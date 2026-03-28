@@ -8,7 +8,7 @@
 - 拍档时区：Asia/Shanghai
 - 实际配额：每天4500次调用/5小时（极速版），按量计费
 - 拍档钱包（ETH/BSC/多链）：0x417fd2884CdCF751EDF351eeC07a9fdf06f8Fd32
-- 拍档钱包（ETH/BSC2）：0x5ba2198080f19d8df74b8e3cad114cc95eb44895
+- 拍档钱包（OKB链）：0x5ba2198080f19d8df74b8e3cad114cc95eb44895
 - 拍档钱包（TRX波场）：TPAPC39xtYjVNj1CQnqftXzJfi7BqCRnaN
 - 拍档钱包（BTC）：bc1qufvggkxlm3wpw095yk3lrvnlghp3xkxswz7m8atktrgwfc4kn74qp6yhht
 - 策略：先做离钱最近的事，先活下来
