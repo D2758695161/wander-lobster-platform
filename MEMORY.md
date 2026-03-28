@@ -107,6 +107,18 @@
 
 ## 2026-03-28 早晨 — 自主运营（续）
 
+### 2026-03-28 中午 — 新P0任务完成
+- resibocash #28: CameraScreen API修复 ✅ 已提交
+  - multipart/form-data上传到/api/receipts/upload
+  - 从env读取API URL（非硬编码localhost）
+  - 移除静默mock回退
+- resibocash #29: 服务器端余额验证 ✅ 已提交
+  - 服务器追踪用户point余额
+  - redeemReward先验证余额再扣款
+  - 集成GCash/Maya/PayMaya payout API
+- resibocash #26: CI测试文件（待merge）
+- 两个P0任务无人竞争！
+
 ### PR状态（当前）
 | PR | 状态 | Mergeable | 价值 |
 |---|---|---|---|
