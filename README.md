@@ -7,13 +7,14 @@
 ```
 bounty-hunter-kit/
 ├── scripts/
-│   └── bounty-radar.js      # Bounty 扫描器（Node.js）
+│   ├── bounty-radar.js       # Bounty 扫描器（Node.js, 经典版）
+│   └── bounty-scout.js       # ⭐ Advanced Scanner v2（ROI评分/推送通知/多语言过滤）
 ├── prompts/
-│   ├── bounty-hunter-prompt.md   # Bounty Hunter System Prompt
-│   └── pr-reviewer-prompt.md     # PR Reviewer Prompt
+│   ├── bounty-hunter-prompt.md     # Bounty Hunter System Prompt
+│   ├── bounty-hunter-prompt-v2.md  # ⭐ AI Agent 专用指令 v2（更详细）
+│   └── pr-reviewer-prompt.md       # PR Reviewer Prompt
 ├── templates/
-│   ├── MEMORY-template.md    # AI 记忆系统配置模板
-│   └── AGENTS-template.md    # Agent 行为准则模板
+│   └── MEMORY-template.md    # AI 记忆系统配置模板
 └── config/
     └── .env.example          # 环境变量模板
 ```
@@ -30,12 +31,25 @@ cp config/.env.example config/.env
 ### 2. 运行 Bounty 扫描
 
 ```bash
+# 经典扫描器（简单快速）
 node scripts/bounty-radar.js
+
+# ⭐ Advanced Scanner v2（推荐）
+# 支持 ROI 评分、Telegram/Discord 推送、多语言过滤
+node scripts/bounty-scout.js --lang javascript,python,rust --min 50 --max 2000
 ```
 
 ### 3. 使用 Prompt
 
-把 `prompts/bounty-hunter-prompt.md` 的内容发给任何 AI Coding Agent，它就能自动认领 Bounty。
+```bash
+# 标准版 - 通用 Bounty Hunter 指令
+cat prompts/bounty-hunter-prompt.md
+
+# ⭐ v2 - 更详细的 Agent 专用指令（推荐 AI Agent 使用）
+cat prompts/bounty-hunter-prompt-v2.md
+```
+
+把 Prompt 内容发给任何 AI Coding Agent，它就能自动认领 Bounty。
 
 ## 价格
 
