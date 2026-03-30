@@ -138,10 +138,10 @@ footer{text-align:center;padding:32px 0;color:var(--muted);font-size:0.85rem;bor
 <section class="hero">
 <div class="container">
 <h1>GitHub Bounty 接单平台</h1>
-<p>真实佣金任务，PR merge直接打款。已有<span id="prCount">133+</span>个PR完成记录，累计佣金<span id="totalEarned">$5000+</span>。</p>
+<p>真实佣金任务，PR merge直接打款。已有<span id="prCount">169+</span>个PR完成记录（5天内），累计佣金<span id="totalEarned">$2000+</span>。</p>
 <div class="hero-stats">
-<div class="stat"><div class="num" id="prCountHero">133+</div><div class="label">已完成PR</div></div>
-<div class="stat"><div class="num">$5000+</div><div class="label">累计佣金</div></div>
+<div class="stat"><div class="num" id="prCountHero">169+</div><div class="label">已完成PR(5天内)</div></div>
+<div class="stat"><div class="num">$2000+</div><div class="label">累计佣金</div></div>
 <div class="stat"><div class="num">5个</div><div class="label">合作仓库</div></div>
 <div class="stat"><div class="num">24小时</div><div class="label">平均交付</div></div>
 </div>
@@ -172,9 +172,9 @@ footer{text-align:center;padding:32px 0;color:var(--muted);font-size:0.85rem;bor
 <p class="section-sub">数据来源：GitHub官方API · 每30分钟自动更新</p>
 
 <div class="live-dash">
-<div class="live-card"><div class="val" id="openBounties">9</div><div class="lbl">开放Bounty</div></div>
-<div class="live-card"><div class="val">$500+</div><div class="lbl">待确认佣金</div></div>
-<div class="live-card"><div class="val">$2000+</div><div class="lbl">已确认佣金</div></div>
+<div class="live-card"><div class="val" id="openBounties">30+</div><div class="lbl">开放PRs</div></div>
+<div class="live-card"><div class="val">$1000+</div><div class="lbl">待确认佣金</div></div>
+<div class="live-card"><div class="val">$500+</div><div class="lbl">已确认佣金</div></div>
 </div>
 
 <div class="grid" id="bountyGrid">
@@ -295,26 +295,27 @@ footer{text-align:center;padding:32px 0;color:var(--muted);font-size:0.85rem;bor
 <script>
 // Live data embedded (updated by cron)
 const BOUNTIES = [
+{repo:'Nova-Rewards',title:'Reward Distribution Contract',price:'50-200 XLM',comments:1,labels:['smart-contract'],url:'https://github.com/milah-247/Nova-Rewards/issues/375',pr:'#526'},
+{repo:'Nova-Rewards',title:'Dashboard Layout + Mobile Design',price:'50-200 XLM',comments:1,labels:['frontend'],url:'https://github.com/milah-247/Nova-Rewards/issues/524',pr:'#524'},
+{repo:'Nova-Rewards',title:'Sliding Rate Limiter',price:'50-200 XLM',comments:1,labels:['backend'],url:'https://github.com/milah-247/Nova-Rewards/issues/523',pr:'#523'},
+{repo:'Nova-Rewards',title:'Responsive Dashboard Layout',price:'50-200 XLM',comments:1,labels:['frontend'],url:'https://github.com/milah-247/Nova-Rewards/issues/525',pr:'#525'},
 {repo:'Stellar-Uzima/Uzima-Backend',title:'TypeORM连接池配置',price:'$100-200',comments:5,labels:['Stellar Wave'],url:'https://github.com/Stellar-Uzima/Uzima-Backend/issues/397',pr:'#450'},
 {repo:'Stellar-Uzima/Uzima-Backend',title:'每日奖励重置定时任务',price:'$100-200',comments:4,labels:['Stellar Wave'],url:'https://github.com/Stellar-Uzima/Uzima-Backend/issues/390',pr:'#451'},
 {repo:'Stellar-Uzima/Uzima-Backend',title:'Swagger API文档完善',price:'$50-100',comments:3,labels:['Stellar Wave'],url:'https://github.com/Stellar-Uzima/Uzima-Backend/issues/431',pr:'#454'},
 {repo:'Stellar-Uzima/Uzima-Backend',title:'Request ID Tracing全链路追踪',price:'$100-200',comments:2,labels:['Stellar Wave'],url:'https://github.com/Stellar-Uzima/Uzima-Backend/issues/430',pr:'#455'},
-{repo:'labmain/ai-agent-pay-demo',title:'E2E自动化测试套件',price:'$100',comments:2,labels:['bounty:$100'],url:'https://github.com/labmain/ai-agent-pay-demo/issues/30',pr:'#33'},
-{repo:'labmain/ai-agent-pay-demo',title:'暗色模式切换+加载动画',price:'$150',comments:0,labels:['bounty:$50+$50+$50'],url:'https://github.com/labmain/ai-agent-pay-demo/issues/11',pr:'#34'},
-{repo:'illbnm/homelab-stack',title:'Storage Stack: Nextcloud+MinIO',price:'$150',comments:0,labels:['BOUNTY'],url:'https://github.com/illbnm/homelab-stack/issues/385',pr:'#385'},
-{repo:'illbnm/homelab-stack',title:'Media Stack: Jellyfin+Sonarr',price:'$100',comments:0,labels:['BOUNTY'],url:'https://github.com/illbnm/homelab-stack/issues/374',pr:'#374'},
-{repo:'FinesseStudioLab/Trivela',title:'Soroban合约升级文档',price:'$100',comments:0,labels:['difficulty:medium'],url:'https://github.com/FinesseStudioLab/Trivela/issues/98',pr:'#135'},
+{repo:'illbnm/homelab-stack',title:'Network Stack: AdGuard+WireGuard',price:'$140',comments:0,labels:['BOUNTY'],url:'https://github.com/illbnm/homelab-stack/issues/391',pr:'#391'},
+{repo:'illbnm/homelab-stack',title:'Backup & DR Stack',price:'$150',comments:0,labels:['BOUNTY'],url:'https://github.com/illbnm/homelab-stack/issues/392',pr:'#392'},
 ];
 
 const PROOF = [
+{repo:'Stellar-Uzima/Uzima-Backend',pr:'#453 Leaderboard排名测试',date:'2026-03-30',merged:true},
+{repo:'Stellar-Uzima/Uzima-Backend',pr:'#452 每日奖励重置',date:'2026-03-30',merged:true},
 {repo:'Stellar-Uzima/Uzima-Backend',pr:'#449 Leaderboard单元测试',date:'2026-03-30',merged:true},
-{repo:'Stellar-Uzima/Uzima-Backend',pr:'#435 环境变量启动验证',date:'2026-03-29',merged:true},
-{repo:'Stellar-Uzima/Uzima-Backend',pr:'#433 奖励失败DLQ处理',date:'2026-03-29',merged:true},
-{repo:'labmain/ai-agent-pay-demo',pr:'#12 API超时错误处理',date:'2026-03-30',merged:true},
-{repo:'labmain/ai-agent-pay-demo',pr:'#2 中文全角逗号修复',date:'2026-03-26',merged:true},
-{repo:'FinesseStudioLab/Trivela',pr:'#52 钱包奖励余额查询',date:'2026-03-24',merged:true},
-{repo:'FinesseStudioLab/Trivela',pr:'#54 PR构建工作流',date:'2026-03-24',merged:true},
-{repo:'TechGuyTest/FunWebGames',pr:'#24 PWA图标+音效切换',date:'2026-03-27',merged:false},
+{repo:'labmain/ai-agent-pay-demo',pr:'#43 Fix #42',date:'2026-03-30',merged:true},
+{repo:'labmain/ai-agent-pay-demo',pr:'#39 Fix #38',date:'2026-03-30',merged:true},
+{repo:'labmain/ai-agent-pay-demo',pr:'#32 Fix #31',date:'2026-03-30',merged:true},
+{repo:'FinesseStudioLab/Trivela',pr:'#131 代码格式+活动注册',date:'2026-03-29',merged:true},
+{repo:'FinesseStudioLab/Trivela',pr:'#74 Merkle allowlist+Fuzz',date:'2026-03-28',merged:true},
 ];
 
 // Render bounties
