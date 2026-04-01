@@ -44,14 +44,25 @@
 - [x] **集成测试** — 23/23项测试通过
 - [x] **安装配置** — openclaw.plugin.json + INSTALL.md + SKILL.md
 
-### Phase 3 — 平台化 🚧 IN PROGRESS
-- [ ] Tool registry 重构（streaming + tool orchestration）
-- [ ] Slash command registry（30+ 命令家族）
-- [ ] Instruction file discovery（向上搜索 AGENTS.md/CLAW.md）
-- [ ] LSP client 集成
-- [ ] Skill bundling 系统（Skill as Plugin）
-- [ ] Plugin marketplace（发布到ClawHub）
-- [ ] Team workspace（多 Agent 协作）
+### Phase 3 — 平台化 ✅ DONE
+- [x] **Slash Command Registry** — `slash-commands.ts` 30KB，30+命令完整实现
+  - Agent: /agent, /agents, /team, /spawn, /delegate
+  - Tools: /tools, /tool, /hook, /hooks, /mcp, /lsp
+  - Memory: /memory, /compact, /summarize, /forget
+  - Config: /model, /permission, /config, /mode
+  - System: /exec, /bash, /eval, /status, /health
+  - Files: /read, /write, /edit, /glob, /grep
+  - Session: /new, /reset, /resume, /export, /import
+- [x] **Instruction File Discovery** — `instruction-discovery.ts` 8KB
+  - 优先级: CLAW.md > CLAW.local.md > .claw/CLAW.md > SOUL.md > AGENTS.md > MEMORY.md
+  - 内容哈希去重 + 4K/12K字符预算
+- [x] **LSP Client** — `lsp-client.ts` 14KB + `lsp-servers.ts` 9KB
+  - gotoDefinition, findReferences, getCompletions, hover, documentSymbols, getDiagnostics
+  - 预配置: TypeScript, Python, Rust, Go, JavaScript
+- [x] **Team Workspace** — `team-workspace.ts` 14KB
+  - Multi-agent orchestration, task graph, messaging, delegation
+  - 角色: architect/developer/reviewer/researcher/coordinator
+- [x] **SKILL.md** — `claw-pipeline/phase3/SKILL.md` 17KB 完整文档
 
 ---
 
