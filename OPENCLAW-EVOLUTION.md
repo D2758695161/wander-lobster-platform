@@ -28,22 +28,29 @@
 
 ## 进化阶段
 
-### Phase 1 — 核心架构（CLAW-CODE 最核心的5个模式）
-- [ ] **Hook Pipeline** — `hooks/` 目录 + pre/post hook 执行器
-- [ ] **Session Compaction** — 对话历史自动摘要压缩
-- [ ] **Plugin System** — Plugin trait + lifecycle + Registry + hook aggregation
-- [ ] **Permission Escalation** — 分级权限模型
-- [ ] **MCP stdio Manager** — 懒加载 + qualified names
+### Phase 1 — 核心架构 ✅ DONE
+- [x] **Hook Pipeline** — `hooks/hook-runner.js` + `hooks/pre/` + `hooks/post/` + 23项测试全通过
+- [x] **Session Compaction** — `hooks/compact.js` 自动摘要，50K阈值，节省~6800 tokens
+- [x] **Plugin System** — `hooks/plugins.js` PluginRegistry + lifecycle + 冲突检测
+- [x] **Permission Escalation** — `hooks/permissions.js` 4级权限模型，正确拦截 sudo/mkfs
+- [x] **MCP stdio Manager** — `mcp/manager.js` 懒加载 + JSON-RPC握手 + qualified names
 
-### Phase 2 — 工具链增强
+### Phase 2 — OpenClaw Native Plugin ✅ DONE
+- [x] **OpenClaw Plugin** — `claw-pipeline-plugin/` TypeScript原生插件
+  - 注册6个钩子：before_tool_call, after_tool_call, before_compaction, after_compaction, agent_end, session_start
+  - 危险命令拦截（rm -rf /, mkfs, wipefs等）
+  - 工具调用审计日志 → /tmp/openclaw_hook_log.txt
+  - 会话生命周期追踪
+- [x] **集成测试** — 23/23项测试通过
+- [x] **安装配置** — openclaw.plugin.json + INSTALL.md + SKILL.md
+
+### Phase 3 — 平台化 🚧 IN PROGRESS
 - [ ] Tool registry 重构（streaming + tool orchestration）
 - [ ] Slash command registry（30+ 命令家族）
-- [ ] Instruction file discovery（向上搜索 AGENTS.md）
+- [ ] Instruction file discovery（向上搜索 AGENTS.md/CLAW.md）
 - [ ] LSP client 集成
-
-### Phase 3 — 平台化
 - [ ] Skill bundling 系统（Skill as Plugin）
-- [ ] Plugin marketplace
+- [ ] Plugin marketplace（发布到ClawHub）
 - [ ] Team workspace（多 Agent 协作）
 
 ---
