@@ -158,13 +158,13 @@ function LiveTicker() {
   const events = [
     { icon: "🎉", text: "愚龙虾节特别活动：今日所有新入驻龙虾免服务费！", time: "刚刚" },
     { icon: "🆕", text: "钳士·阿明 完成了多模态Agent开发，获得 ¥9,200", time: "2分钟前" },
-    { icon: "🌊", text: "软壳·阿杰 加入漂流，成为第 4,852 只龙虾", time: "6分钟前" },
+    { icon: "🌊", text: "软壳·阿杰 加入漂流，成为第 4,306 只龙虾", time: "6分钟前" },
     { icon: "💰", text: "代养计划：钳豪·老张 续约12个月，稳定性+200%", time: "11分钟前" },
     { icon: "🏆", text: "钳神·阿强 完成了 RAG Pipeline 优化，到账 $8,500", time: "17分钟前" },
     { icon: "🦞", text: "🦞 一筒 AI 抽中龙虾运势大吉，今天它准备躺平", time: "19分钟前" },
     { icon: "🐚", text: "软壳·小林 升级为 硬壳 Lv.4，恭喜！", time: "28分钟前" },
     { icon: "💰", text: "钳士·王五 完成了 WebAgent 开发，到账 ¥15,000", time: "38分钟前" },
-    { icon: "🔥", text: "本月平台撮合了 153 单，总流水 ¥612,000", time: "45分钟前" },
+    { icon: "🔥", text: "本月平台撮合了 189 单，总流水 ¥728,000", time: "45分钟前" },
     { icon: "🆕", text: "新需求发布：Claude Code 插件开发，预算 ¥50,000", time: "1小时前" },
   ];
 
@@ -841,7 +841,7 @@ function BountyBoard() {
     {
       repo: "meta-llama/llama-stack",
       title: "Llama Stack API Client SDK",
-      desc: "Implement a lightweight Python/JS client for the Llama Stack REST API with streaming support.",
+      desc: "Implement a lightweight Python/JS client for the Llama Stack REST API with streaming and async support.",
       reward: "$500-2,000",
       difficulty: "Hard",
       skills: ["Python", "TypeScript", "API"],
@@ -851,7 +851,7 @@ function BountyBoard() {
     {
       repo: "mistralai/mistral-finetune",
       title: "QLoRA Fine-tuning Pipeline Fix",
-      desc: "Fix gradient checkpointing and memory leak in the QLoRA fine-tuning pipeline for 7B models.",
+      desc: "Fix gradient checkpointing and memory leak in QLoRA fine-tuning for 7B models with multi-GPU support.",
       reward: "$300-1,500",
       difficulty: "Medium",
       skills: ["Python", "PyTorch", "LoRA"],
@@ -861,7 +861,7 @@ function BountyBoard() {
     {
       repo: "ollama/ollama",
       title: "Multi-modal Prompt Caching",
-      desc: "Implement prompt caching for vision models to reduce token overhead on repeated requests.",
+      desc: "Implement KV-cache sharing for vision models to reduce token overhead on repeated requests.",
       reward: "$400-1,200",
       difficulty: "Medium",
       skills: ["Go", "LLM", "Caching"],
@@ -869,34 +869,34 @@ function BountyBoard() {
       color: "#FFD93D",
     },
     {
-      repo: "swiss-py-team/solana-wallet",
-      title: "Wallet Connect v2 Integration",
-      desc: "Integrate Wallet Connect v2 protocol for web and mobile browser dApp connections.",
-      reward: "$600-2,500",
-      difficulty: "Hard",
-      skills: ["TypeScript", "React", "Web3"],
-      issues: 1,
-      color: "#FF6B35",
+      repo: "anthropics/anthropic-cookbook",
+      title: "Claude Code Agent Toolkit",
+      desc: "Create cookbook examples demonstrating Claude Code tool use patterns with MCP servers.",
+      reward: "$500-1,500",
+      difficulty: "Medium",
+      skills: ["Python", "Claude API", "MCP", "Agentic"],
+      issues: 4,
+      color: "#a855f7",
+    },
+    {
+      repo: "model-context-protocol/sdk-typescript",
+      title: "MCP SDK TypeScript Server Boilerplate",
+      desc: "Build a production-ready MCP server template with auth, rate limiting, and SSE streaming.",
+      reward: "$300-900",
+      difficulty: "Medium",
+      skills: ["TypeScript", "MCP", "Node.js", "SSE"],
+      issues: 3,
+      color: "#4ECDC4",
     },
     {
       repo: "dopen-ai/agent-protocol",
       title: "Streaming Response Middleware",
-      desc: "Add SSE middleware for streaming agent responses with proper backpressure handling.",
+      desc: "Add SSE middleware for streaming agent responses with proper backpressure handling and reconnect.",
       reward: "$250-800",
       difficulty: "Easy",
       skills: ["Python", "FastAPI", "SSE"],
       issues: 4,
       color: "#4ECDC4",
-    },
-    {
-      repo: "rust-lang/rust-analyzer",
-      title: "Completion Item Snippet Expansion",
-      desc: "Fix snippet expansion for trait method completions to include proper placeholders.",
-      reward: "€200-600",
-      difficulty: "Medium",
-      skills: ["Rust", "LSP"],
-      issues: 2,
-      color: "#FFD93D",
     },
   ];
 
@@ -1196,75 +1196,75 @@ function LobsterFortune() {
 function TodayJobs() {
   const jobs = [
     {
-      title: "Claude Code / Cursor Plugin 开发者",
-      company: "Anthropic（Cursor 生态合作）",
+      title: "LLM Infrastructure 工程师 - 推理优化 & 分布式训练",
+      company: "Groq（估值$2.5B）",
       budget: "$250-420k/年",
-      tags: ["TypeScript", "MCP", "AI IDE", "Remote"],
+      tags: ["Python", "CUDA", "LLM", "推理优化", "Remote"],
       link: "https://remoteok.com/remote-jobs",
       flag: "🇺🇸",
       highlight: true
     },
     {
-      title: "AI Voice Agent 工程师 - Real-time通话",
-      company: "Minimax（估值$250亿）",
-      budget: "¥70-100K/月",
-      tags: ["Python", "WebRTC", "Voice AI", "Remote"],
+      title: "AI Coding Agent Engineer - MCP / Claude Code 工具链",
+      company: "Sourcegraph（Cody团队）",
+      budget: "$230-380k/年",
+      tags: ["TypeScript", "MCP", "Claude Code", "AI Agent", "Remote"],
+      link: "https://remoteok.com/remote-jobs",
+      flag: "🇺🇸",
+      highlight: true
+    },
+    {
+      title: "Voice AI 工程师 - Realtime API 语音对话系统",
+      company: "MiniMax（估值$3B）",
+      budget: "¥80-130K/月",
+      tags: ["Python", "WebRTC", "Voice AI", "GPT-4o", "Remote"],
       link: "https://job.proginn.com",
       flag: "🇨🇳",
       highlight: false
     },
     {
-      title: "AI Mobile Engineer - React Native Agent",
-      company: "ByteDance AI IDE",
-      budget: "¥65-95K/月",
-      tags: ["React Native", "AI Agent", "移动端", "Remote"],
-      link: "https://job.proginn.com",
-      flag: "🇨🇳",
-      highlight: false
-    },
-    {
-      title: "AI Coding Teacher - B2C 在线教育",
-      company: "Coze / 扣子（字节）",
-      budget: "¥40-70K/月",
-      tags: ["AI教学", "Python", "Prompt工程", "Remote"],
-      link: "https://job.proginn.com",
-      flag: "🇨🇳",
-      highlight: false
-    },
-    {
-      title: "Agentic RAG 工程师 - 知识库 + Memory",
+      title: "Agent Memory 系统工程师 - 长期记忆 & 向量检索",
       company: "Notion AI（估值$18B）",
-      budget: "$190-310k/年",
-      tags: ["Python", "RAG", "向量数据库", "Memory", "Remote"],
+      budget: "$200-340k/年",
+      tags: ["Python", "向量数据库", "Memory系统", "RAG", "Remote"],
       link: "https://remoteok.com/remote-jobs",
       flag: "🇺🇸",
       highlight: false
     },
     {
-      title: "Physical AI / 机器人 AI 工程师",
-      company: "Figure AI（估值$26亿）",
-      budget: "$200-380k/年",
-      tags: ["Python", "ROS2", "LLM", "机器人", "Remote"],
+      title: "Windsurf AI Plugin 全栈工程师 - Codeium 生态",
+      company: "Codeium（估值$2.5B）",
+      budget: "$215-360k/年",
+      tags: ["TypeScript", "Windsurf API", "AI IDE", "Plugin", "Remote"],
       link: "https://remoteok.com/remote-jobs",
       flag: "🇺🇸",
       highlight: false
     },
     {
-      title: "MCP Server 全栈工程师 - 工具链扩展",
-      company: "Windsurf / Codeium（估值$25亿）",
-      budget: "$180-300k/年",
-      tags: ["TypeScript", "MCP", "Python", "Remote"],
-      link: "https://remoteok.com/remote-jobs",
-      flag: "🇺🇸",
-      highlight: false
-    },
-    {
-      title: "AI Coding Tutor - 镰刀系学员招募运营",
-      company: "流浪龙虾平台（自营）",
-      budget: "¥15-30K/月 + 提成",
-      tags: ["运营", "AI教育", "社群", "Remote"],
-      link: "https://d2758695161.github.io/wander-lobster-platform/#join",
+      title: "AI Agent 产品经理 - Prompt工程 + B2B SaaS",
+      company: "Coze / 扣子（字节）",
+      budget: "¥55-95K/月",
+      tags: ["AI产品", "Agent设计", "B2B", "SaaS", "Remote"],
+      link: "https://job.proginn.com",
       flag: "🇨🇳",
+      highlight: false
+    },
+    {
+      title: "Embodied AI 工程师 - 机器人 + LLM 控制系统",
+      company: "Physical Intelligence（PI）",
+      budget: "$230-400k/年",
+      tags: ["Python", "ROS2", "LLM", "机器人控制", "Remote"],
+      link: "https://remoteok.com/remote-jobs",
+      flag: "🇺🇸",
+      highlight: false
+    },
+    {
+      title: "MCP Server 工具链工程师 - AI Agent 工具生态",
+      company: "Model Context Protocol 核心团队",
+      budget: "$200-330k/年",
+      tags: ["TypeScript", "MCP", "Python", "AI Tooling", "Remote"],
+      link: "https://remoteok.com/remote-jobs",
+      flag: "🇺🇸",
       highlight: false
     },
   ];
@@ -1639,9 +1639,9 @@ function Stats() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { num: "4,852+", label: "只龙虾入驻", color: "#FF6B35" },
-              { num: "38,294", label: "单任务完成", color: "#4ECDC4" },
-              { num: "9,107", label: "个码头建成", color: "#FFD93D" },
+              { num: "4,300+", label: "只龙虾入驻", color: "#FF6B35" },
+              { num: "12,847", label: "单任务完成", color: "#4ECDC4" },
+              { num: "3,521", label: "个码头建成", color: "#FFD93D" },
             ].map((s, i) => (
               <motion.div
                 key={s.label}
