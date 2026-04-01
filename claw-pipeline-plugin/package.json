@@ -1,0 +1,16 @@
+{
+  "name": "claw-pipeline-plugin",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CLAW-CODE inspired hook pipeline + session compaction + permission escalation for OpenClaw",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {
+    "openclaw": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}
