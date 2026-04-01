@@ -1,0 +1,26 @@
+{
+  "name": "claw-pipeline",
+  "version": "1.0.0",
+  "description": "CLAW-CODE inspired hook pipeline, session compaction, permission escalation for OpenClaw",
+  "defaultEnabled": true,
+  "hooks": {
+    "pre": {
+      "exec": ["bash hooks/pre/exec.sh"],
+      "read": ["bash hooks/pre/read.sh"],
+      "write": ["bash hooks/pre/write.sh"],
+      "edit": ["bash hooks/pre/edit.sh"],
+      "general": ["bash hooks/pre/general.sh"]
+    },
+    "post": {
+      "exec": ["bash hooks/post/exec.sh"],
+      "read": ["bash hooks/post/read.sh"],
+      "general": ["bash hooks/post/general.sh"]
+    }
+  },
+  "lifecycle": {
+    "init": ["echo CLAW-Pipeline initialized"],
+    "shutdown": ["echo CLAW-Pipeline shutting down"]
+  },
+  "tools": [],
+  "permissions": ["filesystem:read", "filesystem:write", "network:outbound"]
+}
