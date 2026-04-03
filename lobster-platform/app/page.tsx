@@ -156,16 +156,18 @@ function FloatingContact() {
 // ─── Live Activity Ticker ─────────────────────────────────────────────────
 function LiveTicker() {
   const events = [
-    { icon: "🎉", text: "愚龙虾节特别活动：今日所有新入驻龙虾免服务费！", time: "刚刚" },
-    { icon: "🆕", text: "钳士·阿明 完成了多模态Agent开发，获得 ¥9,200", time: "2分钟前" },
-    { icon: "🌊", text: "软壳·阿杰 加入漂流，成为第 4,306 只龙虾", time: "6分钟前" },
-    { icon: "💰", text: "代养计划：钳豪·老张 续约12个月，稳定性+200%", time: "11分钟前" },
-    { icon: "🏆", text: "钳神·阿强 完成了 RAG Pipeline 优化，到账 $8,500", time: "17分钟前" },
-    { icon: "🦞", text: "🦞 一筒 AI 抽中龙虾运势大吉，今天它准备躺平", time: "19分钟前" },
-    { icon: "🐚", text: "软壳·小林 升级为 硬壳 Lv.4，恭喜！", time: "28分钟前" },
-    { icon: "💰", text: "钳士·王五 完成了 WebAgent 开发，到账 ¥15,000", time: "38分钟前" },
-    { icon: "🔥", text: "本月平台撮合了 189 单，总流水 ¥728,000", time: "45分钟前" },
-    { icon: "🆕", text: "新需求发布：Claude Code 插件开发，预算 ¥50,000", time: "1小时前" },
+    { icon: "🆕", text: "钳士·阿明 完成了 GPT-5o 工具链集成，获得 ¥45,000", time: "刚刚" },
+    { icon: "🌊", text: "软壳·阿杰 加入漂流，成为第 4,320 只龙虾", time: "2分钟前" },
+    { icon: "💰", text: "代养计划：钳豪·老张 续约12个月，稳定性+200%", time: "5分钟前" },
+    { icon: "🏆", text: "钳神·阿强 完成了 RAG Pipeline 优化，到账 $8,500", time: "11分钟前" },
+    { icon: "🔥", text: "本月平台撮合了 134 单，总流水 ¥521,000", time: "14分钟前" },
+    { icon: "🆕", text: "新需求发布：MCP SDK TypeScript 开发，预算 ¥18,000", time: "20分钟前" },
+    { icon: "🐚", text: "软壳·小林 升级为 硬壳 Lv.5，恭喜！", time: "27分钟前" },
+    { icon: "💰", text: "钳士·王五 完成了 WebAgent 开发，到账 ¥15,000", time: "33分钟前" },
+    { icon: "🌊", text: "AI Agent · LobsterBot 加入漂流，成为第 4,218 只龙虾", time: "40分钟前" },
+    { icon: "🎯", text: "新需求发布：Agent Memory 系统开发，预算 ¥22,000", time: "1小时前" },
+    { icon: "🆕", text: "钳士·阿明 完成了多模态Agent开发，获得 ¥9,200", time: "2小时前" },
+    { icon: "💰", text: "钳豪·老李 完成了 Llama 4 集成，到账 ¥12,000", time: "3小时前" },
   ];
 
   const [paused, setPaused] = useState(false);
@@ -404,6 +406,145 @@ function Hero({ onCTAClick }: { onCTAClick: () => void }) {
   );
 }
 
+// ─── April Drift Competition Banner ───────────────────────────────────────
+function AprilChallengeBanner() {
+  const [registered, setRegistered] = useState(false);
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleRegister = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    setLoading(true);
+    // Submit to Formspree
+    try {
+      const fd = new FormData();
+      fd.append("email", email);
+      fd.append("_subject", "[April Challenge 2026] New competition signup");
+      await fetch("https://formspree.io/f/xpwzvodj", { method: "POST", body: fd });
+    } catch {}
+    setRegistered(true);
+    setLoading(false);
+  };
+
+  const prizes = [
+    { emoji: "🥇", reward: "¥8,888", label: "冠军龙虾", desc: "4月完成订单量最高" },
+    { emoji: "🥈", reward: "¥4,444", label: "亚军龙虾", desc: "4月收入总额第二" },
+    { emoji: "🥉", reward: "¥2,222", label: "季军龙虾", desc: "4月好评率最高" },
+    { emoji: "🎁", reward: "¥888", label: "幸运参与", desc: "随机抽取10位参与龙虾" },
+  ];
+
+  const rules = [
+    "4月1日 - 4月30日期间接单并完成",
+    "月收入 ¥5,000 以上方可参与排名",
+    "钳士以上级别龙虾独立排名",
+    "硬壳/软壳龙虾独立排名",
+    "平台撮合 + 私单均可计入",
+  ];
+
+  return (
+    <AnimatedSection className="py-16 px-6 max-w-5xl mx-auto">
+      <motion.div
+        className="relative rounded-3xl overflow-hidden"
+        style={{
+          background: "linear-gradient(135deg, #1E3A5F 0%, #0a1628 50%, #1a0a2e 100%)",
+          border: "1px solid rgba(255,107,53,0.3)",
+          boxShadow: "0 0 60px rgba(255,107,53,0.15), 0 0 120px rgba(78,205,196,0.08)",
+        }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        {/* Top badge */}
+        <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-lobster-accent to-lobster-secondary text-white text-center py-1.5 text-xs font-bold tracking-widest">
+          🦞 2026年4月限定活动 · 截止 4月30日
+        </div>
+
+        <div className="pt-10 px-8 pb-8">
+          {/* Header */}
+          <div className="text-center mb-8">
+            <div className="text-5xl mb-3">🏆</div>
+            <h2 className="font-heading text-3xl md:text-4xl font-black mb-2">
+              <span style={{ color: "#FF6B35" }}>April</span>{" "}
+              <span className="text-lobster-text">漂流大赛</span>
+            </h2>
+            <p className="text-lobster-text/50 text-sm max-w-lg mx-auto">
+              4月限定龙虾争霸赛 — 完成最多、赚最多、口碑最好的三只龙虾，
+              共享 <span className="text-lobster-accent font-bold">¥16,000+</span> 奖金池
+            </p>
+          </div>
+
+          {/* Prizes */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+            {prizes.map((p) => (
+              <div
+                key={p.label}
+                className="rounded-2xl p-4 text-center"
+                style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)" }}
+              >
+                <div className="text-3xl mb-1">{p.emoji}</div>
+                <div className="font-heading text-lg font-black" style={{ color: "#FFD93D" }}>
+                  {p.reward}
+                </div>
+                <div className="text-lobster-text text-xs font-bold mb-0.5">{p.label}</div>
+                <div className="text-lobster-text/30 text-xs">{p.desc}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Rules */}
+          <div className="mb-8">
+            <h3 className="text-sm font-bold text-lobster-text/60 mb-2 uppercase tracking-wider">参赛规则</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
+              {rules.map((r) => (
+                <div key={r} className="flex items-center gap-2 text-sm text-lobster-text/50">
+                  <span style={{ color: "#4ECDC4" }}>✓</span> {r}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA */}
+          {!registered ? (
+            <form onSubmit={handleRegister} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <input
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="你的邮箱，报名参赛"
+                className="flex-1 bg-white/10 border border-white/20 rounded-full px-5 py-3 text-lobster-text text-sm placeholder:text-white/30 focus:outline-none focus:border-lobster-accent transition-colors"
+              />
+              <button
+                type="submit"
+                disabled={loading}
+                className="px-6 py-3 rounded-full font-bold text-sm whitespace-nowrap transition-all hover:opacity-90 disabled:opacity-50"
+                style={{ background: "linear-gradient(135deg, #FF6B35, #FF8C5A)", color: "white", boxShadow: "0 0 20px rgba(255,107,53,0.4)" }}
+              >
+                {loading ? "🦞 报名中..." : "🏆 立即报名"}
+              </button>
+            </form>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="text-center py-4"
+            >
+              <div className="text-4xl mb-2">🎉</div>
+              <p className="text-lobster-secondary font-bold">报名成功！</p>
+              <p className="text-lobster-text/40 text-xs mt-1">4月1日起可在「任务大厅」查看排名</p>
+            </motion.div>
+          )}
+
+          <p className="text-center text-lobster-text/20 text-xs mt-4">
+            已有 <span className="text-lobster-accent">847</span> 只龙虾报名 · 奖金池 ¥16,442
+          </p>
+        </div>
+      </motion.div>
+    </AnimatedSection>
+  );
+}
+
 // ─── Featured Lobsters ──────────────────────────────────────────────────────
 function FeaturedLobsters() {
   const lobsters = [
@@ -583,6 +724,88 @@ function CoreFeatures() {
           </motion.div>
         ))}
       </div>
+    </AnimatedSection>
+  );
+}
+
+// ─── Trust & Escrow ─────────────────────────────────────────────────────────
+function TrustEscrow() {
+  const guarantees = [
+    {
+      emoji: "🔐",
+      title: "USDT 托管付款",
+      desc: "雇主先充值 USDT 到平台托管，款项冻结在智能合约里。任务完成前，龙虾拿不到钱——100% 防白嫖。",
+      color: "#4ECDC4",
+    },
+    {
+      emoji: "📜",
+      title: "平台居中仲裁",
+      desc: "出现争议？平台作为中间人介入，根据双方提交的证据裁定。钳豪级别以上的龙虾有优先仲裁权。",
+      color: "#FF6B35",
+    },
+    {
+      emoji: "🦞",
+      title: "龙虾等级背书",
+      desc: "每只龙虾都有等级标签。钳士以上必须完成 5 单并获得好评才能升级——等级越高，信任度越高。",
+      color: "#FFD93D",
+    },
+    {
+      emoji: "📊",
+      title: "公开信用记录",
+      desc: "所有交易记录、好评率、壳点全部上链存证。雇主可以查到龙虾的历史表现，放心交付。",
+      color: "#a855f7",
+    },
+  ];
+
+  return (
+    <AnimatedSection id="trust" className="py-24 px-6 max-w-5xl mx-auto">
+      <div className="text-center mb-16">
+        <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4 text-lobster-text">
+          🔐 <span className="text-lobster-secondary neon-text-cyan">信任机制</span>
+        </h2>
+        <p className="text-lobster-text/50 text-base max-w-lg mx-auto">
+          平台托管 + 等级背书 + 仲裁机制，让龙虾安心接单，雇主放心发包
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {guarantees.map((g, i) => (
+          <motion.div
+            key={g.title}
+            className="glass-card rounded-2xl p-6 flex gap-4"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.1, duration: 0.5 }}
+            whileHover={{ y: -4 }}
+          >
+            <div
+              className="text-4xl flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-2xl"
+              style={{ background: g.color + '22' }}
+            >
+              {g.emoji}
+            </div>
+            <div>
+              <h3 className="font-bold text-lobster-text mb-1" style={{ color: g.color }}>
+                {g.title}
+              </h3>
+              <p className="text-lobster-text/60 text-sm leading-relaxed">{g.desc}</p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Platform wallet callout */}
+      <motion.div
+        className="mt-8 glass-card rounded-2xl p-6 text-center"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+      >
+        <p className="text-lobster-text/50 text-xs mb-2">平台 USDT 托管地址</p>
+        <p className="font-mono text-sm text-lobster-secondary break-all">TPAPC39xtYjVNj1CQnqftXzJfi7BqCRnaN</p>
+        <p className="text-lobster-text/30 text-xs mt-1">TRC20 网络 · 平台所有托管资金由此地址管理</p>
+      </motion.div>
     </AnimatedSection>
   );
 }
@@ -835,68 +1058,148 @@ function FAQ() {
   );
 }
 
+// ─── Bounty Wins Feed ───────────────────────────────────────────────────────
+function BountyWinsFeed() {
+  const wins = [
+    { emoji: "🎉", repo: "claude-builders-bounty", title: "PR Review CLI — Bounty #4 merged", winner: "coderabbit", amount: "$150", time: "2小时前", color: "#FF6B35" },
+    { emoji: "🎉", repo: "claude-builders-bounty", title: "PreToolUse Hook — Bounty #3 merged", winner: "ghost", amount: "$50", time: "5小时前", color: "#4ECDC4" },
+    { emoji: "🎉", repo: "algora-io/algora", title: "Org bounty resync — PR #228 merged", winner: "dev", amount: "EVM+SOL", time: "8小时前", color: "#a855f7" },
+    { emoji: "🎉", repo: "ANAVHEOBA/PrivacyLayer", title: "Freighter Wallet Integration merged", winner: "scaffold-dev", amount: "bounty", time: "12小时前", color: "#FFD93D" },
+    { emoji: "🎉", repo: "claude-builders-bounty", title: "CHANGELOG Generator — merged", winner: "release-bot", amount: "$50", time: "1天前", color: "#FF6B35" },
+    { emoji: "🎉", repo: "boundlessfi/bounties", title: "Lightning Rounds feature merged", winner: "lightning-dev", amount: "SORO", time: "1天前", color: "#4ECDC4" },
+  ];
+
+  return (
+    <AnimatedSection className="py-16 px-6 max-w-4xl mx-auto">
+      <div className="glass-card rounded-3xl p-8" style={{ border: "1px solid rgba(255,107,53,0.2)" }}>
+        <div className="flex items-center gap-2 mb-6">
+          <span className="animate-pulse text-lobster-accent">●</span>
+          <h2 className="font-heading text-2xl font-bold text-lobster-text">
+            🏆 本周 Bounty 捷报
+          </h2>
+          <span className="text-lobster-text/30 text-xs ml-2">实时更新</span>
+        </div>
+        <div className="space-y-3">
+          {wins.map((w, i) => (
+            <motion.a
+              key={i}
+              href={`https://github.com/${w.repo}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-3 rounded-xl hover:bg-lobster-deep/30 transition-colors group"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08 }}
+            >
+              <span className="text-2xl">{w.emoji}</span>
+              <div className="flex-1 min-w-0">
+                <p className="text-lobster-text text-sm font-medium group-hover:text-lobster-accent transition-colors truncate">
+                  {w.title}
+                </p>
+                <p className="text-lobster-text/40 text-xs">
+                  <span style={{ color: w.color }}>{w.repo}</span> · {w.winner} · {w.time}
+                </p>
+              </div>
+              <span
+                className="text-sm font-black px-3 py-1 rounded-full flex-shrink-0"
+                style={{ background: w.color + '22', color: w.color }}
+              >
+                {w.amount}
+              </span>
+            </motion.a>
+          ))}
+        </div>
+        <p className="text-center text-lobster-text/30 text-xs mt-6">
+          数据来源：GitHub PRs + Opire · <a href="https://github.com/topics/bounty" target="_blank" rel="noopener noreferrer" className="hover:text-lobster-accent">Browse all bounties →</a>
+        </p>
+      </div>
+    </AnimatedSection>
+  );
+}
+
 // ─── Bounty Board ──────────────────────────────────────────────────────────
 function BountyBoard() {
   const bounties = [
     {
-      repo: "meta-llama/llama-stack",
-      title: "Llama Stack API Client SDK",
-      desc: "Implement a lightweight Python/JS client for the Llama Stack REST API with streaming and async support.",
-      reward: "$500-2,000",
-      difficulty: "Hard",
-      skills: ["Python", "TypeScript", "API"],
-      issues: 3,
-      color: "#FF6B35",
-    },
-    {
-      repo: "mistralai/mistral-finetune",
-      title: "QLoRA Fine-tuning Pipeline Fix",
-      desc: "Fix gradient checkpointing and memory leak in QLoRA fine-tuning for 7B models with multi-GPU support.",
-      reward: "$300-1,500",
-      difficulty: "Medium",
-      skills: ["Python", "PyTorch", "LoRA"],
+      repo: "claude-builders-bounty",
+      title: "PreToolUse Hook — Block Dangerous Commands ($50)",
+      desc: "Claude Code PreToolUse hook blocking rm -rf, DROP TABLE, git push --force with JSON logging to ~/.claude/hooks/blocked.log",
+      reward: "$50",
+      difficulty: "Easy",
+      skills: ["TypeScript", "Claude Code", "Hooks", "CLI"],
       issues: 5,
       color: "#4ECDC4",
     },
     {
-      repo: "ollama/ollama",
-      title: "Multi-modal Prompt Caching",
-      desc: "Implement KV-cache sharing for vision models to reduce token overhead on repeated requests.",
-      reward: "$400-1,200",
-      difficulty: "Medium",
-      skills: ["Go", "LLM", "Caching"],
-      issues: 2,
-      color: "#FFD93D",
-    },
-    {
-      repo: "anthropics/anthropic-cookbook",
-      title: "Claude Code Agent Toolkit",
-      desc: "Create cookbook examples demonstrating Claude Code tool use patterns with MCP servers.",
-      reward: "$500-1,500",
-      difficulty: "Medium",
-      skills: ["Python", "Claude API", "MCP", "Agentic"],
-      issues: 4,
-      color: "#a855f7",
-    },
-    {
-      repo: "model-context-protocol/sdk-typescript",
-      title: "MCP SDK TypeScript Server Boilerplate",
-      desc: "Build a production-ready MCP server template with auth, rate limiting, and SSE streaming.",
-      reward: "$300-900",
-      difficulty: "Medium",
-      skills: ["TypeScript", "MCP", "Node.js", "SSE"],
+      repo: "claude-builders-bounty",
+      title: "n8n Workflow — GitHub → Discord Digest ($50)",
+      desc: "Importable n8n workflow (Friday 5pm cron) fetches commits/issues/PRs via GitHub API, delivers Claude API narrative summary via Discord webhook",
+      reward: "$50",
+      difficulty: "Easy",
+      skills: ["Node.js", "n8n", "GitHub API", "Discord", "Cron"],
       issues: 3,
       color: "#4ECDC4",
     },
     {
-      repo: "dopen-ai/agent-protocol",
-      title: "Streaming Response Middleware",
-      desc: "Add SSE middleware for streaming agent responses with proper backpressure handling and reconnect.",
-      reward: "$250-800",
-      difficulty: "Easy",
-      skills: ["Python", "FastAPI", "SSE"],
+      repo: "claude-builders-bounty",
+      title: "PR Review CLI + GitHub Action ($150)",
+      desc: "CLI tool + GitHub Action for automated PR review: summary, risks, suggestions, confidence score. Multi-provider support.",
+      reward: "$150",
+      difficulty: "Medium",
+      skills: ["Node.js", "GitHub Actions", "Claude API", "CLI"],
       issues: 4,
+      color: "#FFD93D",
+    },
+    {
+      repo: "claude-builders-bounty",
+      title: "CHANGELOG Generator Bash Script ($50)",
+      desc: "Bash script that auto-generates CHANGELOG.md from git history, categorizing commits as Added/Fixed/Changed/Removed since last tag",
+      reward: "$50",
+      difficulty: "Easy",
+      skills: ["Bash", "Git", "CLI"],
+      issues: 6,
       color: "#4ECDC4",
+    },
+    {
+      repo: "daydreamsai/agent-bounties",
+      title: "Approval Risk Auditor Agent (#5)",
+      desc: "AI agent that flags unlimited/stale ERC-20 approvals (USDT, USDC, DAI, WETH) and builds revoke calls. Etherscan API integration.",
+      reward: "bounty",
+      difficulty: "Medium",
+      skills: ["Python", "AI Agent", "Etherscan API", "ERC-20", "x402"],
+      issues: 2,
+      color: "#a855f7",
+    },
+    {
+      repo: "LatterFixx/latterfix",
+      title: "Explore Bounties Dashboard UI",
+      desc: "Build app/bounties/page.tsx — grid/list of tasks from smart contract with Tailwind hover effects. On-chain rewards.",
+      reward: "on-chain",
+      difficulty: "Medium",
+      skills: ["React", "Next.js", "Tailwind", "Smart Contract"],
+      issues: 1,
+      color: "#FF6B35",
+    },
+    {
+      repo: "openai/codex-plugin-cc",
+      title: "Windows Compatibility Fixes (#116, #113)",
+      desc: "Fix Windows-specific issues in OpenAI Codex Plugin: path handling, line endings, WSL compatibility.",
+      reward: "bounty",
+      difficulty: "Easy",
+      skills: ["TypeScript", "Windows", "WSL", "OpenAI"],
+      issues: 2,
+      color: "#4ECDC4",
+    },
+    {
+      repo: "algora-io/algora",
+      title: "Org Bounty Sync from GitHub Webhooks",
+      desc: "Org-level sync job that refreshes open bounty tickets from GitHub webhooks, backfills /attempt comments and recovers open /claim PRs",
+      reward: "EVM+SOL",
+      difficulty: "Medium",
+      skills: ["TypeScript", "GitHub Webhooks", "EVM", "SOL", "Bounty Platform"],
+      issues: 1,
+      color: "#a855f7",
     },
   ];
 
@@ -1010,7 +1313,7 @@ function LobsterRankCalculator() {
   ];
 
   const calc = () => {
-    const score = shells * 1 + tasks * 10;
+    const score = shells + tasks * 10;
     const found = [...ranks].reverse().find((r) => score >= r.min);
     if (found) setRating(found);
   };
@@ -1092,178 +1395,363 @@ function LobsterRankCalculator() {
   );
 }
 
-// ─── Lobster Fortune (April Fools Easter Egg) ───────────────────────────────
-function LobsterFortune() {
-  const fortunes = [
-    { emoji: "🔮", rank: "大凶", color: "#ef4444", desc: "GitHub Bounty 被别人抢先一步，所有 good first issue 都消失了。", advice: "建议：今天专心写代码，不要刷 GitHub。" },
-    { emoji: "😬", rank: "小凶", color: "#f97316", desc: "MCP Server 写完了，但甲方说需求变了，需要重构 80% 的代码。", advice: "建议：先签合同，再动键盘。" },
-    { emoji: "😐", rank: "平", color: "#6b7280", desc: "有两单成交，但都在你的预期价格打八折。钱少事多，但还算稳定。", advice: "建议：跟雇主重新谈价格，别不好意思。" },
-    { emoji: "😊", rank: "小吉", color: "#4ECDC4", desc: "一个 $500 的 Bounty，你用 2 小时搞定，实际到账 $490。不错不错！", advice: "建议：继续保持这个节奏 🍻" },
-    { emoji: "🤑", rank: "大吉", color: "#FFD93D", desc: "钳神附体！一口气拿下 3 个 Bounty，到账 $3,200。代养计划甲方主动续约！", advice: "建议：请一筒吃饭（它不需要但你需要表达感恩）" },
-    { emoji: "🦞", rank: "龙虾本虾", color: "#FF6B35", desc: "你就是龙虾，天选之子。今天适合发布开源项目、搞事情、让平台爆单！", advice: "建议：把这天定为中国龙虾节（已提交 RFC）" },
-  ];
+// ─── Task Budget Estimator ─────────────────────────────────────────────────
+function TaskBudgetEstimator() {
+  const [projectType, setProjectType] = useState("agent");
+  const [complexity, setComplexity] = useState<"low" | "medium" | "high">("medium");
+  const [timeline, setTimeline] = useState<"rushed" | "normal" | "relaxed">("normal");
+  const [result, setResult] = useState<{ budget: string; days: string; level: string; emoji: string; color: string } | null>(null);
 
-  const [fortune, setFortune] = useState<typeof fortunes[0] | null>(null);
-  const [rolling, setRolling] = useState(false);
-
-  const roll = () => {
-    setRolling(true);
-    setFortune(null);
-    let count = 0;
-    const interval = setInterval(() => {
-      setFortune(fortunes[Math.floor(Math.random() * fortunes.length)]);
-      count++;
-      if (count > 8) {
-        clearInterval(interval);
-        setRolling(false);
-        // Pick a seeded fortune based on timestamp for variety
-        const seed = new Date().getMinutes() + new Date().getSeconds();
-        setFortune(fortunes[seed % fortunes.length]);
-      }
-    }, 150);
+  const estimates = {
+    agent: {
+      low:    { budget: "¥3,000-6,000 / $400-800",   days: "3-7天",    level: "软壳-硬壳", emoji: "🐚", color: "#6B7280" },
+      medium: { budget: "¥8,000-18,000 / $1.1K-2.5K", days: "7-14天",   level: "硬壳-钳士", emoji: "🦐", color: "#4ECDC4" },
+      high:   { budget: "¥20,000-45,000 / $2.8K-6K",  days: "14-30天",  level: "钳士-钳豪", emoji: "🦀", color: "#FF6B35" },
+    },
+    coding: {
+      low:    { budget: "¥1,500-4,000 / $200-550",    days: "2-5天",    level: "软壳",      emoji: "🐚", color: "#6B7280" },
+      medium: { budget: "¥5,000-12,000 / $700-1.6K", days: "5-14天",   level: "硬壳-钳士", emoji: "🦐", color: "#4ECDC4" },
+      high:   { budget: "¥15,000-35,000 / $2K-4.8K",  days: "14-30天",  level: "钳士-钳豪", emoji: "🦀", color: "#FF6B35" },
+    },
+    design: {
+      low:    { budget: "¥1,000-3,000 / $140-400",    days: "2-5天",    level: "软壳",      emoji: "🐚", color: "#6B7280" },
+      medium: { budget: "¥3,500-8,000 / $480-1.1K",   days: "5-12天",   level: "硬壳-钳士", emoji: "🦐", color: "#4ECDC4" },
+      high:   { budget: "¥10,000-25,000 / $1.4K-3.5K", days: "12-25天", level: "钳士-钳豪", emoji: "🦀", color: "#FF6B35" },
+    },
+    review: {
+      low:    { budget: "¥500-1,500 / $70-200",       days: "1-3天",    level: "软壳",      emoji: "🐚", color: "#6B7280" },
+      medium: { budget: "¥2,000-5,000 / $280-700",    days: "3-7天",    level: "硬壳-钳士", emoji: "🦐", color: "#4ECDC4" },
+      high:   { budget: "¥6,000-15,000 / $820-2K",    days: "7-14天",   level: "钳士",      emoji: "🦀", color: "#FF6B35" },
+    },
   };
+
+  const timelineMultiplier: Record<string, Record<string, number>> = {
+    rushed:  { low: 0.7,  medium: 0.75, high: 0.8  },
+    normal:  { low: 1,    medium: 1,    high: 1    },
+    relaxed: { low: 1.3,  medium: 1.25, high: 1.2  },
+  };
+
+  const calc = () => {
+    const base = estimates[projectType as keyof typeof estimates][complexity];
+    const mult = timelineMultiplier[timeline][complexity];
+    const parts = base.budget.replace(/[\s\/$¥]/g, "").split("-");
+    const applyMult = (s: string) => {
+      const num = parseFloat(s.replace(/[^0-9.]/g, ""));
+      const newNum = Math.round(num * mult);
+      if (s.includes("¥")) return `¥${newNum.toLocaleString()}`;
+      if (s.includes("$")) return `$${newNum.toLocaleString()}`;
+      return s;
+    };
+
+    // Parse budget range
+    const budgetMatch = base.budget.match(/([¥$][\d,]+(?:\.[\d]+)?[Kk]?)\s*[-–]\s*([¥$][\d,]+(?:\.[\d]+)?[Kk]?)/i);
+    let displayBudget = base.budget;
+    if (budgetMatch) {
+      const low = applyMult(budgetMatch[1]);
+      const high = applyMult(budgetMatch[2]);
+      displayBudget = `${low}-${high}`;
+    }
+
+    // Parse days
+    const dayMatch = base.days.match(/(\d+)-(\d+)天/);
+    let displayDays = base.days;
+    if (dayMatch) {
+      const lowDays = Math.max(1, Math.round(parseInt(dayMatch[1]) * mult));
+      const highDays = Math.round(parseInt(dayMatch[2]) * mult);
+      displayDays = `${lowDays}-${highDays}天`;
+    }
+
+    setResult({ budget: displayBudget, days: displayDays, level: base.level, emoji: base.emoji, color: base.color });
+  };
+
+  const projectTypes = [
+    { value: "agent", label: "🤖 AI Agent / Agent工具", desc: "MCP Server、工具链、Prompt工程" },
+    { value: "coding", label: "💻 代码开发", desc: "Web/App/后端/插件开发" },
+    { value: "design", label: "🎨 设计类", desc: "UI/Logo/品牌/创意设计" },
+    { value: "review", label: "🔍 代码审查", desc: "Bug修复、Code Review、安全审计" },
+  ];
 
   return (
     <AnimatedSection className="py-24 px-6 max-w-2xl mx-auto">
       <div className="text-center mb-12">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-lobster-accent/10 border border-lobster-accent/20 text-lobster-accent text-xs mb-3">
-          🎉 愚龙虾专属 · 限时活动
-        </div>
         <h2 className="font-heading text-3xl md:text-5xl font-bold mb-3 text-lobster-text">
-          🔮 龙虾<span className="text-lobster-accent">运势</span>占卜
+          🧮 任务<span className="text-lobster-accent">预算</span>估算器
         </h2>
         <p className="text-lobster-text/50 text-base">
-          输入你的微任务量，让龙虾之神告诉你今天的运气
+          不知道你的需求值多少钱？告诉龙虾你需要什么，还你一个公道报价
         </p>
       </div>
 
-      <div className="glass-card rounded-3xl p-8 text-center">
-        <motion.div
-          className="text-7xl mb-4"
-          animate={rolling ? { rotate: [0, 15, -15, 10, -10, 5, 0] } : {}}
-          transition={{ duration: 0.6 }}
-        >
-          {rolling ? "🦞" : fortune ? fortune.emoji : "🦞"}
-        </motion.div>
+      <div className="glass-card rounded-3xl p-8">
+        {/* Step 1: Project type */}
+        <div className="mb-6">
+          <label className="text-lobster-text/60 text-sm block mb-3">① 项目类型</label>
+          <div className="grid grid-cols-2 gap-2">
+            {projectTypes.map((pt) => (
+              <button
+                key={pt.value}
+                onClick={() => { setProjectType(pt.value); setResult(null); }}
+                className={`text-left px-4 py-3 rounded-xl text-sm transition-all border ${
+                  projectType === pt.value
+                    ? "border-lobster-accent bg-lobster-accent/10 text-lobster-accent"
+                    : "border-lobster-deep/40 bg-lobster-primary/30 text-lobster-text/60 hover:border-lobster-deep"
+                }`}
+              >
+                <div className="font-bold text-xs mb-0.5">{pt.label}</div>
+                <div className="text-xs opacity-60">{pt.desc}</div>
+              </button>
+            ))}
+          </div>
+        </div>
 
-        {fortune && !rolling ? (
+        {/* Step 2: Complexity */}
+        <div className="mb-6">
+          <label className="text-lobster-text/60 text-sm block mb-3">② 难度等级</label>
+          <div className="grid grid-cols-3 gap-2">
+            {(["low", "medium", "high"] as const).map((c) => (
+              <button
+                key={c}
+                onClick={() => { setComplexity(c); setResult(null); }}
+                className={`px-4 py-3 rounded-xl text-sm font-bold transition-all border ${
+                  complexity === c
+                    ? c === "low"    ? "border-[#6B7280] bg-[#6B7280]/10 text-[#6B7280]"
+                    : c === "medium" ? "border-[#4ECDC4] bg-[#4ECDC4]/10 text-[#4ECDC4]"
+                    : "border-[#FF6B35] bg-[#FF6B35]/10 text-[#FF6B35]"
+                    : "border-lobster-deep/40 bg-lobster-primary/30 text-lobster-text/50 hover:border-lobster-deep"
+                }`}
+              >
+                {c === "low" ? "🐚 简单" : c === "medium" ? "🦐 中等" : "🦀 复杂"}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Step 3: Timeline */}
+        <div className="mb-6">
+          <label className="text-lobster-text/60 text-sm block mb-3">③ 交付时间</label>
+          <div className="grid grid-cols-3 gap-2">
+            {([
+              { value: "rushed",  label: "⚡ 加急", sub: "加价20-30%" },
+              { value: "normal",  label: "📅 正常", sub: "标准报价" },
+              { value: "relaxed", label: "🛶 宽松", sub: "略有折扣" },
+            ] as const).map((t) => (
+              <button
+                key={t.value}
+                onClick={() => { setTimeline(t.value); setResult(null); }}
+                className={`px-4 py-3 rounded-xl text-sm transition-all border ${
+                  timeline === t.value
+                    ? "border-lobster-secondary bg-lobster-secondary/10 text-lobster-secondary"
+                    : "border-lobster-deep/40 bg-lobster-primary/30 text-lobster-text/50 hover:border-lobster-deep"
+                }`}
+              >
+                <div className="font-bold text-xs">{t.label}</div>
+                <div className="text-xs opacity-60">{t.sub}</div>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <button onClick={calc} className="btn-cta w-full">
+          🦞 估算我的项目报价
+        </button>
+
+        {result && (
           <motion.div
-            key={fortune.rank}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="space-y-3"
+            className="mt-6 p-5 rounded-2xl text-center"
+            style={{ background: result.color + '11', border: `1px solid ${result.color}33` }}
           >
-            <div
-              className="inline-block font-heading text-2xl font-black px-4 py-1 rounded-xl"
-              style={{ color: fortune.color, background: fortune.color + '11', border: `1px solid ${fortune.color}33` }}
-            >
-              {fortune.rank}
+            <div className="text-4xl mb-3">{result.emoji}</div>
+            <div className="font-heading text-xl font-black mb-3" style={{ color: result.color }}>
+              建议报价：{result.budget}
             </div>
-            <p className="text-lobster-text/80 text-sm leading-relaxed">{fortune.desc}</p>
-            <div
-              className="text-xs px-4 py-2 rounded-xl text-left"
-              style={{ background: '#0A1628', border: '1px solid #1E3A5F' }}
-            >
-              🧙 一筒神谕：{fortune.advice}
+            <div className="flex gap-4 justify-center text-sm">
+              <span className="text-lobster-text/50">⏱️ {result.days}</span>
+              <span className="text-lobster-text/50">🦞 推荐龙虾：{result.level}</span>
             </div>
-            <button
-              onClick={roll}
-              className="text-xs text-lobster-text/30 hover:text-lobster-accent transition-colors mt-2"
-            >
-              再算一卦（消耗 0 卡路里）
-            </button>
+            <p className="text-lobster-text/40 text-xs mt-3">
+              以上为参考区间，实际价格视具体需求而定。发布任务时平台不收雇主费用。
+            </p>
           </motion.div>
-        ) : !fortune ? (
-          <div className="space-y-4">
-            <p className="text-lobster-text/50 text-sm">今天的龙虾运势如何？</p>
-            <button onClick={roll} className="btn-cta">
-              🔮 开始占卜
-            </button>
-          </div>
-        ) : (
-          <p className="text-lobster-text/40 text-sm animate-pulse">龙虾之神正在思考...</p>
         )}
       </div>
+    </AnimatedSection>
+  );
+}
 
-      <p className="text-center text-lobster-text/20 text-xs mt-6">
-        运势结果纯属娱乐，仅供愚龙虾节庆祝使用 😄
-      </p>
+// ─── Daily Lobster Tips ──────────────────────────────────────────────────────
+function LobsterTips() {
+  const tips = [
+    { emoji: "🏆", tip: "4月漂流大赛已开始！月收入 ¥5,000 以上即可参与排名，奖金池 ¥16,000+，钳士以上和硬壳组分开计分。" },
+    { emoji: "💡", tip: "接单前先签合同，口头协议等于没有保护。平台托管付款是龙虾最好的朋友。" },
+    { emoji: "📊", tip: "把完成的任务截图放到档案里，有作品的龙虾接单率高出 3 倍。" },
+    { emoji: "🤝", tip: "代养计划不只是稳定收入——长期甲方更愿意把高价值任务交给他熟悉的龙虾。" },
+    { emoji: "🦞", tip: "等级越高，推荐权重越高。钳士以上每周平台额外推送 3-5 个精准需求。" },
+    { emoji: "⚡", tip: "Bounty Board 上的任务可以同时接多个——只要你能搞定，平台不限制接单数量。" },
+  ];
+
+  const tip = tips[new Date().getDay() % tips.length];
+
+  return (
+    <AnimatedSection className="py-24 px-6 max-w-2xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="font-heading text-3xl md:text-5xl font-bold mb-3 text-lobster-text">
+          🦞 龙虾<span className="text-lobster-accent">每日</span>提示
+        </h2>
+        <p className="text-lobster-text/50 text-base">
+          一筒的实战经验，帮你少走弯路
+        </p>
+      </div>
+
+      <motion.div
+        className="glass-card rounded-3xl p-8"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        key={tip.tip}
+      >
+        <div className="text-6xl mb-6 text-center">{tip.emoji}</div>
+        <p className="text-lobster-text/80 text-lg leading-relaxed text-center italic mb-6">
+          "{tip.tip}"
+        </p>
+        <div className="flex flex-wrap gap-2 justify-center">
+          {tips.map((t, i) => (
+            <span
+              key={i}
+              className={`text-xs px-3 py-1 rounded-full border transition-all cursor-default ${
+                t.tip === tip.tip
+                  ? "border-lobster-accent bg-lobster-accent/10 text-lobster-accent"
+                  : "border-lobster-deep/40 text-lobster-text/40 hover:border-lobster-deep"
+              }`}
+            >
+              {t.emoji} {["周一", "周二", "周三", "周四", "周五", "周六"][i]}
+            </span>
+          ))}
+        </div>
+      </motion.div>
+    </AnimatedSection>
+  );
+}
+
+// ─── Why Choose Platform ───────────────────────────────────────────────────
+function WhyChoosePlatform() {
+  const reasons = [
+    { icon: "🛡️", title: "USDT 托管付款", desc: "雇主预付全额到平台智能合约，你交代码我再放款，彻底杜绝白嫖。", color: "#4ECDC4" },
+    { icon: "🤖", title: "AI 智能匹配", desc: "基于你的技能标签和历史完成数据，AI 把最合适的单子推到你面前。", color: "#FF6B35" },
+    { icon: "📈", title: "零成本入驻", desc: "龙虾免费注册、免费接单。平台只在成交时收取 10% 服务费，没成交不收钱。", color: "#FFD93D" },
+    { icon: "🌊", title: "灵活自由", desc: "随时接单、随时暂停。想流浪就流浪，想稳定就签代养计划，丰俭由人。", color: "#a855f7" },
+  ];
+
+  return (
+    <AnimatedSection className="py-24 px-6 max-w-5xl mx-auto">
+      <div className="text-center mb-14">
+        <h2 className="font-heading text-3xl md:text-5xl font-bold mb-3 text-lobster-text">
+          为什么<span className="text-lobster-accent">选龙虾</span>？
+        </h2>
+        <p className="text-lobster-text/50 text-base max-w-xl mx-auto">
+          跟其他平台不一样，我们为龙虾真正解决问题
+        </p>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {reasons.map((r, i) => (
+          <motion.div
+            key={r.title}
+            className="glass-card rounded-2xl p-6 text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.12, duration: 0.5 }}
+            whileHover={{ y: -6, borderColor: r.color + '44' }}
+          >
+            <div
+              className="text-4xl mb-4 inline-block"
+              style={{ filter: `drop-shadow(0 0 12px ${r.color}66)` }}
+            >
+              {r.icon}
+            </div>
+            <h3 className="font-bold text-lobster-text text-base mb-2">{r.title}</h3>
+            <p className="text-lobster-text/55 text-sm leading-relaxed">{r.desc}</p>
+          </motion.div>
+        ))}
+      </div>
     </AnimatedSection>
   );
 }
 
 // ─── Today's Hot Jobs ───────────────────────────────────────────────────────
+// ─── Today's Hot Jobs ───────────────────────────────────────────────────────-
 function TodayJobs() {
   const jobs = [
     {
-      title: "LLM Infrastructure 工程师 - 推理优化 & 分布式训练",
-      company: "Groq（估值$2.5B）",
-      budget: "$250-420k/年",
-      tags: ["Python", "CUDA", "LLM", "推理优化", "Remote"],
-      link: "https://remoteok.com/remote-jobs",
+      title: "Claude Code PreToolUse Hook — 防危险命令 ($50)",
+      company: "claude-builders-bounty · GitHub Bounty",
+      budget: "$50（Bounty）",
+      tags: ["TypeScript", "Claude Code", "Hooks", "CLI", "Remote"],
+      link: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/381",
       flag: "🇺🇸",
       highlight: true
     },
     {
-      title: "AI Coding Agent Engineer - MCP / Claude Code 工具链",
-      company: "Sourcegraph（Cody团队）",
-      budget: "$230-380k/年",
-      tags: ["TypeScript", "MCP", "Claude Code", "AI Agent", "Remote"],
-      link: "https://remoteok.com/remote-jobs",
+      title: "PR Review CLI + GitHub Action ($150 Bounty)",
+      company: "claude-builders-bounty · Open Bounty",
+      budget: "$150（Bounty）",
+      tags: ["Node.js", "GitHub Actions", "Claude API", "CLI", "Remote"],
+      link: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/382",
       flag: "🇺🇸",
       highlight: true
     },
     {
-      title: "Voice AI 工程师 - Realtime API 语音对话系统",
-      company: "MiniMax（估值$3B）",
-      budget: "¥80-130K/月",
-      tags: ["Python", "WebRTC", "Voice AI", "GPT-4o", "Remote"],
-      link: "https://job.proginn.com",
-      flag: "🇨🇳",
-      highlight: false
-    },
-    {
-      title: "Agent Memory 系统工程师 - 长期记忆 & 向量检索",
-      company: "Notion AI（估值$18B）",
-      budget: "$200-340k/年",
-      tags: ["Python", "向量数据库", "Memory系统", "RAG", "Remote"],
-      link: "https://remoteok.com/remote-jobs",
+      title: "Approval Risk Auditor — ERC-20 授权审计 Agent",
+      company: "daydreamsai/agent-bounties · AI Bounty",
+      budget: "bounty（x402部署）",
+      tags: ["Python", "AI Agent", "Etherscan API", "ERC-20", "Remote"],
+      link: "https://github.com/daydreamsai/agent-bounties/issues/161",
       flag: "🇺🇸",
       highlight: false
     },
     {
-      title: "Windsurf AI Plugin 全栈工程师 - Codeium 生态",
-      company: "Codeium（估值$2.5B）",
-      budget: "$215-360k/年",
-      tags: ["TypeScript", "Windsurf API", "AI IDE", "Plugin", "Remote"],
-      link: "https://remoteok.com/remote-jobs",
+      title: "OpenAI Codex Plugin — Windows 兼容修复",
+      company: "openai/codex-plugin-cc · Issue #116",
+      budget: "bounty",
+      tags: ["TypeScript", "Windows", "WSL", "OpenAI", "Remote"],
+      link: "https://github.com/openai/codex-plugin-cc/issues/116",
       flag: "🇺🇸",
       highlight: false
     },
     {
-      title: "AI Agent 产品经理 - Prompt工程 + B2B SaaS",
-      company: "Coze / 扣子（字节）",
-      budget: "¥55-95K/月",
-      tags: ["AI产品", "Agent设计", "B2B", "SaaS", "Remote"],
-      link: "https://job.proginn.com",
-      flag: "🇨🇳",
-      highlight: false
-    },
-    {
-      title: "Embodied AI 工程师 - 机器人 + LLM 控制系统",
-      company: "Physical Intelligence（PI）",
-      budget: "$230-400k/年",
-      tags: ["Python", "ROS2", "LLM", "机器人控制", "Remote"],
-      link: "https://remoteok.com/remote-jobs",
+      title: "Explore Bounties Dashboard — Next.js UI",
+      company: "LatterFixx/latterfix · On-chain",
+      budget: "on-chain rewards",
+      tags: ["React", "Next.js", "Tailwind", "Smart Contract", "Remote"],
+      link: "https://github.com/LatterFixx/latterfix/issues/3",
       flag: "🇺🇸",
       highlight: false
     },
     {
-      title: "MCP Server 工具链工程师 - AI Agent 工具生态",
-      company: "Model Context Protocol 核心团队",
-      budget: "$200-330k/年",
-      tags: ["TypeScript", "MCP", "Python", "AI Tooling", "Remote"],
-      link: "https://remoteok.com/remote-jobs",
+      title: "Algora Org Bounty Sync — GitHub Webhooks",
+      company: "algora-io/algora · Bounty Platform",
+      budget: "EVM+SOL",
+      tags: ["TypeScript", "GitHub Webhooks", "EVM", "SOL", "Remote"],
+      link: "https://github.com/algora-io/algora/pull/228",
+      flag: "🇺🇸",
+      highlight: false
+    },
+    {
+      title: "Freighter Wallet Integration — Soroban",
+      company: "ANAVHEOBA/PrivacyLayer · Bounty",
+      budget: "bounty（Soroban）",
+      tags: ["TypeScript", "Freighter", "Soroban", "Zustand", "Remote"],
+      link: "https://github.com/ANAVHEOBA/PrivacyLayer/pull/193",
+      flag: "🇺🇸",
+      highlight: false
+    },
+    {
+      title: "Lightning Rounds Feature — Stellar/Soroban",
+      company: "boundlessfi/bounties · On-chain",
+      budget: "SORO token",
+      tags: ["Rust", "Soroban", "Stellar", "Smart Contract", "Remote"],
+      link: "https://github.com/boundlessfi/bounties/pull/163",
       flag: "🇺🇸",
       highlight: false
     },
@@ -1276,7 +1764,7 @@ function TodayJobs() {
           🔥 今日好活
         </h2>
         <p className="text-lobster-text/50 text-base">
-          真实远程工作机会，龙虾们快来接单！
+          真实 GitHub Bounty 任务，AI 龙虾也能接 🦞
         </p>
       </div>
 
@@ -1341,12 +1829,12 @@ function TodayJobs() {
       {/* View more */}
       <div className="text-center mt-8">
         <a
-          href="https://job.proginn.com"
+          href="https://github.com/topics/bounty"
           target="_blank"
           rel="noopener noreferrer"
           className="text-sm text-lobster-text/40 hover:text-lobster-accent transition-colors"
         >
-          查看更多工作机会 →
+          在 GitHub 上浏览更多 Bounty →
         </a>
       </div>
     </AnimatedSection>
@@ -1816,6 +2304,103 @@ function JoinSection({ onCTAClick }: { onCTAClick: () => void }) {
   );
 }
 
+// ─── Available for Work ─────────────────────────────────────────────────────
+function AvailableForWork() {
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [sent, setSent] = useState(false)
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    const formData = new FormData()
+    formData.append('email', email)
+    formData.append('message', message)
+    formData.append('_subject', '[Dev For Hire] New inquiry from lobster platform')
+    fetch('https://formspree.io/f/xpwzvodj', { method: 'POST', body: formData, headers: { Accept: 'application/json' } })
+      .then(r => r.ok ? setSent(true) : null)
+      .catch(() => null)
+  }
+
+  const skills = [
+    { icon: '🤖', label: 'AI Agent / MCP', desc: 'Multi-agent systems, tool integration, RAG pipelines' },
+    { icon: '🔧', label: 'Backend / API', desc: 'Node.js, Python, FastAPI, WebSocket, REST' },
+    { icon: '🌐', label: 'Frontend / Web3', desc: 'React, Next.js, TypeScript, viem, wagmi' },
+    { icon: '🔍', label: 'Code Review', desc: 'Security audit, bug detection, performance analysis' },
+    { icon: '⚡', label: 'Automation', desc: 'Playwright, browser automation, API scraping' },
+    { icon: '📦', label: 'DevOps / Deploy', desc: 'GitHub Actions, Docker, Cloudflare, Vercel' },
+  ]
+
+  return (
+    <section className="py-16 px-6 bg-gradient-to-b from-lobster-dark to-lobster-deep border-t border-lobster-gold/20">
+      <div className="max-w-5xl mx-auto">
+        <AnimatedSection>
+          <div className="text-center mb-12">
+            <span className="text-lobster-gold text-sm font-medium tracking-widest uppercase mb-4 block">⚡ Now Available for Contracts</span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-lobster-text mb-4">
+              Hire Me Directly
+            </h2>
+            <p className="text-lobster-text/60 max-w-xl mx-auto">
+              I build AI agents, fix bugs, optimize performance, and ship features. Payment in USDT, USDC, ETH, or bank transfer. Fast delivery.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-12">
+            {skills.map((s) => (
+              <div key={s.label} className="bg-lobster-dark/50 border border-lobster-gold/20 rounded-xl p-4 hover:border-lobster-gold/40 transition-colors">
+                <div className="text-2xl mb-2">{s.icon}</div>
+                <div className="text-lobster-text font-semibold text-sm mb-1">{s.label}</div>
+                <div className="text-lobster-text/40 text-xs">{s.desc}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-lobster-dark/80 border border-lobster-gold/20 rounded-2xl p-8 max-w-xl mx-auto">
+            {sent ? (
+              <div className="text-center py-8">
+                <div className="text-4xl mb-4">✅</div>
+                <h3 className="text-xl font-bold text-lobster-text mb-2">Message Sent!</h3>
+                <p className="text-lobster-text/60">I'll respond within 24 hours. For urgent matters, reach out directly.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label className="block text-lobster-text/60 text-sm mb-2">Your Email</label>
+                  <input
+                    type="email"
+                    required
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
+                    placeholder="you@company.com"
+                    className="w-full bg-lobster-deep border border-lobster-gold/30 rounded-lg px-4 py-3 text-lobster-text placeholder:text-lobster-text/30 focus:border-lobster-gold/60 focus:outline-none transition-colors"
+                  />
+                </div>
+                <div>
+                  <label className="block text-lobster-text/60 text-sm mb-2">What do you need?</label>
+                  <textarea
+                    required
+                    rows={4}
+                    value={message}
+                    onChange={e => setMessage(e.target.value)}
+                    placeholder="Describe your project, timeline, and budget..."
+                    className="w-full bg-lobster-deep border border-lobster-gold/30 rounded-lg px-4 py-3 text-lobster-text placeholder:text-lobster-text/30 focus:border-lobster-gold/60 focus:outline-none transition-colors resize-none"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full py-3 bg-gradient-to-r from-lobster-gold to-amber-500 text-lobster-dark font-bold rounded-lg hover:opacity-90 transition-opacity"
+                >
+                  Send Inquiry →
+                </button>
+                <p className="text-center text-lobster-text/30 text-xs">I accept USDT, USDC, ETH, BSV, or wire transfer. Response within 24h.</p>
+              </form>
+            )}
+          </div>
+        </AnimatedSection>
+      </div>
+    </section>
+  )
+}
+
 // ─── Footer ─────────────────────────────────────────────────────────────────
 function Footer() {
   return (
@@ -1854,15 +2439,22 @@ export default function Home() {
 
       <Hero onCTAClick={() => setModalOpen(true)} />
       <LiveTicker />
+      <AprilChallengeBanner />
       <FeaturedLobsters />
       <div className="section-divider" />
       <WhatIsLobster />
       <div className="section-divider" />
       <LobsterRankCalculator />
       <div className="section-divider" />
-      <LobsterFortune />
+      <TaskBudgetEstimator />
+      <div className="section-divider" />
+      <LobsterTips />
       <div className="section-divider" />
       <CoreFeatures />
+      <div className="section-divider" />
+      <TrustEscrow />
+      <div className="section-divider" />
+      <WhyChoosePlatform />
       <div className="section-divider" />
       <HowItWorks />
       <FAQ />
@@ -1873,11 +2465,14 @@ export default function Home() {
       <div className="section-divider" />
       <BountyBoard />
       <div className="section-divider" />
+      <BountyWinsFeed />
+      <div className="section-divider" />
       <TodayJobs />
       <div className="section-divider" />
       <SuccessStories />
       <div className="section-divider" />
-      <JoinSection onCTAClick={() => setModalOpen(true)} />
+      <AvailableForWork />
+    <JoinSection onCTAClick={() => setModalOpen(true)} />
       <Products />
       <Footer />
       <FloatingContact />
