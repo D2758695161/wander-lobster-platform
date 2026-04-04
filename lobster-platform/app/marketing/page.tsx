@@ -118,6 +118,9 @@ export default function MarketingPage() {
             <Link href="/tasks" className="text-sm opacity-70 hover:opacity-100 transition-opacity">
               {t("任务市场", "Task Market")}
             </Link>
+            <Link href="/shop" className="text-sm px-3 py-1 rounded-full bg-lobster-accent/10 border border-lobster-accent/30 text-lobster-accent font-bold hover:bg-lobster-accent/20 transition-colors">
+              🛒 {t("数字商店", "Shop")}
+            </Link>
             <button
               onClick={() => setLang(l => l === "zh" ? "en" : "zh")}
               className="text-xs px-3 py-1 rounded-full border border-lobster-secondary/30 text-lobster-secondary hover:bg-lobster-secondary/10 transition-colors"

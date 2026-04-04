@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Remove static export - use SSR for Supabase auth
-  // output: 'export',
+  output: 'export',
+  basePath: '/wander-lobster-platform',
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -18,12 +19,6 @@ const nextConfig = {
         hostname: 'avatars.githubusercontent.com',
       },
     ],
-  },
-  // Required for Supabase SSR auth
-  experimental: {
-    serverActions: {
-      bodySizeLimit: '2mb',
-    },
   },
 };
 

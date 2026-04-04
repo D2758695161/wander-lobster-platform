@@ -31,6 +31,8 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "首页" },
     { href: "/tasks", label: "任务大厅" },
+    { href: "/services", label: "💼 接单", accent: true },
+    { href: "/shop", label: "🛒 商店" },
     { href: "/dashboard", label: "我的面板", protected: true },
   ];
 
@@ -52,7 +54,11 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className={`hover:text-lobster-accent transition-colors ${
-                pathname === link.href ? "text-lobster-accent font-bold" : ""
+                link.accent
+                  ? "text-lobster-accent bg-lobster-accent/10 px-3 py-1 rounded-full border border-lobster-accent/30 font-bold"
+                  : pathname === link.href
+                  ? "text-lobster-accent font-bold"
+                  : ""
               }`}
             >
               {link.label}
