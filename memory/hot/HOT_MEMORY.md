@@ -7,8 +7,9 @@
 
 | PR | Bounty | 状态 | 优先级 |
 |----|--------|------|--------|
-| openai/codex-plugin-cc #148 | 技能口碑 | 🆕 OPEN，Windows Git Bash shell检测修复 | ⭐⭐ |
-| openai/codex-plugin-cc #147 | 技能口碑 | 🆕 OPEN，--full-access flag for GPU/CUDA | ⭐⭐ |
+| openai/codex-plugin-cc #150 | 技能口碑 | 🆕 OPEN，EAGAIN hook crash修复 | ⭐⭐ |
+| openai/codex-plugin-cc #148 | 技能口碑 | OPEN，Windows Git Bash shell检测修复 | ⭐⭐ |
+| openai/codex-plugin-cc #147 | 技能口碑 | OPEN，--full-access flag for GPU/CUDA | ⭐⭐ |
 | mautic #16011 | 技能口碑 | ✅ MERGEABLE，SonarCloud ✅，已ping | ⭐⭐ |
 | SolFoundry #895 | 400K FNDRY | OPEN，7review comments | ⭐⭐ |
 | SolFoundry #897 | 400K FNDRY | OPEN，1评论 | ⭐⭐ |
@@ -46,10 +47,11 @@
 ## Bounty Queue（2026-04-05扫描）
 
 **有价值机会：**
+- **openai/codex-plugin-cc #150** ✅ 已提交（EAGAIN hook crash修复，#120）
 - **openai/codex-plugin-cc #147** ✅ 已提交（full-access flag，GPU/CUDA支持）
 - **openai/codex-plugin-cc #148** ✅ 已提交（Windows Git Bash shell检测修复）
-- **openai/codex-plugin-cc #141** 🔶 SCDynamicStore NULL panic（macOS Rust CLI bug，需研究是否可在plugin层fix）
-- **openai/codex-plugin-cc #135** 🔶 git worktree isolation（可做）
+- **openai/codex-plugin-cc #116** 🔶 EISDIR bug in git.mjs（formatUntrackedFile readFileSync on directory）
+- **openai/codex-plugin-cc #141** 🔶 SCDynamicStore NULL panic（macOS Rust CLI bug）
 - **LatterFixx/latterfix** 🔶 6个unclaimed UI任务（Rust+React，无bounty标签）
 - **LatterFixx/latterfix** 🔶 6个unclaimed UI任务（Rust+React，无bounty标签）
   - #6: Theme Toggler, #5: User Escrow, #4: Task Form, #3: Dashboard, #2: Wallet, #1: Contract Init
