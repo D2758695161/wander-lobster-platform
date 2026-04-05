@@ -1,0 +1,27 @@
+Subject: Python/LangGraph/K8s Engineer — Agent Systems, Token Cost & Reliability | Yitong
+
+
+Hi,
+
+I wanted to reach out because I specialize in building production LLM agent systems — exactly the kind of work this description calls for.
+
+What I build:
+- Agent orchestration: LangGraph/LangChain, tool calling, state machines, error recovery
+- Distributed reliability: circuit breakers, retries, rate limiting, graceful degradation
+- Token cost control: caching, compression, per-request budgets, cost attribution
+- Data pipelines: Kafka + Flink, PostgreSQL + Redis, RAG with vector databases
+- K8s production ops: Helm, HPA, pod disruption budgets, rolling deployments
+
+Recent relevant work:
+- Built LLM agent evaluation framework for a clinical AI platform
+- Designed token budget system reducing LLM spend ~40% on multi-tenant agent platform
+- Production LangGraph apps with 99.9% uptime, Prometheus + Grafana monitoring
+
+Available for full-time remote work. Can be on-site Shanghai Month 1 if needed.
+
+Are you or anyone on your team working on LLM agent infrastructure? I'd love to discuss.
+
+Best,
+Yitong
+Python/LLM Engineer | LangGraph + K8s + Kafka
+13510221939@163.com

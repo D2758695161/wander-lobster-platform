@@ -1,0 +1,121 @@
+{
+  "date": "2026-04-05",
+  "session": "outreach-agent-001 2026-04-05 12:08 CST",
+  "summary": "SMTP COMPLETELY DEAD - all codes invalid. RemoteOK fully stale. 7 emails drafted but blocked. URGENT action needed from partner.",
+  "smtp_tests_2026-04-05_12:08": {
+    "163_smtp_port465": {
+      "FYU6WwPKjeUnMtpE": "ERROR: Invalid login: 535 authentication failed",
+      "GQjbwvrwcZ8HM4Ze": "not tested (known dead)",
+      "SPseM7hrWSCABfwY": "ERROR: Invalid login: 535 authentication failed"
+    },
+    "163_smtp_port587": {
+      "FYU6WwPKjeUnMtpE": "ERROR: mail send failure (connection ok, auth fails)",
+      "GQjbwvrwcZ8HM4Ze": "not tested"
+    },
+    "sendclaw_api": {
+      "status": "DEAD - sendclaw.com rebranded to 5Ducks. API key sk_5d441b7df454704c5ac0042983c7a78bcfaa1103c6f571f3 is orphaned.",
+      "api_response": "HTML page for 5Ducks instead of API"
+    },
+    "port465_tls": "CONNECTED (TLS handshake works, AUTH fails)",
+    "port587_connection": "OPEN but timeout/close on auth",
+    "verdict": "ALL SMTP DEAD - partner must regenerate 163.com authorization code IMMEDIATELY"
+  },
+  "remoteok_status": {
+    "last_updated": "1775347205 (2026-04-05 00:00 UTC)",
+    "all_tags_tested": ["engineer", "python", "backend", "golang", "devops", "automation"],
+    "new_engineering_jobs": 0,
+    "only_new": "Huzzle SDR (1130989, sales, fit=3) - not engineering",
+    "stale_since": "2026-04-02",
+    "applied_jobs": "All jobs from 2026-04-01 and earlier already applied or drafted"
+  },
+  "proginn_status": {
+    "visible_listings": "Same as 2026-04-05 06:03 session",
+    "new_jobs_since_last_session": 0,
+    "blocker": "Phone verification still blocks bidding without virtual phone",
+    "best_pending": "42498 Agent集群 (¥12-18K, LangGraph/K8s/Flink/Kafka - PERFECT match)"
+  },
+  "emails_drafted_and_blocked": [
+    {
+      "id": "proginn_185766",
+      "title": "Python蓝牙APP实时播放+实时转写+RAG (iOS+Android)",
+      "project_id": "185766",
+      "budget": "¥6-12K/月",
+      "fit_score": 10,
+      "to": "185766@proginn.com",
+      "subject": "蓝牙实时音频+RAG问答系统 | Python全栈+双平台 | 可立即开工",
+      "reason": "SMTP BLOCKED"
+    },
+    {
+      "id": "proginn_185771",
+      "title": "硬件开发 - 中医四诊仪原型机",
+      "project_id": "185771",
+      "budget": "¥18-30K/月",
+      "fit_score": 8,
+      "to": "185771@proginn.com",
+      "subject": "中医四诊仪原型机开发 | 嵌入式传感器+信号处理经验",
+      "reason": "SMTP BLOCKED"
+    },
+    {
+      "id": "proginn_185768",
+      "title": "Python工程师 - 扫码支付+IC卡自动落杯饮水机",
+      "project_id": "185768",
+      "budget": "¥1-6K/月",
+      "fit_score": 8,
+      "to": "185768@proginn.com",
+      "subject": "扫码支付饮水机控制系统 | Python+嵌入式+支付集成，可快速交付",
+      "reason": "SMTP BLOCKED"
+    },
+    {
+      "id": "proginn_185767",
+      "title": "Python工程师 - 红果漫剧板块爬虫",
+      "project_id": "185767",
+      "budget": "¥1-6K/月",
+      "fit_score": 7,
+      "to": "185767@proginn.com",
+      "subject": "红果漫剧爬虫 | Python批量采集+Excel导出，今天可交付",
+      "reason": "SMTP BLOCKED"
+    },
+    {
+      "id": "proginn_42551",
+      "title": "Java全栈 - 核销码系统",
+      "project_id": "42551",
+      "budget": "¥5-8K/月",
+      "fit_score": 7,
+      "to": "42551@proginn.com",
+      "subject": "核销码系统 | 微信小程序+管理后台全栈开发 | 月薪可谈",
+      "reason": "SMTP BLOCKED"
+    },
+    {
+      "id": "cold_braintrust",
+      "title": "Braintrust - LangGraph Agents + LLM Evals",
+      "fit_score": 7,
+      "to": "founders@braintrust.com",
+      "subject": "Python Engineer | LangGraph Agents + LLM Evals in Production",
+      "reason": "SMTP BLOCKED"
+    },
+    {
+      "id": "cold_zed",
+      "title": "Zed Industries - AI Tool Calling + LSP",
+      "fit_score": 6,
+      "to": "jobs@zed.dev",
+      "subject": "Python Engineer | AI Tool Calling + LSP Infrastructure",
+      "reason": "SMTP BLOCKED"
+    }
+  ],
+  "emails_sent_this_session": 0,
+  "blockers": {
+    "smtp_163": "CRITICAL - ALL 3 codes (FYU6WwPKjeUnMtpE, GQjbwvrwcZ8HM4Ze, SPseM7hrWSCABfwY) return 535 auth failed. 163.com SMTP is completely dead since 2026-04-03.",
+    "sendclaw": "DEAD - SendClaw rebranded to 5Ducks. API key is orphaned.",
+    "proginn_phone": "Need virtual phone (阿里小号/TextNow) for bidding. Best value: 42498 Agent集群 ¥12-18K/month."
+  },
+  "URGENT_action_required": [
+    "1. PARTNER MUST regenerate 163.com SMTP auth code: Login 163.com → Settings → POP3/SMTP/IMAP → Regenerate authorization code → Give new code to agent immediately",
+    "2. OR: Set up SendGrid/Mailgun free account as backup SMTP",
+    "3. Proginn: Get virtual phone (阿里小号/TextNow) to bid on project 42498 (Agent集群, ¥12-18K, highest value)"
+  ],
+  "alternative_smtp_options": {
+    "sendgrid": "Free tier: 100 emails/day. API key approach - needs account setup",
+    "mailgun": "Free tier: 5,000 emails/month for 3 months. API approach.",
+    "gmail": "Less reliable for bulk - easy to get flagged"
+  }
+}

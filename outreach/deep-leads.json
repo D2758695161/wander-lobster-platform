@@ -1,0 +1,228 @@
+{
+  "generated": "2026-04-05T03:11:00Z",
+  "researchTasks": [
+    {
+      "task": "GitHub repos with bounty labels (last 7 days)",
+      "status": "success",
+      "method": "Playwright direct page parse"
+    },
+    {
+      "task": "Product Hunt developer/AI tools",
+      "status": "blocked",
+      "note": "Cloudflare protection - requires real browser"
+    },
+    {
+      "task": "GitHub Sponsors projects",
+      "status": "partial",
+      "method": "Playwright page parse"
+    },
+    {
+      "task": "RapidAPI no-code integration opportunities",
+      "status": "blocked",
+      "note": "404 on /discover, but hub confirmed operational - Nokia acquisition"
+    },
+    {
+      "task": "New freelance platform registration",
+      "status": "partial",
+      "method": "Playwright page parse"
+    }
+  ],
+  "leads": [
+    {
+      "id": "gh-bounty-001",
+      "source": "GitHub Issues - SolFoundry/solfoundry",
+      "url": "https://github.com/SolFoundry/solfoundry/issues?q=label%3Abounty",
+      "company": "SolFoundry",
+      "project": "solfoundry",
+      "items": [
+        {
+          "issue": "🏭 Bounty T3: Bounty Analytics Dashboard",
+          "issueUrl": "https://github.com/SolFoundry/solfoundry/issues/859",
+          "reward": "800K $FNDRY (~$800-1600 USD est.)",
+          "tier": "Tier 3",
+          "domains": ["Frontend", "Backend"],
+          "description": "Build an analytics dashboard tracking bounty trends, payout distribution, contributor metrics",
+          "priority": "HIGH"
+        },
+        {
+          "issue": "🏭 Bounty T3: Full Autonomous Bounty-Hunting Agent",
+          "issueUrl": "https://github.com/SolFoundry/solfoundry/issues/861",
+          "reward": "1M $FNDRY (~$1000-2000 USD est.)",
+          "tier": "Tier 3",
+          "domains": ["Agent/AI"],
+          "description": "Build a fully autonomous multi-agent system that finds bounties, analyzes requirements",
+          "priority": "HIGH"
+        },
+        {
+          "issue": "🏭 Bounty T2: Discord Bot for Bounty Notifications",
+          "issueUrl": "https://github.com/SolFoundry/solfoundry/issues/853",
+          "reward": "500K $FNDRY (~$500-1000 USD est.)",
+          "tier": "Tier 2",
+          "domains": ["Integration", "Discord Bot"],
+          "description": "Build a Discord bot that posts new bounties to a channel, displays live leaderboard",
+          "priority": "HIGH"
+        },
+        {
+          "issue": "🏭 Bounty T2: AI Bounty Description Enhancer",
+          "issueUrl": "https://github.com/SolFoundry/solfoundry/issues/848",
+          "reward": "450K $FNDRY (~$450-900 USD est.)",
+          "tier": "Tier 2",
+          "domains": ["Agent/AI", "NLP"],
+          "description": "Build an AI agent that analyzes vague bounty descriptions and generates improved versions",
+          "priority": "MEDIUM"
+        },
+        {
+          "issue": "🏭 Bounty T2: Interactive Bounty Flow Diagram Component",
+          "issueUrl": "https://github.com/SolFoundry/solfoundry/issues/851",
+          "reward": "450K $FNDRY (~$450-900 USD est.)",
+          "tier": "Tier 2",
+          "domains": ["Frontend", "React"],
+          "description": "Build a React component showing the bounty lifecycle flow (post → claim → work → review → payout)",
+          "priority": "MEDIUM"
+        },
+        {
+          "issue": "🏭 Bounty T2: Advanced Bounty Search with Filters",
+          "issueUrl": "https://github.com/SolFoundry/solfoundry/issues/842",
+          "reward": "450K $FNDRY (~$450-900 USD est.)",
+          "tier": "Tier 2",
+          "domains": ["Frontend"],
+          "description": "Build advanced search and filtering capabilities for bounties",
+          "priority": "MEDIUM"
+        },
+        {
+          "issue": "🏭 Bounty T2: Add Bounty Comments/Discussion Thread",
+          "issueUrl": "https://github.com/SolFoundry/solfoundry/issues/838",
+          "reward": "450K $FNDRY (~$450-900 USD est.)",
+          "tier": "Tier 2",
+          "domains": ["Frontend", "Backend"],
+          "description": "Add comment and discussion functionality to bounties",
+          "priority": "MEDIUM"
+        },
+        {
+          "issue": "🏭 Bounty T1: Bounty Countdown Timer Component",
+          "issueUrl": "https://github.com/SolFoundry/solfoundry/issues/826",
+          "reward": "100K $FNDRY (~$100-200 USD est.)",
+          "tier": "Tier 1 (Open Race)",
+          "domains": ["Frontend"],
+          "description": "Create a countdown timer component showing time remaining until bounty deadline",
+          "priority": "LOW"
+        }
+      ],
+      "whatTheyNeed": "Multiple React/TypeScript frontend devs, backend devs, AI/agent developers, Discord bot developers",
+      "howToReach": "GitHub Issues - comment on issue to claim, or open PR directly",
+      "expectedBudget": "100K-1M $FNDRY per bounty (crypto token, not USD - do your own price research)"
+    },
+    {
+      "id": "gh-bounty-002",
+      "source": "GitHub Issues - SPLURT-Station/S.P.L.U.R.T-tg",
+      "url": "https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues?q=label%3Abounty",
+      "company": "SPLURT-Station",
+      "project": "S.P.L.U.R.T-tg (Telegram bot for game)",
+      "items": [
+        {
+          "issue": "[BOUNTY] Suggestion #648",
+          "issueUrl": "https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/929",
+          "reward": "Unknown - community bounty",
+          "domains": ["Bot Development", "Telegram"],
+          "description": "Suggestion-based bounty for game feature development",
+          "priority": "LOW"
+        }
+      ],
+      "whatTheyNeed": "Telegram bot developers, game feature developers",
+      "howToReach": "GitHub issue comment",
+      "expectedBudget": "Unspecified - check issue for details"
+    },
+    {
+      "id": "gh-sponsors-001",
+      "source": "GitHub Sponsors",
+      "url": "https://github.com/sponsors/explore",
+      "company": "wevm",
+      "project": "TypeScript tooling for Ethereum",
+      "description": "TypeScript tooling for Ethereum. Used by Uniswap, Coinbase, Stripe, ENS, Optimism, Polymarket, and more.",
+      "whatTheyNeed": "Open source contributors for Ethereum TypeScript tools",
+      "howToReach": "GitHub Sponsors page - sponsor them to connect, or open issues/PRs",
+      "expectedBudget": "Variable - sponsorship/reversal basis"
+    },
+    {
+      "id": "gh-sponsors-002",
+      "source": "GitHub Sponsors",
+      "url": "https://github.com/sponsors/explore",
+      "company": "FILDZ",
+      "project": "Pocket-sized computers with sensors",
+      "description": "Ecosystem of pocket-sized computers equipped with sensors for rapid prototyping and programming",
+      "whatTheyNeed": "Hardware firmware developers, embedded systems programmers",
+      "howToReach": "GitHub Sponsors page",
+      "expectedBudget": "Variable"
+    },
+    {
+      "id": "gh-sponsors-003",
+      "source": "GitHub Sponsors",
+      "url": "https://github.com/sponsors/xPaw",
+      "company": "Pavel Djundik (xPaw)",
+      "project": "SteamDB / xPaw open source",
+      "description": "SteamDB and various open source projects - highly visible in gaming/dev community",
+      "whatTheyNeed": "Contributors to SteamDB and related open source tools",
+      "howToReach": "GitHub Sponsors / GitHub issues",
+      "expectedBudget": "Variable"
+    },
+    {
+      "id": "rapidapi-001",
+      "source": "RapidAPI Hub (now Nokia API Hub)",
+      "url": "https://rapidapi.com/hub",
+      "company": "RapidAPI / Nokia",
+      "project": "API Hub MCP Integration",
+      "description": "RapidAPI (now Nokia API Hub) has rolled out MCP (Model Context Protocol) functionality across the hub. They support Claude Desktop, Claude Code, Cursor, and VSCode MCP integrations.",
+      "new": true,
+      "whatTheyNeed": "API developers to publish on their platform, MCP server integrations",
+      "howToReach": "https://rapidapi.com/developer or https://rapidapi.com/studio",
+      "opportunity": "Build MCP connectors for popular APIs - there's likely demand for no-code/low-code API integration wrappers",
+      "expectedBudget": "Platform revenue share - API providers set pricing"
+    },
+    {
+      "id": "nokia-nac-001",
+      "source": "Nokia Network as Code API",
+      "url": "https://rapidapi.com/nokia-nac-nokia-nac-default/api/network-as-code",
+      "company": "Nokia",
+      "project": "Network as Code API",
+      "description": "Nokia's programmable networks API - 5G network APIs for developers",
+      "new": true,
+      "whatTheyNeed": "Developers to build on network APIs",
+      "howToReach": "RapidAPI listing",
+      "opportunity": "Novel category - could be first mover in network API integrations",
+      "expectedBudget": "API subscription based"
+    }
+  ],
+  "research2_notes": [
+    "Most freelance platform sites (Toptal, gun.io, lotusdev.io, remoteOK) were blocked/gated in this session",
+    "Product Hunt and RapidAPI discovery pages heavily Cloudflare-protected",
+    "GitHub is the most reliably accessible source via Playwright",
+    "Try next session: gun.io (freelance matching platform), lotusdev.io (new dev platform), remoteOK jobs"
+  ],
+  "notes": [
+    "GitHub bounty labels search returned 8942 results - SolFoundry/solfoundry is the most active bounty program with fresh issues from April 4 2026",
+    "Product Hunt is Cloudflare-blocked - could try with a real browser next time",
+    "RapidAPI was acquired by Nokia - brand transitioning, may have new opportunities as 'Nokia API Hub'",
+    "MCP (Model Context Protocol) is a hot category - RapidAPI supports it natively for Claude, Cursor, VSCode",
+    "GitHub Sponsors has 25 sponsored developers/organizations visible - good outreach targets for maintainer relationships",
+    "RapidAPI /discover page returns 404 - the API Hub is the new discovery surface",
+    "SolFoundry bounties pay in $FNDRY token - check token price/TVL before committing significant time"
+  ],
+  "actionItems": [
+    "Claim 1-2 SolFoundry bounties that match skillset (React frontend tasks are most accessible)",
+    "Build an MCP connector for a popular API on RapidAPI - first-mover advantage in emerging category",
+    "Reach out to wevm (Ethereum TypeScript tools) for contribution opportunities - high-visibility project",
+    "Monitor GitHub search 'label:bounty is:issue created:>2026-03-29' daily for new bounties",
+    "Try Product Hunt with full Playwright browser (Cloudflare challenge needs solving)",
+    "Explore gun.io for vetted freelance dev opportunities",
+    "Check lotusdev.io - appeared to be a new dev platform (connection closed - may be temporary)",
+    "RapidAPI is now Nokia API Hub - brand transition may create confusion/opportunity for early movers"
+  ],
+  "summary": {
+    "totalLeadsFound": 9,
+    "highestValue": "SolFoundry T3 bounties (800K-1M $FNDRY = ~$800-2000 est.)",
+    "mostAccessible": "SolFoundry T1/T2 bounties (React frontend, open race format)",
+    "emergingCategory": "MCP (Model Context Protocol) connectors for APIs - RapidAPI Nokia hub",
+    "bestForQuickWin": "Bounty Countdown Timer Component (T1, 100K $FNDRY, open race)",
+    "longTermPlay": "Build MCP connector for popular API on Nokia RapidAPI hub"
+  }
+}
