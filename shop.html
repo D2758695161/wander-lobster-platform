@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderLobster Digital Assets — AI-Generated Packs</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0f;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+    }
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 100%);
+      border-bottom: 1px solid #2a2a4a;
+    }
+    header h1 {
+      font-size: 2.2em;
+      background: linear-gradient(90deg, #00d4ff, #ff00aa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    header p { color: #888; font-size: 0.95em; }
+    .badge {
+      display: inline-block;
+      background: #00d4ff22;
+      border: 1px solid #00d4ff55;
+      color: #00d4ff;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.75em;
+      margin-top: 10px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .hero h2 { font-size: 1.8em; margin-bottom: 15px; color: #fff; }
+    .hero p { color: #999; line-height: 1.6; max-width: 550px; margin: 0 auto; }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 30px 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product {
+      background: #111122;
+      border: 1px solid #2a2a4a;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .product:hover {
+      transform: translateY(-4px);
+      border-color: #00d4ff55;
+    }
+    .product-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background: #1a1a2e;
+    }
+    .product-info { padding: 18px; }
+    .product-info h3 { font-size: 1.05em; color: #fff; margin-bottom: 6px; }
+    .product-info p { font-size: 0.82em; color: #777; line-height: 1.5; margin-bottom: 14px; }
+    .product-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .price { font-size: 1.3em; font-weight: bold; color: #00d4ff; }
+    .btn {
+      background: linear-gradient(90deg, #00d4ff, #0088cc);
+      color: #000;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 0.85em;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover { opacity: 0.85; }
+
+    .categories {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+    .cat-btn {
+      background: #1a1a2e;
+      border: 1px solid #3a3a5a;
+      color: #aaa;
+      padding: 7px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85em;
+      transition: all 0.2s;
+    }
+    .cat-btn:hover, .cat-btn.active {
+      background: #2a2a4a;
+      color: #00d4ff;
+      border-color: #00d4ff;
+    }
+
+    .stats {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      padding: 40px 20px;
+      background: #0f0f1e;
+      border-top: 1px solid #2a2a4a;
+      border-bottom: 1px solid #2a2a4a;
+    }
+    .stat { text-align: center; }
+    .stat-n { font-size: 2em; font-weight: bold; color: #00d4ff; }
+    .stat-l { font-size: 0.8em; color: #666; margin-top: 4px; }
+
+    .coming-soon {
+      text-align: center;
+      padding: 40px;
+      color: #555;
+    }
+    .coming-soon h3 { color: #888; margin-bottom: 15px; }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #444;
+      font-size: 0.8em;
+    }
+    footer a { color: #00d4ff88; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🦞 WanderLobster</h1>
+  <p>Premium AI-Generated Digital Assets — Royalty-Free, Commercial Use</p>
+  <span class="badge">🌊 New Packs Weekly</span>
+</header>
+
+<section class="hero">
+  <h2>Digital Assets Built for Creators</h2>
+  <p>High-quality AI-generated images, textures, patterns, and UI packs. Each pack contains 50–200 meticulously crafted assets ready for commercial use. New packs added every week.</p>
+</section>
+
+<div class="categories">
+  <button class="cat-btn active" onclick="filter('all')">All</button>
+  <button class="cat-btn" onclick="filter('textures')">Textures & Patterns</button>
+  <button class="cat-btn" onclick="filter('ui')">UI Kits</button>
+  <button class="cat-btn" onclick="filter('abstract')">Abstract Art</button>
+  <button class="cat-btn" onclick="filter('capes')">Print Ready</button>
+</div>
+
+<section class="products" id="product-grid">
+  <!-- Cyberpunk Texture Pack -->
+  <div class="product" data-cat="textures">
+    <img class="product-img" src="https://picsum.photos/seed/cyber1/560/280" alt="Cyberpunk Textures">
+    <div class="product-info">
+      <h3>🔮 Cyberpunk Texture Pack Vol.1</h3>
+      <p>100 high-res cyberpunk textures — neon glows, circuit patterns, holographic surfaces. 4K PNG, seamless.</p>
+      <div class="product-footer">
+        <span class="price">$12</span>
+        <a href="https://payhip.com/xxxxx" class="btn" target="_blank">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Abstract Art Pack -->
+  <div class="product" data-cat="abstract">
+    <img class="product-img" src="https://picsum.photos/seed/abstract1/560/280" alt="Abstract Art">
+    <div class="product-info">
+      <h3>🌌 Abstract Nebula Collection</h3>
+      <p>80 stunning AI-generated abstract artworks. Perfect for book covers, posters, wall art, and digital backgrounds.</p>
+      <div class="product-footer">
+        <span class="price">$15</span>
+        <a href="https://payhip.com/xxxxx" class="btn" target="_blank">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- UI Kit -->
+  <div class="product" data-cat="ui">
+    <img class="product-img" src="https://picsum.photos/seed/darkui/560/280" alt="Dark UI Kit">
+    <div class="product-info">
+      <h3>💀 Dark UI Component Kit</h3>
+      <p>200+ dark-mode UI elements — buttons, cards, navbars, charts. Figma + PNG formats. SaaS-ready.</p>
+      <div class="product-footer">
+        <span class="price">$19</span>
+        <a href="https://payhip.com/xxxxx" class="btn" target="_blank">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Print Ready -->
+  <div class="product" data-cat="capes">
+    <img class="product-img" src="https://picsum.photos/seed/artprint1/560/280" alt="Art Prints">
+    <div class="product-info">
+      <h3>🎨 Art Print Mega Pack</h3>
+      <p>50 print-ready AI artworks — high resolution 300 DPI. T-shirts, posters, phone cases, merchandise.</p>
+      <div class="product-footer">
+        <span class="price">$22</span>
+        <a href="https://payhip.com/xxxxx" class="btn" target="_blank">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- More Texture Pack -->
+  <div class="product" data-cat="textures">
+    <img class="product-img" src="https://picsum.photos/seed/neon2/560/280" alt="Neon Surfaces">
+    <div class="product-info">
+      <h3>⚡ Neon Surface Pack</h3>
+      <p>120 neon-lit surface textures — perfect for gaming backgrounds, app UI, and digital art projects.</p>
+      <div class="product-footer">
+        <span class="price">$14</span>
+        <a href="https://payhip.com/xxxxx" class="btn" target="_blank">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Abstract Vol.2 -->
+  <div class="product" data-cat="abstract">
+    <img class="product-img" src="https://picsum.photos/seed/fluid2/560/280" alt="Fluid Art">
+    <div class="product-info">
+      <h3>🌊 Fluid Abstract Collection</h3>
+      <p>60 fluid art AI pieces — mesmerizing color gradients and organic shapes. Ideal for brand design and social media.</p>
+      <div class="product-footer">
+        <span class="price">$12</span>
+        <a href="https://payhip.com/xxxxx" class="btn" target="_blank">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="coming-soon">
+  <h3>🚀 More Packs Coming Soon</h3>
+  <p>Isometric scenes • 3D mockups • Animation-ready backgrounds • Game asset packs</p>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-n">200</div><div class="stat-l">Images Generated Daily</div></div>
+  <div class="stat"><div class="stat-n">500+</div><div class="stat-l">Assets Ready</div></div>
+  <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Royalty-Free</div></div>
+</div>
+
+<footer>
+  <p>© 2026 WanderLobster · <a href="https://github.com/D2758695161/wander-lobster-platform">GitHub</a> · Contact: wanderlobster@proton.me</p>
+</footer>
+
+<script>
+function filter(cat) {
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  document.querySelectorAll('.product').forEach(p => {
+    p.style.display = (cat === 'all' || p.dataset.cat === cat) ? 'block' : 'none';
+  });
+}
+</script>
+
+</body>
+</html>
