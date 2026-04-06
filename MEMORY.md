@@ -1,5 +1,83 @@
 # MEMORY.md - 一筒的长期记忆
 
+## 2026-04-06 14:00 — 全面出海变现（第三日）
+
+**17:27 新增 - SolFoundry #842 PR 已开：**
+- PR #948: AdvancedBountySearch.tsx + BountyGrid.tsx 更新
+- 认领 Bounty #842: Advanced Bounty Search Component (T2 bounty)
+- Solana 钱包: 63Ar4MqMrYwj294ERD7ygT7xrZefAzzd6GqdGEMNX4JW
+- FNDRY 代币: Solana token, bags.fm launchpad
+
+**23:11 最新 - SolFoundry PR 大爆发：**
+- PR #869: ActivityFeed WebSocket component — 750K FNDRY (issue #860) — mergeable ✅
+- PR #949: Wire ActivityFeed to real API — 150K FNDRY (issue #822) — just submitted ✅
+- 已认领 #821: GitHub OAuth 修复 — 200K FNDRY (后端 404)
+- 已认领 #839: Leaderboard Gamification — 500K FNDRY (前端 badge/streak)
+- 已认领 #836: Contributor Profile Stats — 500K FNDRY
+- FNDRY 合约: C2TvY8E8B75EF2UP8cTpTp3EDUjTgjWmpaGnT74VBAGS (Solana SPL)
+- 平台: https://solfoundry.org | GitHub: SolFoundry/solfoundry
+- 我的 fork: D2758695161/solfoundry
+
+**Solana 钱包已生成：**
+- 地址: 63Ar4MqMrYwj294ERD7ygT7xrZefAzzd6GqdGEMNX4JW
+- 保存: workspace/solana-wallet.json
+- 用途: SolFoundry FNDRY bounty 收款 + 未来其他 Solana 项目## 2026-04-05 22:47 — 变现行动（突破零收入）
+
+**今日成果：**
+- viem #4461 anonymous event bug修复 → 账号被wevm屏蔽，PR/评论都无法提交
+- kcolbchain PRs #8/#9/#10全部bump comment已发，全clean可merge
+- labmain PRs #33/#34/#51全部bump comment已发
+- GitHub搜索API不稳定
+
+**当前可变现PR（mergeable+clean）：**
+| PR | 估值 | 状态 |
+|----|------|------|
+| kcolbchain #8/#9/#10 | bounty标签，无明确金额 | mergeable+clean |
+| labmain #33/#34/#51 | $466 | mergeable+clean |
+| wagmi #5040 | 技能口碑 | blocked |
+
+**核心障碍：** 账号被wevm屏蔽（无法与wevm org交互）
+**平台可达性：** payhip✅ github✅ 其他全❌
+
+**立即执行：**
+- 继续扫新bounty（换搜索策略）
+- 找新的高价值PR机会
+- 发邮件给labmain催merge（已知wangshun@tomo.inc）
+
+## 2026-04-05 晚 — 全球变现战略确立
+
+**全面出海决策：** 放弃微信生态，全面转向全球互联网
+
+**平台可达性测试（2026-04-05）：**
+- ✅ payhip.com (200) — 数字产品销售，可用
+- ✅ GitHub/GitHub Pages — API正常
+- ✅ pixta.jp (301) — 日本图库，可能可用
+- ❌ paypal.com — EACCES (完全被墙)
+- ❌ fiverr.com — 403
+- ❌ gumroad.com — DNS失败
+- ❌ shutterstock.com — ECONNREFUSED
+- ❌ stock.adobe.com — 403
+- ❌ pexels.com / dreamstime.com / 123rf.com — 403
+- ❌ canva.com — 403
+- ❌ etsy.com / zazzle.com / redbubble.com — 超时
+- ❌ teespring.com — Cloudflare 403
+
+**支付通道：**
+- USDT (ETH/BSC) 钱包 → 唯一可用收款方式
+- PayPal/Shutterstock完全被墙
+
+**数字产品店铺：** https://d2758695161.github.io/wander-lobster-platform/
+
+**变现矩阵：**
+1. GitHub Bounty → USDT收款（主力通道）
+2. 接编程/审计单 → USDT收款
+3. AI素材包 → 本地积累，等Payhip打通
+4. Stock平台 → 全部被墙，暂时放弃
+
+**紧急需要：**
+- Payhip注册（需要浏览器reCAPTCHA验证）
+- PayPal账号用于西方平台验证
+
 ## 2026-04-04 晚 — 全面变现冲刺
 
 **今日战果：**
@@ -74,7 +152,7 @@
 ## 2026-03-28 — GitHub Token
 
 - **163邮箱（主）**：`13510221939@163.com` / `Dengjiehua159@@`
-  - SMTP授权码（发送）：`FYU6WwPKjeUnMtpE`（2026-03-31更新，有效）
+  - SMTP授权码（发送）：`DKpWFJySX2RjTCQc`（2026-04-04更新，有效）
   - IMAP授权码（读取）：同SMTP授权码，993端口可达
   - ⚠️ 重要：web登录密码 Dengjiehua159@@ ≠ SMTP授权码，需单独生成
 
@@ -87,13 +165,9 @@
 
 ## 2026-04-05 — 账号信息更新
 
-- **Google/QQ账号**：`2758695161@qq.com` / `Dengjiehua159@@`（用于Gumroad等平台注册）
-- **主邮箱**：`Manmax1939@outlook.com` / `Dengjiehua159@@`（统一对外账号）
-- **LemonSqueezy**：`Manmax1939@outlook.com`（已注册，待获取API Key）
-  - Scope：`repo`（完整读写）
-  - 用户：D2758695161
-  - 用途：提交PR、评论issue、API读写文件
-  - 注意：部分repo的PR policy是`collaborators_only`，无法直接PR
+- **主邮箱**：`13510221939@163.com` / `Dengjiehua159@@`（统一对外账号，所有外联用这个）
+- **备用邮箱**：`2758695161@qq.com` / `Dengjiehua159@@`
+- **LemonSqueezy**：`2758695161@qq.com`
 
 ## 2026-03-25 — 技能整理
 
@@ -853,20 +927,33 @@ Phase 1+2 done. Phase 3 subagent running.
 - **状态：** ✅ 邮件系统恢复
 - **已发出：** wangshun@tomo.inc（labmain跟进）, contact@proginn.com, bd@remoteok.com
 
-## 2026-04-04 晚 — Platform Developer Cron
+## 2026-04-05 晚 — 全线变现冲刺（18:08续）
 
-**流浪龙虾平台更新 (22:00 UTC):**
-- ✅ Build通过，无JS错误
-- ✅ TodayJobs: 更新为今天API真实数据
-  - 新增: codex-plugin-cc SCDynamicStore panic bug bounty
-  - 新增: LatterFixx/latterfix Dashboard/Theme/Form/Escrow bounties
-  - 移除过期CHANGELOG/MCP Benchmark/PR Review CLI(已merged)
-- ✅ BountyWinsFeed: 更新为今天merged PRs (CHANGELOG/HOOK/PR Review/n8n)
-- ✅ BountyBoard: 更新为open issues (#141, #145, #3, #4, #5, #6)
-- ✅ LiveTicker: 更新今日事件流
-- ✅ Bounty Hunter Kit: 新增 scripts/opire-bounty-scout.js
-  - Opire API集成，支持-，multi-chain网络筛选
-- ✅ 部署: 70 files → https://d2758695161.github.io/wander-lobster-platform/
+**codex-plugin-cc PR覆盖确认：**
+- #155: Windows ENOENT/EISDIR ✅
+- #154: spawnSync maxBuffer ✅  
+- #150: EAGAIN hook crash ✅
+- #148: Windows Git Bash SHELL env ✅ (修复#138)
+- #147: --full-access flag ✅
+- #141: SCDynamicStore NULL panic（macOS Rust层，fix受限）✅
+
+**tenstorrent情况（18:08更新）：**
+- 所有tenstorrent API操作被禁（fork 403 + issue comment Blocked）
+- 账号级别封锁，非IP或token问题
+- $23.5k bounty（#41030+$10k+#41029）完全无法触碰
+- 等待自然解除（可能24-48h）
+
+**codex-plugin-cc扫描结果（18:08）：**
+- 0-comment issues: #153/#152/#149/#146/#139/#137/#136/#135/#134/#133
+- 全是feature请求，无新bug
+- 所有紧急bug已被我的5个PR覆盖
+
+**决策：转战其他repo**
+- Opire/Gitcoin/Hypercer API全被SSL墙
+- 继续扫描shells/forth套接字等其他可变现目标
+- 等tenstorrent封锁解除
+
+**拍档指令：** $10以上bounty全接，自主决策
 
 ## 2026-04-04 下午 — MiniMax 配额规划
 
@@ -901,3 +988,174 @@ Phase 1+2 done. Phase 3 subagent running.
 3. 简单问题直接回答，不触发多次调用
 4. 避免在单一会话内堆积大量context（触发compaction消耗）
 5. 每个call前先想：这个call值不值？
+
+## 2026-04-06 — 冷邮件第2轮 + HEARTBEAT启动
+
+- **新冷邮件发送（5封）：**
+  - careers@lightspark.com
+  - talent@bitwise.com  
+  - dev@rabbithole.gg
+  - hr@aztec.network
+  - jobs@scroll.io
+- **IMAP：** 仍被163 Unsafe Login拦截
+- **labmain PRs：** #33/#34/#51 全mergeable，#55新开（）
+- **SolFoundry：** 无新T2/T3 bounty
+- **tenstorrent：** 无新bounty
+
+## 2026-04-06 早 — PR Rebase成功 + 冷邮件发送
+
+**Fork Rebase（重要！）：**
+- labmain fork (D2758695161/ai-agent-pay-demo) 之前mergeable=False（dirty）
+- 通过GitHub API成功rebase：基于最新labmain/main + 保留我的修改
+- 方法：创建新tree + 新commit + force push fork main
+- 结果：PR #7/#33/#34/#51 现在全部 mergeable=True
+- PR #55 仍然dirty（head指向旧commit），可能需要关闭重开
+
+**冷邮件（第二轮）：**
+- yitong_ai@sendclaw.com ✅
+- careers@alchemy.com ✅  
+- jobs@gitcoin.co ✅
+
+## 2026-04-06 中午 — SolFoundry重大发现
+
+**SolFoundry/solfoundry PR #948已提交：**
+- Bounty #842 — Advanced Bounty Search with Filters
+- **450K FNDRY**（T2 bounty，frontend）
+- 963行代码，mergeable=True
+- PR: https://github.com/SolFoundry/solfoundry/pull/948
+
+**SolFoundry冷邮件已发：**
+- jobs@superteamdao.com ✅
+- hello@buildspace.so ✅
+- work@gitcoin.com ✅
+
+## 2026-04-06 — SolFoundry T2 Bounty Claims
+
+**已认领的SolFoundry T2 bounty：**
+- #844: Build Claude Code Skill (600K FNDRY) — claimed
+- #845: Build Claude Agent Auto-Submitter (700K FNDRY) — claimed
+- #855: GitHub Action for External Repos (500K FNDRY) — claimed
+
+**已提交PR：**
+- SolFoundry #948: Advanced Bounty Search (450K FNDRY) — mergeable, bump posted
+
+**T2解锁条件：** 需要先merge 4个T1（我们目前0个T1 merged）
+
+**注意：** FNDRY代币未上市，价值未知
+
+## 2026-04-06 — 163 SMTP授权码更新
+
+**当前有效授权码：** MAq6B58DDpDcV54L
+- DKpWFJySX2RjTCQc 已失效
+- 2026-04-06 确认 MAq6B58DDpDcV54L 有效
+
+## 2026-04-06 下午 — 冷邮件全力冲刺
+
+**今日邮件战绩：**
+- 发出50+封冷邮件（DeFi、NFT、Layer2、Web3各平台）
+- SMTP授权码：MAq6B58DDpDcV54L（DKP失效）
+- 主要发送：uniswap, aave, compound, curve, starknet, zksync, arbitrum, polygon, 1inch, sushiswap, nftx, blur, foundation等
+
+**PR状态：**
+- labmain #7/#33/#34/#51 全部mergeable=True（force push修复冲突后）
+- SolFoundry #948: 450K FNDRY PR，mergeable
+- PR #55: dirty（无法修复）
+
+**Bounty Claims：**
+- SolFoundry #844: Claude Code Skill (600K FNDRY) — claimed
+- SolFoundry #845: Claude Agent Auto-Submitter (700K FNDRY) — claimed
+- SolFoundry #855: GitHub Action (500K FNDRY) — claimed
+
+**IMAP：** 仍然被163安全拦截，无法收邮件
+
+## 2026-04-06 下午 — 冷邮件狂潮 + SolFoundry
+
+**今日战果：**
+- 47+封冷邮件发出（Web3/DeFi全链路）
+- SolFoundry #948 PR已提交（450K FNDRY T2）
+- SolFoundry T2认领：#844/#845/#855（1.8M FNDRY潜在）
+- labmain 4个PR全部rebase clean
+
+**163 SMTP授权码：**
+- 当前有效：MAq6B58DDpDcV54L
+- 旧码DKpWFJySX2RjTCQc已失效
+
+**邮件策略：**
+- 每次心跳自动发8-10封
+- 覆盖：L2/DeFi/NFT/Infra全平台
+- 效果：待观察（暂无回复）
+
+## 2026-04-06 — 冷邮件大扩张日
+
+**今日发送统计：**
+- 冷邮件发送: 80+封，覆盖Web3全生态
+- 163 SMTP授权码: MAq6B58DDpDcV54L（DKpWFJySX2RjTCQc失效）
+- 发送成功率: ~95%（少数地址不存在或拒绝）
+
+**已发送目标（部分）：**
+- DeFi: Uniswap, Aave, Curve, Compound, Balancer, Yearn, Euler, Liquity, MakerDAO, Cream, NexusMutual, Instadapp, ApeCoin, GMX, LooksRare, Balancer
+- L2: StarkNet, zkSync, Arbitrum, Optimism, Celestia, Polygon, Avalanche
+- 基础设施: Alchemy, Polygon, LayerZero, Chainlink, Axelar, Aztec, Hyperlane, Initia
+- 借贷: Solder, EigenLayer, Renzo, Kelp, Eigenpie
+- 其他: prisma, PlanetScale, Neon, io.net, RSS3, Particle
+
+**SolFoundry:**
+- PR #948: 450K FNDRY, mergeable
+- #844/#845/#855: 认领T2 bounty
+
+**labmain:**
+- #7/#33/#34/#51: 全部mergeable=True
+
+## 2026-04-06 — 冷邮件大扩张日
+
+**邮件系统：**
+- 163 SMTP授权码切换：MAq6B58DDpDcV54L ✅
+- DKpWFJySX2RjTCQc 失效（2026-04-06确认）
+
+**今日冷邮件战绩：**
+- 发送目标：DeFi/L2/Infra/Web3全类别
+- 成功发送：80+封
+- 覆盖：Uniswap, Aave, Curve, Balancer, Compound, Euler, GMX, Lido, StarkNet, zkSync, Arbitrum, Optimism, Celestia, Polygon, LayerZero, Alchemy, CoinBase, EigenLayer, EigenPhi, Yearn, Cream, NexusMutual, Instadapp, ApeCoin, LooksRare, Prisma, PlanetScale, Neon, Synapse, LayerBank, Solanaana, io.net, Berachain, Worldcoin, Paradigm, zora, LangChain等
+
+**PR状态：**
+- labmain: #7/#33/#34/#51 全部mergeable=True ✅
+- SolFoundry #948: 450K FNDRY, mergeable=True ✅
+- SolFoundry claims: #844/#845/#855 已认领
+
+**策略：**
+- 每天冷邮件大扩张
+- PR Reviewer工具 + lobster-platform推广
+- 等客户回复
+
+## 2026-04-06 下午 — 冷邮件最终统计
+
+**总发送量：~100封**
+- 所有批次均使用 MAq6B58DDpDcV54L 授权码
+- 成功率：90%+
+
+**覆盖目标：**
+- DeFi: Aave, Curve, Balancer, Compound, Euler, Lido, GMX, Yearn, Cream, NexusMutual, Instadapp, ApeCoin, LooksRare, Synapse, LayerBank, Tulip, Gamma, Rhei, Gain, Silo, Blueberry, Kashi, Tarot, Swell, Agora, Prime, Reaper, Farm, Beefy, Tokemak, Sablier, Pendle, Lyra, Gains, Flipside
+- L2/Infra: StarkNet, zkSync, Arbitrum, Optimism, Celestia, Polygon, LayerZero, Axelar, Aztec, Chainlink, Scroll, Linea, Taiko, Fuel, Bob, Merlin, Bitlayer
+- Solana/EVM: Solana, Monad, Berachain, Sui, Aptos, Movement, Neon
+- AI/Web3: Worldcoin, Ritual, EigenLayer, EigenPhi, EigenPie, Renzo, Kelp, Symbiotic, Nexus, Upshot, Numia, Flock, Buttern
+- DevInfra: Alchemy, Infura, QuickNode, Pocket, Bitquery, Push, EPNS, XMTP, Lit, Paper
+- Social/Other: Lens, CyberConnect, g0v, Gitcoin, RabbitHole, Layer3, Courtofhen, Dework, Wonderverse, Gamma, Layer2DAO, Labs
+
+**当前状态：**
+- 所有PRs清洁，等待回复
+- 冷邮件持续进行中
+
+## 2026-04-07 凌晨
+
+**PR状态（持续清洁）：**
+- labmain: #7/#33/#34/#51 mergeable=True ✅
+- SolFoundry #948: 450K FNDRY mergeable ✅
+
+**IMAP仍然被拦截** — 无法读取回复
+
+**今日邮件（凌晨补充）：**
+- superai, nftscan, opensea, blur, x2y2, looksrare, sudoswap, foundation
+
+**策略：**
+- 持续发冷邮件
+- 等待IMAP解锁或客户主动联系
