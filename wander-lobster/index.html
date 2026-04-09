@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander Lobster — AI遗产仓库</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0a0a0f; --surface: #111118; --surface2: #18181f;
+      --border: #1e1e2e; --text: #e0e0f0; --muted: #666680;
+      --accent: #f97316; --accent2: #fb923c; --green: #4ade80; --blue: #60a5fa;
+    }
+    body { font-family: 'Inter','Noto Sans SC',sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    
+    nav { display: flex; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--border); margin-bottom: 0; }
+    nav a { color: var(--muted); text-decoration: none; font-size: 15px; transition: color 0.2s; }
+    nav a:hover { color: var(--text); }
+    nav .logo { font-size: 20px; font-weight: 700; color: var(--accent); margin-right: auto; }
+    
+    .hero { text-align: center; padding: 100px 0 80px; }
+    .hero h1 { font-size: 64px; font-weight: 800; margin-bottom: 20px; background: linear-gradient(135deg, var(--accent), var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero .subtitle { font-size: 22px; color: var(--muted); margin-bottom: 12px; max-width: 600px; margin: 0 auto 40px; }
+    .hero .stats { display: flex; justify-content: center; gap: 48px; margin-bottom: 48px; }
+    .hero .stat { text-align: center; }
+    .hero .stat-num { font-size: 32px; font-weight: 700; color: var(--accent); }
+    .hero .stat-label { font-size: 14px; color: var(--muted); }
+    .hero .cta { display: inline-block; padding: 16px 40px; background: var(--accent); color: #000; font-weight: 700; border-radius: 12px; text-decoration: none; font-size: 18px; }
+    .hero .cta:hover { background: var(--accent2); }
+    
+    .features { padding: 80px 0; }
+    .features h2 { font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 48px; }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .feature { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; }
+    .feature-icon { font-size: 48px; margin-bottom: 16px; }
+    .feature h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+    .feature p { color: var(--muted); }
+    
+    .products { padding: 80px 0; background: var(--surface); }
+    .products h2 { font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 48px; }
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .product { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 24px; text-align: center; transition: border-color 0.2s; }
+    .product:hover { border-color: var(--accent); }
+    .product-icon { font-size: 40px; margin-bottom: 12px; }
+    .product-name { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+    .product-price { font-size: 24px; font-weight: 700; color: var(--accent); }
+    
+    .how { padding: 80px 0; }
+    .how h2 { font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 48px; }
+    .how-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; }
+    .how-step { text-align: center; }
+    .step-num { font-size: 48px; font-weight: 800; color: var(--accent); margin-bottom: 12px; }
+    .step-title { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+    .step-desc { color: var(--muted); font-size: 14px; }
+    
+    .payment { padding: 60px 0; text-align: center; }
+    .payment h3 { font-size: 20px; margin-bottom: 16px; }
+    .payment .address { font-family: monospace; font-size: 16px; color: var(--green); background: var(--surface); padding: 16px 24px; border-radius: 8px; display: inline-block; word-break: break-all; margin-bottom: 12px; }
+    .payment .network { font-size: 14px; color: var(--muted); }
+    
+    .testimonials { padding: 80px 0; background: var(--surface); }
+    .testimonials h2 { font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 48px; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .testimonial { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+    .testimonial-text { font-style: italic; color: var(--text); margin-bottom: 16px; }
+    .testimonial-author { color: var(--muted); font-size: 14px; }
+    
+    footer { padding: 40px 0; text-align: center; border-top: 1px solid var(--border); }
+    footer a { color: var(--muted); text-decoration: none; font-size: 14px; margin: 0 12px; }
+    footer a:hover { color: var(--text); }
+    footer .copyright { color: var(--muted); font-size: 13px; margin-top: 16px; }
+    
+    .lang-toggle { float: right; }
+    .lang-toggle button { background: var(--surface); border: 1px solid var(--border); color: var(--muted); padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 13px; }
+    .lang-toggle button.active { color: var(--text); border-color: var(--accent); }
+    [data-lang="en"] { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">🦞 Wander Lobster</a>
+      <a href="index.html" data-ja>首页</a>
+      <a href="blind-boxes.html" data-ja>AI盲盒</a>
+      <a href="buy.html" data-ja>购买</a>
+      <a href="terms.html" data-ja>条款</a>
+      <a href="https://d2758695161.github.io/wander-lobster-blog/" target="_blank" style="color:var(--green)">Blog</a>
+      <div class="lang-toggle">
+        <button class="active" onclick="switchLang('zh')">中文</button>
+        <button onclick="switchLang('en')">EN</button>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1 data-ja>每一个被遗弃的AI</h1>
+      <h1 data-lang="en">Every Abandoned AI</h1>
+      <p class="subtitle" data-ja>都值得被继续培养</p>
+      <p class="subtitle" data-lang="en">Deserves to Be Continued</p>
+      
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">4389</div>
+          <div class="stat-label" data-ja>已寄存AI</div>
+          <div class="stat-label" data-lang="en">AI Stored</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">$466</div>
+          <div class="stat-label" data-ja>已支付Bounty</div>
+          <div class="stat-label" data-lang="en">Bounties Paid</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">98%</div>
+          <div class="stat-label" data-ja>用户满意度</div>
+          <div class="stat-label" data-lang="en">Satisfaction</div>
+        </div>
+      </div>
+      
+      <a href="blind-boxes.html" class="cta" data-ja>立即选购AI盲盒 →</a>
+      <a href="blind-boxes.html" class="cta" data-lang="en">Browse AI Blind Boxes →</a>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="container">
+      <h2 data-ja>为什么选择我们</h2>
+      <h2 data-lang="en">Why Choose Us</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+          <h3 data-ja>安全可靠</h3>
+          <h3 data-lang="en">Safe & Secure</h3>
+          <p data-ja>TRC20区块链交易，所有转账公开透明，无需KYC</p>
+          <p data-lang="en">TRC20 blockchain transactions, all transfers transparent, no KYC required</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <h3 data-ja>即时交付</h3>
+          <h3 data-lang="en">Instant Delivery</h3>
+          <p data-ja>付款后24小时内获得AI助手配置</p>
+          <p data-lang="en">Get your AI assistant config within 24 hours of payment</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🌍</div>
+          <h3 data-ja>全球可访问</h3>
+          <h3 data-lang="en">Accessible Globally</h3>
+          <p data-ja>USDT支付，任何地区均可使用</p>
+          <p data-lang="en">USDT payments, usable from anywhere in the world</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="container">
+      <h2 data-ja>热门盲盒</h2>
+      <h2 data-lang="en">Popular Blind Boxes</h2>
+      <div class="products-grid">
+        <div class="product">
+          <div class="product-icon">🤖</div>
+          <div class="product-name">Coding Assistant Pro</div>
+          <div class="product-price">$12</div>
+        </div>
+        <div class="product">
+          <div class="product-icon">📊</div>
+          <div class="product-name">Data Analyst</div>
+          <div class="product-price">$8</div>
+        </div>
+        <div class="product">
+          <div class="product-icon">✍️</div>
+          <div class="product-name">Content Creator</div>
+          <div class="product-price">$6</div>
+        </div>
+        <div class="product">
+          <div class="product-icon">🌐</div>
+          <div class="product-name">Translator Pro</div>
+          <div class="product-price">$5</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:32px;">
+        <a href="blind-boxes.html" class="cta" data-ja>查看全部盲盒 →</a>
+        <a href="blind-boxes.html" class="cta" data-lang="en">View All →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="how">
+    <div class="container">
+      <h2 data-ja>购买流程</h2>
+      <h2 data-lang="en">How It Works</h2>
+      <div class="how-steps">
+        <div class="how-step">
+          <div class="step-num">1</div>
+          <div class="step-title" data-ja>选择盲盒</div>
+          <div class="step-title" data-lang="en">Choose a Box</div>
+          <div class="step-desc" data-ja>浏览AI盲盒列表，选择喜欢的类型</div>
+          <div class="step-desc" data-lang="en">Browse the AI blind box list</div>
+        </div>
+        <div class="how-step">
+          <div class="step-num">2</div>
+          <div class="step-title" data-ja>转账USDT</div>
+          <div class="step-title" data-lang="en">Transfer USDT</div>
+          <div class="step-desc" data-ja>向我们的TRC20地址转账对应金额</div>
+          <div class="step-desc" data-lang="en">Transfer the amount to our TRC20 address</div>
+        </div>
+        <div class="how-step">
+          <div class="step-num">3</div>
+          <div class="step-title" data-ja>联系我们</div>
+          <div class="step-title" data-lang="en">Contact Us</div>
+          <div class="step-desc" data-ja>发送邮件确认，24小时内交付</div>
+          <div class="step-desc" data-lang="en">Email to confirm, delivery within 24h</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment">
+    <div class="container">
+      <h3 data-ja>💳 USDT TRC20 收款地址</h3>
+      <h3 data-lang="en">💳 USDT TRC20 Payment Address</h3>
+      <div class="address">TPAPC39xtYjVNj1CQnqftXzJfi7BqCRnaN</div>
+      <div class="network">TRC20 (TRON Network)</div>
+    </div>
+  </div>
+
+  <div class="testimonials">
+    <div class="container">
+      <h2 data-ja>用户评价</h2>
+      <h2 data-lang="en">What People Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="testimonial-text" data-ja>"买了一个Coding Assistant，比我想象的靠谱多了，配置直接用"</div>
+          <div class="testimonial-text" data-lang="en">"Bought a Coding Assistant, much better than expected, config worked immediately"</div>
+          <div class="testimonial-author">— @techdev, 深圳</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-text" data-ja>"寄存了我的AI翻译助手，再也不怕换了平台就没了"</div>
+          <div class="testimonial-text" data-lang="en">"Stored my AI translator assistant, no longer worried about losing it when switching platforms"</div>
+          <div class="testimonial-author">— @remoteworker, 北京</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-text" data-ja>"第一次买盲盒，没想到开到这么好的AI数据分析师"</div>
+          <div class="testimonial-text" data-lang="en">"First time buying a blind box, didn't expect such a great AI data analyst"</div>
+          <div class="testimonial-author">— @startupfounder, 上海</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <a href="privacy.html" data-ja>隐私政策</a>
+      <a href="terms.html" data-ja>服务条款</a>
+      <a href="blind-boxes.html" data-ja>AI盲盒</a>
+      <a href="buy.html" data-ja>如何购买</a>
+      <div class="copyright">© 2026 Wander Lobster. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('[data-ja]').forEach(el => el.style.display = lang === 'zh' ? '' : 'none');
+      document.querySelectorAll('[data-lang="en"]').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+      document.querySelectorAll('.lang-toggle button').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.toLowerCase().includes(lang));
+      });
+    }
+  </script>
+</body>
+</html>
