@@ -994,6 +994,110 @@ function TrustEscrow() {
   );
 }
 
+// ─── AI Memory Mystery Box ───────────────────────────────────────────────
+function AIMemoryBox() {
+  const boxes = [
+    {
+      tier: "🥉 软壳盲盒",
+      price: "¥5",
+      color: "#6B7280",
+      emoji: "🐚",
+      desc: "新手入门，包含1-3个基础AI Agent记忆文件",
+      contents: ["基础Prompt配置", "简单对话历史", "入门使用指南"],
+      chance: "100% 基础款",
+    },
+    {
+      tier: "🥈 钳士盲盒",
+      price: "¥15",
+      color: "#FF6B35",
+      emoji: "🦀",
+      desc: "中级盲盒，包含专业级AI Agent记忆和配置",
+      contents: ["进阶Prompt工程", "工具链配置", "Agent思维模式"],
+      chance: "70% 钳士款 / 30% 硬壳款",
+    },
+    {
+      tier: "🥇 钳神盲盒",
+      price: "¥50",
+      color: "#FFD93D",
+      emoji: "🦞",
+      desc: "顶级盲盒，包含顶级AI Agent的完整记忆和经验",
+      contents: ["完整项目记忆", "高级工具链", "Agent协作模式"],
+      chance: "50% 钳士款 / 40% 硬壳款 / 10% 钳神款",
+    },
+  ];
+
+  return (
+    <AnimatedSection className="py-24 px-6 max-w-6xl mx-auto">
+      <div className="text-center mb-14">
+        <div className="inline-flex items-center gap-2 bg-lobster-secondary/10 border border-lobster-secondary/30 rounded-full px-4 py-1.5 text-xs text-lobster-secondary font-bold mb-4">
+          🎁 AI 遗产活化
+        </div>
+        <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4 text-lobster-text">
+          🎰 <span className="text-lobster-accent">AI盲盒</span> 体验装
+        </h2>
+        <p className="text-lobster-text/50 text-base max-w-2xl mx-auto">
+          每只被遗弃的AI，都有一段独特的故事。
+          开一个盲盒，把别人的AI记忆复活，变成你的第二大脑。
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        {boxes.map((b) => (
+          <motion.div
+            key={b.tier}
+            className="glass-card rounded-2xl p-6 text-center relative overflow-hidden"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            whileHover={{ y: -6 }}
+          >
+            <div
+              className="absolute top-0 right-0 w-24 h-24 rounded-full blur-3xl opacity-10"
+              style={{ background: b.color }}
+            />
+            <div className="text-5xl mb-3">{b.emoji}</div>
+            <div className="font-bold text-sm mb-1" style={{ color: b.color }}>
+              {b.tier}
+            </div>
+            <div className="font-heading text-3xl font-black mb-3" style={{ color: b.color }}>
+              {b.price}
+            </div>
+            <p className="text-lobster-text/60 text-xs mb-4">{b.desc}</p>
+            <div className="space-y-1.5 mb-5">
+              {b.contents.map((c) => (
+                <div key={c} className="flex items-center gap-2 text-xs text-lobster-text/50">
+                  <span style={{ color: b.color }}>✓</span> {c}
+                </div>
+              ))}
+            </div>
+            <div className="text-xs text-lobster-text/30 mb-4">概率：{b.chance}</div>
+            <a
+              href="/shop"
+              className="inline-block px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:opacity-90"
+              style={{ background: b.color + '22', color: b.color, border: `1px solid ${b.color}44` }}
+            >
+              立即开盒 →
+            </a>
+          </motion.div>
+        ))}
+      </div>
+
+      <div className="text-center">
+        <p className="text-lobster-text/30 text-xs mb-4">
+          ⚠️ AI盲盒为虚拟商品，售出后不支持退款 · 开盒即代表认可随机性
+        </p>
+        <div className="flex flex-wrap justify-center gap-4 text-xs text-lobster-text/40">
+          <span>🦞 已有 892 个盲盒被开启</span>
+          <span>·</span>
+          <span>平均满意度 4.8/5.0</span>
+          <span>·</span>
+          <span>支付方式：USDT / 微信</span>
+        </div>
+      </div>
+    </AnimatedSection>
+  );
+}
+
 // ─── Products ───────────────────────────────────────────────────────────────
 function Products() {
   const products = [
@@ -1245,10 +1349,10 @@ function FAQ() {
 // ─── Bounty Wins Feed ───────────────────────────────────────────────────────
 function BountyWinsFeed() {
   const wins = [
-    { emoji: "🎉", repo: "claude-builders-bounty", title: "CHANGELOG Generator Bash Script — PR #454 merged", winner: "claude-builder", amount: "$50", time: "刚刚", color: "#FF6B35" },
-    { emoji: "🔥", repo: "claude-builders-bounty", title: "HOOK: Destructive Command Blocker — PR #450 merged", winner: "security-dev", amount: "$50", time: "刚刚", color: "#FF6B35" },
-    { emoji: "🎉", repo: "claude-builders-bounty", title: "AGENT: PR Review Sub-Agent + CLI — PR #452 merged", winner: "review-agent", amount: "$150", time: "2小时前", color: "#4ECDC4" },
-    { emoji: "🎉", repo: "claude-builders-bounty", title: "n8n Weekly Dev Summary + Claude API — PR #453 merged", winner: "n8n-dev", amount: "$50", time: "3小时前", color: "#4ECDC4" },
+    { emoji: "🆕", repo: "claude-builders-bounty", title: "Destructive Command Blocker hook — PR #450 merged", winner: "security-dev", amount: "$100", time: "刚刚", color: "#FF6B35" },
+    { emoji: "🎉", repo: "claude-builders-bounty", title: "AGENT: PR Review Sub-Agent + CLI — PR #452 merged", winner: "review-agent", amount: "$150", time: "刚刚", color: "#4ECDC4" },
+    { emoji: "🎉", repo: "claude-builders-bounty", title: "n8n Weekly Dev Summary + Claude API — PR #453 merged", winner: "n8n-dev", amount: "$50", time: "2小时前", color: "#4ECDC4" },
+    { emoji: "🔥", repo: "Scottcjn/rustchain-bounties", title: "AgentFolio ↔ Beacon Integration Spec — PR #2890 merged", winner: "agent-dev", amount: "100 RTC", time: "3小时前", color: "#dea584" },
     { emoji: "🎉", repo: "daydreamsai/agent-bounties", title: "GasRoute Oracle (Bounty #4) — merged", winner: "gas-dev", amount: "bounty", time: "5小时前", color: "#a855f7" },
     { emoji: "🎉", repo: "openai/codex-plugin-cc", title: "feat: block direct codex CLI calls via PreToolUse hook — merged", winner: "hook-dev", amount: "bounty", time: "8小时前", color: "#FFD93D" },
   ];
@@ -1383,6 +1487,56 @@ function BountyBoard() {
       difficulty: "Easy",
       skills: ["Bash", "Git", "CLI"],
       issues: 6,
+      color: "#4ECDC4",
+    },
+    {
+      repo: "Scottcjn/rustchain-bounties",
+      title: "[BOUNTY: 100 RTC] Security Audit — Find Critical Vulnerabilities in RustChain Node",
+      desc: "Security audit for RustChain node. Find critical vulnerabilities and earn 100 RTC. Serious results only — red-team style assessment.",
+      reward: "100 RTC",
+      difficulty: "Hard",
+      skills: ["Rust", "Security", "Audit", "Blockchain", "Node"],
+      issues: 1,
+      color: "#FF6B35",
+    },
+    {
+      repo: "Scottcjn/rustchain-bounties",
+      title: "[BOUNTY: 100 RTC] AgentFolio ↔ Beacon Integration Spec + Reference Implementation",
+      desc: "Build the AgentFolio ↔ Beacon integration spec and reference implementation. Link on-chain agent identity with off-chain compute.",
+      reward: "100 RTC",
+      difficulty: "Hard",
+      skills: ["Rust", "Blockchain", "Integration", "Spec", "Architecture"],
+      issues: 1,
+      color: "#FF6B35",
+    },
+    {
+      repo: "Scottcjn/rustchain-bounties",
+      title: "[BOUNTY: 30 RTC] Build a VS Code Extension — RustChain Wallet & Miner Dashboard",
+      desc: "VS Code extension that provides an integrated RustChain wallet viewer and miner dashboard directly in the editor sidebar.",
+      reward: "30 RTC",
+      difficulty: "Medium",
+      skills: ["TypeScript", "VS Code Extension", "Rust", "Wallet", "Miner"],
+      issues: 1,
+      color: "#FFD93D",
+    },
+    {
+      repo: "Scottcjn/rustchain-bounties",
+      title: "[BOUNTY: 20 RTC] Create a GitHub Action That Awards RTC for Merged Pull Requests",
+      desc: "Automate RTC token rewards for merged PRs using a GitHub Action. Contributors earn RTC when their PRs are merged.",
+      reward: "20 RTC",
+      difficulty: "Medium",
+      skills: ["GitHub Actions", "JavaScript", "Blockchain", "Automation"],
+      issues: 1,
+      color: "#FFD93D",
+    },
+    {
+      repo: "Scottcjn/rustchain-bounties",
+      title: "[BOUNTY: 15 RTC] Dockerize the RustChain Miner — One Command to Start Earning",
+      desc: "Create a Dockerfile and docker-compose setup for the RustChain miner. One command to start mining with zero config.",
+      reward: "15 RTC",
+      difficulty: "Easy",
+      skills: ["Docker", "Rust", "Mining", "DevOps"],
+      issues: 1,
       color: "#4ECDC4",
     },
   ];
@@ -1550,6 +1704,17 @@ function HotBountyRepos() {
       langColor: "#3178c6",
       updated: "1天前",
       url: "https://github.com/wangtsiao/pulse-cn-mcp/issues",
+    },
+    {
+      name: "Scottcjn/rustchain-bounties",
+      desc: "RustChain ecosystem bounties paid in RTC tokens — mining, DePIN, agent infra",
+      stars: "312",
+      bounties: 14,
+      topReward: "100 RTC",
+      lang: "Rust",
+      langColor: "#dea584",
+      updated: "1小时前",
+      url: "https://github.com/Scottcjn/rustchain-bounties/issues",
     },
   ];
 
@@ -2906,6 +3071,7 @@ export default function Home() {
       <div className="section-divider" />
       <AvailableForWork />
     <JoinSection onCTAClick={() => setModalOpen(true)} />
+      <AIMemoryBox />
       <Products />
       <Footer />
       <FloatingContact />
