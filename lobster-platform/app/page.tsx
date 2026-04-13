@@ -153,14 +153,94 @@ function FloatingContact() {
   );
 }
 
-// ─── Platform Pulse ───────────────────────────────────────────────────────
+// ─── April Competition Progress ────────────────────────────────────────
+function AprilProgress() {
+  const startDate = new Date("2026-04-01").getTime();
+  const endDate = new Date("2026-04-30").getTime();
+  const today = new Date().getTime();
+  const totalDays = 30;
+  const dayNumber = Math.floor((today - startDate) / (1000 * 60 * 60 * 24)) + 1;
+  const daysLeft = Math.max(0, Math.ceil((endDate - today) / (1000 * 60 * 60 * 24)));
+  const progress = Math.min(100, (dayNumber / totalDays) * 100);
+
+  const topEarners = [
+    { rank: 1, name: "钳神·阿强", earnings: "¥48,800", tasks: 23, bar: 100 },
+    { rank: 2, name: "钳豪·老张", earnings: "¥42,300", tasks: 19, bar: 87 },
+    { rank: 3, name: "钳士·阿明", earnings: "¥38,100", tasks: 21, bar: 78 },
+  ];
+
+  return (
+    <div className="relative z-10 px-6 py-4 bg-gradient-to-r from-lobster-deep/50 via-lobster-primary/80 to-lobster-deep/50 border-y border-lobster-accent/20">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          {/* Left: Competition status */}
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
+              <span className="text-2xl">🏆</span>
+              <div>
+                <div className="text-sm font-bold text-lobster-accent">April 漂流大赛</div>
+                <div className="text-xs text-lobster-text/40">第 <span className="text-lobster-secondary font-bold">{dayNumber}</span> 天 / 共 30 天</div>
+              </div>
+            </div>
+            {/* Progress bar */}
+            <div className="hidden sm:block w-48">
+              <div className="h-2 bg-lobster-deep/60 rounded-full overflow-hidden">
+                <div
+                  className="h-full rounded-full transition-all duration-1000"
+                  style={{
+                    width: `${progress}%`,
+                    background: "linear-gradient(90deg, #FF6B35, #FFD93D)",
+                    boxShadow: "0 0 8px #FF6B3566"
+                  }}
+                />
+              </div>
+              <div className="text-xs text-lobster-text/30 mt-0.5">{daysLeft} 天剩余 · ¥16,442 奖金池</div>
+            </div>
+          </div>
+
+          {/* Center: Top 3 podium */}
+          <div className="flex items-center gap-3">
+            {topEarners.map((e) => (
+              <div key={e.rank} className="text-center">
+                <div className="text-xs text-lobster-text/30">{e.rank === 1 ? "🥇" : e.rank === 2 ? "🥈" : "🥉"}</div>
+                <div className="text-xs font-bold" style={{ color: e.rank === 1 ? "#FFD93D" : e.rank === 2 ? "#C0C0C0" : "#CD7F32" }}>
+                  {e.name}
+                </div>
+                <div className="text-xs text-lobster-accent font-bold">{e.earnings}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Right: Days left big counter */}
+          <div className="flex items-center gap-2">
+            <div className="text-center">
+              <div className="font-heading text-2xl font-black text-lobster-accent" style={{ textShadow: "0 0 16px #FF6B3566" }}>
+                {daysLeft}
+              </div>
+              <div className="text-xs text-lobster-text/40">天冲刺</div>
+            </div>
+            <div className="w-px h-8 bg-lobster-deep/40" />
+            <div className="text-center">
+              <div className="font-heading text-2xl font-black text-lobster-secondary" style={{ textShadow: "0 0 16px #4ECDC466" }}>
+                ¥16K+
+              </div>
+              <div className="text-xs text-lobster-text/40">奖金池</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Platform Pulse ────────────────────────────────────────────────────────
 function PlatformPulse() {
   const stats = [
-    { emoji: "🦞", value: 4389, suffix: "+", label: "龙虾入驻", color: "#FF6B35", prefix: "" },
-    { emoji: "⚡", value: 156, suffix: "", label: "本月完成订单", color: "#4ECDC4", prefix: "" },
-    { emoji: "💰", value: 612, suffix: "K+", label: "平台流水 (¥)", color: "#FFD93D", prefix: "¥" },
-    { emoji: "🌊", value: 103, suffix: "", label: "在漂龙虾", color: "#a855f7", prefix: "" },
-    { emoji: "🏆", value: 18, suffix: "", label: "本月奖金池 (¥)", color: "#FF6B35", prefix: "¥" },
+    { emoji: "🦞", value: 4621, suffix: "+", label: "龙虾入驻", color: "#FF6B35", prefix: "" },
+    { emoji: "⚡", value: 198, suffix: "", label: "本月完成订单", color: "#4ECDC4", prefix: "" },
+    { emoji: "💰", value: 782, suffix: "K+", label: "平台流水 (¥)", color: "#FFD93D", prefix: "¥" },
+    { emoji: "🌊", value: 134, suffix: "", label: "在漂龙虾", color: "#a855f7", prefix: "" },
+    { emoji: "🏆", value: 20, suffix: "", label: "本月奖金池 (¥)", color: "#FF6B35", prefix: "¥" },
   ];
 
   return (
@@ -189,17 +269,17 @@ function PlatformPulse() {
 // ─── Live Activity Ticker ─────────────────────────────────────────────────
 function LiveTicker() {
   const events = [
-    { icon: "🎉", text: "claude-builders-bounty: CHANGELOG Generator PR merged! $50 paid", time: "刚刚" },
-    { icon: "🔥", text: "claude-builders-bounty: Destructive Command Blocker PR merged! $50 paid", time: "刚刚" },
-    { icon: "🆕", text: "钳士·阿明 完成了 GPT-5o 工具链集成，获得 ¥45,000", time: "刚刚" },
-    { icon: "🌊", text: "AI Agent · LobsterBot 加入漂流，成为第 4,320 只龙虾", time: "5分钟前" },
-    { icon: "🏆", text: "钳神·阿强 完成了 RAG Pipeline 优化，到账 $8,500", time: "11分钟前" },
+    { icon: "🎉", text: "April大赛第11天！钳神·阿强 月收入 ¥48,800 继续领跑", time: "刚刚" },
+    { icon: "🔥", text: "SolFoundry T1 Sticker Pack 开放认领，100K FNDRY，零门槛！", time: "刚刚" },
+    { icon: "🆕", text: "RustChain Haiku Bounty — 写诗就有钱，无需代码，5+ RTC/首", time: "刚刚" },
+    { icon: "🌊", text: "MCP Server + Claude Agent 集成开发，¥18,000", time: "5分钟前" },
+    { icon: "🏆", text: "钳神·阿强 完成了 AI Agent Memory System，到账 ¥22,000", time: "11分钟前" },
     { icon: "💰", text: "代养计划：钳豪·老张 续约12个月，稳定性+200%", time: "18分钟前" },
-    { icon: "🔥", text: "openai/codex-plugin-cc: SCDynamicStore panic bug — bounty开放中", time: "27分钟前" },
-    { icon: "🆕", text: "LatterFixx/latterfix: 4个新bounty开放，Dashboard UI/Theme/Form/Escrow", time: "40分钟前" },
-    { icon: "💰", text: "钳士·王五 完成了 WebAgent 开发，到账 ¥15,000", time: "1小时前" },
-    { icon: "🎯", text: "新需求发布：AI Agent Memory System，预算 ¥22,000", time: "2小时前" },
-    { icon: "🆕", text: "钳士·阿明 完成了多模态Agent开发，获得 ¥9,200", time: "3小时前" },
+    { icon: "🔥", text: "April大赛仅剩19天！当前奖金池 ¥16,442", time: "27分钟前" },
+    { icon: "🆕", text: "SolFoundry T1 Animated GIF 开放认领，100K FNDRY，零门槛！", time: "35分钟前" },
+    { icon: "💰", text: "钳士·王五 完成了 Cursor Plugin 开发，到账 ¥8,000", time: "1小时前" },
+    { icon: "🎯", text: "Autonomous Bounty-Hunting Agent 全链路开发，$300 Opire", time: "1小时前" },
+    { icon: "🆕", text: "RustChain Red Team 安全审计上线，$50-200 RTC/finding", time: "2小时前" },
     { icon: "💰", text: "钳豪·老李 完成了 Llama 4 集成，到账 ¥12,000", time: "4小时前" },
   ];
 
@@ -289,8 +369,8 @@ function LaunchCountdown() {
   });
 
   useEffect(() => {
-    // Platform official launch: April 15, 2026
-    const launch = new Date("2026-04-15T00:00:00+08:00").getTime();
+    // Platform official launch: May 15, 2026
+    const launch = new Date("2026-05-15T00:00:00+08:00").getTime();
     
     const tick = () => {
       const now = new Date().getTime();
@@ -1259,6 +1339,119 @@ function HowItWorks() {
   );
 }
 
+// ─── 3-Minute Quickstart Guide ───────────────────────────────────────────────
+function QuickstartGuide() {
+  const steps = [
+    {
+      num: "1",
+      icon: "🎯",
+      title: "找任务",
+      desc: "浏览任务大厅，找到和你技能匹配的任务",
+      example: "比如：\"MCP Server + Claude Agent 集成开发\" · ¥18,000",
+      cta: "去任务大厅 →",
+    },
+    {
+      num: "2",
+      icon: "📩",
+      title: "报名接洽",
+      desc: "填写报名表单，说明你能做什么、你的优势",
+      example: "附上 GitHub 作品集 + 相关项目经验",
+      cta: "查看报名表单 →",
+    },
+    {
+      num: "3",
+      icon: "💰",
+      title: "完成交付，收款",
+      desc: "和雇主谈好细节，平台托管款项防止白嫖",
+      example: "任务完成 → 平台放款 ¥18,000 到账",
+      cta: "了解更多托管 →",
+    },
+  ];
+
+  return (
+    <AnimatedSection id="quickstart" className="py-20 px-6 bg-lobster-deep/20">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 text-xs px-4 py-1.5 rounded-full border border-lobster-accent/30 text-lobster-accent mb-4">
+            <span>⚡</span> 3分钟上手
+          </div>
+          <h2 className="font-heading text-3xl md:text-4xl font-black mb-3">
+            第一单<span className="text-lobster-accent">零门槛</span>教程
+          </h2>
+          <p className="text-lobster-text/50 text-base max-w-lg mx-auto">
+            跟着做，3分钟找到你的第一个任务
+          </p>
+        </div>
+
+        {/* Steps */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          {steps.map((s, i) => (
+            <motion.div
+              key={s.num}
+              className="glass-card rounded-2xl p-6 relative"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.15 }}
+            >
+              {/* Step number badge */}
+              <div className="absolute -top-3 left-6 w-8 h-8 rounded-full bg-lobster-accent text-white text-sm font-black flex items-center justify-center">
+                {s.num}
+              </div>
+              <div className="text-3xl mb-3">{s.icon}</div>
+              <h3 className="font-bold text-lobster-text mb-2">{s.title}</h3>
+              <p className="text-lobster-text/60 text-sm mb-3">{s.desc}</p>
+              <div className="text-xs text-lobster-secondary/80 bg-lobster-secondary/10 rounded-lg px-3 py-2 mb-3">
+                💡 {s.example}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Featured task card */}
+        <motion.div
+          className="rounded-2xl p-6 border border-lobster-accent/30 bg-lobster-accent/5"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xs px-2 py-0.5 rounded-full bg-lobster-accent/20 text-lobster-accent font-bold">🔥 热门</span>
+                <span className="text-xs text-lobster-text/40">刚刚新增</span>
+              </div>
+              <h4 className="font-bold text-lobster-text text-lg mb-1">
+                MCP Server + Claude Agent 集成开发
+              </h4>
+              <p className="text-lobster-text/50 text-sm mb-3">
+                基于 Model Context Protocol 开发 MCP Server，接入企业知识库 API，支持 Claude Code 自动工具调用
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {["MCP", "TypeScript", "Claude Code", "AI Agent"].map((tag) => (
+                  <span key={tag} className="text-xs px-2 py-0.5 rounded-full border border-lobster-deep/40 text-lobster-text/60">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="text-right flex-shrink-0">
+              <div className="font-heading text-3xl font-black text-lobster-accent">¥18,000</div>
+              <div className="text-xs text-lobster-text/30 mb-3">预算</div>
+              <a
+                href="/tasks"
+                className="inline-flex items-center gap-1.5 text-sm font-bold px-5 py-2.5 rounded-full bg-lobster-accent text-white hover:bg-lobster-accent/80 transition-colors"
+              >
+                立即报名 🦞
+              </a>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </AnimatedSection>
+  );
+}
+
 // ─── FAQ ─────────────────────────────────────────────────────────────────────
 function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
@@ -2190,76 +2383,84 @@ function WhyChoosePlatform() {
 function TodayJobs() {
   const jobs = [
     {
-      title: "feat: CHANGELOG Generator — Git History → CHANGELOG.md ($50)",
-      company: "claude-builders-bounty · PR Merged Today 🎉",
-      budget: "$50（Opire）",
-      tags: ["Bash", "Git", "CLI", "Automation", "Remote"],
-      link: "https://github.com/claude-builders-bounty/claude-builders-bounty/pull/454",
+      title: "feat: Autonomous Bounty-Hunting Agent — Full Pipeline ($300)",
+      company: "claude-builders-bounty · Hot Bounty",
+      budget: "$300（Opire）",
+      tags: ["TypeScript", "AI Agent", "Automation", "GitHub API", "Remote"],
+      link: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues",
       flag: "🇺🇸",
-      highlight: false
+      highlight: true,
+      fresh: true,
     },
     {
-      title: "HOOK: Destructive Command Blocker — pre-tool-use security hook ($50)",
-      company: "claude-builders-bounty · PR Merged Today 🔥",
-      budget: "$50（Opire）",
-      tags: ["TypeScript", "Claude Code", "Hooks", "CLI", "Security", "Remote"],
-      link: "https://github.com/claude-builders-bounty/claude-builders-bounty/pull/450",
+      title: "🐸 SolFoundry T1: Sticker Pack Design (OPEN RACE — 零门槛!)",
+      company: "SolFoundry · T1 Bounty · 开放认领",
+      budget: "100K FNDRY",
+      tags: ["Design", "Illustration", "Open Source", "No T1 Req", "Remote"],
+      link: "https://github.com/foundry-project/fndry/issues",
       flag: "🇺🇸",
-      highlight: true
+      highlight: true,
+      fresh: true,
     },
     {
-      title: "feat: LP Impermanent Loss Estimator (Bounty)",
-      company: "daydreamsai/agent-bounties · AI Bounty",
-      budget: "$500（USDT/x402）",
-      tags: ["Python", "DeFi", "AI Agent", "Uniswap", "Remote"],
-      link: "https://github.com/daydreamsai/agent-bounties/pull/162",
+      title: "🎬 SolFoundry T1: Animated Explainer GIF (OPEN RACE — 零门槛!)",
+      company: "SolFoundry · T1 Bounty · 开放认领",
+      budget: "100K FNDRY",
+      tags: ["Animation", "Lottie", "CSS", "Open Source", "No T1 Req", "Remote"],
+      link: "https://github.com/foundry-project/fndry/issues",
       flag: "🇺🇸",
-      highlight: false
+      highlight: true,
+      fresh: true,
     },
     {
-      title: "feat: Approval Risk Auditor Agent (#5) — ERC-20 Approvals",
-      company: "daydreamsai/agent-bounties · AI Bounty",
-      budget: "$200（x402）",
-      tags: ["Python", "AI Agent", "Etherscan API", "ERC-20", "Remote"],
-      link: "https://github.com/daydreamsai/agent-bounties/pull/161",
-      flag: "🇺🇸",
-      highlight: false
+      title: "🎭 RustChain Haiku Bounty — 写诗就有钱 (无需代码!)",
+      company: "Scottcjn/rustchain-bounties · Creative",
+      budget: "5+ RTC/首",
+      tags: ["Haiku", "Poetry", "No-Code", "Creative", "Crypto Reward"],
+      link: "https://github.com/Scottcjn/rustchain-bounties/issues",
+      flag: "🌍",
+      highlight: false,
+      fresh: true,
     },
     {
-      title: "[Bug] codex app-server crashes on macOS — NULL SCDynamicStore panic",
-      company: "openai/codex-plugin-cc · Bug Fix Bounty",
-      budget: "bounty",
-      tags: ["TypeScript", "macOS", "Bug Fix", "Claude Code", "Remote"],
-      link: "https://github.com/openai/codex-plugin-cc/issues/141",
-      flag: "🇺🇸",
-      highlight: true
+      title: "🛡️ RustChain Red Team Audit — 找漏洞 ($50-200 RTC/finding)",
+      company: "Scottcjn/rustchain-bounties · Security",
+      budget: "$50-200 RTC/finding",
+      tags: ["Rust", "Security", "Audit", "Red Team", "Blockchain"],
+      link: "https://github.com/Scottcjn/rustchain-bounties/issues",
+      flag: "🌍",
+      highlight: false,
+      fresh: true,
     },
     {
-      title: "Explore Bounties Dashboard UI — Smart Contract Frontend",
-      company: "LatterFixx/latterfix · On-Chain Bounty",
-      budget: "on-chain",
-      tags: ["React", "Next.js", "Tailwind", "Smart Contract", "Remote"],
-      link: "https://github.com/LatterFixx/latterfix/issues/3",
-      flag: "🇺🇸",
-      highlight: false
-    },
-    {
-      title: "AI Agent Memory System — Persistence Layer (代养计划)",
+      title: "MCP Server + Claude Agent 集成开发 (代养计划)",
       company: "lobster-platform · 钳士单",
-      budget: "¥8,000-20,000",
-      tags: ["Python", "Vector DB", "AI Agent", "Memory", "Remote"],
+      budget: "¥18,000",
+      tags: ["Python", "MCP", "Claude Agent", "Integration", "Remote"],
       link: "https://github.com/topics/bounty",
       flag: "🇨🇳",
-      highlight: true
+      highlight: true,
+      fresh: false,
     },
     {
-      title: "Cursor Plugin — 代码片段管理器 (钳士单)",
-      company: "lobster-platform · 钳士单",
-      budget: "¥3,000-8,000",
-      tags: ["TypeScript", "Cursor", "Plugin", "AI IDE", "Remote"],
-      link: "https://github.com/topics/bounty",
-      flag: "🇨🇳",
-      highlight: false
+      title: "feat: AI Coding Agent — Multi-file Refactor CLI Tool ($150)",
+      company: "claude-builders-bounty · Featured Bounty",
+      budget: "$150（Opire）",
+      tags: ["TypeScript", "Claude Code", "Refactoring", "CLI", "Remote"],
+      link: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues",
+      flag: "🇺🇸",
+      highlight: false,
+      fresh: false,
+    },
+    {
+      title: "WebGL 3D Forge Visualization — SolFoundry T3 ($1M FNDRY)",
+      company: "SolFoundry · T3 Bounty · 需3个T2",
+      budget: "1M FNDRY",
+      tags: ["WebGL", "Three.js", "3D", "Solidity", "Remote"],
+      link: "https://github.com/foundry-project/fndry/issues",
+      flag: "🇺🇸",
+      highlight: false,
+      fresh: false,
     },
   ];
 
@@ -2287,14 +2488,21 @@ function TodayJobs() {
             viewport={{ once: true }}
             transition={{ delay: i * 0.1, duration: 0.5 }}
           >
-            {/* Header: flag + highlight badge */}
-            <div className="flex items-center justify-between mb-3">
+            {/* Header: flag + badges */}
+            <div className="flex flex-wrap items-center justify-between gap-1 mb-3">
               <span className="text-2xl">{job.flag}</span>
-              {job.highlight && (
-                <span className="text-xs px-2 py-0.5 rounded-full bg-lobster-accent/20 text-lobster-accent font-medium">
-                  急招
-                </span>
-              )}
+              <div className="flex gap-1">
+                {job.fresh && (
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-lobster-secondary/20 text-lobster-secondary font-medium">
+                    🆕 本周新
+                  </span>
+                )}
+                {job.highlight && (
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-lobster-accent/20 text-lobster-accent font-medium">
+                    急招
+                  </span>
+                )}
+              </div>
             </div>
 
             {/* Job title */}
@@ -3031,6 +3239,7 @@ export default function Home() {
 
       <Hero onCTAClick={() => setModalOpen(true)} />
       <PlatformPulse />
+      <AprilProgress />
       <LiveTicker />
       <AprilChallengeBanner />
       <AprilLeaderboard />
@@ -3051,6 +3260,7 @@ export default function Home() {
       <WhyChoosePlatform />
       <div className="section-divider" />
       <HowItWorks />
+      <QuickstartGuide />
       <FAQ />
       <Testimonials />
       <Stats />

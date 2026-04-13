@@ -1,9 +1,9 @@
-const token = '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';
+const token = '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';
 const owner = 'D2758695161';
 const repo = 'wander-lobster-platform';
-const outDir = './out';
-const fs = require('fs');
 const path = require('path');
+const fs = require('fs');
+const outDir = path.join(__dirname, 'out');
 
 async function uploadFile(filePath, content) {
   const relativePath = path.relative(outDir, filePath).replace(/\\/g, '/');
