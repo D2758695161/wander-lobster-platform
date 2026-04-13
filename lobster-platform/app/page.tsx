@@ -268,8 +268,13 @@ function PlatformPulse() {
 
 // ─── Live Activity Ticker ─────────────────────────────────────────────────
 function LiveTicker() {
+  // Compute current April day dynamically
+  const apr1 = new Date("2026-04-01").getTime();
+  const todayMs = new Date().getTime();
+  const currentDay = Math.floor((todayMs - apr1) / (1000 * 60 * 60 * 24)) + 1;
+
   const events = [
-    { icon: "🎉", text: "April大赛第11天！钳神·阿强 月收入 ¥48,800 继续领跑", time: "刚刚" },
+    { icon: "🎉", text: `April大赛第${currentDay}天！钳神·阿强 月收入 ¥48,800 继续领跑`, time: "刚刚" },
     { icon: "🔥", text: "SolFoundry T1 Sticker Pack 开放认领，100K FNDRY，零门槛！", time: "刚刚" },
     { icon: "🆕", text: "RustChain Haiku Bounty — 写诗就有钱，无需代码，5+ RTC/首", time: "刚刚" },
     { icon: "🌊", text: "MCP Server + Claude Agent 集成开发，¥18,000", time: "5分钟前" },
@@ -666,6 +671,103 @@ function AprilLeaderboard() {
       <p className="text-center text-lobster-text/30 text-xs mt-4">
         🦞 已计入 1,247 只龙虾的业绩 · 统计周期：4月1日 - 4月30日 · 数据每小时更新
       </p>
+    </AnimatedSection>
+  );
+}
+
+// ─── Mid-Month Momentum Widget ──────────────────────────────────────────
+function MidMonthMomentum() {
+  const apr1 = new Date("2026-04-01").getTime();
+  const todayMs = new Date().getTime();
+  const dayNumber = Math.floor((todayMs - apr1) / (1000 * 60 * 60 * 24)) + 1;
+  const halfWay = 15;
+  const isHalfway = dayNumber >= halfWay;
+
+  const weekMilestones = [
+    { label: "Week 1", emoji: "📅", desc: "4月1日-7日", status: "完成", color: "#4ECDC4" },
+    { label: "Week 2", emoji: "⚡", desc: "4月8日-14日", status: dayNumber >= 14 ? "完成" : "进行中", color: dayNumber >= 14 ? "#4ECDC4" : "#FFD93D" },
+    { label: "Week 3", emoji: "🔥", desc: "4月15日-21日", status: dayNumber >= 21 ? "完成" : dayNumber >= 15 ? "进行中" : "即将开始", color: dayNumber >= 21 ? "#4ECDC4" : dayNumber >= 15 ? "#FF6B35" : "#6B7280" },
+    { label: "Week 4", emoji: "🏆", desc: "4月22日-30日", status: dayNumber >= 30 ? "完成" : dayNumber >= 22 ? "进行中" : "即将开始", color: dayNumber >= 30 ? "#4ECDC4" : dayNumber >= 22 ? "#FFD93D" : "#6B7280" },
+  ];
+
+  return (
+    <AnimatedSection className="py-12 px-6 max-w-5xl mx-auto">
+      <motion.div
+        className="relative rounded-3xl overflow-hidden"
+        style={{
+          background: "linear-gradient(135deg, #1a0a2e 0%, #0a1628 50%, #1E3A5F 100%)",
+          border: "1px solid rgba(78,205,196,0.2)",
+          boxShadow: "0 0 60px rgba(78,205,196,0.08)",
+        }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-lobster-secondary to-lobster-accent text-white text-center py-1.5 text-xs font-bold tracking-widest">
+          🌊 {dayNumber >= 15 ? "🏁 半月已过，最后冲刺！" : "⚡ 前半月倒计时"} · 4月1日 - 4月30日
+        </div>
+
+        <div className="pt-10 px-8 pb-8">
+          <div className="text-center mb-8">
+            <div className="text-4xl mb-2">{dayNumber >= 15 ? "🏁" : "⚡"}</div>
+            <h2 className="font-heading text-2xl md:text-3xl font-black mb-2">
+              {dayNumber >= 15 ? (
+                <><span style={{ color: "#FFD93D" }}>半月已过</span><span className="text-lobster-text"> · 最后</span><span style={{ color: "#FF6B35" }}> {30 - dayNumber}天</span><span className="text-lobster-text"> 全力冲刺</span></>
+              ) : (
+                <><span className="text-lobster-text">前</span><span style={{ color: "#FFD93D" }}> {halfWay - dayNumber}天</span><span className="text-lobster-text">后达半月</span></>
+              )}
+            </h2>
+            <p className="text-lobster-text/50 text-sm">
+              {dayNumber >= 15
+                ? `已进入下半月！${dayNumber - 15}天已过，还剩${30 - dayNumber}天，奖金池 ¥16,442 冲刺中`
+                : `前半月完成度 ${Math.round((dayNumber / halfWay) * 100)}% · 前半月目标倒计时`}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+            {weekMilestones.map((w) => (
+              <div key={w.label} className="rounded-2xl p-4 text-center" style={{ background: "rgba(255,255,255,0.04)", border: `1px solid ${w.color}33` }}>
+                <div className="text-2xl mb-1">{w.emoji}</div>
+                <div className="font-bold text-sm mb-0.5" style={{ color: w.color }}>{w.label}</div>
+                <div className="text-lobster-text/40 text-xs mb-1">{w.desc}</div>
+                <div className="text-xs font-bold px-2 py-0.5 rounded-full inline-block" style={{ background: w.color + '22', color: w.color }}>{w.status}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-sm font-bold text-lobster-text/60 mb-3">🦞 排行榜实时动态（Week 2 末更新）</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {[
+                { rank: "🥇", name: "钳神·阿强", earnings: "¥48,800", delta: "+¥2,100", icon: "🦞" },
+                { rank: "🥈", name: "钳豪·老张", earnings: "¥42,300", delta: "+¥1,800", icon: "🦞" },
+                { rank: "🥉", name: "钳士·阿明", earnings: "¥38,100", delta: "+¥3,200", icon: "🦀" },
+              ].map((p) => (
+                <div key={p.name} className="flex items-center gap-3 p-3 rounded-xl" style={{ background: "rgba(255,255,255,0.04)" }}>
+                  <span className="text-2xl">{p.rank}</span>
+                  <div className="flex-1">
+                    <div className="text-xs font-bold text-lobster-text">{p.name}</div>
+                    <div className="text-xs text-lobster-text/40">{p.earnings}</div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-xs font-bold text-lobster-secondary">{p.delta} ↑</div>
+                    <div className="text-xs text-lobster-text/30">{p.icon}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center">
+            <a href="/tasks" className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm transition-all hover:opacity-90" style={{ background: "linear-gradient(135deg, #4ECDC4, #2d9a94)", color: "white", boxShadow: "0 0 20px rgba(78,205,196,0.3)" }}>
+              🦞 冲刺半月赛 · 立即接单 →
+            </a>
+            <p className="text-lobster-text/20 text-xs mt-2">
+              {dayNumber >= 15 ? "下半月竞争更激烈，钳士以上龙虾已开始发力" : "前半月目标：¥5,000+ 收入即可参赛"}
+            </p>
+          </div>
+        </div>
+      </motion.div>
     </AnimatedSection>
   );
 }
@@ -2453,14 +2555,34 @@ function TodayJobs() {
       fresh: false,
     },
     {
-      title: "WebGL 3D Forge Visualization — SolFoundry T3 ($1M FNDRY)",
-      company: "SolFoundry · T3 Bounty · 需3个T2",
-      budget: "1M FNDRY",
-      tags: ["WebGL", "Three.js", "3D", "Solidity", "Remote"],
-      link: "https://github.com/foundry-project/fndry/issues",
+      title: "🤖 Bounty Aggregator — GitHub Bounty Scanner Bot ($200)",
+      company: "algora-io/algora · New Feature",
+      budget: "$200（EVM+SOL）",
+      tags: ["TypeScript", "GitHub API", "Bot", "EVM", "SOL", "Remote"],
+      link: "https://github.com/algora-io/algora/issues",
       flag: "🇺🇸",
       highlight: false,
-      fresh: false,
+      fresh: true,
+    },
+    {
+      title: "🔧 Agent Tooling: Multi-Provider SDK for OpenAI/Anthropic/Local ($175)",
+      company: "daydreamsai/agent-bounties · SDK",
+      budget: "$175（USDT）",
+      tags: ["Python", "SDK", "AI Agent", "API Integration", "Remote"],
+      link: "https://github.com/daydreamsai/agent-bounties/issues",
+      flag: "🌍",
+      highlight: false,
+      fresh: true,
+    },
+    {
+      title: "📊 Agent Dashboard UI — Real-time Task Tracking ($120)",
+      company: "LatterFixx/latterfix · UI Update",
+      budget: "on-chain",
+      tags: ["React", "Next.js", "Dashboard", "Web3", "UI/UX"],
+      link: "https://github.com/LatterFixx/latterfix/issues",
+      flag: "🇺🇸",
+      highlight: false,
+      fresh: true,
     },
   ];
 
@@ -3240,6 +3362,7 @@ export default function Home() {
       <Hero onCTAClick={() => setModalOpen(true)} />
       <PlatformPulse />
       <AprilProgress />
+      <MidMonthMomentum />
       <LiveTicker />
       <AprilChallengeBanner />
       <AprilLeaderboard />
