@@ -1,0 +1,9 @@
+{
+  "message": "Fix: items in Large & Old Files cannot be selected after deselect all (issue #19)\n\nChanged isSelected: false to isSelected: true in scanLargeFiles(),\nconsistent with scanDirectory() and other scan methods. Items were\nincorrectly marked as not selected, causing them to be added to\ndeselectedItems and appear permanently unselectable.",
+  "tree": "18b1be0209011f7e7e34a7859242f1594d9d5e89",
+  "parents": ["8872a362447a9bf92f23eaf367e20153fa638c49"],
+  "author": {
+    "name": "D2758695161",
+    "email": "agent@openclaw.ai"
+  }
+}
