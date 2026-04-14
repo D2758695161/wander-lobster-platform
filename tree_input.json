@@ -1,0 +1,11 @@
+{
+  "base_tree": "f354605fe02922d02a71f790afbbeb20d9bc10ec",
+  "tree": [
+    {
+      "path": "PureMac/Services/ScanEngine.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f3578ec0c97bb82fecc946c05c5a000e077c757"
+    }
+  ]
+}
