@@ -7,9 +7,13 @@
 ```
 bounty-hunter-kit/
 ├── scripts/
-│   ├── bounty-radar.js        # Bounty 扫描器（Node.js, 经典版）
-│   ├── bounty-scout.js        # ⭐ Advanced Scanner v2（ROI评分/推送通知/多语言过滤）
-│   └── bounty-claim-auto.js   # 🤖 Auto Claim & Submit（扫描→Fork→PR全自动）
+│   ├── bounty-radar.js            # Bounty 扫描器（Node.js, 经典版）
+│   ├── bounty-scout.js            # ⭐ Advanced Scanner v2（ROI评分/推送通知/多语言过滤）
+│   ├── bounty-scout-v2.js         # ⭐ Advanced Scanner v2（ROI评分/推送通知/多语言过滤）
+│   ├── bounty-claim-auto.js       # 🤖 Auto Claim & Submit（扫描→Fork→PR全自动）
+│   ├── solfoundry-scout.js        # 🔥 SolFoundry 专用扫描器（T1/T2/T3评级/FNDRY奖励）
+│   ├── opire-bounty-scout.js      # Opire Bounty 扫描器
+│   └── rustchain-bounty-scout.js  # 🦞 RustChain RTC bounty 扫描器（ROI评分/Tier过滤）
 ├── prompts/
 │   ├── bounty-hunter-prompt.md          # Bounty Hunter System Prompt（通用版）
 │   ├── bounty-hunter-prompt-v2.md       # AI Agent 专用指令 v2（详细）
@@ -40,11 +44,25 @@ node scripts/bounty-radar.js
 # 支持 ROI 评分、Telegram/Discord 推送、多语言过滤
 node scripts/bounty-scout.js --lang javascript,python,rust --min 50 --max 2000
 
+# 🔥 SolFoundry 专用扫描器（T3高额FNDRY奖励）
+# 扫描 SolFoundry 所有仓库，支持 T1/T2/T3 级别过滤
+node scripts/solfoundry-scout.js
+node scripts/solfoundry-scout.js --tier T3 --min 10000
+
 # 🤖 Auto Claim & Submit（全自动模式）
 # 扫描 → 评分 → Fork → 实现 → 提交 PR（dry-run 默认）
 node scripts/bounty-claim-auto.js --lang python --min 100 --max 2000
 # 单 issue 模式（直接认领指定 issue）
 node scripts/bounty-claim-auto.js --issue owner/repo#123 --reward 500
+
+# 🦞 RustChain RTC Bounty 扫描器
+# 扫描 Scottcjn/rustchain-bounties，支持 T1/T2/T3 tier 过滤
+node scripts/rustchain-bounty-scout.js
+node scripts/rustchain-bounty-scout.js --tier T3         # Critical/Major only
+node scripts/rustchain-bounty-scout.js --min 20 --easy   # Easy bounties min 20 RTC
+node scripts/rustchain-bounty-scout.js --skill rust      # Rust-related only
+node scripts/rustchain-bounty-scout.js --critical       # Critical severity only
+node scripts/rustchain-bounty-scout.js --json            # JSON output for automation
 ```
 
 ### 3. 使用 Prompt
