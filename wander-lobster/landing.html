@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>流浪龙虾 Wander Lobster — AI遗产仓库</title>
   <meta name="description" content="Every abandoned AI deserves a second life. Store your AI agent memories, or find a new companion.">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXX" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
@@ -283,6 +284,7 @@
         <a href="#faq" class="zh-only">常见问题</a>
         <a href="#faq" class="en-only">FAQ</a>
         <a href="https://d2758695161.github.io/wander-lobster-blog/" target="_blank" style="color:#4ade80">Blog</a>
+        <a href="https://d2758695161.github.io/wander-lobster-blog/digital-products/" target="_blank" style="color:#f97316">Digital Products</a>
       </div>
     </div>
   </nav>
@@ -290,8 +292,8 @@
   <section class="hero">
     <div class="container">
       <div class="lang-toggle">
-        <button class="active" onclick="document.body.className='zh'">中文</button>
-        <button onclick="document.body.className='en'">English</button>
+        <button class="active" id="lang-zh" onclick="setLang('zh')">中文</button>
+        <button id="lang-en" onclick="setLang('en')">English</button>
       </div>
 
       <div class="hero-badge">
@@ -507,6 +509,12 @@
     </div>
   </section>
 
+  <section class="ads" style="padding:2rem 0;text-align:center;">
+    <div class="container">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXX" data-ad-slot="XXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </section>
+
   <section class="cta-section">
     <div class="container">
       <h2>
@@ -534,5 +542,12 @@
       </p>
     </div>
   </footer>
+  <script>
+    function setLang(lang) {
+      document.body.className = lang;
+      document.getElementById('lang-zh').classList.toggle('active', lang === 'zh');
+      document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    }
+  </script>
 </body>
 </html>

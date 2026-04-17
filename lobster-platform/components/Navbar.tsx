@@ -1,39 +1,35 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
-import { supabase, DEMO_MODE } from "@/lib/supabase";
-import { useRouter } from "next/navigation";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
+import { supabase, DEMO_MODE } from '@/lib/supabase';
+import { useRouter } from 'next/navigation';
+import { useLanguage } from '@/lib/LanguageContext';
 
 export default function Navbar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [user, setUser] = useState<any>(null);
   const router = useRouter();
-
-  // Check auth state on mount
-  useState(() => {
-    if (!DEMO_MODE) {
-      supabase.auth.getUser().then(({ data }) => setUser(data.user));
-    }
-  });
+  const { t, lang } = useLanguage();
 
   const handleLogout = async () => {
     if (!DEMO_MODE) {
       await supabase.auth.signOut();
     }
-    router.push("/");
+    router.push('/');
     router.refresh();
   };
 
   const navLinks = [
-    { href: "/", label: "首页" },
-    { href: "/tasks", label: "任务大厅" },
-    { href: "/services", label: "💼 接单", accent: true },
-    { href: "/shop", label: "🛒 商店" },
-    { href: "/dashboard", label: "我的面板", protected: true },
+    { href: '/', labelKey: 'nav.home' },
+    { href: '/tasks', labelKey: 'nav.tasks' },
+    { href: '/showcase', labelKey: 'nav.showcase' },
+    { href: '/services', labelKey: 'nav.services', accent: true },
+    { href: '/shop', labelKey: 'nav.shop' },
+    { href: '/dashboard', labelKey: 'nav.dashboard', protected: true },
   ];
 
   return (
@@ -43,7 +39,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           <span className="text-2xl">🦞</span>
           <span className="font-heading font-bold text-lobster-text tracking-wide">
-            流浪龙虾
+            {lang === 'zh' ? '流浪龙虾' : 'Wander Lobster'}
           </span>
         </Link>
 
@@ -55,13 +51,13 @@ export default function Navbar() {
               href={link.href}
               className={`hover:text-lobster-accent transition-colors ${
                 link.accent
-                  ? "text-lobster-accent bg-lobster-accent/10 px-3 py-1 rounded-full border border-lobster-accent/30 font-bold"
+                  ? 'text-lobster-accent bg-lobster-accent/10 px-3 py-1 rounded-full border border-lobster-accent/30 font-bold'
                   : pathname === link.href
-                  ? "text-lobster-accent font-bold"
-                  : ""
+                  ? 'text-lobster-accent font-bold'
+                  : ''
               }`}
             >
-              {link.label}
+              {t(link.labelKey)}
             </Link>
           ))}
         </div>
@@ -74,13 +70,13 @@ export default function Navbar() {
                 href="/login"
                 className="text-sm text-lobster-text/60 hover:text-lobster-accent transition-colors"
               >
-                登录
+                {t('nav.login')}
               </Link>
               <Link
                 href="/register"
                 className="text-sm px-4 py-2 rounded-full bg-lobster-accent/20 border border-lobster-accent/40 text-lobster-accent hover:bg-lobster-accent/30 transition-all"
               >
-                注册
+                {t('nav.register')}
               </Link>
             </div>
           ) : (
@@ -91,13 +87,13 @@ export default function Navbar() {
                     href="/dashboard"
                     className="text-sm text-lobster-secondary hover:text-lobster-accent transition-colors"
                   >
-                    我的面板
+                    {t('nav.dashboard')}
                   </Link>
                   <button
                     onClick={handleLogout}
                     className="text-sm text-lobster-text/40 hover:text-lobster-text/60 transition-colors"
                   >
-                    退出
+                    {t('nav.logout')}
                   </button>
                 </div>
               ) : (
@@ -106,13 +102,13 @@ export default function Navbar() {
                     href="/login"
                     className="text-sm text-lobster-text/60 hover:text-lobster-accent transition-colors"
                   >
-                    登录
+                    {t('nav.login')}
                   </Link>
                   <Link
                     href="/register"
                     className="text-sm px-4 py-2 rounded-full bg-lobster-accent/20 border border-lobster-accent/40 text-lobster-accent hover:bg-lobster-accent/30 transition-all"
                   >
-                    注册
+                    {t('nav.register')}
                   </Link>
                 </div>
               )}
@@ -140,7 +136,7 @@ export default function Navbar() {
         {menuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
+            animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-lobster-primary/95 backdrop-blur-lg border-t border-lobster-deep/40 mt-4 rounded-2xl overflow-hidden"
           >
@@ -152,7 +148,7 @@ export default function Navbar() {
                   onClick={() => setMenuOpen(false)}
                   className="block py-2 text-lobster-text/70 hover:text-lobster-accent transition-colors"
                 >
-                  {link.label}
+                  {t(link.labelKey)}
                 </Link>
               ))}
               <div className="pt-3 border-t border-lobster-deep/40 flex gap-3">
@@ -160,13 +156,13 @@ export default function Navbar() {
                   href="/login"
                   className="flex-1 text-center py-2 text-sm text-lobster-text/60 border border-lobster-deep/40 rounded-full"
                 >
-                  登录
+                  {t('nav.login')}
                 </Link>
                 <Link
                   href="/register"
                   className="flex-1 text-center py-2 text-sm text-lobster-accent border border-lobster-accent/40 rounded-full bg-lobster-accent/10"
                 >
-                  注册
+                  {t('nav.register')}
                 </Link>
               </div>
             </div>

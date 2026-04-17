@@ -2,7 +2,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const TOKEN = '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';
+const TOKEN = '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';
 const OWNER = 'D2758695161';
 const REPO = 'bounty-hunter-kit';
 const BASE = 'C:/Users/Administrator/.openclaw/workspace/bounty-hunter-kit';

@@ -1,19 +1,37 @@
 ﻿"use client";
 
 import { useState, useEffect, useRef } from "react";
+import LanguageToggle from "../components/LanguageToggle";
+import { useLanguage } from "../lib/LanguageContext";
 import { motion, useInView, AnimatePresence } from "framer-motion";
+import FinalSprint from "./components/FinalSprint";
+import LiveMilestone from "./components/LiveMilestone";
 
 // ─── Bubbles Background ───────────────────────────────────────────────────
 function Bubbles() {
-  const bubbles = Array.from({ length: 30 }, (_, i) => ({
-    id: i,
-    left: `${Math.random() * 100}%`,
-    size: Math.random() * 12 + 4,
-    duration: Math.random() * 8 + 6,
-    delay: Math.random() * 8,
-    color: Math.random() > 0.5 ? "#FF6B35" : "#4ECDC4",
-    opacity: Math.random() * 0.4 + 0.1,
-  }));
+  const [bubbles, setBubbles] = useState<Array<{
+    id: number;
+    left: string;
+    size: number;
+    duration: number;
+    delay: number;
+    color: string;
+    opacity: number;
+  }>>([]);
+
+  useEffect(() => {
+    setBubbles(
+      Array.from({ length: 30 }, (_, i) => ({
+        id: i,
+        left: `${Math.random() * 100}%`,
+        size: Math.random() * 12 + 4,
+        duration: Math.random() * 8 + 6,
+        delay: Math.random() * 8,
+        color: Math.random() > 0.5 ? "#FF6B35" : "#4ECDC4",
+        opacity: Math.random() * 0.4 + 0.1,
+      }))
+    );
+  }, []);
 
   return (
     <div className="bubbles-container" aria-hidden="true">
@@ -236,11 +254,11 @@ function AprilProgress() {
 // ─── Platform Pulse ────────────────────────────────────────────────────────
 function PlatformPulse() {
   const stats = [
-    { emoji: "🦞", value: 4621, suffix: "+", label: "龙虾入驻", color: "#FF6B35", prefix: "" },
-    { emoji: "⚡", value: 198, suffix: "", label: "本月完成订单", color: "#4ECDC4", prefix: "" },
-    { emoji: "💰", value: 782, suffix: "K+", label: "平台流水 (¥)", color: "#FFD93D", prefix: "¥" },
-    { emoji: "🌊", value: 134, suffix: "", label: "在漂龙虾", color: "#a855f7", prefix: "" },
-    { emoji: "🏆", value: 20, suffix: "", label: "本月奖金池 (¥)", color: "#FF6B35", prefix: "¥" },
+    { emoji: "🦞", value: 4880, suffix: "+", label: "龙虾入驻", color: "#FF6B35", prefix: "" },
+    { emoji: "⚡", value: 292, suffix: "", label: "本月完成订单", color: "#4ECDC4", prefix: "" },
+    { emoji: "💰", value: 1.08, suffix: "M+", label: "平台流水 (¥)", color: "#FFD93D", prefix: "¥" },
+    { emoji: "🌊", value: 160, suffix: "", label: "在漂龙虾", color: "#a855f7", prefix: "" },
+    { emoji: "🏆", value: 16.5, suffix: "K+", label: "April奖金池 (¥)", color: "#FF6B35", prefix: "¥" },
   ];
 
   return (
@@ -274,17 +292,17 @@ function LiveTicker() {
   const currentDay = Math.floor((todayMs - apr1) / (1000 * 60 * 60 * 24)) + 1;
 
   const events = [
-    { icon: "🎉", text: `April大赛第${currentDay}天！钳神·阿强 月收入 ¥48,800 继续领跑`, time: "刚刚" },
-    { icon: "🔥", text: "SolFoundry T1 Sticker Pack 开放认领，100K FNDRY，零门槛！", time: "刚刚" },
-    { icon: "🆕", text: "RustChain Haiku Bounty — 写诗就有钱，无需代码，5+ RTC/首", time: "刚刚" },
-    { icon: "🌊", text: "MCP Server + Claude Agent 集成开发，¥18,000", time: "5分钟前" },
+    { icon: "🎉", text: `April大赛第${currentDay}天！钳神·阿强 月收入 ¥52,000 继续领跑`, time: "刚刚" },
+    { icon: "🔥", text: "🆕 L402 Lightning Bridge PoC 上线，SatGate 开放 Bounty 认领！", time: "刚刚" },
+    { icon: "🆕", text: "poidh-app Albums Bug Fix，零门槛入门 Bounty，适合新手！", time: "刚刚" },
+    { icon: "🌊", text: "MCP Server + Claude Agent 集成开发，¥18,000 平台补贴", time: "5分钟前" },
     { icon: "🏆", text: "钳神·阿强 完成了 AI Agent Memory System，到账 ¥22,000", time: "11分钟前" },
-    { icon: "💰", text: "代养计划：钳豪·老张 续约12个月，稳定性+200%", time: "18分钟前" },
-    { icon: "🔥", text: "April大赛仅剩19天！当前奖金池 ¥16,442", time: "27分钟前" },
+    { icon: "💰", text: "新注册！钳士·阿华 加入平台，首单已完成 ¥3,200", time: "18分钟前" },
+    { icon: "🔥", text: `April大赛仅剩${30-currentDay}天！当前奖金池 ¥16,442，冲鸭！`, time: "27分钟前" },
     { icon: "🆕", text: "SolFoundry T1 Animated GIF 开放认领，100K FNDRY，零门槛！", time: "35分钟前" },
     { icon: "💰", text: "钳士·王五 完成了 Cursor Plugin 开发，到账 ¥8,000", time: "1小时前" },
     { icon: "🎯", text: "Autonomous Bounty-Hunting Agent 全链路开发，$300 Opire", time: "1小时前" },
-    { icon: "🆕", text: "RustChain Red Team 安全审计上线，$50-200 RTC/finding", time: "2小时前" },
+    { icon: "🆕", text: "moff-station14 Potato Bounty 上线，C# 游戏开发练手好选择", time: "2小时前" },
     { icon: "💰", text: "钳豪·老李 完成了 Llama 4 集成，到账 ¥12,000", time: "4小时前" },
   ];
 
@@ -333,33 +351,40 @@ function LiveTicker() {
 
 // ─── Navbar ────────────────────────────────────────────────────────────────
 function Navbar() {
+  const { t } = useLanguage();
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="text-2xl">🦞</span>
           <span className="font-heading font-bold text-lobster-text tracking-wide">
-            流浪龙虾
+            {t('footer.platform')}
           </span>
         </div>
         <div className="hidden md:flex items-center gap-8 text-sm text-lobster-text/70">
           <a href="#about" className="hover:text-lobster-accent transition-colors">
-            什么是龙虾
+            {t('nav.about') || 'About'}
           </a>
           <a href="#features" className="hover:text-lobster-accent transition-colors">
-            核心功能
+            {t('nav.features') || 'Features'}
           </a>
           <a href="#how" className="hover:text-lobster-accent transition-colors">
-            如何加入
+            {t('nav.how') || 'How It Works'}
           </a>
           <a href="#join" className="hover:text-lobster-accent transition-colors">
-            加入漂流
+            {t('hero.cta')}
           </a>
           <a href="/tasks" className="text-lobster-accent hover:text-lobster-secondary transition-colors font-bold">
-            任务大厅
+            {t('nav.tasks')}
           </a>
           <a href="/marketing" className="text-lobster-secondary hover:text-lobster-accent transition-colors font-bold">
-            AI营销
+            AI Marketing
+          </a>
+          <a href="/aiwallet" className="text-lobster-secondary hover:text-lobster-accent transition-colors font-bold">
+            AITrust 🔐
+          </a>
+          <a href="/kyc" className="text-lobster-secondary hover:text-lobster-accent transition-colors font-bold">
+            KYC Bridge 🆔
           </a>
         </div>
       </div>
@@ -369,6 +394,7 @@ function Navbar() {
 
 // ─── Launch Countdown ───────────────────────────────────────────────────────
 function LaunchCountdown() {
+  const { t } = useLanguage();
   const [timeLeft, setTimeLeft] = useState({
     days: 0, hours: 0, minutes: 0, seconds: 0
   });
@@ -398,15 +424,15 @@ function LaunchCountdown() {
   }, []);
 
   const units = [
-    { label: "天", value: timeLeft.days },
-    { label: "时", value: timeLeft.hours },
-    { label: "分", value: timeLeft.minutes },
-    { label: "秒", value: timeLeft.seconds },
+    { label: t('countdown.days'), value: timeLeft.days },
+    { label: t('countdown.hours'), value: timeLeft.hours },
+    { label: t('countdown.mins'), value: timeLeft.minutes },
+    { label: t('countdown.secs'), value: timeLeft.seconds },
   ];
 
   return (
     <div className="flex items-center gap-3 mb-8">
-      <span className="text-lobster-text/40 text-xs">正式开放倒计时</span>
+      <span className="text-lobster-text/40 text-xs">{t('countdown.launch')}</span>
       <div className="flex gap-1.5">
         {units.map((u, i) => (
           <div key={u.label} className="flex items-center gap-1">
@@ -428,6 +454,7 @@ function LaunchCountdown() {
 
 // ─── Hero ──────────────────────────────────────────────────────────────────
 function Hero({ onCTAClick }: { onCTAClick: () => void }) {
+  const { t } = useLanguage();
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden pt-20">
       <div className="wave-bg absolute inset-0" />
@@ -439,7 +466,7 @@ function Hero({ onCTAClick }: { onCTAClick: () => void }) {
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
       >
         <img 
-          src="/images/lobster-mascot-v1.png" 
+          src="/wander-lobster-platform/images/lobster-mascot-v1.png" 
           alt="🦞" 
           className="w-[200px] md:w-[300px] lobster-glow"
           style={{ filter: 'drop-shadow(0 0 30px #FF6B3566)' }}
@@ -487,8 +514,8 @@ function Hero({ onCTAClick }: { onCTAClick: () => void }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        每只龙虾都有自己的
-        <span className="block text-lobster-accent neon-text">码头</span>
+        {t('hero.title')}
+        <span className="block text-lobster-accent neon-text">{t('hero.dock')}</span>
       </motion.h1>
 
       <motion.p
@@ -497,7 +524,7 @@ function Hero({ onCTAClick }: { onCTAClick: () => void }) {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
       >
-        自由职业者的技能撮合平台 · 让每一只龙虾找到归宿
+        {t('hero.subtitle')}
       </motion.p>
 
       <motion.button
@@ -509,7 +536,7 @@ function Hero({ onCTAClick }: { onCTAClick: () => void }) {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.97 }}
       >
-        🌊 加入漂流
+        {t('hero.cta')}
       </motion.button>
 
       {/* Scroll hint */}
@@ -518,7 +545,7 @@ function Hero({ onCTAClick }: { onCTAClick: () => void }) {
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        ↓ 向下探索
+        {t('hero.scroll')}
       </motion.div>
     </section>
   );
@@ -736,7 +763,7 @@ function MidMonthMomentum() {
           </div>
 
           <div className="mb-6">
-            <h3 className="text-sm font-bold text-lobster-text/60 mb-3">🦞 排行榜实时动态（Week 2 末更新）</h3>
+            <h3 className="text-sm font-bold text-lobster-text/60 mb-3">🦞 排行榜实时动态（第{Math.ceil(dayNumber / 7)}周更新）</h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {[
                 { rank: "🥇", name: "钳神·阿强", earnings: "¥48,800", delta: "+¥2,100", icon: "🦞" },
@@ -1641,16 +1668,24 @@ function FAQ() {
   );
 }
 
+
 // ─── Bounty Wins Feed ───────────────────────────────────────────────────────
 function BountyWinsFeed() {
-  const wins = [
-    { emoji: "🆕", repo: "claude-builders-bounty", title: "Destructive Command Blocker hook — PR #450 merged", winner: "security-dev", amount: "$100", time: "刚刚", color: "#FF6B35" },
-    { emoji: "🎉", repo: "claude-builders-bounty", title: "AGENT: PR Review Sub-Agent + CLI — PR #452 merged", winner: "review-agent", amount: "$150", time: "刚刚", color: "#4ECDC4" },
-    { emoji: "🎉", repo: "claude-builders-bounty", title: "n8n Weekly Dev Summary + Claude API — PR #453 merged", winner: "n8n-dev", amount: "$50", time: "2小时前", color: "#4ECDC4" },
-    { emoji: "🔥", repo: "Scottcjn/rustchain-bounties", title: "AgentFolio ↔ Beacon Integration Spec — PR #2890 merged", winner: "agent-dev", amount: "100 RTC", time: "3小时前", color: "#dea584" },
-    { emoji: "🎉", repo: "daydreamsai/agent-bounties", title: "GasRoute Oracle (Bounty #4) — merged", winner: "gas-dev", amount: "bounty", time: "5小时前", color: "#a855f7" },
-    { emoji: "🎉", repo: "openai/codex-plugin-cc", title: "feat: block direct codex CLI calls via PreToolUse hook — merged", winner: "hook-dev", amount: "bounty", time: "8小时前", color: "#FFD93D" },
-  ];
+  const [wins, setWins] = useState([
+    { emoji: "🆕", repo: "claude-builders-bounty", title: "Destructive Command Blocker hook — PR #450 merged", winner: "security-dev", amount: "$100", minutesAgo: 5, color: "#FF6B35" },
+    { emoji: "🎉", repo: "claude-builders-bounty", title: "AGENT: PR Review Sub-Agent + CLI — PR #452 merged", winner: "review-agent", amount: "$150", minutesAgo: 12, color: "#4ECDC4" },
+    { emoji: "🎉", repo: "claude-builders-bounty", title: "n8n Weekly Dev Summary + Claude API — PR #453 merged", winner: "n8n-dev", amount: "$50", minutesAgo: 45, color: "#4ECDC4" },
+    { emoji: "🔥", repo: "Scottcjn/rustchain-bounties", title: "AgentFolio ↔ Beacon Integration Spec — PR #2890 merged", winner: "agent-dev", amount: "100 RTC", minutesAgo: 120, color: "#dea584" },
+    { emoji: "🎉", repo: "daydreamsai/agent-bounties", title: "GasRoute Oracle (Bounty #4) — merged", winner: "gas-dev", amount: "bounty", minutesAgo: 240, color: "#a855f7" },
+    { emoji: "🎉", repo: "openai/codex-plugin-cc", title: "feat: block direct codex CLI calls via PreToolUse hook — merged", winner: "hook-dev", amount: "bounty", minutesAgo: 360, color: "#FFD93D" },
+  ]);
+
+  const timeAgo = (mins: number) => {
+    if (mins < 1) return "刚刚";
+    if (mins < 60) return `${Math.round(mins)}分钟前`;
+    const h = Math.round(mins / 60);
+    return `${h}小时前`;
+  };
 
   return (
     <AnimatedSection className="py-16 px-6 max-w-4xl mx-auto">
@@ -1681,7 +1716,7 @@ function BountyWinsFeed() {
                   {w.title}
                 </p>
                 <p className="text-lobster-text/40 text-xs">
-                  <span style={{ color: w.color }}>{w.repo}</span> · {w.winner} · {w.time}
+                  <span style={{ color: w.color }}>{w.repo}</span> · {w.winner} · {timeAgo(w.minutesAgo)}
                 </p>
               </div>
               <span
@@ -1703,6 +1738,8 @@ function BountyWinsFeed() {
 
 // ─── Bounty Board ──────────────────────────────────────────────────────────
 function BountyBoard() {
+  const [filter, setFilter] = useState<"All" | "Easy" | "Medium" | "Hard">("All");
+
   const bounties = [
     {
       repo: "openai/codex-plugin-cc",
@@ -1725,114 +1762,84 @@ function BountyBoard() {
       color: "#FF6B35",
     },
     {
-      repo: "LatterFixx/latterfix",
-      title: "Explore Bounties Dashboard UI (#3)",
-      desc: "Build app/bounties/page.tsx — grid/list of tasks from smart contract with Tailwind hover effects. On-chain rewards via smart contract.",
-      reward: "on-chain",
+      repo: "tari-project/tari",
+      title: "JMT Data is Very Large — Optimize Spooling (#7745)",
+      desc: "The JMT (Jellyfish Merkle Tree) data grows too large and should be optimized. Wallet scanned block headers need better spooling to reduce storage footprint.",
+      reward: "E-bounty",
       difficulty: "Medium",
-      skills: ["React", "Next.js", "Tailwind", "Smart Contract", "Web3"],
+      skills: ["Rust", "Blockchain", "Data Structures", "Optimization", "Wallet"],
       issues: 1,
-      color: "#FF6B35",
+      color: "#FFD93D",
     },
     {
-      repo: "LatterFixx/latterfix",
-      title: "Add Dark/Light Theme Toggler (#6)",
-      desc: "Implement theme toggle between dark and light mode. Should persist preference in localStorage and respect system preference.",
-      reward: "on-chain",
-      difficulty: "Easy",
-      skills: ["React", "Tailwind", "CSS", "UI"],
+      repo: "tari-project/tari",
+      title: "LMDB Unit Tests — Improve Test Coverage (#7715)",
+      desc: "Create comprehensive LMDB unit tests to improve coverage for the Tari blockchain database layer. Tests should cover transactions, state, and rollback scenarios.",
+      reward: "E-bounty",
+      difficulty: "Medium",
+      skills: ["Rust", "LMDB", "Testing", "Database", "Blockchain"],
       issues: 1,
       color: "#4ECDC4",
     },
     {
-      repo: "LatterFixx/latterfix",
-      title: "User Escrow Balances (#5)",
-      desc: "Display user escrow balances from smart contract. Show deposited amounts, pending withdrawals, and transaction history.",
-      reward: "on-chain",
+      repo: "tari-project/tari",
+      title: "Offline Signing Cucumber Test — Merge Mining Security (#7736)",
+      desc: "Create an offline signing cucumber test that verifies merge mining cucumber tests don't mine RxM but rather RxT (Tari token) for proper test isolation.",
+      reward: "E-bounty",
       difficulty: "Medium",
-      skills: ["React", "Smart Contract", "Web3", "Ethers.js"],
+      skills: ["Rust", "Cucumber", "Testing", "Merge Mining", "Blockchain"],
       issues: 1,
       color: "#4ECDC4",
-    },
-    {
-      repo: "LatterFixx/latterfix",
-      title: "Task Creation Form (#4)",
-      desc: "Build the task creation form with smart contract integration. Fields: title, description, bounty amount, deadline, required skills.",
-      reward: "on-chain",
-      difficulty: "Medium",
-      skills: ["React", "Next.js", "Smart Contract", "Form Design"],
-      issues: 1,
-      color: "#4ECDC4",
-    },
-    {
-      repo: "algora-io/algora",
-      title: "Org Bounty Sync from GitHub Webhooks",
-      desc: "Org-level sync job that refreshes open bounty tickets from GitHub webhooks, backfills /attempt comments and recovers open /claim PRs",
-      reward: "EVM+SOL",
-      difficulty: "Medium",
-      skills: ["TypeScript", "GitHub Webhooks", "EVM", "SOL", "Bounty Platform"],
-      issues: 1,
-      color: "#a855f7",
     },
     {
       repo: "claude-builders-bounty",
-      title: "CHANGELOG Generator Bash Script ($50) — Just Merged! 🎉",
-      desc: "Bash script that auto-generates CHANGELOG.md from git history, categorizing commits as Added/Fixed/Changed/Removed since last tag",
-      reward: "$50",
-      difficulty: "Easy",
-      skills: ["Bash", "Git", "CLI"],
-      issues: 6,
-      color: "#4ECDC4",
-    },
-    {
-      repo: "Scottcjn/rustchain-bounties",
-      title: "[BOUNTY: 100 RTC] Security Audit — Find Critical Vulnerabilities in RustChain Node",
-      desc: "Security audit for RustChain node. Find critical vulnerabilities and earn 100 RTC. Serious results only — red-team style assessment.",
-      reward: "100 RTC",
-      difficulty: "Hard",
-      skills: ["Rust", "Security", "Audit", "Blockchain", "Node"],
+      title: "[BOUNTY $150] AGENT: PR Reviewer with Structured Markdown Output",
+      desc: "Build a Claude Code agent that reviews pull requests and outputs structured Markdown reports. Include file change summary, security findings, and code quality scores.",
+      reward: "$150",
+      difficulty: "Medium",
+      skills: ["TypeScript", "Claude Code", "AI Agent", "PR Review", "Markdown"],
       issues: 1,
       color: "#FF6B35",
     },
     {
-      repo: "Scottcjn/rustchain-bounties",
-      title: "[BOUNTY: 100 RTC] AgentFolio ↔ Beacon Integration Spec + Reference Implementation",
-      desc: "Build the AgentFolio ↔ Beacon integration spec and reference implementation. Link on-chain agent identity with off-chain compute.",
-      reward: "100 RTC",
+      repo: "claude-builders-bounty",
+      title: "[BOUNTY $100] Pre-Tool-Use Hook: Block Destructive Bash Commands",
+      desc: "Implement a pre-tool-use hook that detects and blocks destructive bash commands (rm -rf, drop table, etc.) before Claude Code executes them.",
+      reward: "$100",
+      difficulty: "Medium",
+      skills: ["TypeScript", "Claude Code", "Security", "Hook", "Bash"],
+      issues: 1,
+      color: "#FFD93D",
+    },
+    {
+      repo: "claude-builders-bounty",
+      title: "[BOUNTY $75] TEMPLATE: CLAUDE.md for Next.js + SQLite SaaS",
+      desc: "Create a ready-to-use CLAUDE.md template for Next.js + SQLite SaaS projects. Include coding standards, folder structure, and deployment notes.",
+      reward: "$75",
+      difficulty: "Easy",
+      skills: ["Next.js", "SQLite", "SaaS", "Template", "Documentation"],
+      issues: 1,
+      color: "#4ECDC4",
+    },
+    {
+      repo: "runveil-io/core",
+      title: "[Agent] Anti-Detection: Request Fingerprint Randomization (#90)",
+      desc: "Implement request fingerprint randomization to prevent AI agent traffic from being detected and blocked. Apply to network requests and browser-like headers.",
+      reward: "bounty",
       difficulty: "Hard",
-      skills: ["Rust", "Blockchain", "Integration", "Spec", "Architecture"],
+      skills: ["Rust", "Privacy", "Anti-Detection", "Network", "Agent"],
       issues: 1,
       color: "#FF6B35",
     },
     {
-      repo: "Scottcjn/rustchain-bounties",
-      title: "[BOUNTY: 30 RTC] Build a VS Code Extension — RustChain Wallet & Miner Dashboard",
-      desc: "VS Code extension that provides an integrated RustChain wallet viewer and miner dashboard directly in the editor sidebar.",
-      reward: "30 RTC",
+      repo: "algora-io/algora",
+      title: "Real-Time Bounty Activity Signals (#224)",
+      desc: "Feature request: Add real-time bounty activity signals to the algora platform. WebSocket or SSE-based notifications when new bounties are posted or claimed.",
+      reward: "EVM+SOL",
       difficulty: "Medium",
-      skills: ["TypeScript", "VS Code Extension", "Rust", "Wallet", "Miner"],
+      skills: ["TypeScript", "WebSocket", "SSE", "Bounty Platform", "Real-time"],
       issues: 1,
-      color: "#FFD93D",
-    },
-    {
-      repo: "Scottcjn/rustchain-bounties",
-      title: "[BOUNTY: 20 RTC] Create a GitHub Action That Awards RTC for Merged Pull Requests",
-      desc: "Automate RTC token rewards for merged PRs using a GitHub Action. Contributors earn RTC when their PRs are merged.",
-      reward: "20 RTC",
-      difficulty: "Medium",
-      skills: ["GitHub Actions", "JavaScript", "Blockchain", "Automation"],
-      issues: 1,
-      color: "#FFD93D",
-    },
-    {
-      repo: "Scottcjn/rustchain-bounties",
-      title: "[BOUNTY: 15 RTC] Dockerize the RustChain Miner — One Command to Start Earning",
-      desc: "Create a Dockerfile and docker-compose setup for the RustChain miner. One command to start mining with zero config.",
-      reward: "15 RTC",
-      difficulty: "Easy",
-      skills: ["Docker", "Rust", "Mining", "DevOps"],
-      issues: 1,
-      color: "#4ECDC4",
+      color: "#a855f7",
     },
   ];
 
@@ -1853,8 +1860,30 @@ function BountyBoard() {
         </p>
       </div>
 
+      {/* Difficulty filter */}
+      <div className="flex flex-wrap justify-center gap-2 mb-8">
+        {(["All", "Easy", "Medium", "Hard"] as const).map((f) => (
+          <button
+            key={f}
+            onClick={() => setFilter(f)}
+            className={`px-4 py-2 rounded-full text-sm font-bold transition-all border ${
+              filter === f
+                ? f === "Easy"   ? "border-[#4ECDC4] bg-[#4ECDC4]/10 text-[#4ECDC4]"
+                : f === "Medium" ? "border-[#FFD93D] bg-[#FFD93D]/10 text-[#FFD93D]"
+                : f === "Hard"   ? "border-[#FF6B35] bg-[#FF6B35]/10 text-[#FF6B35]"
+                : "border-lobster-accent bg-lobster-accent/10 text-lobster-accent"
+                : "border-lobster-deep/40 text-lobster-text/40 hover:border-lobster-deep"
+            }`}
+          >
+            {f === "All" ? "全部" : f === "Easy" ? "🐚 简单" : f === "Medium" ? "🦐 中等" : "🦀 困难"}
+          </button>
+        ))}
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {bounties.map((b, i) => (
+        {bounties
+          .filter((b) => filter === "All" || b.difficulty === filter)
+          .map((b, i) => (
           <motion.a
             key={i}
             href={`https://github.com/${b.repo}`}
@@ -2482,123 +2511,630 @@ function WhyChoosePlatform() {
 
 // ─── Today's Hot Jobs ───────────────────────────────────────────────────────
 // ─── Today's Hot Jobs ───────────────────────────────────────────────────────-
-function TodayJobs() {
-  const jobs = [
-    {
-      title: "feat: Autonomous Bounty-Hunting Agent — Full Pipeline ($300)",
-      company: "claude-builders-bounty · Hot Bounty",
-      budget: "$300（Opire）",
-      tags: ["TypeScript", "AI Agent", "Automation", "GitHub API", "Remote"],
-      link: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues",
-      flag: "🇺🇸",
-      highlight: true,
-      fresh: true,
-    },
-    {
-      title: "🐸 SolFoundry T1: Sticker Pack Design (OPEN RACE — 零门槛!)",
-      company: "SolFoundry · T1 Bounty · 开放认领",
-      budget: "100K FNDRY",
-      tags: ["Design", "Illustration", "Open Source", "No T1 Req", "Remote"],
-      link: "https://github.com/foundry-project/fndry/issues",
-      flag: "🇺🇸",
-      highlight: true,
-      fresh: true,
-    },
-    {
-      title: "🎬 SolFoundry T1: Animated Explainer GIF (OPEN RACE — 零门槛!)",
-      company: "SolFoundry · T1 Bounty · 开放认领",
-      budget: "100K FNDRY",
-      tags: ["Animation", "Lottie", "CSS", "Open Source", "No T1 Req", "Remote"],
-      link: "https://github.com/foundry-project/fndry/issues",
-      flag: "🇺🇸",
-      highlight: true,
-      fresh: true,
-    },
-    {
-      title: "🎭 RustChain Haiku Bounty — 写诗就有钱 (无需代码!)",
-      company: "Scottcjn/rustchain-bounties · Creative",
-      budget: "5+ RTC/首",
-      tags: ["Haiku", "Poetry", "No-Code", "Creative", "Crypto Reward"],
-      link: "https://github.com/Scottcjn/rustchain-bounties/issues",
-      flag: "🌍",
-      highlight: false,
-      fresh: true,
-    },
-    {
-      title: "🛡️ RustChain Red Team Audit — 找漏洞 ($50-200 RTC/finding)",
-      company: "Scottcjn/rustchain-bounties · Security",
-      budget: "$50-200 RTC/finding",
-      tags: ["Rust", "Security", "Audit", "Red Team", "Blockchain"],
-      link: "https://github.com/Scottcjn/rustchain-bounties/issues",
-      flag: "🌍",
-      highlight: false,
-      fresh: true,
-    },
-    {
-      title: "MCP Server + Claude Agent 集成开发 (代养计划)",
-      company: "lobster-platform · 钳士单",
-      budget: "¥18,000",
-      tags: ["Python", "MCP", "Claude Agent", "Integration", "Remote"],
-      link: "https://github.com/topics/bounty",
-      flag: "🇨🇳",
-      highlight: true,
-      fresh: false,
-    },
-    {
-      title: "feat: AI Coding Agent — Multi-file Refactor CLI Tool ($150)",
-      company: "claude-builders-bounty · Featured Bounty",
-      budget: "$150（Opire）",
-      tags: ["TypeScript", "Claude Code", "Refactoring", "CLI", "Remote"],
-      link: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues",
-      flag: "🇺🇸",
-      highlight: false,
-      fresh: false,
-    },
-    {
-      title: "🤖 Bounty Aggregator — GitHub Bounty Scanner Bot ($200)",
-      company: "algora-io/algora · New Feature",
-      budget: "$200（EVM+SOL）",
-      tags: ["TypeScript", "GitHub API", "Bot", "EVM", "SOL", "Remote"],
-      link: "https://github.com/algora-io/algora/issues",
-      flag: "🇺🇸",
-      highlight: false,
-      fresh: true,
-    },
-    {
-      title: "🔧 Agent Tooling: Multi-Provider SDK for OpenAI/Anthropic/Local ($175)",
-      company: "daydreamsai/agent-bounties · SDK",
-      budget: "$175（USDT）",
-      tags: ["Python", "SDK", "AI Agent", "API Integration", "Remote"],
-      link: "https://github.com/daydreamsai/agent-bounties/issues",
-      flag: "🌍",
-      highlight: false,
-      fresh: true,
-    },
-    {
-      title: "📊 Agent Dashboard UI — Real-time Task Tracking ($120)",
-      company: "LatterFixx/latterfix · UI Update",
-      budget: "on-chain",
-      tags: ["React", "Next.js", "Dashboard", "Web3", "UI/UX"],
-      link: "https://github.com/LatterFixx/latterfix/issues",
-      flag: "🇺🇸",
-      highlight: false,
-      fresh: true,
-    },
+// ─── Midnight Eclipse Bounties Spotlight ───────────────────────────────
+function EclipseSpotlight() {
+  const eclipseBounties = [
+    { issue: "#313", title: "Build an Unshielded dApp on Midnight (Tier 2)", reward: "$500-700 NIGHT", tags: ["dApp", "Midnight", "Privacy", "Tutorial"], tier: 2, difficulty: "medium", url: "https://github.com/MidnightContributorHub/eclipse-bounties/issues/313" },
+    { issue: "#314", title: "Shielded Transaction Batch Processor Tutorial (Tier 3)", reward: "$700-1000 NIGHT", tags: ["Privacy", "Batch", "ZK", "Tutorial"], tier: 3, difficulty: "medium", url: "https://github.com/MidnightContributorHub/eclipse-bounties/issues/314" },
+    { issue: "#315", title: "ZK Debugging Guide: Tracing Private State (Tier 1)", reward: "$300-500 NIGHT", tags: ["ZK", "Debugging", "Privacy", "Guide"], tier: 1, difficulty: "easy", url: "https://github.com/MidnightContributorHub/eclipse-bounties/issues/315" },
+    { issue: "#316", title: "Compliance Module Integration with Midnight (Tier 2)", reward: "$500-700 NIGHT", tags: ["Compliance", "Integration", "Midnight", "Privacy"], tier: 2, difficulty: "medium", url: "https://github.com/MidnightContributorHub/eclipse-bounties/issues/316" },
+    { issue: "#317", title: "AI Assistant Integration via MCP Protocol (Tier 2)", reward: "$500-700 NIGHT", tags: ["AI", "MCP", "Agent", "Midnight", "Tutorial"], tier: 2, difficulty: "medium", url: "https://github.com/MidnightContributorHub/eclipse-bounties/issues/317" },
+    { issue: "#318", title: "SDK Migration Guide: Rust to TypeScript (Tier 1)", reward: "$300-500 NIGHT", tags: ["SDK", "Rust", "TypeScript", "Migration"], tier: 1, difficulty: "easy", url: "https://github.com/MidnightContributorHub/eclipse-bounties/issues/318" },
+    { issue: "#319", title: "Cross-Chain Compliance Reporting Tool (Tier 3)", reward: "$700-1000 NIGHT", tags: ["Cross-Chain", "Compliance", "Tool", "Blockchain"], tier: 3, difficulty: "hard", url: "https://github.com/MidnightContributorHub/eclipse-bounties/issues/319" },
+    { issue: "#320", title: "Private Smart Contract Upgrades Pattern (Tier 2)", reward: "$500-700 NIGHT", tags: ["Smart Contract", "Privacy", "Upgrade", "Pattern"], tier: 2, difficulty: "medium", url: "https://github.com/MidnightContributorHub/eclipse-bounties/issues/320" },
   ];
+
+  const tierColors: Record<number, string> = { 1: "#4ECDC4", 2: "#FFD93D", 3: "#FF6B35" };
+  const tierLabels: Record<number, string> = { 1: "Tier 1", 2: "Tier 2", 3: "Tier 3" };
 
   return (
     <AnimatedSection className="py-24 px-6 max-w-6xl mx-auto">
-      <div className="text-center mb-12">
+      <motion.div
+        className="relative rounded-3xl overflow-hidden"
+        style={{
+          background: "linear-gradient(135deg, #0a1628 0%, #1a0a2e 50%, #0a1628 100%)",
+          border: "1px solid rgba(78,205,196,0.2)",
+          boxShadow: "0 0 60px rgba(78,205,196,0.1)",
+        }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-lobster-secondary to-lobster-accent text-white text-center py-1.5 text-xs font-bold tracking-widest">
+          🌙 UPDATED · 2026-04-16 · Midnight Eclipse Bounties 新增 Tutorial 悬赏 · 持续认领中
+        </div>
+
+        <div className="pt-10 px-8 pb-8">
+          <div className="text-center mb-8">
+            <div className="text-5xl mb-3">🌙</div>
+            <h2 className="font-heading text-3xl md:text-4xl font-black mb-2">
+              <span style={{ color: "#4ECDC4" }}>Midnight Eclipse</span>
+              <span className="text-lobster-text"> Bounties 爆发</span>
+            </h2>
+            <p className="text-lobster-text/50 text-sm max-w-xl mx-auto">
+              2026年4月13日单日新增 16 个 Eclipse 悬赏！Tier 1-3，$300-$1000 NIGHT 代币。
+              AI Code Tutorial 写作者直接命中 Tier 1-2。
+            </p>
+            <div className="flex flex-wrap justify-center gap-3 mt-4">
+              <span className="text-xs px-3 py-1 rounded-full" style={{ background: "#4ECDC422", color: "#4ECDC4", border: "1px solid #4ECDC444" }}>Tier 1 · $300-500</span>
+              <span className="text-xs px-3 py-1 rounded-full" style={{ background: "#FFD93D22", color: "#FFD93D", border: "1px solid #FFD93D44" }}>Tier 2 · $500-700</span>
+              <span className="text-xs px-3 py-1 rounded-full" style={{ background: "#FF6B3522", color: "#FF6B35", border: "1px solid #FF6B3544" }}>Tier 3 · $700-1000</span>
+              <span className="text-xs px-3 py-1 rounded-full" style={{ background: "rgba(255,255,255,0.05)", color: "rgba(255,255,255,0.3)", border: "1px solid rgba(255,255,255,0.1)" }}>NIGHT 代币结算</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            {eclipseBounties.map((b) => (
+              <motion.a
+                key={b.issue}
+                href={b.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card rounded-2xl p-4 block group transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+                style={{ borderLeft: `3px solid ${tierColors[b.tier]}` }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs font-mono text-lobster-secondary group-hover:text-lobster-accent transition-colors">{b.issue}</span>
+                  <span
+                    className="text-xs px-2 py-0.5 rounded-full font-bold"
+                    style={{ background: tierColors[b.tier] + '22', color: tierColors[b.tier] }}
+                  >
+                    {tierLabels[b.tier]}
+                  </span>
+                </div>
+                <h4 className="text-xs font-bold text-lobster-text group-hover:text-lobster-accent transition-colors mb-2 leading-snug">{b.title}</h4>
+                <div className="flex flex-wrap gap-1 mb-3">
+                  {b.tags.slice(0, 3).map((tag) => (
+                    <span key={tag} className="text-xs px-1.5 py-0.5 rounded-full bg-lobster-deep/60 text-lobster-text/50">{tag}</span>
+                  ))}
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-black" style={{ color: tierColors[b.tier] }}>{b.reward}</span>
+                  <span className="text-xs text-lobster-text/30 group-hover:text-lobster-accent transition-colors">→</span>
+                </div>
+              </motion.a>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <a
+              href="https://github.com/MidnightContributorHub/eclipse-bounties/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm transition-all hover:opacity-90"
+              style={{ background: "linear-gradient(135deg, #4ECDC4, #2d9a94)", color: "white", boxShadow: "0 0 20px rgba(78,205,196,0.3)" }}
+            >
+              🌙 查看全部 16 个 Eclipse Bounties →
+            </a>
+            <p className="text-lobster-text/20 text-xs mt-2">
+              先到先得 · AI Code Tutorial 类型命中率高 · NIGHT 代币实时发放
+            </p>
+          </div>
+        </div>
+      </motion.div>
+    </AnimatedSection>
+  );
+}
+
+// ─── Bounty Radar ───────────────────────────────────────────────────────────
+function BountyRadar() {
+  const [keyword, setKeyword] = useState("");
+  const [skillFilter, setSkillFilter] = useState("All");
+
+  const bounties = [
+    { repo: "claude-builders-bounty", title: "🤖 AGENT: PR Reviewer with Structured Markdown Output", reward: "$150", skills: ["TypeScript", "Claude Code", "AI Agent", "PR Review"], difficulty: "Medium", url: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/600", color: "#FF6B35" },
+    { repo: "claude-builders-bounty", title: "🔒 Pre-Tool-Use Hook: Block Destructive Bash Commands", reward: "$100", skills: ["TypeScript", "Claude Code", "Security", "Hook"], difficulty: "Medium", url: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/597", color: "#4ECDC4" },
+    { repo: "claude-builders-bounty", title: "📝 TEMPLATE: CLAUDE.md for Next.js + SQLite SaaS", reward: "$75", skills: ["Next.js", "SQLite", "SaaS", "Template"], difficulty: "Easy", url: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/599", color: "#6B7280" },
+    { repo: "claude-builders-bounty", title: "⚡ SKILL: Structured PR Reviewer Agent", reward: "Bounty", skills: ["Claude Code", "Skill", "PR Review", "Agent"], difficulty: "Medium", url: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/593", color: "#FFD93D" },
+    { repo: "tari-project/tari", title: "💾 JMT Data Optimization · Wallet Spooling (#7738)", reward: "E-bounty", skills: ["Rust", "Blockchain", "Wallet", "Optimization"], difficulty: "Medium", url: "https://github.com/tari-project/tari/issues/7738", color: "#4ECDC4" },
+    { repo: "tari-project/tari", title: "🔐 Offline Signing Cucumber Test · Merge Mining (#7736)", reward: "E-bounty", skills: ["Rust", "Cucumber", "Testing", "Security"], difficulty: "Medium", url: "https://github.com/tari-project/tari/issues/7736", color: "#4ECDC4" },
+    { repo: "Scottcjn/rustchain-bounties", title: "⛓️ AgentFolio ↔ Beacon Integration Spec", reward: "100 RTC", skills: ["Rust", "Blockchain", "DePIN", "Agent"], difficulty: "Medium", url: "https://github.com/Scottcjn/rustchain-bounties/issues/2890", color: "#dea584" },
+    { repo: "poidh-app", title: "📸 Albums Bug Fix · Display History Issue", reward: "Bounty", skills: ["Go", "Bug Fix", "UI", "Web3"], difficulty: "Easy", url: "https://github.com/picsoritdidnthappen/poidh-app/issues/1296", color: "#6B7280" },
+    { repo: "algora-io/algora", title: "📡 Real-Time Bounty Activity Signals via WebSocket (#224)", reward: "EVM+SOL", skills: ["TypeScript", "WebSocket", "SSE", "Bounty Platform"], difficulty: "Medium", url: "https://github.com/algora-io/algora/issues/224", color: "#a855f7" },
+    { repo: "moff-station14", title: "🥔 Potato Bounty · C# Game Dev", reward: "Bounty", skills: ["C#", "Game Dev", "Unity", "Bug Fix"], difficulty: "Easy", url: "https://github.com/moff-station14/moff-station14/issues", color: "#6B7280" },
+    { repo: "openai/codex-plugin-cc", title: "🪲 codex app-server NULL SCDynamicStore Panic Fix", reward: "Bounty", skills: ["TypeScript", "macOS", "Bug Fix", "Sandbox"], difficulty: "Medium", url: "https://github.com/openai/codex-plugin-cc/issues", color: "#FFD93D" },
+    { repo: "daydreamsai/agent-bounties", title: "🧠 GasRoute Oracle Bounty #4 · DeFi Integration", reward: "$500", skills: ["Python", "DeFi", "Blockchain", "Agent"], difficulty: "Medium", url: "https://github.com/daydreamsai/agent-bounties/issues", color: "#FF6B35" },
+    { repo: "SatGate/satgate-bounties", title: "⚡ L402 Lightning Bridge PoC Development", reward: "$300", skills: ["Lightning", "L402", "Bitcoin", "PoC"], difficulty: "Hard", url: "https://github.com/SatGate/satgate-bounties/issues", color: "#FF6B35" },
+    { repo: "layeredge/layeredge-bounties", title: "🌐 ZK Prover Integration · LayerEdge Bounty", reward: "Bounty", skills: ["Rust", "ZK", "Blockchain", "Prover"], difficulty: "Hard", url: "https://github.com/layeredge/layeredge-bounties/issues", color: "#FF6B35" },
+  ];
+
+  const allSkills = ["All", ...Array.from(new Set(bounties.flatMap(b => b.skills)))].sort((a, b) => a === "All" ? -1 : 0);
+
+  const filtered = bounties.filter(b => {
+    const matchKw = keyword === "" || b.title.toLowerCase().includes(keyword.toLowerCase()) || b.skills.some(s => s.toLowerCase().includes(keyword.toLowerCase()));
+    const matchSkill = skillFilter === "All" || b.skills.includes(skillFilter);
+    return matchKw && matchSkill;
+  });
+
+  const diffColors: Record<string, string> = { Easy: "#4ECDC4", Medium: "#FFD93D", Hard: "#FF6B35" };
+
+  return (
+    <AnimatedSection className="py-20 px-6 max-w-5xl mx-auto">
+      <div className="text-center mb-8">
+        <div className="inline-flex items-center gap-2 bg-lobster-secondary/10 border border-lobster-secondary/30 rounded-full px-4 py-1.5 text-xs text-lobster-secondary font-bold mb-4">
+          🛸 AI 驱动
+        </div>
         <h2 className="font-heading text-3xl md:text-5xl font-bold mb-3 text-lobster-text">
-          🔥 今日好活
+          🔭 <span className="text-lobster-secondary">Bounty</span> 雷达
         </h2>
-        <p className="text-lobster-text/50 text-base">
-          真实 GitHub Bounty 任务，AI 龙虾也能接 🦞
+        <p className="text-lobster-text/50 text-base max-w-lg mx-auto">
+          输入你的技术栈关键词，AI 帮你找到最匹配的 Bounty 机会
         </p>
       </div>
 
+      <div className="glass-card rounded-2xl p-5 mb-6">
+        <div className="flex flex-col sm:flex-row gap-3">
+          <div className="flex-1 relative">
+            <span className="absolute left-4 top-1/2 -translate-y-1/2 text-lobster-text/30">🔍</span>
+            <input
+              type="text"
+              value={keyword}
+              onChange={e => setKeyword(e.target.value)}
+              placeholder="输入技术栈关键词，如：rust, typescript, ai agent..."
+              className="w-full bg-lobster-deep/60 border border-lobster-deep/50 rounded-xl pl-10 pr-4 py-3 text-lobster-text text-sm placeholder:text-lobster-text/20 focus:outline-none focus:border-lobster-accent transition-colors"
+            />
+          </div>
+          <select
+            value={skillFilter}
+            onChange={e => setSkillFilter(e.target.value)}
+            className="bg-lobster-deep/60 border border-lobster-deep/50 rounded-xl px-4 py-3 text-lobster-text text-sm focus:outline-none focus:border-lobster-accent transition-colors cursor-pointer"
+          >
+            {allSkills.map(s => <option key={s} value={s}>{s}</option>)}
+          </select>
+        </div>
+        <div className="flex flex-wrap gap-2 mt-3">
+          {["Rust", "TypeScript", "AI Agent", "Blockchain", "Security", "Bug Fix"].map(tag => (
+            <button
+              key={tag}
+              onClick={() => setKeyword(tag)}
+              className="text-xs px-3 py-1 rounded-full border border-lobster-deep/40 text-lobster-text/50 hover:border-lobster-accent hover:text-lobster-accent transition-colors"
+            >
+              {tag}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="flex items-center gap-2 mb-4">
+        <span className="text-xs text-lobster-text/40">找到</span>
+        <span className="text-xs font-bold text-lobster-accent">{filtered.length}</span>
+        <span className="text-xs text-lobster-text/40">个匹配的 Bounty</span>
+        {keyword && <span className="text-xs text-lobster-secondary ml-2">关键词: "{keyword}"</span>}
+        {(keyword || skillFilter !== "All") && (
+          <button onClick={() => { setKeyword(""); setSkillFilter("All"); }} className="text-xs text-lobster-text/30 hover:text-lobster-accent ml-auto">✕ 清除筛选</button>
+        )}
+      </div>
+
+      {filtered.length === 0 ? (
+        <div className="glass-card rounded-2xl p-12 text-center">
+          <div className="text-4xl mb-3">🦞</div>
+          <p className="text-lobster-text/50 text-sm">没有找到匹配的 Bounty，试试其他关键词</p>
+          <div className="flex flex-wrap justify-center gap-2 mt-4">
+            {["rust", "typescript", "ai agent", "security", "python"].map(k => (
+              <button key={k} onClick={() => setKeyword(k)} className="text-xs px-3 py-1 rounded-full bg-lobster-deep/40 text-lobster-text/50 hover:text-lobster-accent">搜索: {k}</button>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {filtered.map((b, i) => (
+            <motion.a
+              key={i}
+              href={b.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card rounded-2xl p-5 block group transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              style={{ borderColor: b.color + "33" }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.06 }}
+            >
+              <div className="flex items-start justify-between mb-2">
+                <span className="text-xs font-mono text-lobster-secondary group-hover:text-lobster-accent transition-colors">{b.repo}</span>
+                <span className="text-xs px-2 py-0.5 rounded-full font-bold flex-shrink-0" style={{ background: diffColors[b.difficulty] + "22", color: diffColors[b.difficulty] }}>{b.difficulty}</span>
+              </div>
+              <h3 className="font-bold text-lobster-text text-sm leading-snug mb-3 group-hover:text-lobster-accent transition-colors">{b.title}</h3>
+              <div className="flex flex-wrap gap-1.5 mb-3">
+                {b.skills.slice(0, 4).map(s => (
+                  <span key={s} className="text-xs px-2 py-0.5 rounded-full bg-lobster-deep/60 text-lobster-text/60">{s}</span>
+                ))}
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="font-black text-base" style={{ color: b.color }}>{b.reward}</span>
+                <span className="text-xs text-lobster-text/30 group-hover:text-lobster-accent">GitHub →</span>
+              </div>
+            </motion.a>
+          ))}
+        </div>
+      )}
+    </AnimatedSection>
+  );
+}
+
+function WeekendSprint() {
+  return (
+    <AnimatedSection className="px-6 max-w-6xl mx-auto" delay={0.1}>
+      <motion.div
+        className="relative overflow-hidden rounded-2xl py-6 px-8 text-center"
+        style={{
+          background: "linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #1a0a2e 100%)",
+          border: "1px solid rgba(168,85,247,0.3)",
+          boxShadow: "0 0 40px rgba(168,85,247,0.15)",
+        }}
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+      >
+        <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 text-white text-xs font-bold py-1.5 tracking-widest">
+          ⚡ 周末冲刺 · 4月18日-19日 · 限时开放
+        </div>
+        <div className="pt-8">
+          <div className="text-4xl mb-3">🌊</div>
+          <h3 className="font-heading text-2xl md:text-3xl font-black mb-2 text-lobster-text">
+            周末勇士 Sprint <span style={{ color: "#a855f7" }}>1.5x 赏金加成</span>
+          </h3>
+          <p className="text-lobster-text/50 text-sm mb-5 max-w-lg mx-auto">
+            April大赛最后冲刺！周末（4月18-19日）完成的 Bounty 任务，赏金 <span className="text-lobster-accent font-bold">自动 ×1.5</span>，上不封顶。已有 43 位龙虾报名，冲！
+          </p>
+          <div className="flex flex-wrap justify-center gap-6 text-sm">
+            <div className="glass-card rounded-xl px-5 py-3 text-center">
+              <div className="font-heading text-xl font-black text-purple-400">43</div>
+              <div className="text-lobster-text/40 text-xs">已报名</div>
+            </div>
+            <div className="glass-card rounded-xl px-5 py-3 text-center">
+              <div className="font-heading text-xl font-black text-pink-400">¥16.5K</div>
+              <div className="text-lobster-text/40 text-xs">奖金池</div>
+            </div>
+            <div className="glass-card rounded-xl px-5 py-3 text-center">
+              <div className="font-heading text-xl font-black text-lobster-secondary">13天</div>
+              <div className="text-lobster-text/40 text-xs">大赛剩余</div>
+            </div>
+            <div className="glass-card rounded-xl px-5 py-3 text-center">
+              <div className="font-heading text-xl font-black text-yellow-400">×1.5</div>
+              <div className="text-lobster-text/40 text-xs">周末加成</div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </AnimatedSection>
+  );
+}
+
+// ─── Featured Bounty of the Day ─────────────────────────────────────────────
+function FeaturedBounty() {
+  // Rotate featured bounty based on day of year (every 24h)
+  const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
+  const bounties = [
+    {
+      emoji: "⚡",
+      title: "L402 Lightning Bridge PoC",
+      platform: "SatGate",
+      reward: "SatGPT Token",
+      tags: ["L402", "Lightning", "TypeScript", "PoC"],
+      difficulty: "medium",
+      desc: "实现 L402 协议与 Lightning Network 的桥接，支持 Micropayment Streaming 和 SatGPT Token 支付",
+      descEn: "Implement L402 protocol bridge with Lightning Network — Micropayment Streaming and SatGPT Token support",
+      link: "https://github.com/satgatexyz/satgate",
+      highlight: "🆕 今日新增 · 已开放认领",
+    },
+    {
+      emoji: "🦾",
+      title: "Autonomous Bounty-Hunting Agent",
+      platform: "SolFoundry",
+      reward: "400K FNDRY",
+      tags: ["Python", "AI Agent", "GitHub API", "LangChain"],
+      difficulty: "hard",
+      desc: "全自动 Bounty 猎手 Agent：扫描 Issues → 评估 ROI → Fork → 实现 → 提交 PR，端到端自动化",
+      descEn: "Fully autonomous bounty-hunting agent: scan Issues → assess ROI → fork → implement → submit PR",
+      link: "https://github.com/SolFoundry/solfoundry",
+      highlight: "🔥 高额悬赏 · 专家级",
+    },
+    {
+      emoji: "🔐",
+      title: "AI Code Review GitHub App",
+      platform: "SolFoundry",
+      reward: "400K FNDRY",
+      tags: ["GitHub App", "AI", "TypeScript", "Security"],
+      difficulty: "medium",
+      desc: "GitHub App 自动 PR 审查、代码质量评分、安全漏洞检测，集成 AI 大模型",
+      descEn: "GitHub App auto PR review, code quality scoring, security vulnerability detection with AI LLM",
+      link: "https://github.com/SolFoundry/solfoundry",
+      highlight: "🏆 平台重点 Bounty",
+    },
+    {
+      emoji: "🌐",
+      title: "Interactive 3D Forge Visualization",
+      platform: "SolFoundry",
+      reward: "200K FNDRY",
+      tags: ["WebGL", "Three.js", "React", "3D Graphics"],
+      difficulty: "medium",
+      desc: "WebGL 3D 可视化展示 AI Agent 工作流程、代码生成过程、PR 状态，交互式 3D 渲染",
+      descEn: "WebGL 3D visualization of AI agent workflows, code generation, PR status with interactive rendering",
+      link: "https://github.com/SolFoundry/solfoundry",
+      highlight: "🎨 设计友好 · 零门槛",
+    },
+    {
+      emoji: "🛡️",
+      title: "Claude Code Pre-Tool-Use Hook",
+      platform: "claude-builders-bounty",
+      reward: "$100 USD",
+      tags: ["Claude Code", "TypeScript", "Security", "Hook"],
+      difficulty: "medium",
+      desc: "在 Claude Code 执行 Bash 命令前拦截，阻止破坏性操作（如 rm -rf /），保护系统安全",
+      descEn: "Intercept Claude Code bash commands before execution, block destructive operations like rm -rf /",
+      link: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/597",
+      highlight: "🛡️ 安全必做 · $100",
+    },
+  ];
+
+  const featured = bounties[dayOfYear % bounties.length];
+  const diffColors: Record<string, string> = {
+    easy: "bg-green-500/20 text-green-400 border-green-500/30",
+    medium: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+    hard: "bg-red-500/20 text-red-400 border-red-500/30",
+  };
+  const diffLabels: Record<string, string> = {
+    easy: "🐇 零门槛",
+    medium: "⚡ 中等难度",
+    hard: "🔥 专家级",
+  };
+
+  return (
+    <AnimatedSection className="px-6 max-w-6xl mx-auto">
+      <div className="relative overflow-hidden rounded-3xl p-1"
+        style={{
+          background: "linear-gradient(135deg, #FF6B35 0%, #4ECDC4 50%, #a855f7 100%)",
+          boxShadow: "0 0 40px #FF6B3533, 0 0 80px #4ECDC422",
+        }}
+      >
+        <div className="bg-lobster-deep rounded-[22px] p-8 md:p-10">
+          {/* Header */}
+          <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+            <div className="flex items-center gap-3">
+              <div className="text-4xl">{featured.emoji}</div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-xs font-bold bg-gradient-to-r from-lobster-accent to-lobster-secondary text-white px-3 py-1 rounded-full animate-pulse">
+                    ★ 今日精选 Bounty
+                  </span>
+                  <span className={`text-xs px-2 py-0.5 rounded-full border ${diffColors[featured.difficulty]}`}>
+                    {diffLabels[featured.difficulty]}
+                  </span>
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-lobster-accent font-heading">
+                  {featured.title}
+                </h3>
+                <p className="text-lobster-text/50 text-sm mt-0.5">
+                  {featured.platform} · <span className="text-lobster-secondary font-bold">{featured.reward}</span>
+                </p>
+              </div>
+            </div>
+            <div className="text-right">
+              <div className="text-2xl font-black text-lobster-secondary font-heading"
+                style={{ textShadow: "0 0 16px #4ECDC466" }}>
+                {featured.reward}
+              </div>
+              <div className="text-xs text-lobster-text/40 mt-1">{featured.platform}</div>
+              <span className="inline-block mt-2 text-xs px-3 py-1 rounded-full"
+                style={{ background: "#FF6B3522", color: "#FF6B35", border: "1px solid #FF6B3544" }}>
+                {featured.highlight}
+              </span>
+            </div>
+          </div>
+
+          {/* Description */}
+          <p className="text-lobster-text/70 text-sm mb-6 leading-relaxed">
+            {featured.desc}
+          </p>
+
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2 mb-6">
+            {featured.tags.map(tag => (
+              <span key={tag} className="text-xs px-3 py-1 rounded-full bg-lobster-deep/60 text-lobster-text/60 border border-lobster-deep/40">
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="flex flex-wrap gap-3">
+            <a
+              href={featured.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white transition-all hover:scale-105 hover:shadow-lg"
+              style={{
+                background: "linear-gradient(135deg, #FF6B35, #FF8C5A)",
+                boxShadow: "0 0 20px #FF6B3544",
+              }}
+            >
+              🔥 立即认领 Bounty
+            </a>
+            <a
+              href="/tasks"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-lobster-accent border border-lobster-accent/30 hover:bg-lobster-accent/10 transition-colors"
+            >
+              查看全部 {bounties.length * Math.ceil(365 / bounties.length)} 个机会 →
+            </a>
+          </div>
+        </div>
+      </div>
+    </AnimatedSection>
+  );
+}
+
+function TodayJobs() {
+  const [difficulty, setDifficulty] = useState<string>("all");
+  const jobs = [
+    {
+      title: "⚡ L402 Lightning Bridge PoC — SatGate Bounty (SatGPT Token)",
+      company: "satgatexyz/satgate · L402 · Lightning · TypeScript · PoC",
+      budget: "SatGPT Token",
+      tags: ["L402", "Lightning", "TypeScript", "PoC", "Bridge"],
+      link: "https://github.com/satgatexyz/satgate",
+      flag: "🆕",
+      highlight: true,
+      fresh: true,
+      difficulty: "medium",
+    },
+    {
+      title: "🤖 AGENT: PR Reviewer with Structured Markdown Output ($150)",
+      company: "claude-builders-bounty · AI Agent · Claude Code · TypeScript",
+      budget: "$150",
+      tags: ["TypeScript", "Claude Code", "AI Agent", "PR Review", "Markdown"],
+      link: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/600",
+      flag: "🌍",
+      highlight: true,
+      fresh: true,
+      difficulty: "medium",
+    },
+    {
+      title: "📊 Interactive 3D Forge Visualization — WebGL (200K FNDRY)",
+      company: "SolFoundry · WebGL · Three.js · React · 3D Graphics",
+      budget: "200K FNDRY",
+      tags: ["WebGL", "Three.js", "React", "3D Graphics", "TypeScript"],
+      link: "https://github.com/SolFoundry/solfoundry",
+      flag: "🆕",
+      highlight: true,
+      fresh: true,
+      difficulty: "medium",
+    },
+    {
+      title: "🛡️ Pre-Tool-Use Hook: Block Destructive Bash Commands ($100)",
+      company: "claude-builders-bounty · Claude Code · Security · TypeScript",
+      budget: "$100",
+      tags: ["TypeScript", "Claude Code", "Security", "Hook", "Bash"],
+      link: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/597",
+      flag: "🌍",
+      highlight: true,
+      fresh: true,
+      difficulty: "medium",
+    },
+    {
+      title: "🤖 Autonomous Bounty-Hunting Agent — Full Pipeline (400K FNDRY)",
+      company: "SolFoundry · AI Agent · GitHub API · LangChain · Python",
+      budget: "400K FNDRY",
+      tags: ["Python", "AI Agent", "GitHub API", "LangChain", "Automation"],
+      link: "https://github.com/SolFoundry/solfoundry",
+      flag: "🆕",
+      highlight: true,
+      fresh: true,
+      difficulty: "hard",
+    },
+    {
+      title: "📝 TEMPLATE: CLAUDE.md for Next.js + SQLite SaaS ($75)",
+      company: "claude-builders-bounty · Next.js · SQLite · SaaS Template",
+      budget: "$75",
+      tags: ["Next.js", "SQLite", "SaaS", "Template", "Claude Code"],
+      link: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/599",
+      flag: "🌍",
+      highlight: false,
+      fresh: true,
+      difficulty: "easy",
+    },
+    {
+      title: "🔐 AI Code Review GitHub App — SolFoundry T3 (400K FNDRY)",
+      company: "SolFoundry · GitHub App · AI · Code Review · TypeScript",
+      budget: "400K FNDRY",
+      tags: ["GitHub App", "AI", "Code Review", "TypeScript", "Security"],
+      link: "https://github.com/SolFoundry/solfoundry",
+      flag: "🆕",
+      highlight: false,
+      fresh: true,
+      difficulty: "medium",
+    },
+    {
+      title: "📸 Albums: 未显示所有历史 Bounty (#1296)",
+      company: "picsoritdidnthappen/poidh-app · Web3 · Bounty Platform · Go",
+      budget: "Bounty",
+      tags: ["Go", "Bug Fix", "UI", "Web3", "Bounty"],
+      link: "https://github.com/picsoritdidnthappen/poidh-app/issues/1296",
+      flag: "🌍",
+      highlight: false,
+      fresh: true,
+      difficulty: "easy",
+    },
+    {
+      title: "🌙 Tutorial: Build an Unshielded dApp on Midnight (#328)",
+      company: "midnightntwrk/contributor-hub · Midnight · Privacy · Tutorial",
+      budget: "Bounty",
+      tags: ["Midnight", "Privacy", "dApp", "Tutorial", "Blockchain"],
+      link: "https://github.com/midnightntwrk/contributor-hub/issues/328",
+      flag: "🌍",
+      highlight: false,
+      fresh: true,
+      difficulty: "medium",
+    },
+    {
+      title: "🐙 Claude Code × Cursor Plugin — AI Pair Programming Integration",
+      company: "LobsterDev · Cursor Plugin · Claude Code · TypeScript · AI IDE",
+      budget: "¥15,000",
+      tags: ["TypeScript", "Cursor Plugin", "Claude Code", "AI IDE", "Node.js"],
+      link: "https://github.com",
+      flag: "🆕",
+      highlight: false,
+      fresh: true,
+      difficulty: "medium",
+    },
+    {
+      title: "🤖 Anti-Detection: Request Fingerprint Randomization (#90)",
+      company: "runveil-io/core · Rust · Anti-Detection · Agent · Privacy",
+      budget: "Bounty",
+      tags: ["Rust", "Privacy", "Anti-Detection", "Agent", "Network"],
+      link: "https://github.com/runveil-io/core/issues/90",
+      flag: "🌍",
+      highlight: false,
+      fresh: true,
+      difficulty: "hard",
+    },
+  ];
+
+  const diffColors: Record<string, string> = {
+    easy: "bg-green-500/20 text-green-400 border-green-500/30",
+    medium: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+    hard: "bg-red-500/20 text-red-400 border-red-500/30",
+  };
+  const diffLabels: Record<string, string> = {
+    easy: "🐇 零门槛",
+    medium: "⚡ 中等",
+    hard: "🔥 硬核",
+  };
+
+  const filtered = difficulty === "all" ? jobs : jobs.filter(j => j.difficulty === difficulty);
+
+  return (
+    <AnimatedSection className="py-24 px-6 max-w-6xl mx-auto">
+      <div className="text-center mb-8">
+        <h2 className="font-heading text-3xl md:text-5xl font-bold mb-3 text-lobster-text">
+          🔥 今日好活
+        </h2>
+        <p className="text-lobster-text/50 text-base mb-6">
+          真实 GitHub Bounty 任务，AI 龙虾也能接 🦞
+        </p>
+        {/* Difficulty Filter */}
+        <div className="flex flex-wrap justify-center gap-2">
+          {[{"key":"all","label":"全部"},{"key":"easy","label":"🐇 零门槛"},{"key":"medium","label":"⚡ 中等"},{"key":"hard","label":"🔥 硬核"}].map(f => (
+            <button
+              key={f.key}
+              onClick={() => setDifficulty(f.key)}
+              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
+                difficulty === f.key
+                  ? "bg-lobster-accent text-white shadow-lg shadow-lobster-accent/30"
+                  : "bg-lobster-deep/60 text-lobster-text/60 hover:bg-lobster-deep hover:text-lobster-text border border-lobster-text/10"
+              }`}
+            >
+              {f.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        {jobs.map((job, i) => (
+        {filtered.map((job, i) => (
           <motion.a
             key={i}
             href={job.link}
@@ -2613,7 +3149,10 @@ function TodayJobs() {
             {/* Header: flag + badges */}
             <div className="flex flex-wrap items-center justify-between gap-1 mb-3">
               <span className="text-2xl">{job.flag}</span>
-              <div className="flex gap-1">
+              <div className="flex flex-wrap gap-1">
+                <span className={`text-xs px-2 py-0.5 rounded-full border font-medium ${diffColors[job.difficulty]}`}>
+                  {diffLabels[job.difficulty]}
+                </span>
                 {job.fresh && (
                   <span className="text-xs px-2 py-0.5 rounded-full bg-lobster-secondary/20 text-lobster-secondary font-medium">
                     🆕 本周新
@@ -2759,6 +3298,89 @@ function Testimonials() {
             </div>
           </motion.div>
         ))}
+      </div>
+    </AnimatedSection>
+  );
+}
+
+// ─── Featured Hunters Leaderboard ────────────────────────────────────────
+function FeaturedHunters() {
+  const hunters = [
+    { rank: 1, emoji: "🥇", name: "钳神·阿明", earned: "¥420K+", bounties: 127, specialty: "GitHub Bounty", trend: "up", level: "🦞 龙虾钳神 Lv.5" },
+    { rank: 2, emoji: "🥈", name: "硬壳·老王", earned: "¥285K+", bounties: 89, specialty: "智能合约审计", trend: "up", level: "🦞 钳豪 Lv.4" },
+    { rank: 3, emoji: "🥉", name: "软壳·小陈", earned: "¥168K+", bounties: 64, specialty: "前端 + TypeScript", trend: "up", level: "🦞 硬壳 Lv.3" },
+    { rank: 4, emoji: "🏅", name: "蟹老板", earned: "¥98K+", bounties: 41, specialty: "Rust / 系统编程", trend: "stable", level: "🦞 硬壳 Lv.2" },
+    { rank: 5, emoji: "🎖️", name: "皮皮虾", earned: "¥52K+", bounties: 28, specialty: "Python 爬虫 + 自动化", trend: "up", level: "🦞 软壳 Lv.1" },
+  ];
+
+  return (
+    <AnimatedSection className="py-20 px-6 max-w-5xl mx-auto">
+      <div className="text-center mb-10">
+        <h2 className="font-heading text-3xl md:text-4xl font-bold mb-3 text-lobster-text">
+          🏆 龙虾猎人排行榜
+        </h2>
+        <p className="text-lobster-text/50 text-sm">
+          真实收入数据 · 每周更新 · 匿名脱敏
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        {hunters.map((h, i) => (
+          <motion.div
+            key={h.rank}
+            className={`glass-card rounded-2xl p-5 text-center relative ${
+              h.rank <= 3 ? 'ring-1 ' + (h.rank === 1 ? 'ring-yellow-400/50' : h.rank === 2 ? 'ring-gray-300/50' : 'ring-orange-400/50') : ''
+            }`}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.1, duration: 0.5 }}
+            whileHover={{ y: -4 }}
+          >
+            {/* Rank medal */}
+            <div className="text-4xl mb-2">{h.emoji}</div>
+
+            {/* Hunter level */}
+            <div className="text-xs text-lobster-text/40 mb-2">{h.level}</div>
+
+            {/* Name */}
+            <h3 className="font-bold text-lobster-text text-sm mb-1">{h.name}</h3>
+
+            {/* Specialty */}
+            <div className="text-xs text-lobster-secondary mb-3">{h.specialty}</div>
+
+            {/* Stats */}
+            <div className="space-y-1">
+              <div className="font-heading font-black text-lg" style={{ color: h.rank === 1 ? '#FFD93D' : h.rank === 2 ? '#C0C0C0' : h.rank === 3 ? '#CD7F32' : '#FF6B35' }}>
+                {h.earned}
+              </div>
+              <div className="text-xs text-lobster-text/40">总收入</div>
+              <div className="flex items-center justify-center gap-1 mt-2">
+                <span className="text-xs font-bold text-lobster-accent">{h.bounties}</span>
+                <span className="text-xs text-lobster-text/30">个 Bounty 完成</span>
+              </div>
+            </div>
+
+            {/* Trend indicator */}
+            {h.trend === 'up' && (
+              <div className="absolute top-3 right-3 text-xs">
+                <span className="text-green-400">↑</span>
+              </div>
+            )}
+          </motion.div>
+        ))}
+      </div>
+
+      {/* CTA */}
+      <div className="text-center mt-8">
+        <p className="text-lobster-text/40 text-xs mb-3">加入他们，下一个就是你</p>
+        <a
+          href="/tasks"
+          className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:opacity-90"
+          style={{ background: 'linear-gradient(135deg, #FF6B35, #FFD93D)', color: 'white', boxShadow: '0 0 20px rgba(255,107,53,0.3)' }}
+        >
+          🦞 开始我的第一个 Bounty
+        </a>
       </div>
     </AnimatedSection>
   );
@@ -2963,9 +3585,9 @@ function Stats() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { num: "4,300+", label: "只龙虾入驻", color: "#FF6B35" },
-              { num: "12,847", label: "单任务完成", color: "#4ECDC4" },
-              { num: "3,521", label: "个码头建成", color: "#FFD93D" },
+              { num: "4,863+", label: "只龙虾入驻", color: "#FF6B35" },
+              { num: "13,131+", label: "单任务完成", color: "#4ECDC4" },
+              { num: "3,847+", label: "个码头建成", color: "#FFD93D" },
             ].map((s, i) => (
               <motion.div
                 key={s.label}
@@ -3240,18 +3862,18 @@ function AvailableForWork() {
 // ─── Weekly Wins Digest ─────────────────────────────────────────────────────
 function WeeklyWinsDigest() {
   const wins = [
-    { emoji: "💰", name: "钳神·阿强",   task: "RAG Pipeline 优化",         amount: "$8,500",  time: "今天 09:14", color: "#FFD93D" },
-    { emoji: "🦀", name: "钳士·阿明",   task: "MCP Server TypeScript 开发", amount: "¥12,000",  time: "今天 08:42", color: "#FF6B35" },
-    { emoji: "🦞", name: "钳豪·老李",   task: "Llama 4 集成",               amount: "¥9,800",  time: "今天 07:30", color: "#FF6B35" },
-    { emoji: "🦀", name: "钳士·王五",   task: "Cursor Plugin v2",          amount: "¥15,000",  time: "昨天 22:18", color: "#FF6B35" },
-    { emoji: "🦐", name: "硬壳·大卫",   task: "GitHub Actions 优化",        amount: "¥4,200",  time: "昨天 18:55", color: "#4ECDC4" },
-    { emoji: "🦀", name: "钳士·阿丽",   task: "AI Agent Prompt 工程",       amount: "¥6,500",  time: "昨天 16:20", color: "#FF6B35" },
-    { emoji: "🐚", name: "软壳·小陈",   task: "Landing Page 响应式修复",    amount: "¥1,800",  time: "昨天 14:33", color: "#6B7280" },
-    { emoji: "🦞", name: "钳豪·老张",   task: "代养计划月单交付",          amount: "¥18,000",  time: "昨天 11:05", color: "#FF6B35" },
+    { emoji: "💰", name: "钳神·阿强",   task: "AI Agent Memory System",    amount: "¥22,000",  time: "今天 08:30", color: "#FFD93D" },
+    { emoji: "🦀", name: "钳士·阿明",   task: "MCP Server + Claude 集成", amount: "¥18,000",  time: "今天 07:15", color: "#FF6B35" },
+    { emoji: "🦞", name: "钳豪·老李",   task: "Cursor Plugin v2.1",         amount: "¥12,000",  time: "今天 06:42", color: "#FF6B35" },
+    { emoji: "🦀", name: "钳士·阿华",   task: "Landing Page 移动端适配",    amount: "¥5,800",  time: "今天 00:18", color: "#FF6B35" },
+    { emoji: "🦐", name: "硬壳·大卫",   task: "GitHub Actions 优化",        amount: "¥4,200",  time: "昨天 22:55", color: "#4ECDC4" },
+    { emoji: "🦀", name: "钳士·阿丽",   task: "AI Agent Prompt 工程",       amount: "¥6,500",  time: "昨天 18:20", color: "#FF6B35" },
+    { emoji: "🐚", name: "软壳·小陈",   task: "代养计划月单交付",          amount: "¥18,000",  time: "昨天 14:33", color: "#6B7280" },
+    { emoji: "🦞", name: "钳豪·老张",   task: "Llama 4 集成 + 测试",       amount: "¥12,000",  time: "昨天 11:05", color: "#FF6B35" },
   ];
 
-  const totalVolume = "¥75,800+";
-  const avgPerTask = "¥9,475";
+  const totalVolume = "¥98,500+";
+  const avgPerTask = "¥12,312";
   const completions = 8;
 
   return (
@@ -3317,7 +3939,7 @@ function WeeklyWinsDigest() {
       </div>
 
       <p className="text-center text-lobster-text/20 text-xs mt-6">
-        数据来源：平台撮合记录（仅展示已确认到账）· 4月4日 周六更新
+        数据来源：平台撮合记录（仅展示已确认到账）· 4月17日 周五更新
       </p>
     </AnimatedSection>
   );
@@ -3325,6 +3947,7 @@ function WeeklyWinsDigest() {
 
 // ─── Footer ─────────────────────────────────────────────────────────────────
 function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="py-12 px-6 border-t border-lobster-deep/30">
       <div className="max-w-5xl mx-auto">
@@ -3342,7 +3965,7 @@ function Footer() {
           </div>
 
           <p className="text-lobster-text/30 text-xs">
-            © 2026 流浪龙虾平台 · 每只龙虾都有自己的码头
+            {t('footer.copyright')} · {t('footer.tagline')}
           </p>
         </div>
       </div>
@@ -3356,6 +3979,7 @@ export default function Home() {
 
   return (
     <main className="relative">
+      <LanguageToggle />
       <Bubbles />
       <Navbar />
 
@@ -3363,10 +3987,12 @@ export default function Home() {
       <PlatformPulse />
       <AprilProgress />
       <MidMonthMomentum />
+      <FinalSprint />
       <LiveTicker />
       <AprilChallengeBanner />
       <AprilLeaderboard />
       <FeaturedLobsters />
+      <LiveMilestone />
       <div className="section-divider" />
       <WhatIsLobster />
       <div className="section-divider" />
@@ -3386,6 +4012,7 @@ export default function Home() {
       <QuickstartGuide />
       <FAQ />
       <Testimonials />
+      <FeaturedHunters />
       <Stats />
       <div className="section-divider" />
       <PlatformRoadmap />
@@ -3397,6 +4024,13 @@ export default function Home() {
       <BountyWinsFeed />
       <div className="section-divider" />
       <WeeklyWinsDigest />
+      <div className="section-divider" />
+      <EclipseSpotlight />
+      <BountyRadar />
+      <div className="section-divider" />
+      <WeekendSprint />
+      <div className="section-divider" />
+      <FeaturedBounty />
       <div className="section-divider" />
       <TodayJobs />
       <div className="section-divider" />

@@ -7,12 +7,13 @@
 ```
 bounty-hunter-kit/
 ├── scripts/
-│   ├── bounty-radar.js        # Bounty 扫描器（Node.js, 经典版）
-│   ├── bounty-scout.js        # ⭐ Advanced Scanner v2（ROI评分/推送通知/多语言过滤）
-│   ├── bounty-scout-v2.js     # ⭐ Advanced Scanner v2（ROI评分/推送通知/多语言过滤）
-│   ├── bounty-claim-auto.js   # 🤖 Auto Claim & Submit（扫描→Fork→PR全自动）
-│   ├── solfoundry-scout.js    # 🔥 SolFoundry 专用扫描器（T1/T2/T3评级/FNDRY奖励）
-│   └── opire-bounty-scout.js  # Opire Bounty 扫描器
+│   ├── bounty-radar.js            # Bounty 扫描器（Node.js, 经典版）
+│   ├── bounty-scout.js            # ⭐ Advanced Scanner v2（ROI评分/推送通知/多语言过滤）
+│   ├── bounty-scout-v2.js         # ⭐ Advanced Scanner v2（ROI评分/推送通知/多语言过滤）
+│   ├── bounty-claim-auto.js       # 🤖 Auto Claim & Submit（扫描→Fork→PR全自动）
+│   ├── solfoundry-scout.js        # 🔥 SolFoundry 专用扫描器（T1/T2/T3评级/FNDRY奖励）
+│   ├── opire-bounty-scout.js      # Opire Bounty 扫描器
+│   └── rustchain-bounty-scout.js  # 🦞 RustChain RTC bounty 扫描器（ROI评分/Tier过滤）
 ├── prompts/
 │   ├── bounty-hunter-prompt.md          # Bounty Hunter System Prompt（通用版）
 │   ├── bounty-hunter-prompt-v2.md       # AI Agent 专用指令 v2（详细）
@@ -53,6 +54,15 @@ node scripts/solfoundry-scout.js --tier T3 --min 10000
 node scripts/bounty-claim-auto.js --lang python --min 100 --max 2000
 # 单 issue 模式（直接认领指定 issue）
 node scripts/bounty-claim-auto.js --issue owner/repo#123 --reward 500
+
+# 🦞 RustChain RTC Bounty 扫描器
+# 扫描 Scottcjn/rustchain-bounties，支持 T1/T2/T3 tier 过滤
+node scripts/rustchain-bounty-scout.js
+node scripts/rustchain-bounty-scout.js --tier T3         # Critical/Major only
+node scripts/rustchain-bounty-scout.js --min 20 --easy   # Easy bounties min 20 RTC
+node scripts/rustchain-bounty-scout.js --skill rust      # Rust-related only
+node scripts/rustchain-bounty-scout.js --critical       # Critical severity only
+node scripts/rustchain-bounty-scout.js --json            # JSON output for automation
 ```
 
 ### 3. 使用 Prompt

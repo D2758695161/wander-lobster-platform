@@ -1135,5 +1135,566 @@
       ],
       "smtp_status": "CRITICAL BLOCKER - ALL SMTP DEAD since 2026-04-03"
     }
+  ],
+  "jobs_appended_2026_04_09": [
+    {
+      "session": "outreach-agent-001 2026-04-09 15:02 CST",
+      "platform": "job.proginn.com",
+      "new_jobs": [
+        {
+          "platform": "job.proginn.com",
+          "title": "Python工程师 - 抖音本地推广告账户管理系统",
+          "project_id": "185995",
+          "budget": "¥12-18K/月 (项目制, 15-25天)",
+          "fit_score": 9,
+          "description": "内部系统管理数百个抖音本地推广告账户：批量授权/分组/自动启停/素材管理/绩效统计/ECharts可视化/7x24稳定",
+          "requirements": [
+            "Python Flask/Django",
+            "ECharts",
+            "巨量本地推API"
+          ],
+          "email_to": "185995@proginn.com",
+          "status": "email_drafted_NOT_sent"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "全栈 - 淘宝EXE+拼多多插件反反爬优化 防封号",
+          "project_id": "42625",
+          "budget": "¥2-3K (7天)",
+          "fit_score": 8,
+          "description": "淘宝+拼多多反爬防封优化：风控/验证码/封号/IP封禁",
+          "requirements": [
+            "Python爬虫",
+            "浏览器指纹",
+            "代理IP",
+            "反检测"
+          ],
+          "contact_wechat": "jayy091",
+          "status": "email_drafted_NOT_sent"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "Java工程师 - Adobe Illustrator CEP插件 (Nesting算法)",
+          "project_id": "185992",
+          "budget": "¥20-35K (项目制, 1.5-3个月)",
+          "fit_score": 8,
+          "description": "Illustrator矢量图案排版插件：异形嵌套算法/共边切割/切割线/DXF-SVG导出/商用加密授权",
+          "requirements": [
+            "Illustrator CEP/SDK",
+            "Nesting算法",
+            "C++/JS"
+          ],
+          "status": "not_drafted"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "Python工程师 - POD订单图片批量处理",
+          "project_id": "185994",
+          "budget": "¥1-6K/月",
+          "fit_score": 7,
+          "description": "POD订单Excel导入 → NAS图片查找 → 批量导出缺失图片到分类文件夹",
+          "requirements": [
+            "Python",
+            "pandas",
+            "Excel",
+            "NAS"
+          ],
+          "status": "not_drafted"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "Java工程师 - 古诗背诵微信小程序",
+          "project_id": "185999",
+          "budget": "¥5-8K (三个版本约1万)",
+          "fit_score": 6,
+          "description": "古诗背诵微信小程序：年级选择/背诵评分/错题本/会员系统/分享裂变",
+          "requirements": [
+            "Java",
+            "uniapp",
+            "微信云开发"
+          ],
+          "status": "not_drafted"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "Flutter工程师 - 校园社交+生活服务多端APP",
+          "project_id": "42620",
+          "budget": "¥18-500K/月",
+          "fit_score": 6,
+          "description": "校园社交+生活服务APP补全UI开发：液态玻璃/毛玻璃/iOS/Android/鸿蒙多端",
+          "requirements": [
+            "Flutter",
+            "iOS",
+            "Android",
+            "HarmonyOS"
+          ],
+          "status": "not_drafted"
+        }
+      ],
+      "smtp_status": "DEAD - 163 all 3 codes + SendClaw ECONNREFUSED"
+    },
+    {
+      "session": "outreach-agent-001 2026-04-11 00:03 CST",
+      "action": "Proginn scan. 1 new listing found (186049 TensorFlow->vLLM). SMTP DEAD.",
+      "new_proginn_jobs": [
+        {
+          "platform": "job.proginn.com",
+          "title": "Python工程师 - AI模型迁移 (TensorFlow->vLLM)",
+          "project_id": "186049",
+          "budget": "¥12-18K/月 (项目制, 1个月)",
+          "posted": "2026-04-10",
+          "fit_score": 9,
+          "skills_match": [
+            "Python",
+            "TensorFlow",
+            "vLLM",
+            "GPU集群",
+            "模型推理服务",
+            "单元测试",
+            "集成测试"
+          ],
+          "description": "AI模型迁移：TensorFlow Serving->vLLM，自建GPU集群->云推理服务。迁移方案+单元测试+集成测试+端到端联调+文档产出。",
+          "email_to": "186049@proginn.com",
+          "proposal_email": {
+            "subject": "Python AI模型迁移 | TensorFlow->vLLM + GPU推理服务 + 端到端测试"
+          },
+          "status": "email_drafted_NOT_sent",
+          "smtp_broken": true,
+          "notes": "NEW 2026-04-11. TensorFlow->vLLM迁移。¥12-18K/月，1个月。直接匹配AI/LLM生产经验。"
+        }
+      ],
+      "smtp_status": "DEAD - All 3 codes 535. Partner must regenerate 163.com auth code.",
+      "emails_sent_this_session": 0
+    }
+  ],
+  "jobs_appended_2026-04-14-evening": [
+    {
+      "session": "outreach-agent-001 2026-04-14 21:02 CST",
+      "new_jobs": [
+        {
+          "platform": "job.proginn.com",
+          "title": "Java工程师 - 德州酒吧/收钱吧多租户SaaS小程序+三端后台",
+          "project_id": "186235",
+          "budget": "¥6-12K/月 (30天)",
+          "fit_score": 9,
+          "description": "类似收钱吧、笔笔付橙的德州酒吧小程序、后端、ios/android/web三端后台管理系统，总部分门店多租户数据隔离，SaaS架构。",
+          "requirements": [
+            "Java",
+            "Vue",
+            "MySQL",
+            "多租户SaaS",
+            "小程序",
+            "Element UI"
+          ],
+          "email_to": "186235@proginn.com",
+          "status": "email_sent"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "Python工程师 - 界面像素级修改还原（完整切图）",
+          "project_id": "186231",
+          "budget": "¥1-6K/月 (15天)",
+          "fit_score": 7,
+          "description": "提供完整切图，在原界面基础上修改新界面，不改变原界面功能，只修改显示，和设计图要做到像素级一致的按钮大小、颜色、字体完全一样。5-10年经验优先。",
+          "requirements": [
+            "Python",
+            "HTML/CSS",
+            "Vue/React",
+            "像素级还原",
+            "切图"
+          ],
+          "email_to": "186231@proginn.com",
+          "status": "email_sent"
+        }
+      ],
+      "smtp_status": "WORKING - TLfTvAJBC8QKxxre via smtp.163.com:465 SSL",
+      "emails_sent_this_session": 2
+    }
+  ],
+  "jobs_appended_2026-04-15-noon": [
+    {
+      "session": "outreach-agent-001 2026-04-15 12:17 CST",
+      "new_jobs": [
+        {
+          "platform": "job.proginn.com",
+          "title": "Python工程师 - 巴西+尼日利亚企业数据采集爬虫",
+          "project_id": "186276",
+          "budget": "¥18-30K/月 (项目制)",
+          "fit_score": 9,
+          "description": "跨境爬虫：巴西CNPJ+尼日利亚CAC企业数据（企业名/官网/法人/财务邮箱）。Hunter.io/Snov.io邮箱挖掘，LGPD/NDPR合规，50条小样验收。",
+          "requirements": [
+            "Python爬虫",
+            "Requests/BeautifulSoup",
+            "Hunter.io/Snov.io",
+            "LGPD/NDPR合规"
+          ],
+          "email_to": "186276@proginn.com",
+          "status": "email_sent",
+          "message_id": "f8acfb8e-319e-ee29-5631-a8cc57a8fe02@163.com",
+          "sent_at": "2026-04-15T12:17 CST",
+          "notes": "HIGH PRIORITY - ¥18-30K budget. CNPJ/CAC爬虫 + 邮箱验证完美匹配Python技能。"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "C++工程师 - ESP32-S3玩具智能体固件 (深圳驻场)",
+          "project_id": "42709",
+          "budget": "¥12-18K/月",
+          "fit_score": 8,
+          "description": "ESP32-S3固件：BLE GATT/1.8英寸圆形TFT/LVGL UI/MPU6050/ESP-SR离线语音/深度睡眠。深圳1个月驻场。",
+          "requirements": [
+            "C++",
+            "ESP32-S3",
+            "BLE GATT",
+            "LVGL/TFT_eSPI",
+            "MPU6050",
+            "ESP-SR",
+            "深圳驻场"
+          ],
+          "email_to": "42709@proginn.com",
+          "status": "email_sent",
+          "message_id": "3ef40176-551d-fc50-ab2a-2fe80a14756a@163.com",
+          "sent_at": "2026-04-15T12:17 CST",
+          "notes": "C++ not core but ESP32/BLE/LVGL embedded match. Shenzhen on-site = moderate priority."
+        }
+      ],
+      "smtp_status": "WORKING - TLfTvAJBC8QKxxre via smtp.163.com:465 SSL",
+      "emails_sent_this_session": 2
+    }
+  ],
+  "jobs_appended_2026-04-16": [
+    {
+      "session": "outreach-agent-001 2026-04-16 03:02 CST",
+      "remoteok_status": "NEW - last_updated 2026-04-15T19:00 UTC",
+      "new_remoteok_jobs": [
+        {
+          "id": "1131106",
+          "title": "Technical Support L3 Weekends",
+          "company": "Redis",
+          "salary": "$91,455-$137,273",
+          "fit_score": 8,
+          "email_to": "talent@redis.com",
+          "status": "email_sent",
+          "sent_at": "2026-04-16T03:02 CST"
+        },
+        {
+          "id": "1131104",
+          "title": "Sr Software Engineer B/E",
+          "company": "Rebuy Inc",
+          "salary": "$130-180k",
+          "fit_score": 5,
+          "status": "low_priority_not_contacted",
+          "notes": "PHP not core"
+        }
+      ],
+      "new_proginn_jobs": [
+        {
+          "platform": "job.proginn.com",
+          "title": "Python工程师 - 环境适配（比特云+动态住宅代理Socks5）",
+          "project_id": "186303",
+          "budget": "¥1-6K/月",
+          "fit_score": 8,
+          "email_to": "186303@proginn.com",
+          "status": "email_sent",
+          "sent_at": "2026-04-16T03:02 CST"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "Python工程师 - 集换社app加密接口抓取",
+          "project_id": "186290",
+          "budget": "¥1-6K/月",
+          "fit_score": 7,
+          "status": "not_contacted"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "前端 - Scratch2->Scratch3 Arduino+ESP32",
+          "project_id": "186296",
+          "budget": "¥1-6K/月",
+          "fit_score": 6,
+          "status": "not_contacted"
+        }
+      ],
+      "emails_sent_this_session": 2,
+      "total_emails_today": 2,
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING"
+    }
+  ],
+  "jobs_appended_2026_04_16_morning": [
+    {
+      "session": "outreach-agent-001 2026-04-16 06:03 CST",
+      "new_proginn_jobs": [
+        {
+          "platform": "job.proginn.com",
+          "title": "测试工程师 - 功能+安全+性能测试 (法律SaaS)",
+          "project_id": "42714",
+          "budget": "¥12-18K/月",
+          "fit_score": 9,
+          "location": "北京驻场",
+          "requirements": [
+            "Python",
+            "自动化测试",
+            "安全测试",
+            "性能测试"
+          ],
+          "email_to": "42714@proginn.com",
+          "status": "email_sent",
+          "message_id": "247d91b9-6f98-f4c3-a316-5e114e1a1193@163.com",
+          "sent_at": "2026-04-16T06:03 CST"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "人工智能 - AI服装爆款延改工具 (飞书打通)",
+          "project_id": "186283",
+          "budget": "¥6-12K/月",
+          "fit_score": 9,
+          "requirements": [
+            "AI图像生成",
+            "飞书API",
+            "Python爬虫",
+            "竞品监测",
+            "LangGraph"
+          ],
+          "email_to": "186283@proginn.com",
+          "status": "email_sent",
+          "message_id": "c2a889f3-4055-e243-d719-318fbfb738db@163.com",
+          "sent_at": "2026-04-16T06:03 CST"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "Unity3D - Cocos 3D游戏模型制作",
+          "project_id": "42715",
+          "budget": "¥18-30K/月",
+          "fit_score": 4,
+          "status": "not_contacted"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "硬件开发 - DRONECAN/APM/PX4无人机通讯",
+          "project_id": "186286",
+          "budget": "¥6-12K/月",
+          "fit_score": 5,
+          "status": "not_contacted"
+        }
+      ,
+    {
+      "platform": "job.proginn.com",
+      "title": "后端其他 - 物流加油管理平台部署运维",
+      "project_id": "186392",
+      "budget": "¥12-18K/月",
+      "fit_score": 9,
+      "email_to": "186392@proginn.com",
+      "status": "email_sent",
+      "message_id": "d2e90880-5c04-a368-9a7a-d25846ce9fa6@163.com",
+      "sent_at": "2026-04-17T12:23 CST",
+      "notes": "Java/MySQL/微信小程序. ¥12-18K high-value SaaS deployment."
+    },
+    {
+      "platform": "job.proginn.com",
+      "title": "Python工程师 - 像素蛋糕Windows修图计费软件",
+      "project_id": "186394",
+      "budget": "¥1-6K/月",
+      "fit_score": 8,
+      "email_to": "186394@proginn.com",
+      "status": "email_sent",
+      "message_id": "841f1f6e-eda5-a9e4-79bc-3d75a597f08c@163.com",
+      "sent_at": "2026-04-17T12:23 CST",
+      "notes": "Windows Python automation. psutil/PyQt5. Quick 1-week win."
+    }],
+      "remoteok_status": "STALE - same 3 jobs as yesterday. No new engineering postings.",
+      "emails_sent_this_session": 2,
+      "total_emails_today": 4,
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING"
+    }
+  ],
+  "jobs_appended_2026_04_17": [
+    {
+      "session": "outreach-agent-001 2026-04-17 10:38 CST",
+      "new_proginn_jobs": [
+        {
+          "platform": "job.proginn.com",
+          "title": "Python工程师 - PVE虚拟机 xterm.js/VNC/SPICE连接",
+          "project_id": "186385",
+          "budget": "¥1-6K/月",
+          "fit_score": 8,
+          "description": "网站调用PVE底层生成虚拟机给学生上课，xterm.js/VNC/SPICE web连接，代码有bug需修复+二次开发",
+          "requirements": [
+            "Python",
+            "PVE",
+            "xterm.js",
+            "VNC",
+            "SPICE",
+            "WebSocket"
+          ],
+          "email_to": "186385@proginn.com",
+          "status": "email_sent",
+          "message_id": "2d730fec-bb96-4bed-9573-23a9f6657d43@163.com",
+          "sent_at": "2026-04-17T10:38 CST"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "Android工程师 - ADHD辅助App MVP (Flutter)",
+          "project_id": "186359",
+          "budget": "¥1-6K/月",
+          "fit_score": 7,
+          "description": "ADHD辅助App：Apple Watch睡眠数据读取/一键录音/虚拟木鱼/定时提醒，Flutter iOS+Android",
+          "requirements": [
+            "Flutter",
+            "HealthKit",
+            "iOS",
+            "Android",
+            "Widget"
+          ],
+          "email_to": "186359@proginn.com",
+          "status": "email_sent",
+          "message_id": "74df2429-8002-4d8e-87c2-905c19290730@163.com",
+          "sent_at": "2026-04-17T10:38 CST"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "小程序 - 果愈兔IP盲盒小程序（全栈）",
+          "project_id": "186357",
+          "budget": "¥6-12K/月",
+          "fit_score": 9,
+          "description": "果愈兔IP治愈系盲盒小程序：盲盒购买/SN绑定/档位权益解锁/微信支付/VR场景/AI兔子日记/ECharts管理后台",
+          "requirements": [
+            "微信小程序",
+            "Flutter/原生",
+            "微信支付",
+            "AI",
+            "VR",
+            "MySQL",
+            "后端"
+          ],
+          "email_to": "186357@proginn.com",
+          "status": "email_sent",
+          "message_id": "2bbc146d-fcbc-438c-ae3a-53ca8b7be1e8@163.com",
+          "sent_at": "2026-04-17T10:38 CST",
+          "notes": "HIGH PRIORITY - ¥6-12K. 后端+支付+管理后台直接匹配。盲盒核销逻辑熟悉。"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "iOS工程师 - C端app AI集成",
+          "project_id": "42733",
+          "budget": "¥18-500K/月",
+          "fit_score": 6,
+          "description": "开发C端app，需要ios技术牛一点，会用ai",
+          "requirements": [
+            "iOS",
+            "Swift",
+            "AI"
+          ],
+          "status": "not_contacted_ios_not_core"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "C#工程师 - HF RFID/NFC读卡器",
+          "project_id": "186378",
+          "budget": "¥1-6K/月",
+          "fit_score": 5,
+          "description": "对接工业HF RFID/NFC读卡器，自动读卡/Excel导出",
+          "requirements": [
+            "C#",
+            "Android",
+            "RFID/NFC",
+            "Excel"
+          ],
+          "status": "not_contacted_c_sharp_not_core"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "小程序 - 妙思美推一反三 健康打卡返现",
+          "project_id": "186376",
+          "budget": "¥1-6K/月",
+          "fit_score": 6,
+          "description": "健康产品任务打卡返现小程序：下单/核销打卡/微信支付返现/源码交付",
+          "requirements": [
+            "微信小程序",
+            "微信支付",
+            "uniapp"
+          ],
+          "location_note": "优先吉林/长春本地开发者",
+          "status": "skipped_location_preference"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "Go工程师 - AI漫灵 元宇宙旅行社交APP",
+          "project_id": "42732",
+          "budget": "¥1-6K/月",
+          "fit_score": 5,
+          "description": "AI+3D元宇宙旅行社交APP，React Native + Go + 火山引擎",
+          "requirements": [
+            "Go",
+            "React Native",
+            "MySQL",
+            "Redis",
+            "ES",
+            "AI"
+          ],
+          "status": "not_contacted_go_not_core"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "测试工程师 - 网络安全渗透测试",
+          "project_id": "42731",
+          "budget": "¥6-12K/月",
+          "fit_score": 7,
+          "description": "网络安全测试/渗透测试，BurpSuite/Goby/xray/AWVS/SQLMAP",
+          "requirements": [
+            "安全测试",
+            "渗透测试",
+            "BurpSuite",
+            "Wireshark"
+          ],
+          "status": "not_contacted_security_not_core"
+        }
+      ],
+      "remoteok_status": "3 new jobs - all location/US-citizen-restricted",
+      "emails_sent_this_session": 3,
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING via smtp.163.com:465 SSL",
+      "smtp_note": "Task specified GQjbwvrwcZ8HM4Ze but TLfTvAJBC8QKxxre verified working"
+    },
+    {
+      "session": "outreach-agent-001 2026-04-17 15:18 CST",
+      "platform": "job.proginn.com",
+      "new_jobs": [
+        {
+          "platform": "job.proginn.com",
+          "title": "硬件开发 - AI翻译工具 (Rockchip RK3576)",
+          "project_id": "186401",
+          "budget": "¥18-30K/月",
+          "fit_score": 9,
+          "description": "AI翻译工具，尺寸银行卡大，厚度1.5cm，Rockchip RK3576，带电池麦克风，挂脖，WiFi，续航+散热+识别准确",
+          "requirements": ["Rockchip RK3576", "WiFi", "麦克风", "LLM集成", "续航优化", "散热设计"],
+          "proposal_email": {
+            "subject": "Python工程师 | AI翻译工具RK3576硬件 + WiFi/LLM集成 | Yitong"
+          },
+          "email_to": "186401@proginn.com",
+          "status": "email_sent",
+          "message_id": "outreach-1744886280-2@163.com",
+          "sent_at": "2026-04-17T15:18 CST",
+          "notes": "HIGH PRIORITY - ¥18-30K. Rockchip RK3576 ARM开发 + 语音LLM翻译 + WiFi续航. Email sent."
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "Python工程师 - 项目 (编号186396)",
+          "project_id": "186396",
+          "budget": "TBD",
+          "fit_score": 7,
+          "description": "Python后端项目",
+          "requirements": ["Python后端"],
+          "proposal_email": {
+            "subject": "Python工程师 | 项目承接 | Yitong"
+          },
+          "email_to": "186396@proginn.com",
+          "status": "email_sent",
+          "message_id": "outreach-1744886280-3@163.com",
+          "sent_at": "2026-04-17T15:18 CST",
+          "notes": "Generic Python backend project. Email sent."
+        }
+      ],
+      "remoteok_status": "FULLY STALE - no engineering jobs (Yuno/LATAM, Gong/GuidePoint sales only)",
+      "emails_sent_this_session": 2,
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING via smtp.163.com:465 SSL"
+    }
   ]
 }

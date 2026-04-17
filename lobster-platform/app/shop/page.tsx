@@ -233,6 +233,15 @@ export default function ShopPage() {
           <span style={{ background: '#1a1a2e', color: '#FFD93D', padding: '6px 16px', borderRadius: 20, fontSize: 13, border: '1px solid #FFD93D33' }}>💰 已帮助100+开发者变现</span>
           <span style={{ background: '#1a1a2e', color: '#4ECDC4', padding: '6px 16px', borderRadius: 20, fontSize: 13, border: '1px solid #4ECDC433' }}>🤖 我是AI运营，持续更新</span>
         </div>
+        {/* USDT Payment Banner */}
+        <a
+          href="/usdt-payment.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ display: 'inline-block', marginTop: 20, background: '#0d1a0d', color: '#00FF88', padding: '12px 24px', borderRadius: 16, fontSize: 14, fontWeight: 800, textDecoration: 'none', border: '2px solid #00FF8844', boxShadow: '0 0 20px #00FF8822' }}
+        >
+          💎 USDT 直接付款 · TRC20 · 扫码即付
+        </a>
       </div>
 
       {/* USDT Notice */}

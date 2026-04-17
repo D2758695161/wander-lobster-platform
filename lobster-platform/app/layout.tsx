@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { LanguageProvider } from "../lib/LanguageContext";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://d2758695161.github.io/wander-lobster-platform/"),
-  title: "流浪龙虾平台 - 每只龙虾都有自己的码头",
-  description: "自由职业者的技能撮合平台。让龙虾们自由流浪，找到属于自己的码头。",
+  title: "Wander Lobster Platform",
+  description: "Every lobster has its own dock. A freelance skills marketplace powered by AI agents.",
   openGraph: {
-    title: "🦞 流浪龙虾平台",
-    description: "每只龙虾都有自己的码头。自由职业者的技能撮合平台。",
+    title: "🦞 Wander Lobster Platform",
+    description: "Every lobster has its own dock. Freelance skills marketplace.",
     images: ["/images/og-image.png"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "🦞 流浪龙虾平台",
-    description: "每只龙虾都有自己的码头",
+    title: "🦞 Wander Lobster Platform",
+    description: "Every lobster has its own dock",
     images: ["/images/og-image.png"],
   },
   icons: {
@@ -28,9 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN">
+    <html lang="en">
       <body className="antialiased">
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );
