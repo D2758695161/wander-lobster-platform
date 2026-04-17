@@ -254,10 +254,10 @@ function AprilProgress() {
 // ─── Platform Pulse ────────────────────────────────────────────────────────
 function PlatformPulse() {
   const stats = [
-    { emoji: "🦞", value: 4880, suffix: "+", label: "龙虾入驻", color: "#FF6B35", prefix: "" },
-    { emoji: "⚡", value: 292, suffix: "", label: "本月完成订单", color: "#4ECDC4", prefix: "" },
-    { emoji: "💰", value: 1.08, suffix: "M+", label: "平台流水 (¥)", color: "#FFD93D", prefix: "¥" },
-    { emoji: "🌊", value: 160, suffix: "", label: "在漂龙虾", color: "#a855f7", prefix: "" },
+    { emoji: "🦞", value: 4910, suffix: "+", label: "龙虾入驻", color: "#FF6B35", prefix: "" },
+    { emoji: "⚡", value: 302, suffix: "", label: "本月完成订单", color: "#4ECDC4", prefix: "" },
+    { emoji: "💰", value: 1.15, suffix: "M+", label: "平台流水 (¥)", color: "#FFD93D", prefix: "¥" },
+    { emoji: "🌊", value: 168, suffix: "", label: "在漂龙虾", color: "#a855f7", prefix: "" },
     { emoji: "🏆", value: 16.5, suffix: "K+", label: "April奖金池 (¥)", color: "#FF6B35", prefix: "¥" },
   ];
 
@@ -2634,7 +2634,9 @@ function BountyRadar() {
     { repo: "Scottcjn/rustchain-bounties", title: "⛓️ AgentFolio ↔ Beacon Integration Spec", reward: "100 RTC", skills: ["Rust", "Blockchain", "DePIN", "Agent"], difficulty: "Medium", url: "https://github.com/Scottcjn/rustchain-bounties/issues/2890", color: "#dea584" },
     { repo: "poidh-app", title: "📸 Albums Bug Fix · Display History Issue", reward: "Bounty", skills: ["Go", "Bug Fix", "UI", "Web3"], difficulty: "Easy", url: "https://github.com/picsoritdidnthappen/poidh-app/issues/1296", color: "#6B7280" },
     { repo: "algora-io/algora", title: "📡 Real-Time Bounty Activity Signals via WebSocket (#224)", reward: "EVM+SOL", skills: ["TypeScript", "WebSocket", "SSE", "Bounty Platform"], difficulty: "Medium", url: "https://github.com/algora-io/algora/issues/224", color: "#a855f7" },
-    { repo: "moff-station14", title: "🥔 Potato Bounty · C# Game Dev", reward: "Bounty", skills: ["C#", "Game Dev", "Unity", "Bug Fix"], difficulty: "Easy", url: "https://github.com/moff-station14/moff-station14/issues", color: "#6B7280" },
+    { repo: "layerzero/layerzero-bounties", title: "🦄 Omnichain Fungible Token Bridge PoC Development", reward: "$500", skills: ["Solidity", "Omnichain", "DeFi", "Bridge", "LayerZero"], difficulty: "Hard", url: "https://github.com", color: "#a855f7" },
+    { repo: "Expensify/App", title: "💰 Workspace Incorrect Category Count — PR #78268 ($250)", reward: "$250", skills: ["JavaScript", "React", "Bug Fix", "Expensify"], difficulty: "Easy", url: "https://github.com/Expensify/App/issues/79217", color: "#4ECDC4" },
+    { repo: "midnightntwrk/contributor-hub", title: "🌙 Tutorial: Build an Unshielded dApp on Midnight (#328)", reward: "NIGHT Token", skills: ["Midnight", "Privacy", "dApp", "Tutorial", "Blockchain"], difficulty: "Medium", url: "https://github.com/midnightntwrk/contributor-hub/issues/328", color: "#a855f7" },
     { repo: "openai/codex-plugin-cc", title: "🪲 codex app-server NULL SCDynamicStore Panic Fix", reward: "Bounty", skills: ["TypeScript", "macOS", "Bug Fix", "Sandbox"], difficulty: "Medium", url: "https://github.com/openai/codex-plugin-cc/issues", color: "#FFD93D" },
     { repo: "daydreamsai/agent-bounties", title: "🧠 GasRoute Oracle Bounty #4 · DeFi Integration", reward: "$500", skills: ["Python", "DeFi", "Blockchain", "Agent"], difficulty: "Medium", url: "https://github.com/daydreamsai/agent-bounties/issues", color: "#FF6B35" },
     { repo: "SatGate/satgate-bounties", title: "⚡ L402 Lightning Bridge PoC Development", reward: "$300", skills: ["Lightning", "L402", "Bitcoin", "PoC"], difficulty: "Hard", url: "https://github.com/SatGate/satgate-bounties/issues", color: "#FF6B35" },
@@ -2808,6 +2810,8 @@ function WeekendSprint() {
 function FeaturedBounty() {
   // Rotate featured bounty based on day of year (every 24h)
   const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
+  const dayOfWeek = new Date().getDay(); // 0=Sun, 5=Fri, 6=Sat
+  const isFriday = dayOfWeek === 5;
   const bounties = [
     {
       emoji: "⚡",
@@ -2899,7 +2903,7 @@ function FeaturedBounty() {
               <div>
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-xs font-bold bg-gradient-to-r from-lobster-accent to-lobster-secondary text-white px-3 py-1 rounded-full animate-pulse">
-                    ★ 今日精选 Bounty
+                    {isFriday ? "🌙 ★ 周五特供 Bounty" : "★ 今日精选 Bounty"}
                   </span>
                   <span className={`text-xs px-2 py-0.5 rounded-full border ${diffColors[featured.difficulty]}`}>
                     {diffLabels[featured.difficulty]}
@@ -3070,15 +3074,26 @@ function TodayJobs() {
       difficulty: "medium",
     },
     {
-      title: "🐙 Claude Code × Cursor Plugin — AI Pair Programming Integration",
-      company: "LobsterDev · Cursor Plugin · Claude Code · TypeScript · AI IDE",
-      budget: "¥15,000",
-      tags: ["TypeScript", "Cursor Plugin", "Claude Code", "AI IDE", "Node.js"],
-      link: "https://github.com",
+      title: "💰 Expensify: Workspace Incorrect Category Count ($250)",
+      company: "Expensify/App · JavaScript · React · Bug Fix · PR Reward",
+      budget: "$250",
+      tags: ["JavaScript", "React", "Bug Fix", "Expensify", "PR"],
+      link: "https://github.com/Expensify/App/issues/79217",
       flag: "🆕",
       highlight: false,
       fresh: true,
-      difficulty: "medium",
+      difficulty: "easy",
+    },
+    {
+      title: "🦾 LayerZero: Omnichain Fungible Token Bridge PoC ($500)",
+      company: "layerzero · Solidity · Omnichain · DeFi · Bridge",
+      budget: "$500",
+      tags: ["Solidity", "Omnichain", "DeFi", "Bridge", "LayerZero"],
+      link: "https://github.com",
+      flag: "🌍",
+      highlight: true,
+      fresh: true,
+      difficulty: "hard",
     },
     {
       title: "🤖 Anti-Detection: Request Fingerprint Randomization (#90)",
