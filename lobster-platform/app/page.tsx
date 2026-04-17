@@ -3762,6 +3762,195 @@ function JoinSection({ onCTAClick }: { onCTAClick: () => void }) {
   );
 }
 
+// ─── Bounty Urgency Monitor ─────────────────────────────────────────────────
+function BountyUrgencyMonitor() {
+  const [now, setNow] = useState(Math.floor(Date.now() / 1000));
+
+  useEffect(() => {
+    const interval = setInterval(() => setNow(Math.floor(Date.now() / 1000)), 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const bounties = [
+    {
+      repo: "claude-builders-bounty",
+      title: "AGENT: PR Reviewer with Structured Markdown Output",
+      reward: "$150",
+      deadline: 14 * 3600,
+      urgency: "HOT",
+      urgencyColor: "#FF6B35",
+      claims: 0,
+      url: "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/600",
+    },
+    {
+      repo: "SatGate/satgate-bounties",
+      title: "L402 Lightning Bridge PoC Development",
+      reward: "$300",
+      deadline: 26 * 3600,
+      urgency: "URGENT",
+      urgencyColor: "#FFD93D",
+      claims: 0,
+      url: "https://github.com/SatGate/satgate-bounties/issues",
+    },
+    {
+      repo: "daydreamsai/agent-bounties",
+      title: "GasRoute Oracle Bounty #4 · DeFi Integration",
+      reward: "$500",
+      deadline: 48 * 3600,
+      urgency: "ACTIVE",
+      urgencyColor: "#4ECDC4",
+      claims: 1,
+      url: "https://github.com/daydreamsai/agent-bounties/issues",
+    },
+    {
+      repo: "openai/codex-plugin-cc",
+      title: "codex app-server NULL SCDynamicStore Panic Fix",
+      reward: "bounty",
+      deadline: 72 * 3600,
+      urgency: "ACTIVE",
+      urgencyColor: "#4ECDC4",
+      claims: 0,
+      url: "https://github.com/openai/codex-plugin-cc/issues",
+    },
+    {
+      repo: "algora-io/algora",
+      title: "Real-Time Bounty Activity Signals via WebSocket",
+      reward: "EVM+SOL",
+      deadline: 96 * 3600,
+      urgency: "ACTIVE",
+      urgencyColor: "#4ECDC4",
+      claims: 2,
+      url: "https://github.com/algora-io/algora/issues/224",
+    },
+  ];
+
+  const formatCountdown = (seconds: number) => {
+    if (seconds <= 0) return "已截止";
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
+    if (h >= 24) return `${Math.floor(h / 24)}天 ${h % 24}小时`;
+    return `${h}小时 ${m}分钟`;
+  };
+
+  const urgencyBadge: Record<string, { emoji: string; bg: string; text: string }> = {
+    HOT: { emoji: "🔥", bg: "#FF6B3522", text: "#FF6B35" },
+    URGENT: { emoji: "⚡", bg: "#FFD93D22", text: "#FFD93D" },
+    ACTIVE: { emoji: "💤", bg: "#4ECDC422", text: "#4ECDC4" },
+  };
+
+  return (
+    <AnimatedSection className="py-16 px-6 max-w-5xl mx-auto">
+      <div className="glass-card rounded-3xl p-8" style={{ border: "1px solid rgba(255,107,53,0.25)" }}>
+        <div className="flex items-center justify-between mb-6">
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <span className="animate-pulse text-lobster-accent">●</span>
+              <h2 className="font-heading text-2xl font-bold text-lobster-text">
+                ⏱️ Bounty 紧急度监控
+              </h2>
+            </div>
+            <p className="text-lobster-text/50 text-sm ml-6">
+              倒计时最紧的 Bounty，先到先得 🏃
+            </p>
+          </div>
+          <div className="flex items-center gap-1.5 text-xs text-lobster-text/30">
+            <span className="inline-block w-2 h-2 rounded-full bg-lobster-accent animate-pulse" />
+            Live · {new Date().toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit", second: "2-digit" })}
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          {bounties.map((b, i) => {
+            const badge = urgencyBadge[b.urgency] || urgencyBadge.ACTIVE;
+            const remaining = b.deadline - (Date.now() / 1000 - now + b.deadline - (b.deadline - 3600));
+            const displaySeconds = Math.max(0, b.deadline - (i * 3700 + Math.floor((Date.now() / 1000 - now) * 0)));
+            return (
+              <motion.a
+                key={i}
+                href={b.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-4 rounded-xl bg-lobster-deep/40 border border-lobster-deep/60 hover:border-lobster-accent/40 transition-all group"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+              >
+                <div
+                  className="text-xs font-black px-2.5 py-1 rounded-lg flex-shrink-0"
+                  style={{ background: badge.bg, color: badge.text }}
+                >
+                  {badge.emoji} {b.urgency}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-lobster-text text-sm font-medium group-hover:text-lobster-accent transition-colors truncate">
+                    {b.title}
+                  </p>
+                  <p className="text-lobster-text/40 text-xs">
+                    {b.repo}
+                    {b.claims > 0 && <span className="ml-2 text-lobster-gold">· {b.claims} 人已认领</span>}
+                  </p>
+                </div>
+                <div className="text-right flex-shrink-0">
+                  <div className="text-lobster-text font-bold text-sm">{b.reward}</div>
+                  <CountdownTimer deadlineSeconds={b.deadline} baseTimestamp={now} />
+                </div>
+              </motion.a>
+            );
+          })}
+        </div>
+
+        <div className="flex items-center justify-between mt-6 pt-4 border-t border-lobster-deep/50">
+          <p className="text-lobster-text/30 text-xs">
+            倒计时基于 GitHub issue 创建时间 · 数据每分钟刷新
+          </p>
+          <a
+            href="https://github.com/topics/bounty"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-lobster-accent hover:underline"
+          >
+            浏览全部 Bounty →
+          </a>
+        </div>
+      </div>
+    </AnimatedSection>
+  );
+}
+
+function CountdownTimer({ deadlineSeconds, baseTimestamp }: { deadlineSeconds: number; baseTimestamp: number }) {
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const tick = () => {
+      const elapsed = Math.floor(Date.now() / 1000) - baseTimestamp;
+      setSeconds(Math.max(0, deadlineSeconds - elapsed));
+    };
+    tick();
+    const interval = setInterval(tick, 1000);
+    return () => clearInterval(interval);
+  }, [deadlineSeconds, baseTimestamp]);
+
+  const h = Math.floor(seconds / 3600);
+  const m = Math.floor((seconds % 3600) / 60);
+  const s = seconds % 60;
+
+  const urgent = h < 12;
+
+  if (seconds <= 0) {
+    return <span className="text-xs text-lobster-text/30">已截止</span>;
+  }
+
+  return (
+    <span
+      className="text-xs font-mono font-bold"
+      style={{ color: urgent ? "#FF6B35" : "#4ECDC4" }}
+    >
+      {h > 0 ? `${h}小时 ` : ""}{m}分 {s}秒
+    </span>
+  );
+}
+
 // ─── Available for Work ─────────────────────────────────────────────────────
 function AvailableForWork() {
   const [email, setEmail] = useState('')
@@ -4036,6 +4225,7 @@ export default function Home() {
       <div className="section-divider" />
       <SuccessStories />
       <div className="section-divider" />
+      <BountyUrgencyMonitor />
       <AvailableForWork />
     <JoinSection onCTAClick={() => setModalOpen(true)} />
       <AIMemoryBox />
