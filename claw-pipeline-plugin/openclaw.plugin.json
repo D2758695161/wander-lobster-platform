@@ -1,0 +1,32 @@
+{
+  "id": "claw-pipeline",
+  "name": "CLAW-Pipeline",
+  "description": "CLAW-CODE inspired hook pipeline, session compaction, and permission escalation for OpenClaw. Registers before_tool_call and after_tool_call hooks to intercept and audit all tool execution.",
+  "version": "1.0.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "compactThreshold": {
+        "type": "number",
+        "default": 50000,
+        "description": "Token threshold to trigger session compaction"
+      },
+      "compactPreserve": {
+        "type": "number",
+        "default": 20,
+        "description": "Number of recent messages to preserve during compaction"
+      },
+      "logFile": {
+        "type": "string",
+        "default": "/tmp/openclaw_hook_log.txt",
+        "description": "Path to hook audit log file"
+      },
+      "dangerousPatterns": {
+        "type": "array",
+        "default": ["rm -rf /", "mkfs", "wipefs"],
+        "description": "Command patterns to block in exec tool"
+      }
+    }
+  }
+}

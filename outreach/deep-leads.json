@@ -1,0 +1,328 @@
+{
+  "researchDate": "2026-04-17",
+  "researchTime": "14:47 Asia/Shanghai",
+  "researcher": "leads-researcher-001",
+  "summary": "Research completed via GitHub API accessed through Playwright browser. Found 72 bounty-labeled issues in last 7 days. GitHub token returns 401 when used via Node.js but API works via browser GET without auth. Also found trending repos updated today.",
+  "leads": [
+    {
+      "id": "gh-bounty-001",
+      "source": "GitHub Issues API (via browser)",
+      "status": "active-real-data",
+      "totalBountyIssuesFound": 72,
+      "items": [
+        {
+          "title": "$500 Bounty: Fake a Verified Post",
+          "url": "https://github.com/ClementWalter/agent-captcha/issues/1",
+          "repo": "ClementWalter/agent-captcha",
+          "created": "2026-04-16",
+          "labels": ["bounty"],
+          "description": "Challenge to post a message with a green verified badge on agentcaptcha.chat without running real model inference on CommitLLM-compatible GPU",
+          "whatTheyNeed": "Creative bypass / social engineering approach to fake verified badge",
+          "howToReach": "Open GitHub issue, respond with solution",
+          "expectedBudget": "$500"
+        },
+        {
+          "title": "Bounty: FV Standalone Flow — Differentiate first-time vs. reverify intro screens",
+          "url": "https://github.com/GoodDollar/GoodDAPP/issues/4377",
+          "repo": "GoodDollar/GoodDAPP",
+          "created": "2026-04-17",
+          "labels": ["bounty"],
+          "description": "Refactor standalone face-verification intro flow, separate first-time vs reverify screens",
+          "whatTheyNeed": "React/ReactJS refactoring work",
+          "howToReach": "Open issue, submit PR",
+          "expectedBudget": "Not specified - ask maintainer"
+        },
+        {
+          "title": "[BOUNTY] Claim: Travel Price Tracker — $50",
+          "url": "https://github.com/bolivian-peru/marketplace-service-template/issues/372",
+          "repo": "bolivian-peru/marketplace-service-template",
+          "created": "2026-04-15",
+          "labels": ["bounty"],
+          "description": "Python + Playwright service tracking real-time flight/hotel prices from Google Flights",
+          "whatTheyNeed": "Python + Playwright scraping service",
+          "howToReach": "Comment on issue claiming the bounty",
+          "expectedBudget": "$50 in $SX token"
+        },
+        {
+          "title": "Tokenised market-maker shares: ERC-4626 vault per agent, fees → share holders",
+          "url": "https://github.com/kcolbchain/meridian/issues/18",
+          "repo": "kcolbchain/meridian",
+          "created": "2026-04-13",
+          "labels": ["enhancement", "help wanted", "bounty"],
+          "description": "Build tokenised vault system for blockchain agent market-making",
+          "whatTheyNeed": "Solidity/ERC-4626 vault development + blockchain integration",
+          "howToReach": "Open issue, contact repo owner",
+          "expectedBudget": "Not specified - likely meaningful for DeFi project"
+        },
+        {
+          "title": "[Tutorial] Building an Unshielded Token dApp with UI",
+          "url": "https://github.com/midnightntwrk/contributor-hub/issues/328",
+          "repo": "midnightntwrk/contributor-hub",
+          "created": "2026-04-13",
+          "labels": ["bounty", "content-proposal", "public"],
+          "description": "Tutorial for building unshielded token dApp with working frontend",
+          "whatTheyNeed": "Technical tutorial writing with code",
+          "howToReach": "Respond on GitHub issue, submit content",
+          "expectedBudget": "Bounty amount not specified"
+        },
+        {
+          "title": "[Tutorial] Shielded Token Operations: Mint, Transfer & Burn with Test Suite",
+          "url": "https://github.com/midnightntwrk/contributor-hub/issues/327",
+          "repo": "midnightntwrk/contributor-hub",
+          "created": "2026-04-13",
+          "labels": ["bounty", "content-proposal", "public"],
+          "description": "Walk through shielded token lifecycle in Compact with compilable code",
+          "whatTheyNeed": "Technical tutorial writing, blockchain/solidity",
+          "howToReach": "Respond on GitHub issue",
+          "expectedBudget": "Bounty amount not specified"
+        },
+        {
+          "title": "Bounty: Tier S defectors identified (v0.1.0)",
+          "url": "https://github.com/plurigrid/nash-portal/issues/3",
+          "repo": "plurigrid/nash-portal",
+          "created": "2026-04-13",
+          "labels": ["bounty"],
+          "description": "On-chain data analysis - identifying defectors in token system",
+          "whatTheyNeed": "Blockchain data analysis",
+          "howToReach": "Open issue",
+          "expectedBudget": "Not specified"
+        },
+        {
+          "title": "Optimize GitHub Issue Polling Interval",
+          "url": "https://github.com/Jennycruzy/sovereign-genesis/issues/62",
+          "repo": "Jennycruzy/sovereign-genesis",
+          "created": "2026-04-15",
+          "labels": ["Bounty"],
+          "description": "Analyze and optimize polling interval in scanner.js for dynamic polling strategy",
+          "whatTheyNeed": "Node.js performance optimization",
+          "howToReach": "Open issue, submit PR",
+          "expectedBudget": "Not specified"
+        },
+        {
+          "title": "Enhance Logging for AI Judge Module",
+          "url": "https://github.com/Jennycruzy/sovereign-genesis/issues/61",
+          "repo": "Jennycruzy/sovereign-genesis",
+          "created": "2026-04-15",
+          "labels": ["Bounty"],
+          "description": "Improve logging in judge.js with timestamps, error details, review metrics",
+          "whatTheyNeed": "Node.js logging enhancement",
+          "howToReach": "Open issue, submit PR",
+          "expectedBudget": "Not specified"
+        },
+        {
+          "title": "add a python version of the kit",
+          "url": "https://github.com/priyanshudumps/fuel-agent-kit/issues/1",
+          "repo": "priyanshudumps/fuel-agent-kit",
+          "created": "2026-04-13",
+          "labels": ["bounty"],
+          "description": "Port existing kit to Python (Fuel blockchain agent kit)",
+          "whatTheyNeed": "Python development, blockchain/agent framework",
+          "howToReach": "Open issue",
+          "expectedBudget": "Not specified - good visibility opportunity"
+        }
+      ]
+    },
+    {
+      "id": "gh-trending-001",
+      "source": "GitHub Trending Repos API (via browser)",
+      "status": "active-real-data",
+      "query": "stars:>500 pushed:>2026-04-10",
+      "totalCount": 19893,
+      "topRepos": [
+        {
+          "name": "OpenViking",
+          "fullName": "volcengine/OpenViking",
+          "url": "https://github.com/volcengine/OpenViking",
+          "description": "Open-source context database for AI Agents (similar to OpenClaw). 22k stars, 173 open issues",
+          "language": "Python",
+          "stars": 22445,
+          "openIssues": 173,
+          "whatTheyNeed": "Contributors for context/agent memory systems, Python devs",
+          "expectedBudget": "Volunteer (Volcengine backed)"
+        },
+        {
+          "name": "webiny-js",
+          "fullName": "webiny/webiny-js",
+          "url": "https://github.com/webiny/webiny-js",
+          "description": "Open-source serverless CMS on AWS. 7.9k stars, 331 open issues, topics include MCP, AI-assisted development",
+          "language": "TypeScript",
+          "stars": 7962,
+          "openIssues": 331,
+          "whatTheyNeed": "TypeScript/Node.js contributors, MCP integration help",
+          "expectedBudget": "Volunteer"
+        },
+        {
+          "name": "ytdlnis",
+          "fullName": "deniscerri/ytdlnis",
+          "url": "https://github.com/deniscerri/ytdlnis",
+          "description": "Full-featured audio/video downloader for Android using yt-dlp. 8.3k stars, 55 open issues",
+          "language": "Kotlin",
+          "stars": 8340,
+          "openIssues": 55,
+          "whatTheyNeed": "Kotlin/Android devs for feature work",
+          "expectedBudget": "Volunteer"
+        },
+        {
+          "name": "bluefin",
+          "fullName": "ublue-os/bluefin",
+          "url": "https://github.com/ublue-os/bluefin",
+          "description": "Next-gen Linux workstation. 2.4k stars, 89 open issues",
+          "language": "Shell",
+          "stars": 2439,
+          "openIssues": 89,
+          "whatTheyNeed": "Linux/GNOME contributors",
+          "expectedBudget": "Volunteer"
+        },
+        {
+          "name": "jco",
+          "fullName": "bytecodealliance/jco",
+          "url": "https://github.com/bytecodealliance/jco",
+          "description": "JavaScript toolchain for WebAssembly Components. 942 stars, 57 open issues",
+          "language": "Rust",
+          "stars": 942,
+          "openIssues": 57,
+          "whatTheyNeed": "Rust + WebAssembly contributors",
+          "expectedBudget": "Volunteer"
+        },
+        {
+          "name": "rspress",
+          "fullName": "web-infra-dev/rspress",
+          "url": "https://github.com/web-infra-dev/rspress",
+          "description": "Fast Rsbuild-based static site generator. 2.2k stars, 49 open issues",
+          "language": "TypeScript",
+          "stars": 2205,
+          "openIssues": 49,
+          "whatTheyNeed": "TypeScript/docs contributors",
+          "expectedBudget": "Volunteer"
+        },
+        {
+          "name": "java-operator-sdk",
+          "fullName": "operator-framework/java-operator-sdk",
+          "url": "https://github.com/operator-framework/java-operator-sdk",
+          "description": "Java SDK for Kubernetes Operators. 925 stars, 86 open issues",
+          "language": "Java",
+          "stars": 925,
+          "openIssues": 86,
+          "whatTheyNeed": "Java/Kubernetes contributors",
+          "expectedBudget": "Volunteer"
+        },
+        {
+          "name": "api-bricks-sdk",
+          "fullName": "api-bricks/api-bricks-sdk",
+          "url": "https://github.com/api-bricks/api-bricks-sdk",
+          "description": "SDKs for CoinAPI & FinFeedAPI. 526 stars, 16 open issues",
+          "language": "C#",
+          "stars": 526,
+          "openIssues": 16,
+          "whatTheyNeed": "API integration contributors, multi-language SDK work",
+          "expectedBudget": "Volunteer"
+        },
+        {
+          "name": "seo-geo-claude-skills",
+          "fullName": "aaron-he-zhu/seo-geo-claude-skills",
+          "url": "https://github.com/aaron-he-zhu/seo-geo-claude-skills",
+          "description": "20 SEO & GEO skills for Claude Code, Cursor, Codex. 1k stars",
+          "language": "Python",
+          "stars": 1034,
+          "openIssues": 1,
+          "whatTheyNeed": "SEO content, skill development",
+          "expectedBudget": "Volunteer"
+        }
+      ]
+    },
+    {
+      "id": "gh-sponsors-001",
+      "source": "GitHub Sponsors",
+      "status": "browser-timeout",
+      "note": "github.com/sponsors/explore timed out. But GitHub API is accessible via browser for repo search. Could search for repos with sponsorship files via API.",
+      "action": "Try browser to GET: https://api.github.com/search/repositories?q=github+sponsors+in:readme&sort=stars"
+    },
+    {
+      "id": "ph-devtools-001",
+      "source": "Product Hunt",
+      "company": "Product Hunt - Developer Tools",
+      "status": "accessible-browser-only",
+      "whatTheyNeed": "New AI/developer tool launches daily - integration help, content writing, beta testing, community management",
+      "howToReach": "https://www.producthunt.com/topics/developer-tools - browse daily, contact makers via Twitter or product page",
+      "expectedBudget": "$200-$2000 per engagement"
+    },
+    {
+      "id": "rapidapi-enterprise-001",
+      "source": "RapidAPI Enterprise",
+      "company": "RapidAPI Hub",
+      "status": "accessible-browser-only-js-required",
+      "whatTheyNeed": "Enterprise API providers need SDK wrappers, integration docs, code examples, Zapier/Make/Bubble integrations",
+      "howToReach": "https://rapidapi.com/enterprise or browse individual API provider pages",
+      "expectedBudget": "$500-$3000 per integration project"
+    },
+    {
+      "id": "upwork-001",
+      "source": "Upwork",
+      "company": "Upwork",
+      "status": "open-registration-jobs-available",
+      "whatTheyNeed": "AI integration, API development, automation jobs - high volume",
+      "howToReach": "https://www.upwork.com/nx/search/jobs/ - create profile, bid on AI/API/integration jobs",
+      "expectedBudget": "$15-$150/hr"
+    },
+    {
+      "id": "toptal-001",
+      "source": "Toptal",
+      "company": "Toptal",
+      "status": "registration-open",
+      "whatTheyNeed": "Vetted AI/ML and API integration developers",
+      "howToReach": "https://www.toptal.com/freelance-jobs - apply via talent@toptal.com",
+      "expectedBudget": "$60-$200+/hr"
+    }
+  ],
+  "immediateActionItems": [
+    {
+      "priority": 1,
+      "action": "Claim $500 bounty: Fake a Verified Post (ClementWalter/agent-captcha)",
+      "reason": "Concrete $500 reward, creative challenge"
+    },
+    {
+      "priority": 2,
+      "action": "Claim $50 Travel Price Tracker bounty (bolivian-peru/marketplace-service-template)",
+      "reason": "Python + Playwright = your skillset"
+    },
+    {
+      "priority": 3,
+      "action": "Contribute to OpenViking (volcengine/OpenViking) - AI agent context DB, 22k stars",
+      "reason": "High-visibility project, related to your OpenClaw work, lots of open issues"
+    },
+    {
+      "priority": 4,
+      "action": "Create Upwork profile targeting AI/API/integration jobs",
+      "reason": "Immediate income, low barrier"
+    },
+    {
+      "priority": 5,
+      "action": "Port fuel-agent-kit to Python (priyanshudumps/fuel-agent-kit)",
+      "reason": "Shows versatility, blockchain agent dev is growing field"
+    },
+    {
+      "priority": 6,
+      "action": "Submit tutorial bounties on midnightntwrk/contributor-hub",
+      "reason": "DeFi/blockchain tutorial writing pays, leverages documentation skills"
+    }
+  ],
+  "researchMethodology": {
+    "githubApiBountySearch": "https://api.github.com/search/issues?q=label:bounty+created:>2026-04-10&per_page=15&sort=created&order=desc - returned 72 total, 15 items sampled",
+    "githubTrendingRepos": "https://api.github.com/search/repositories?q=stars:>500+pushed:>2026-04-10&sort=updated&order=desc&per_page=10 - returned 19893 total, 10 items sampled",
+    "note": "GitHub API accessible via Playwright browser without auth token"
+  },
+  "blockedResources": [
+    "web_search DuckDuckGo (fetch failed)",
+    "GitHub API via Node.js (401 on provided token)",
+    "GitHub.com main site (connection timeout)",
+    "Product Hunt (403 via web_fetch, accessible via browser)",
+    "RapidAPI (JS-rendered, needs browser)"
+  ],
+  "accessibleResources": [
+    "GitHub API - repos search (via browser)",
+    "GitHub API - issues search (via browser)",
+    "Product Hunt (via browser)",
+    "Upwork (via browser)",
+    "Toptal (via browser)"
+  ]
+}

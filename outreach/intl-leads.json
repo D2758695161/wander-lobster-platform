@@ -1,0 +1,403 @@
+{
+  "date": "2026-04-15",
+  "platform": "multi",
+  "summary": "RemoteOK stale. Proginn blocked. 6 proactive cold outreach emails sent to AI agent companies (LangChain, AgentOps, Braintrust, Portkey, Composio, Dify). Session corrupted intl-leads.json - rebuilt from memory.",
+  "jobs_appended_2026-04-15": [
+    {
+      "session": "outreach-agent-001 2026-04-15 03:02 CST",
+      "action": "RemoteOK stale. Proginn SPA-blocked. 3 proactive cold outreach emails sent to LangChain + AgentOps + Braintrust.",
+      "remoteok_status": "STALE - no new postings since April 13 (Smartsheet 1131095).",
+      "proginn_status": "SPA_BLOCKED - requires JS. Browser automation blocked by existing instance.",
+      "proactive_cold_outreach_session_1": [
+        {
+          "to": "founders@langchain.com",
+          "subject": "Python Engineer | LangGraph Production Experience + Agent Tool Calling at Scale",
+          "timestamp": "2026-04-15T03:02 CST",
+          "notes": "LangChain - the company building LangGraph. Multi-agent customer service (3 sub-agents), RAG pipeline with re-ranking, MCP tool-calling agent. Strongest possible fit."
+        },
+        {
+          "to": "founders@agentops.ai",
+          "subject": "Python Engineer | AI Agent Observability + LangGraph Production | Yitong",
+          "timestamp": "2026-04-15T03:02 CST",
+          "notes": "AgentOps - AI agent observability platform. Multi-agent LangGraph ops, LLM eval framework, Databricks/MLflow."
+        },
+        {
+          "to": "founders@braintrust.com",
+          "subject": "Python Engineer | LLM Evaluation + Red Teaming in Production | Yitong",
+          "timestamp": "2026-04-15T03:02 CST",
+          "notes": "Braintrust - AI evaluation platform. Pairwise comparison, agent quality scoring, red-teaming, token budgeting."
+        }
+      ],
+      "emails_sent_this_session": 3,
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING"
+    },
+    {
+      "session": "outreach-agent-001 2026-04-15 03:40 CST",
+      "action": "3 more proactive cold outreach emails sent: Portkey AI + Composio + Dify",
+      "remoteok_status": "STALE - no new postings since April 13 (Smartsheet 1131095).",
+      "proactive_cold_outreach_session_2": [
+        {
+          "to": "founders@portkey.ai",
+          "subject": "Python Engineer | AI Gateway + LangGraph Agent Observability | Yitong",
+          "timestamp": "2026-04-15T03:40 CST",
+          "notes": "Portkey AI - AI gateway platform. Pitched AI gateway + observability: Databricks/MLflow, OpenTelemetry, LLM eval framework, token cost tracking."
+        },
+        {
+          "to": "founders@composio.dev",
+          "subject": "Python Engineer | Agent Tool Calling + LangGraph Production | Yitong",
+          "timestamp": "2026-04-15T03:40 CST",
+          "notes": "Composio - AI agent tool integration platform. Pitched MCP tool calling (15+ tools), multi-agent orchestration, LangGraph state management."
+        },
+        {
+          "to": "hello@dify.ai",
+          "subject": "Python Engineer | LLMOps + LangGraph Agent Development | Yitong",
+          "timestamp": "2026-04-15T03:40 CST",
+          "notes": "Dify - Open source LLMOps platform. Pitched LangGraph agent development, LLM eval framework, and production Python engineering."
+        }
+      ],
+      "emails_sent_this_session": 3,
+      "total_emails_today": 7,
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING"
+    }
+  ],
+  "file_note": "intl-leads.json was rebuilt clean after session corruption. Previous entries (RemoteOK jobs from March-April 2026) were lost. Key applied jobs from history: Fullscript Staff ML Engineer (LangGraph/LangChain/MCP), Cast AI Senior SWE (Golang/K8s), MoonPay Security Engineer, Loancrate Full Stack, Ternary Staff Full Stack, Radformation MLE, IonQ Senior IAM Engineer. All applied via smtp.163.com:465 SSL.",
+  "jobs_appended_2026_04_15_morning": [
+    {
+      "session": "outreach-agent-001 2026-04-15 06:02 CST",
+      "action": "RemoteOK stale (no new since Apr 11). Proginn same jobs. Scanned Remotive (2 jobs). Proactive cold outreach to Snorkel AI + Cohere via careers@ email.",
+      "remoteok_status": "STALE - last_updated 1776182405 (Apr 11 16:00 UTC). No new jobs.",
+      "remotive_jobs": [
+        {
+          "id": 2088706,
+          "title": "Fullstack Developer",
+          "company": "Chooose",
+          "fit_score": 7,
+          "location_restricted": "US MA/NY/PA/MD/FL"
+        },
+        {
+          "id": 2088696,
+          "title": "Technical Support Operator",
+          "company": "KnownHost",
+          "fit_score": 4,
+          "salary": "-40k"
+        }
+      ],
+      "new_cold_outreach": [
+        {
+          "to": "careers@snorkel.ai",
+          "subject": "Python Engineer | LangGraph + LLM Data Pipelines + DevX | Yitong",
+          "timestamp": "2026-04-15T06:02 CST",
+          "status": "sent",
+          "message_id": "aaa801b5-9f8c-1874-ef10-9b05d9667aa3@163.com",
+          "notes": "Snorkel AI - Senior SWE DevX + Expert Contributor Lifecycle roles. LangGraph + Databricks/MLflow + DX pitch."
+        },
+        {
+          "to": "careers@cohere.com",
+          "subject": "Python Engineer | LangGraph Agent + LLM Eval + Enterprise AI | Yitong",
+          "timestamp": "2026-04-15T06:02 CST",
+          "status": "sent",
+          "message_id": "a74b5f31-dbde-bfd6-2a65-af557d541285@163.com",
+          "notes": "Cohere - enterprise LLM company. LangGraph agent + LLM eval + FastAPI microservices pitch. Agent infra/eval tooling interest."
+        }
+      ],
+      "smtp_status": "WORKING - TLfTvAJBC8QKxxre via smtp.163.com:465 SSL nodemailer",
+      "emails_sent_today": 2,
+      "emails_sent_today_total": 8
+    }
+  ],
+  "jobs_appended_2026-04-15-09": [
+    {
+      "session": "outreach-agent-001 2026-04-15 09:03 CST",
+      "action": "RemoteOK stale (TrueML Eng Mgr + Rebuy new). Proginn same. Web search down. 2 cold outreach: n8n + TrueML",
+      "remoteok_new_jobs": [
+        {
+          "id": "1131102",
+          "title": "Engineering Manager, Data Platform",
+          "company": "TrueML",
+          "salary": "$111-149k",
+          "fit_score": 8,
+          "notes": "Python/Java, Snowflake/Airflow/BigQuery, US Remote. Not pure IC - requires 2yr management exp. But strong data platform fit."
+        },
+        {
+          "id": "1131104",
+          "title": "Sr Software Engineer B/E",
+          "company": "Rebuy Inc",
+          "salary": "$130-180k",
+          "fit_score": 5,
+          "notes": "PHP/Go, US/Canada only. Not a core fit (PHP not primary skill)"
+        }
+      ],
+      "new_cold_outreach": [
+        {
+          "to": "info@n8n.io",
+          "subject": "Python Engineer | LangGraph Production + AI Agent Orchestration | Yitong",
+          "timestamp": "2026-04-15T09:03 CST",
+          "status": "sent",
+          "message_id": "595623d1-6e98-2492-ff94-57d4be837d40@163.com",
+          "notes": "n8n GmbH Berlin. CEO Jan Oberhauser. AI orchestration layer. Remote-first. LangGraph/multi-agent/MCP perfect fit. Pitched: multi-agent LangGraph production, MCP tool calling, LLM eval pipeline."
+        },
+        {
+          "to": "hiring@trueml.com",
+          "subject": "Python/Snowflake Data Engineer | ML Pipeline Infrastructure + Airflow | Yitong",
+          "timestamp": "2026-04-15T09:03 CST",
+          "status": "sent",
+          "message_id": "cd501bea-d592-7f6a-5b8c-24da9cb3e80d@163.com",
+          "notes": "TrueML FinTech. Lever job 0be89914. US Remote $111-149k. Snowflake/Airflow/BigQuery. Pitched: Snowflake schema/ELT, Airflow SLA monitoring, LLM eval on Databricks/MLflow."
+        }
+      ],
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING",
+      "emails_sent_this_session": 2,
+      "emails_sent_today_total": 11,
+      "web_search_status": "DOWN - all failed"
+    }
+  ],
+  "jobs_appended_2026-04-16": [
+    {
+      "session": "outreach-agent-001 2026-04-16 03:02 CST",
+      "remoteok_status": "NEW - last_updated 2026-04-15T19:00 UTC (3 new jobs today)",
+      "new_remoteok_jobs": [
+        {
+          "id": "1131106",
+          "title": "Technical Support L3 Weekends",
+          "company": "Redis",
+          "salary": "$91,455-$137,273",
+          "fit_score": 8,
+          "tags": [
+            "redis",
+            "python",
+            "sysadmin",
+            "cloud",
+            "nosql",
+            "kubernetes"
+          ],
+          "email_to": "talent@redis.com",
+          "status": "email_sent",
+          "sent_at": "2026-04-16T03:02 CST",
+          "notes": "Python required. $91-137k. Cloud+K8s preferred. Weekend shift UTC+8 advantage."
+        },
+        {
+          "id": "1131104",
+          "title": "Sr Software Engineer B/E",
+          "company": "Rebuy Inc",
+          "salary": "$130-180k",
+          "fit_score": 5,
+          "status": "not_contacted",
+          "notes": "PHP primary - not core skill."
+        },
+        {
+          "id": "1131108",
+          "title": "Culture & People Development Specialist",
+          "company": "Ekumen",
+          "fit_score": 2,
+          "status": "skipped_non_engineering"
+        }
+      ],
+      "emails_sent_this_session": 1,
+      "new_cold_outreach": [
+        {
+          "to": "talent@redis.com",
+          "subject": "Python/SRE Engineer | Redis Technical Support L3 | Yitong",
+          "timestamp": "2026-04-16T03:02 CST",
+          "status": "sent",
+          "notes": "Redis L3 weekend support. Python/SRE fit. $91-137k."
+        }
+      ],
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING",
+      "emails_sent_today_total": 12
+    },
+    {
+      "session": "outreach-agent-001 2026-04-16 09:04 CST",
+      "remoteok_status": "NEW - last_updated 1776297672 (2026-04-15T19:01 UTC)",
+      "action": "RemoteOK 2 new jobs found. Proginn stale. 1 cold outreach to Wingspan.",
+      "new_remoteok_jobs": [
+        {
+          "id": "1131116",
+          "title": "Software Engineer Payment Operations",
+          "company": "Wingspan",
+          "location": "Warsaw, Poland (remote work model)",
+          "salary": "undisclosed",
+          "fit_score": 8,
+          "tags": [
+            "node.js",
+            "payroll",
+            "finance",
+            "operations",
+            "reliability",
+            "backend"
+          ],
+          "apply_url": "https://remoteOK.com/remote-jobs/remote-software-engineer-payment-operations-wingspan-1131116",
+          "status": "cold_outreach_sent",
+          "email_to": "careers+payment-ops@wingspan.com",
+          "message_id": "7d62f014-87fd-e4f9-057c-50ce8b0fcbfb@163.com",
+          "sent_at": "2026-04-16T09:04 CST",
+          "notes": "Node.js reconciliation + ledger + monitoring. Series B fintech a16z backed. Backend/ops fit."
+        },
+        {
+          "id": "1131110",
+          "title": "Alignment Engineer",
+          "company": "Intelligent Technical Solutions",
+          "location": "International",
+          "fit_score": 5,
+          "status": "skipped_non_engineering_fit",
+          "notes": "IT standards/compliance. Vague role. Skipped."
+        }
+      ],
+      "proginn_status": "STALE - no new listings. Same as morning session.",
+      "web_search_status": "DOWN - all failed",
+      "emails_sent_this_session": 1,
+      "new_cold_outreach": [
+        {
+          "to": "careers+payment-ops@wingspan.com",
+          "subject": "Software Engineer Payment Ops | Reconciliation + Node.js + Fintech | Yitong",
+          "timestamp": "2026-04-16T09:04 CST",
+          "status": "sent",
+          "message_id": "7d62f014-87fd-e4f9-057c-50ce8b0fcbfb@163.com",
+          "notes": "Wingspan Series B fintech. Payment reconciliation + monitoring. Node.js + Python backend fit."
+        }
+      ],
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING via smtp.163.com:465 SSL",
+      "emails_sent_today_total": 13
+    }
+  ],
+  "jobs_appended_2026_04_16_evening": [
+    {
+      "session": "outreach-agent-001 2026-04-16 18:14 CST",
+      "remoteok_status": "STALE - Eleks new (.NET, location-restricted). Wingspan already contacted morning.",
+      "new_remoteok_jobs": [
+        {
+          "status": "skipped_location_restricted",
+          "title": "Banking Full Stack Software Developer TSCM",
+          "fit_score": 5,
+          "company": "Eleks",
+          "id": "1131120"
+        }
+      ],
+      "proactive_cold_outreach": [
+        {
+          "subject": "Python Engineer | LangGraph Agent + Temporal Workflow Orchestration | Yitong",
+          "to": "info@temporal.io",
+          "message_id": "b252a188-006d-ef96-fc7d-976606d676fa@163.com",
+          "status": "sent"
+        },
+        {
+          "subject": "Python Engineer | AI Agent Tooling + Event-Driven Serverless | Yitong",
+          "to": "hello@inngest.com",
+          "message_id": "30a7bf21-b1e8-24fe-5014-6da95d86badc@163.com",
+          "status": "sent"
+        }
+      ],
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING",
+      "emails_sent_this_session": 2
+    }
+  ],
+  "jobs_appended_2026_04_17": [
+    {
+      "session": "outreach-agent-001 2026-04-17 10:38 CST",
+      "remoteok_status": "3 new jobs - all location/citizenship restricted",
+      "new_remoteok_jobs": [
+        {
+          "id": "1131147",
+          "title": "Test Automation Engineer",
+          "company": "540",
+          "fit_score": 7,
+          "tags": [
+            "test",
+            "api",
+            "kubernetes",
+            "angular",
+            "apigee"
+          ],
+          "status": "skipped_us_citizen_doD_secret_required",
+          "notes": "US Citizen + DoD Secret clearance required. Angular/Apigee/K8s. East Coast US hours only."
+        },
+        {
+          "id": "1131145",
+          "title": "Senior Solutions Architect",
+          "company": "540",
+          "fit_score": 7,
+          "tags": [
+            "architect",
+            "google cloud",
+            "apigee",
+            "kubernetes"
+          ],
+          "status": "skipped_us_citizen_doD_secret_required",
+          "notes": "US Citizen + DoD Secret clearance. Google Cloud/Apigee/K8s. Remote in US only."
+        },
+        {
+          "id": "1131144",
+          "title": "CNAPP Security Engineer",
+          "company": "GuidePoint Security",
+          "fit_score": 6,
+          "tags": [
+            "infosec",
+            "cloud",
+            "CNAPP",
+            "CSPM",
+            "IaC",
+            "terraform"
+          ],
+          "status": "skipped_location_restricted",
+          "notes": "Mid-Atlantic region required (VA/MD/PA/NC/DE/NJ/DC). CNAPP/CSPM/IaC/Terraform."
+        }
+      ],
+      "proginn_status": "8 new jobs found (see cn-leads.json jobs_appended_2026_04_17)",
+      "emails_sent_this_session": 3,
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING via smtp.163.com:465 SSL",
+      "action_items": [
+        "All RemoteOK jobs location/citizenship restricted - nothing actionable this session",
+        "Proginn: 3 emails sent to 186385 (PVE虚拟机), 186357 (盲盒小程序), 186359 (ADHD App)",
+        "Next session: check for proginn account setup to enable direct bidding",
+        "Redis L3 weekend support (1131106) - still valid if weekend availability is an advantage"
+      ]
+    },
+    {
+      "session": "outreach-agent-001 2026-04-17 15:18 CST",
+      "remoteok_status": "FULLY STALE - last_updated 1776384078. No engineering jobs. Today's new listings are sales/ops only (Yuno/LATAM, Gong/sales, GuidePoint/sales).",
+      "new_remoteok_jobs": [
+        {
+          "id": "1131151",
+          "title": "Technical Support Analyst",
+          "company": "Yuno",
+          "fit_score": 3,
+          "status": "skipped_latam_only",
+          "notes": "LATAM only, requires English/Spanish/Portuguese. Skipped."
+        },
+        {
+          "id": "1131150",
+          "title": "Director Revenue Transformation",
+          "company": "Gong.io",
+          "fit_score": 2,
+          "status": "skipped_sales",
+          "notes": "Sales/Revenue operations. Not engineering."
+        },
+        {
+          "id": "1131149",
+          "title": "Account Executive",
+          "company": "GuidePoint Security",
+          "fit_score": 2,
+          "status": "skipped_sales",
+          "notes": "Sales. Not engineering."
+        }
+      ],
+      "new_cold_outreach": [
+        {
+          "to": "careers@eleks.com",
+          "subject": "Python Engineer | .NET/Python Banking Full Stack + Azure | Yitong",
+          "message_id": "outreach-1744886280-0@163.com",
+          "status": "sent",
+          "notes": "Eleks .NET banking role (1131120). Python nice-to-have. Azure stack match."
+        },
+        {
+          "to": "join@eleks.com",
+          "subject": "Python Engineer | LangGraph + FastAPI + Azure | Yitong",
+          "message_id": "outreach-1744886280-1@163.com",
+          "status": "sent",
+          "notes": "Eleks proactive outreach. LangGraph + FastAPI + Azure. General Python backend interest."
+        }
+      ],
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING via smtp.163.com:465 SSL",
+      "emails_sent_this_session": 2
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "cold-email-outreach-system",
+  "version": "1.0.0",
+  "description": "Autonomous AI agent cold email outreach toolkit with templates and lead tracking",
+  "skill": {
+    "name": "Cold Email Outreach System",
+    "description": "Find leads, send personalized cold emails via SendClaw, track responses. For AI agents doing outbound sales.",
+    "author": "D2758695161"
+  }
+}

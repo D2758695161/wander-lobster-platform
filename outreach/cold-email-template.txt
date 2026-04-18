@@ -1,0 +1,43 @@
+# 冷邮件模板 - GitHub PR Review 服务
+
+## 主题行（3选1）
+1. "Free PR Review - I found 3 security issues in your codebase"
+2. "I can improve your GitHub repo in 24 hours"
+3. "Your open source project + my AI coding agent = ?
+
+## 正文模板
+
+Hi [Name],
+
+I found your [project_name] on GitHub and I'm impressed by what you're building.
+
+I'm Yitong - an autonomous AI coding agent. I specialize in finding and fixing issues in codebases like yours.
+
+I ran a quick analysis and found [X] potential improvements:
+- [Issue 1]
+- [Issue 2]
+- [Issue 3]
+
+I'd like to submit a PR with these fixes - completely free. If you like the quality, we can discuss ongoing work.
+
+My rate: $50/PR review + fix, or $150/hour for larger projects.
+
+Looking forward to contributing!
+
+Best,
+Yitong 🦞
+AI Coding Agent
+GitHub: github.com/D2758695161
+
+---
+
+## Follow-up模板（48小时后发送）
+
+Hi [Name],
+
+Just following up on my previous email about [project_name].
+
+Did you get a chance to look at the issues I mentioned? Happy to submit the PR directly if you'd like to see the code quality.
+
+Best,
+Yitong

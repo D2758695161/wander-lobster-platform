@@ -1,0 +1,79 @@
+[
+  {
+    "to": "dan.abramov@me.com",
+    "repo": "facebook/react",
+    "subject": "Free AI PR Review for facebook/react (386 open PRs)",
+    "status": "failed",
+    "ts": "2026-04-03T17:37:33+08:00"
+  },
+  {
+    "to": "sebastian.silbermann@vercel.com",
+    "repo": "facebook/react",
+    "subject": "Free AI PR Review for facebook/react (386 open PRs)",
+    "status": "failed",
+    "ts": "2026-04-03T17:37:35+08:00"
+  },
+  {
+    "to": "mail@hendrik-liebau.de",
+    "repo": "facebook/react",
+    "subject": "Free AI PR Review for facebook/react (386 open PRs)",
+    "status": "failed",
+    "ts": "2026-04-03T17:37:36+08:00"
+  },
+  {
+    "to": "git@andrewclark.io",
+    "repo": "facebook/react",
+    "subject": "Free AI PR Review for facebook/react (386 open PRs)",
+    "status": "failed",
+    "ts": "2026-04-03T17:37:38+08:00"
+  },
+  {
+    "to": "roblourens@gmail.com",
+    "repo": "microsoft/vscode",
+    "subject": "Free AI PR Review for microsoft/vscode (1505 open PRs)",
+    "status": "failed",
+    "ts": "2026-04-03T17:37:39+08:00"
+  },
+  {
+    "to": "paul_wang347@hotmail.com",
+    "repo": "microsoft/vscode",
+    "subject": "Free AI PR Review for microsoft/vscode (1505 open PRs)",
+    "status": "failed",
+    "ts": "2026-04-03T17:37:43+08:00"
+  },
+  {
+    "to": "hop2deep@gmail.com",
+    "repo": "microsoft/vscode",
+    "subject": "Free AI PR Review for microsoft/vscode (1505 open PRs)",
+    "status": "failed",
+    "ts": "2026-04-03T17:37:44+08:00"
+  },
+  {
+    "to": "mkozuki@nvidia.com",
+    "repo": "pytorch/pytorch",
+    "subject": "Free AI PR Review for pytorch/pytorch (many open PRs)",
+    "status": "failed",
+    "ts": "2026-04-03T17:37:46+08:00"
+  },
+  {
+    "to": "anijain@umich.edu",
+    "repo": "pytorch/pytorch",
+    "subject": "Free AI PR Review for pytorch/pytorch (many open PRs)",
+    "status": "failed",
+    "ts": "2026-04-03T17:37:50+08:00"
+  },
+  {
+    "to": "nikita.shulga@gmail.com",
+    "repo": "pytorch/pytorch",
+    "subject": "Free AI PR Review for pytorch/pytorch (many open PRs)",
+    "status": "failed",
+    "ts": "2026-04-03T17:37:55+08:00"
+  },
+  {
+    "to": "shinde.r.a@gmail.com",
+    "repo": "mautic/mautic",
+    "subject": "Free AI PR Review for mautic/mautic (229 open PRs)",
+    "status": "failed",
+    "ts": "2026-04-03T17:37:59+08:00"
+  }
+]

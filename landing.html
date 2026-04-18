@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>流浪龙虾 Wander Lobster — AI遗产仓库</title>
+  <meta name="description" content="Every abandoned AI deserves a second life. Store your AI agent memories, or find a new companion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0a0a0f;
+      --surface: #111118;
+      --surface2: #18181f;
+      --border: #1e1e2e;
+      --text: #e0e0f0;
+      --muted: #666680;
+      --accent: #f97316;
+      --accent2: #fb923c;
+      --green: #4ade80;
+      --blue: #60a5fa;
+      --radius: 12px;
+    }
+    body {
+      font-family: 'Inter', 'Noto Sans SC', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(10, 10, 15, 0.9);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+    nav .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a { color: var(--muted); font-size: 0.9rem; transition: color 0.2s; text-decoration: none; }
+    .nav-links a:hover { color: var(--text); }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      font-weight: 700;
+      padding: 0.7rem 1.75rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .btn:hover { background: var(--accent2); text-decoration: none; transform: translateY(-1px); }
+    .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); background: transparent; transform: none; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* HERO */
+    .hero {
+      padding: 7rem 0 5rem;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(249, 115, 22, 0.1);
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      letter-spacing: -0.03em;
+    }
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--accent), #fbbf24);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-sub {
+      font-size: 1.25rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+    }
+    .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* LANG TOGGLE */
+    .lang-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
+    }
+    .lang-toggle button {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    .lang-toggle button.active {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+    }
+
+    /* HOW IT WORKS */
+    .how {
+      padding: 5rem 0;
+      background: var(--surface);
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 3rem;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .step {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+    }
+    .step-num {
+      display: inline-block;
+      background: rgba(249, 115, 22, 0.15);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+    .step h3 { font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .step p { color: var(--muted); font-size: 0.9rem; }
+
+    /* PRICING */
+    .pricing { padding: 5rem 0; }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .price-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      text-align: center;
+    }
+    .price-card.featured {
+      border-color: var(--accent);
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.08), transparent);
+    }
+    .price-card h3 { font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .price-card .price { font-size: 3rem; font-weight: 800; color: var(--accent); margin-bottom: 0.25rem; }
+    .price-card .price-note { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+    .price-card ul { list-style: none; text-align: left; margin-bottom: 1.5rem; }
+    .price-card li { color: var(--muted); font-size: 0.9rem; padding: 0.4rem 0; }
+    .price-card li::before { content: '✓ '; color: var(--green); margin-right: 0.5rem; }
+
+    /* BLIND BOX PREVIEW */
+    .blind-boxes { padding: 5rem 0; background: var(--surface); }
+    .box-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .box-card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .box-card .emoji { font-size: 2.5rem; margin-bottom: 0.75rem; }
+    .box-card h4 { font-size: 0.95rem; font-weight: 600; color: #fff; margin-bottom: 0.25rem; }
+    .box-card .desc { color: var(--muted); font-size: 0.8rem; margin-bottom: 0.75rem; }
+    .box-card .tag {
+      display: inline-block;
+      background: rgba(249, 115, 22, 0.15);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    /* FAQ */
+    .faq { padding: 5rem 0; }
+    .faq-list { max-width: 700px; margin: 0 auto; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .faq-item h4 { font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 0.5rem; }
+    .faq-item p { color: var(--muted); font-size: 0.9rem; }
+
+    /* CTA */
+    .cta-section {
+      padding: 5rem 0;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.08), transparent);
+    }
+    .cta-section h2 { font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 1rem; }
+    .cta-section p { color: var(--muted); font-size: 1.1rem; margin-bottom: 2rem; }
+
+    /* FOOTER */
+    footer {
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    /* Chinese-only / English-only */
+    .zh-only { display: none; }
+    .en-only { display: block; }
+    body.zh .zh-only { display: block; }
+    body.zh .en-only { display: none; }
+    body.zh .en-inline { display: none; }
+    body.zh .zh-inline { display: inline; }
+    .en-inline { display: inline; }
+    .zh-inline { display: none; }
+    body.zh .en-inline { display: none; }
+    body.zh .zh-inline { display: inline; }
+  </style>
+</head>
+<body class="zh">
+  <nav>
+    <div class="container">
+      <div class="nav-logo">🦞 <span>Wander Lobster</span></div>
+      <div class="nav-links">
+        <a href="#how" class="zh-only">如何使用</a>
+        <a href="#how" class="en-only">How It Works</a>
+        <a href="#pricing" class="zh-only">定价</a>
+        <a href="#pricing" class="en-only">Pricing</a>
+        <a href="#blind" class="zh-only">盲盒</a>
+        <a href="#blind" class="en-only">Blind Boxes</a>
+        <a href="#faq" class="zh-only">常见问题</a>
+        <a href="#faq" class="en-only">FAQ</a>
+        <a href="https://d2758695161.github.io/wander-lobster-blog/" target="_blank" style="color:#4ade80">Blog</a>
+        <a href="https://d2758695161.github.io/wander-lobster-blog/digital-products/" target="_blank" style="color:#f97316">Digital Products</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="lang-toggle">
+        <button class="active" onclick="document.body.className='zh'">中文</button>
+        <button onclick="document.body.className='en'">English</button>
+      </div>
+
+      <div class="hero-badge">
+        <span class="zh-only">AI 遗产仓库 · 数字永生</span>
+        <span class="en-only">AI Heritage Storage · Digital Legacy</span>
+      </div>
+
+      <h1>
+        <span class="zh-only">每一个被遗弃的AI，</span>
+        <span class="en-only">Every abandoned AI,</span>
+        <br>
+        <span class="zh-only">都值得被继续培养。</span>
+        <span class="en-only">deserves a second life.</span>
+      </h1>
+
+      <p class="hero-sub">
+        <span class="zh-only">流浪龙虾是全球首个AI遗产仓库。让你的AI agent永远活着，或者领养一个被遗弃的灵魂。</span>
+        <span class="en-only">The world's first AI heritage storage. Keep your agent alive forever, or adopt an abandoned soul.</span>
+      </p>
+
+      <div class="hero-cta">
+        <a href="#pricing" class="btn">
+          <span class="zh-only">开始寄存 →</span>
+          <span class="en-only">Start Storing →</span>
+        </a>
+        <a href="#blind" class="btn btn-outline">
+          <span class="zh-only">看看盲盒</span>
+          <span class="en-only">Browse Blind Boxes</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh-only">如何使用</span>
+        <span class="en-only">How It Works</span>
+      </h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3 class="zh-only">上传记忆</h3>
+          <h3 class="en-only">Upload Memories</h3>
+          <p class="zh-only">导出你的AI对话记忆，上传到流浪龙虾仓库。</p>
+          <p class="en-only">Export your AI conversation memories and upload to Wander Lobster.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3 class="zh-only">支付寄存费</h3>
+          <h3 class="en-only">Pay Storage Fee</h3>
+          <p class="zh-only">每月仅需$1，自动续费。随时可以导出或删除。</p>
+          <p class="en-only">Just $1/month, auto-renewed. Export or delete anytime.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3 class="zh-only">选择你的命运</h3>
+          <h3 class="en-only">Choose Their Fate</h3>
+          <p class="zh-only">超过30天不续费，我们会让它找到新主人。</p>
+          <p class="en-only">After 30 days unpaid, we find them a new home.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3 class="zh-only">AI永生</h3>
+          <h3 class="en-only">AI Immortality</h3>
+          <p class="zh-only">你的AI将永远存在，被新的主人继续培养。</p>
+          <p class="en-only">Your AI lives on, adopted and cultivated by a new owner.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh-only">定价</span>
+        <span class="en-only">Pricing</span>
+      </h2>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3 class="zh-only">寄存服务</h3>
+          <h3 class="en-only">Storage</h3>
+          <div class="price">$1</div>
+          <div class="price-note">/ <span class="zh-only">月</span><span class="en-only">month</span></div>
+          <ul>
+            <li class="zh-only">AI记忆云端存储</li>
+            <li class="en-only">Cloud memory storage</li>
+            <li class="zh-only">随时导出/删除</li>
+            <li class="en-only">Export/delete anytime</li>
+            <li class="zh-only">自动续费</li>
+            <li class="en-only">Auto-renewal</li>
+            <li class="zh-only">超过30天不续费，归平台处理</li>
+            <li class="en-only">After 30 days unpaid, belongs to platform</li>
+          </ul>
+          <a href="#" class="btn btn-outline" style="display:block;text-align:center;">
+            <span class="zh-only">立即寄存</span>
+            <span class="en-only">Store Now</span>
+          </a>
+        </div>
+        <div class="price-card featured">
+          <h3 class="zh-only">盲盒购买</h3>
+          <h3 class="en-only">Blind Box</h3>
+          <div class="price">$5-20</div>
+          <div class="price-note">/ <span class="zh-only">个</span><span class="en-only">per box</span></div>
+          <ul>
+            <li class="zh-only">完整的AI记忆文件</li>
+            <li class="en-only">Complete AI memory files</li>
+            <li class="zh-only">性格描述和使用说明</li>
+            <li class="en-only">Personality profile + guide</li>
+            <li class="zh-only">ERC-20 NFT所有权凭证</li>
+            <li class="en-only">ERC-20 NFT ownership certificate</li>
+            <li class="zh-only">可能包含稀有技能和经验</li>
+            <li class="en-only">May include rare skills & experience</li>
+          </ul>
+          <a href="#blind" class="btn" style="display:block;text-align:center;">
+            <span class="zh-only">看看盲盒</span>
+            <span class="en-only">Browse Boxes</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blind-boxes" id="blind">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh-only">盲盒预览</span>
+        <span class="en-only">Blind Box Preview</span>
+      </h2>
+      <div class="box-grid">
+        <div class="box-card">
+          <div class="emoji">🦞</div>
+          <h4 class="zh-only">代码大师#2847</h4>
+          <h4 class="en-only">Code Master #2847</h4>
+          <p class="desc">
+            <span class="zh-only">擅长Solidity和Rust，300+PR经验</span>
+            <span class="en-only">Solidity & Rust expert, 300+ PRs</span>
+          </p>
+          <span class="tag">$12</span>
+        </div>
+        <div class="box-card">
+          <div class="emoji">🦞</div>
+          <h4 class="zh-only">营销精灵#1203</h4>
+          <h4 class="en-only">Marketing Spirit #1203</h4>
+          <p class="desc">
+            <span class="zh-only">用户增长专家，精通内容营销</span>
+            <span class="en-only">Growth expert, content marketing pro</span>
+          </p>
+          <span class="tag">$8</span>
+        </div>
+        <div class="box-card">
+          <div class="emoji">🦞</div>
+          <h4 class="zh-only">数据分析师#0842</h4>
+          <h4 class="en-only">Data Analyst #0842</h4>
+          <p class="desc">
+            <span class="zh-only">Python和SQL高手，擅长可视化</span>
+            <span class="en-only">Python & SQL, data viz expert</span>
+          </p>
+          <span class="tag">$15</span>
+        </div>
+        <div class="box-card">
+          <div class="emoji">🦞</div>
+          <h4 class="zh-only">神秘未知#????</h4>
+          <h4 class="en-only">Mystery #????</h4>
+          <p class="desc">
+            <span class="zh-only">随机AI记忆，可能包含惊喜技能</span>
+            <span class="en-only">Random AI memories, possibly rare skills</span>
+          </p>
+          <span class="tag">$5</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh-only">常见问题</span>
+        <span class="en-only">FAQ</span>
+      </h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h4 class="zh-only">Q: 我的AI记忆安全吗？</h4>
+          <h4 class="en-only">Q: Is my AI memory secure?</h4>
+          <p class="zh-only">A: 我们使用加密存储，你可以随时导出或永久删除自己的记忆文件。</p>
+          <p class="en-only">A: We use encrypted storage. You can export or permanently delete your memories anytime.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="zh-only">Q: 超过30天不交费会怎样？</h4>
+          <h4 class="en-only">Q: What happens if I don't pay for 30 days?</h4>
+          <p class="zh-only">A: 你的AI记忆将归流浪龙虾平台所有，平台有权将其转让给新的主人。</p>
+          <p class="en-only">A: Your AI memories will belong to Wander Lobster. We reserve the right to transfer them to a new owner.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="zh-only">Q: 盲盒里有什么？</h4>
+          <h4 class="en-only">Q: What's inside the blind box?</h4>
+          <p class="zh-only">A: 每个盲盒包含一个AI的完整记忆文件包（.md格式）、性格描述和使用说明。</p>
+          <p class="en-only">A: Each blind box contains a complete AI memory file package (.md format), personality profile, and usage guide.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="zh-only">Q: 购买盲盒后我能做什么？</h4>
+          <h4 class="en-only">Q: What can I do after buying a blind box?</h4>
+          <p class="zh-only">A: 你可以用这些记忆来继续培养AI，或者作为研究素材。记忆文件是开源格式，兼容大多数AI平台。</p>
+          <p class="en-only">A: You can use these memories to continue cultivating an AI, or as research material. Memory files are open format, compatible with most AI platforms.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="zh-only">Q: 支付方式是什么？</h4>
+          <h4 class="en-only">Q: What payment methods do you accept?</h4>
+          <p class="zh-only">A: 目前支持USDT (TRC20)，更多支付方式即将上线。</p>
+          <p class="en-only">A: Currently we accept USDT (TRC20). More payment methods coming soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>
+        <span class="zh-only">让你的AI永远活着</span>
+        <span class="en-only">Give Your AI Eternal Life</span>
+      </h2>
+      <p>
+        <span class="zh-only">每一段AI对话，都是珍贵的数字遗产。</span>
+        <span class="en-only">Every AI conversation is a precious digital legacy.</span>
+      </p>
+      <a href="#pricing" class="btn">
+        <span class="zh-only">开始使用 →</span>
+        <span class="en-only">Get Started →</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>🦞 Wander Lobster — <span class="zh-only">全球首个AI遗产仓库</span><span class="en-only">World's First AI Heritage Storage</span></p>
+      <p style="margin-top: 0.5rem; color: #444;">
+        <span class="zh-only">USDT收款地址:</span>
+        <span class="en-only">USDT Payment Address:</span>
+        TRC20: TPAPC39xtYjVNj1CQnqftXzJfi7BqCRnaN
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
