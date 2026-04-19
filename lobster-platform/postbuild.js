@@ -41,5 +41,14 @@ function restructureDir(basename) {
 // Handle all app directory routes
 restructureDir('tasks');
 restructureDir('marketing');
+restructureDir('books');
+restructureDir('dashboard');
+restructureDir('kyc');
+restructureDir('login');
+restructureDir('products');
+restructureDir('register');
+restructureDir('services');
+restructureDir('shop');
+restructureDir('showcase');
 
-console.log('[postbuild] Done');
+console.log('[postbuild] Done - all routes restructured for clean URLs');
