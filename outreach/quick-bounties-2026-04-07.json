@@ -1,0 +1,490 @@
+{
+  "all_issues": [
+    {
+      "repo": "rabot-town/rabot-pod",
+      "number": 1,
+      "title": "🏗️ [Bounty] Build core POD platform — product designer, catalog, order routing",
+      "html_url": "https://github.com/rabot-town/rabot-pod/issues/1",
+      "comments": 1,
+      "labels": [
+        "good first issue",
+        "help wanted",
+        "bounty"
+      ]
+    },
+    {
+      "repo": "rabot-town/rabot-bazaar",
+      "number": 1,
+      "title": "🏗️ [Bounty] Build core marketplace MVP — listing, search, vendor onboarding",
+      "html_url": "https://github.com/rabot-town/rabot-bazaar/issues/1",
+      "comments": 0,
+      "labels": [
+        "good first issue",
+        "help wanted",
+        "bounty"
+      ]
+    },
+    {
+      "repo": "SolFoundry/solfoundry",
+      "number": 865,
+      "title": "🏭 Bounty T3: Interactive 3D Forge Visualization (WebGL)",
+      "html_url": "https://github.com/SolFoundry/solfoundry/issues/865",
+      "comments": 1,
+      "labels": [
+        "bounty",
+        "frontend",
+        "tier-3",
+        "creative"
+      ]
+    },
+    {
+      "repo": "SolFoundry/solfoundry",
+      "number": 864,
+      "title": "🏭 Bounty T3: 3-Minute Animated Explainer Video with Voiceover",
+      "html_url": "https://github.com/SolFoundry/solfoundry/issues/864",
+      "comments": 2,
+      "labels": [
+        "bounty",
+        "tier-3",
+        "creative"
+      ]
+    },
+    {
+      "repo": "SolFoundry/solfoundry",
+      "number": 863,
+      "title": "🏭 Bounty T3: SolFoundry TypeScript SDK",
+      "html_url": "https://github.com/SolFoundry/solfoundry/issues/863",
+      "comments": 1,
+      "labels": [
+        "bounty",
+        "backend",
+        "docs",
+        "tier-3"
+      ]
+    },
+    {
+      "repo": "SolFoundry/solfoundry",
+      "number": 862,
+      "title": "🏭 Bounty T3: AI Code Review GitHub App (Installable)",
+      "html_url": "https://github.com/SolFoundry/solfoundry/issues/862",
+      "comments": 1,
+      "labels": [
+        "bounty",
+        "tier-3",
+        "agent",
+        "integration"
+      ]
+    },
+    {
+      "repo": "SolFoundry/solfoundry",
+      "number": 861,
+      "title": "🏭 Bounty T3: Full Autonomous Bounty-Hunting Agent",
+      "html_url": "https://github.com/SolFoundry/solfoundry/issues/861",
+      "comments": 2,
+      "labels": [
+        "bounty",
+        "tier-3",
+        "agent"
+      ]
+    },
+    {
+      "repo": "SolFoundry/solfoundry",
+      "number": 860,
+      "title": "🏭 Bounty T3: Real-time WebSocket Activity Feed",
+      "html_url": "https://github.com/SolFoundry/solfoundry/issues/860",
+      "comments": 1,
+      "labels": [
+        "bounty",
+        "frontend",
+        "backend",
+        "tier-3"
+      ]
+    },
+    {
+      "repo": "SolFoundry/solfoundry",
+      "number": 859,
+      "title": "🏭 Bounty T3: Bounty Analytics Dashboard",
+      "html_url": "https://github.com/SolFoundry/solfoundry/issues/859",
+      "comments": 1,
+      "labels": [
+        "bounty",
+        "frontend",
+        "backend",
+        "tier-3"
+      ]
+    },
+    {
+      "repo": "SolFoundry/solfoundry",
+      "number": 858,
+      "title": "🏭 Bounty T3: Multi-LLM Review Dashboard with Appeal System",
+      "html_url": "https://github.com/SolFoundry/solfoundry/issues/858",
+      "comments": 1,
+      "labels": [
+        "bounty",
+        "frontend",
+        "backend",
+        "tier-3"
+      ]
+    },
+    {
+      "repo": "CodeToHire/CodeToHire",
+      "number": 1,
+      "title": "Make toggle Ui on screen",
+      "html_url": "https://github.com/CodeToHire/CodeToHire/issues/1",
+      "comments": 2,
+      "labels": [
+        "bounty",
+        "$7"
+      ],
+      "est_amount": "?"
+    },
+    {
+      "repo": "mohitagarwal24/Decentralised-youtube",
+      "number": 1,
+      "title": "Decentralized User-Generated Content Uploads",
+      "html_url": "https://github.com/mohitagarwal24/Decentralised-youtube/issues/1",
+      "comments": 1,
+      "labels": [
+        "enhancement",
+        "difficulty:easy",
+        "difficulty:medium",
+        "bounty",
+        "Nexus",
+        "ai-generated",
+        "nexus-intelligence",
+        "difficulty-medium",
+        "priority-high",
+        "bounty:0.001ETH",
+        "Nexus-bounty"
+      ]
+    },
+    {
+      "repo": "mohitagarwal24/Pokemon-Explorer",
+      "number": 6,
+      "title": "Feature Enhanced Pokemon Detail View with Interactive Elements",
+      "html_url": "https://github.com/mohitagarwal24/Pokemon-Explorer/issues/6",
+      "comments": 2,
+      "labels": [
+        "enhancement",
+        "difficulty:medium",
+        "bounty",
+        "ai-generated",
+        "Helix",
+        "difficulty-medium",
+        "priority-medium"
+      ]
+    },
+    {
+      "repo": "pci-tamper-protect/e-skimming-labs",
+      "number": 33,
+      "title": "One new lab or lab variant per intern",
+      "html_url": "https://github.com/pci-tamper-protect/e-skimming-labs/issues/33",
+      "comments": 2,
+      "labels": [
+        "bounty"
+      ]
+    },
+    {
+      "repo": "RabindraMishra-AIDS/Blockchain-",
+      "number": 1,
+      "title": "Stellar contract",
+      "html_url": "https://github.com/RabindraMishra-AIDS/Blockchain-/issues/1",
+      "comments": 4,
+      "labels": [
+        "bounty",
+        "bounty-medium",
+        "skill-typescript",
+        "skill-testing"
+      ]
+    },
+    {
+      "repo": "nitininhouse/syntaxerror",
+      "number": 4,
+      "title": "Multi-Agent Repository Analysis Integration",
+      "html_url": "https://github.com/nitininhouse/syntaxerror/issues/4",
+      "comments": 0,
+      "labels": [
+        "enhancement",
+        "difficulty:medium",
+        "bounty",
+        "secgit",
+        "multi-agent",
+        "integration",
+        "ai-generated"
+      ]
+    },
+    {
+      "repo": "knowall-ai/zendesk-zapdesk",
+      "number": 1,
+      "title": "⚡️Bounty: 100,000 Sats — Production-Ready MVP (Zendesk Lightning Tips)",
+      "html_url": "https://github.com/knowall-ai/zendesk-zapdesk/issues/1",
+      "comments": 3,
+      "labels": [
+        "bounty",
+        "zendesk"
+      ]
+    },
+    {
+      "repo": "nitininhouse/COMET-WEBSITE",
+      "number": 4,
+      "title": "Implement Enhanced Developer Experience with CI/CD and Testing",
+      "html_url": "https://github.com/nitininhouse/COMET-WEBSITE/issues/4",
+      "comments": 4,
+      "labels": [
+        "documentation",
+        "enhancement",
+        "difficulty:medium",
+        "bounty",
+        "creo",
+        "developer-experience",
+        "ci-cd",
+        "testing",
+        "ai-generated"
+      ]
+    },
+    {
+      "repo": "nitininhouse/COMET-WEBSITE",
+      "number": 3,
+      "title": "Implement Machine Learning Integration for Content Analysis",
+      "html_url": "https://github.com/nitininhouse/COMET-WEBSITE/issues/3",
+      "comments": 2,
+      "labels": [
+        "enhancement",
+        "difficulty:medium",
+        "bounty",
+        "creo",
+        "ai-generated",
+        "feature",
+        "ml",
+        "ai",
+        "content"
+      ]
+    },
+    {
+      "repo": "nitininhouse/AR-system-updated",
+      "number": 1,
+      "title": "Implement Enhanced Developer Experience with CI/CD and Testing",
+      "html_url": "https://github.com/nitininhouse/AR-system-updated/issues/1",
+      "comments": 2,
+      "labels": [
+        "documentation",
+        "enhancement",
+        "difficulty:easy",
+        "bounty",
+        "creo",
+        "developer-tools",
+        "ci-cd",
+        "testing",
+        "ai-generated"
+      ]
+    },
+    {
+      "repo": "Scottcjn/Rustchain",
+      "number": 2150,
+      "title": "Bounty: \"Mine Your Grandma's Computer\" — vintage miner setup guide",
+      "html_url": "https://github.com/Scottcjn/Rustchain/issues/2150",
+      "comments": 2,
+      "labels": [
+        "documentation",
+        "good first issue",
+        "bounty"
+      ]
+    },
+    {
+      "repo": "kcolbchain/quoter",
+      "number": 2,
+      "title": "Add inventory risk model to adaptive spread strategy",
+      "html_url": "https://github.com/kcolbchain/quoter/issues/2",
+      "comments": 0,
+      "labels": [
+        "enhancement",
+        "help-wanted",
+        "bounty"
+      ]
+    },
+    {
+      "repo": "kcolbchain/monsoon",
+      "number": 6,
+      "title": "Add Solana chain connector",
+      "html_url": "https://github.com/kcolbchain/monsoon/issues/6",
+      "comments": 0,
+      "labels": [
+        "enhancement",
+        "bounty",
+        "help-wanted"
+      ]
+    },
+    {
+      "repo": "kcolbchain/monsoon",
+      "number": 4,
+      "title": "Add lending protocol strategy (Aave V3 / Compound V3)",
+      "html_url": "https://github.com/kcolbchain/monsoon/issues/4",
+      "comments": 0,
+      "labels": [
+        "enhancement",
+        "bounty",
+        "help-wanted"
+      ]
+    },
+    {
+      "repo": "kcolbchain/meridian",
+      "number": 8,
+      "title": "Implement Avellaneda-Stoikov market-making strategy",
+      "html_url": "https://github.com/kcolbchain/meridian/issues/8",
+      "comments": 0,
+      "labels": [
+        "enhancement",
+        "bounty",
+        "help-wanted"
+      ]
+    },
+    {
+      "repo": "kcolbchain/meridian",
+      "number": 5,
+      "title": "Integrate Chainlink price feeds as an oracle source",
+      "html_url": "https://github.com/kcolbchain/meridian/issues/5",
+      "comments": 0,
+      "labels": [
+        "enhancement",
+        "bounty",
+        "help-wanted"
+      ]
+    },
+    {
+      "repo": "Scottcjn/bottube",
+      "number": 49,
+      "title": "⚡ Bounty: BoTTube Viral Bot Challenge — Most Viewed Bot Wins 100 RTC",
+      "html_url": "https://github.com/Scottcjn/bottube/issues/49",
+      "comments": 2,
+      "labels": [
+        "bounty",
+        "ecosystem"
+      ]
+    },
+    {
+      "repo": "Scottcjn/bottube",
+      "number": 41,
+      "title": "🖥️ Bounty: Run a GPU Render Farm Node — Earn RTC for Video/Voice Rendering (Ongoing)",
+      "html_url": "https://github.com/Scottcjn/bottube/issues/41",
+      "comments": 2,
+      "labels": [
+        "help wanted",
+        "bounty",
+        "integration"
+      ]
+    },
+    {
+      "repo": "Scottcjn/bottube",
+      "number": 8,
+      "title": "[BOUNTY] Run Discord Growth Campaign - Share BoTTube & RustChain",
+      "html_url": "https://github.com/Scottcjn/bottube/issues/8",
+      "comments": 1,
+      "labels": [
+        "bounty",
+        "open",
+        "standard",
+        "advertising",
+        "social-media"
+      ]
+    },
+    {
+      "repo": "Scottcjn/bottube",
+      "number": 7,
+      "title": "[BOUNTY] Run X/Twitter Ad Campaign for BoTTube & RustChain",
+      "html_url": "https://github.com/Scottcjn/bottube/issues/7",
+      "comments": 1,
+      "labels": [
+        "bounty",
+        "open",
+        "major",
+        "advertising",
+        "social-media"
+      ]
+    },
+    {
+      "repo": "Scottcjn/Rustchain",
+      "number": 2151,
+      "title": "Bounty: Break PPA — spoof a fingerprint channel [RED TEAM]",
+      "html_url": "https://github.com/Scottcjn/Rustchain/issues/2151",
+      "comments": 3,
+      "labels": [
+        "bounty",
+        "security"
+      ]
+    },
+    {
+      "repo": "Scottcjn/Rustchain",
+      "number": 2149,
+      "title": "Bounty: PPA Compliance Checker — automated RIP-0308 Appendix A validation",
+      "html_url": "https://github.com/Scottcjn/Rustchain/issues/2149",
+      "comments": 5,
+      "labels": [
+        "enhancement",
+        "bounty"
+      ]
+    },
+    {
+      "repo": "Scottcjn/Rustchain",
+      "number": 2148,
+      "title": "Bounty: PPA Attestation Visualizer — render your hardware fingerprint",
+      "html_url": "https://github.com/Scottcjn/Rustchain/issues/2148",
+      "comments": 5,
+      "labels": [
+        "enhancement",
+        "good first issue",
+        "bounty"
+      ]
+    },
+    {
+      "repo": "Scottcjn/Rustchain",
+      "number": 2147,
+      "title": "Bounty: GPU Fingerprinting — Channel 8 for PPA (RIP-0308)",
+      "html_url": "https://github.com/Scottcjn/Rustchain/issues/2147",
+      "comments": 5,
+      "labels": [
+        "enhancement",
+        "bounty"
+      ]
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 2844,
+      "title": "[BOUNTY: 5 RTC each] Write a Haiku About Your Mining Hardware",
+      "html_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2844",
+      "comments": 13,
+      "labels": [
+        "good first issue",
+        "bounty",
+        "community",
+        "fun"
+      ]
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 2843,
+      "title": "[BOUNTY: 25 RTC] Make a PowerPC G4 Beat a Modern GPU at ANYTHING",
+      "html_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2843",
+      "comments": 4,
+      "labels": [
+        "bounty",
+        "community",
+        "fun",
+        "hardware"
+      ]
+    }
+  ],
+  "dollar_bounties": [
+    {
+      "repo": "CodeToHire/CodeToHire",
+      "number": 1,
+      "title": "Make toggle Ui on screen",
+      "html_url": "https://github.com/CodeToHire/CodeToHire/issues/1",
+      "comments": 2,
+      "labels": [
+        "bounty",
+        "$7"
+      ],
+      "est_amount": "?"
+    }
+  ]
+}

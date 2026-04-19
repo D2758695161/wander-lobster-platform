@@ -1,0 +1,354 @@
+[
+  {
+    "name": "Geekflare Scraping API v2",
+    "tagline": "RAG-ready web scraping that cuts your LLM token costs",
+    "productUrl": "https://www.producthunt.com/products/geekflare-api",
+    "phUrl": "https://www.producthunt.com/r/p/1123543?app_id=339",
+    "postedDate": "2026-04-14",
+    "maker": {
+      "name": "Chandan Kumar"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI", "APIs"],
+    "problem": "LLM applications need RAG-ready web data but scraping is expensive and unstructured, causing high token costs",
+    "integrationNeeds": "This IS an API product. Potential cross-promotion: web scraping + LLM integration. Could offer data pipeline integrations.",
+    "notes": "Strong API/infrastructure product. API-focused by nature. Good outreach candidate for LLM/AI integration partnerships."
+  },
+  {
+    "name": "Athena",
+    "tagline": "Claude Code for Product Teams",
+    "productUrl": "https://www.producthunt.com/products/athena-9b536c7c-a0eb-4ab0-a230-ea0de18d0f47",
+    "phUrl": "https://www.producthunt.com/r/p/1124624?app_id=339",
+    "postedDate": "2026-04-15",
+    "maker": {
+      "name": "Ben Lang"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI"],
+    "problem": "Product teams need AI coding assistance tailored to their workflow, not just individual developers",
+    "integrationNeeds": "Integrates with Claude Code. Could use API/webhook integrations for team notifications, project management tools, CI/CD pipelines.",
+    "notes": "Ben Lang is a known PH community member. Team-oriented Claude Code wrapper - may need collaboration/integration APIs."
+  },
+  {
+    "name": "The Factory Desktop App",
+    "tagline": "Agent-native software dev that works alongside you",
+    "productUrl": "https://www.producthunt.com/products/factory-3",
+    "phUrl": "https://www.producthunt.com/r/p/1123910?app_id=339",
+    "postedDate": "2026-04-14",
+    "maker": {
+      "name": "Rohan Chaubey"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI"],
+    "problem": "Developers need agent-native dev tools that integrate with their workflow rather than replacing them",
+    "integrationNeeds": "Desktop app likely needs Git integration, CI/CD pipeline hooks, IDE plugins, and code review API integrations.",
+    "notes": "Rohan Chaubey is very active on PH (multiple launches). Agentic coding tool with desktop component."
+  },
+  {
+    "name": "Subagents in Gemini CLI",
+    "tagline": "Gemini CLI now runs specialist subagents in your terminal",
+    "productUrl": "https://www.producthunt.com/products/google",
+    "phUrl": "https://www.producthunt.com/r/p/1124671?app_id=339",
+    "postedDate": "2026-04-15",
+    "maker": {
+      "name": "Rohan Chaubey"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI", "developer-platform"],
+    "problem": "Terminal-based AI coding needs modular specialist agents for different tasks",
+    "integrationNeeds": "Gemini CLI integration. Could benefit from plugin/extension API for custom subagent types, file system integrations.",
+    "notes": "Google-backed Gemini CLI. Open-source/developer-focused. High potential for extension ecosystem."
+  },
+  {
+    "name": "CalendarPipe",
+    "tagline": "Programmable calendar sync for humans and AI agents",
+    "productUrl": "https://www.producthunt.com/products/calendarpipe",
+    "phUrl": "https://www.producthunt.com/r/p/1125151?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Jakub Beneš"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI", "APIs", "integrations"],
+    "problem": "AI agents and automation tools need reliable calendar sync but lack good programmable calendar APIs",
+    "integrationNeeds": "Direct API product. Needs Google Calendar, Outlook, Apple Calendar integrations. Great webhook/API infrastructure potential.",
+    "notes": "Strong API-first product. Targets AI agent developers. Jakub is an indie maker. Good outreach candidate."
+  },
+  {
+    "name": "Form Dump",
+    "tagline": "The form backend for AI Agents (and Humans)",
+    "productUrl": "https://www.producthunt.com/products/form-dump",
+    "phUrl": "https://www.producthunt.com/r/p/1125155?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Gonçalo Henriques"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI", "APIs", "integrations"],
+    "problem": "AI agents need to collect form data but lack simple form backend infrastructure",
+    "integrationNeeds": "API product for form submissions. Webhook integrations, AI agent SDK/integration, data pipeline to other tools.",
+    "notes": "Form backend API specifically for AI agents. Indie maker. Could benefit from AI agent SDK integrations (Claude, GPT, etc.)"
+  },
+  {
+    "name": "AgenticLens",
+    "tagline": "Visual debugging, tracing, and replay for agent workflows",
+    "productUrl": "https://www.producthunt.com/products/agenticlens",
+    "phUrl": "https://www.producthunt.com/r/p/1125852?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Amit Mishra"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI", "developer-platform"],
+    "problem": "AI agent developers lack visibility into how their agents are making decisions, making debugging complex workflows difficult",
+    "integrationNeeds": "Tracing/debugging APIs. Could integrate with various AI agent frameworks (LangChain, AutoGPT, etc.), observability platforms.",
+    "notes": "Observability/debugging tool for AI agents. High-value for agent developers. Amit is an indie maker."
+  },
+  {
+    "name": "CoAgentor",
+    "tagline": "AI Agents that participate live in meetings",
+    "productUrl": "https://www.producthunt.com/products/coagentor",
+    "phUrl": "https://www.producthunt.com/r/p/1124587?app_id=339",
+    "postedDate": "2026-04-15",
+    "maker": {
+      "name": "Josh Torrey"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI", "integrations"],
+    "problem": "Meetings need AI participation but current solutions are post-meeting summaries, not real-time agents",
+    "integrationNeeds": "Calendar/calendarpipe integration, video conferencing APIs (Zoom, Teams, Meet), note-taking app integrations, CRM integrations.",
+    "notes": "AI meeting participant. Would need calendar APIs, video platform APIs, and webhook integrations for post-meeting actions."
+  },
+  {
+    "name": "Hacktron",
+    "tagline": "Your AI security engineer. Ship fast while staying secure.",
+    "productUrl": "https://www.producthunt.com/products/hacktron",
+    "phUrl": "https://www.producthunt.com/r/p/1125827?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Zayne Zhang"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI", "developer-platform"],
+    "problem": "Developers need security checks but don't have dedicated security engineers, slowing down shipping",
+    "integrationNeeds": "CI/CD pipeline integrations (GitHub Actions, GitLab CI), IDE plugins, GitHub/GitLab PR review APIs, SAST/DAST tool integrations.",
+    "notes": "AI security engineering tool. Indie maker Zayne Zhang. Dev tool that embeds in dev workflow."
+  },
+  {
+    "name": "DB Explorer",
+    "tagline": "Modern AI‑first database client",
+    "productUrl": "https://www.producthunt.com/products/sourceforge",
+    "phUrl": "https://www.producthunt.com/r/p/1125713?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Ashish Srivastava"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools"],
+    "problem": "Traditional database clients lack AI capabilities for query generation and optimization",
+    "integrationNeeds": "Database driver APIs (PostgreSQL, MySQL, MongoDB, etc.), AI model integrations for query generation, export/webhook integrations.",
+    "notes": "Database client with AI features. Launched via SourceForge which gives some credibility. Ashish Srivastava is the maker."
+  },
+  {
+    "name": "gridland",
+    "tagline": "React apps that render in the terminal and browser",
+    "productUrl": "https://www.producthunt.com/products/gridland",
+    "phUrl": "https://www.producthunt.com/r/p/1125700?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Jess Cheng"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools"],
+    "problem": "React developers want cross-platform rendering (terminal + browser) without writing separate UIs",
+    "integrationNeeds": "npm/package ecosystem integration, bundler plugins, terminal rendering APIs, browser extension APIs.",
+    "notes": "Cross-platform React rendering tool. Jess Cheng is an indie maker. Interesting tech with niche appeal."
+  },
+  {
+    "name": "Themery",
+    "tagline": "Build beautiful themes for your IDE",
+    "productUrl": "https://www.producthunt.com/products/themery",
+    "phUrl": "https://www.producthunt.com/r/p/1124616?app_id=339",
+    "postedDate": "2026-04-15",
+    "maker": {
+      "name": "Tiago Peter"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools"],
+    "problem": "Creating IDE themes is complex and lacks good tooling, limiting personalization options",
+    "integrationNeeds": "VS Code theme API, JetBrains plugin API, Sublime Text theme formats, npm for distribution.",
+    "notes": "IDE theme building tool. Indie maker Tiago Peter. Niche dev tool with community appeal."
+  },
+  {
+    "name": "Visual PR Testing with AI",
+    "tagline": "Validate every PR with AI that runs tests for you",
+    "productUrl": "https://www.producthunt.com/products/qa-tech",
+    "phUrl": "https://www.producthunt.com/r/p/1125302?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "fmerian"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI", "integrations"],
+    "problem": "PR validation requires manual test writing and review, slowing down code review and potentially missing visual bugs",
+    "integrationNeeds": "GitHub/GitLab PR APIs, CI/CD pipeline integrations, screenshot comparison APIs, browser automation (Playwright, Puppeteer).",
+    "notes": "fmerian is an active PH maker. AI-powered visual PR testing. Integrates with existing CI/CD and Git workflows."
+  },
+  {
+    "name": "Sharpsana",
+    "tagline": "The AI agent that runs your entire startup",
+    "productUrl": "https://www.producthunt.com/products/sharpsana",
+    "phUrl": "https://www.producthunt.com/r/p/1125582?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Assylkhan Sarsenbayev"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["AI", "developer-tools"],
+    "problem": "Startups need to automate operations but integrating multiple AI tools is complex and time-consuming",
+    "integrationNeeds": "Multi-tool integration APIs, webhook infrastructure, CRM/ERP integrations, communication platform APIs (Slack, email).",
+    "notes": "AI agent for startup operations. Indie maker Assylkhan Sarsenbayev. Bold claim of running entire startup."
+  },
+  {
+    "name": "Cloudflare Email Service",
+    "tagline": "Turn any email inbox into a native interface for AI agents",
+    "productUrl": "https://www.producthunt.com/products/cloudflare",
+    "phUrl": "https://www.producthunt.com/r/p/1125410?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Ankit Sharma"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["AI", "APIs", "integrations", "developer-platform"],
+    "problem": "AI agents can't natively interact with email systems, limiting their ability to handle email-based workflows",
+    "integrationNeeds": "Email provider APIs (Gmail, Outlook, IMAP), AI agent SDK integration, webhook infrastructure for email-triggered actions.",
+    "notes": "Cloudflare-powered email AI agent interface. Built on Cloudflare Workers/email. Ankit Sharma is an indie maker."
+  },
+  {
+    "name": "Codex 2.0",
+    "tagline": "Codex now runs apps, automates tasks, codes & more",
+    "productUrl": "https://www.producthunt.com/products/openai",
+    "phUrl": "https://www.producthunt.com/r/p/1125523?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Rohan Chaubey"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["AI", "developer-platform"],
+    "problem": "Running apps and automating complex multi-step tasks requires specialized infrastructure",
+    "integrationNeeds": "App execution environment APIs, sandbox/container APIs, task automation webhooks, cloud infrastructure APIs.",
+    "notes": "OpenAI Codex 2.0 launch. Rohan Chaubey posted this (not an official OpenAI launch). Major AI product with huge potential ecosystem."
+  },
+  {
+    "name": "Qwen3.6-35B-A3B",
+    "tagline": "The open sparse MoE model for agentic coding",
+    "productUrl": "https://www.producthunt.com/products/qwen3",
+    "phUrl": "https://www.producthunt.com/r/p/1125358?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Zac Zuo"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["AI", "developer-platform"],
+    "problem": "Open-source models for agentic coding need to be efficient and accessible for developers",
+    "integrationNeeds": "Model API (together.ai, Groq, etc.), inference infrastructure, fine-tuning APIs, agent framework integrations.",
+    "notes": "Alibaba's Qwen3 model launch on PH. Open sparse MoE model. Zac Zuo is a very active PH poster."
+  },
+  {
+    "name": "Claude Opus 4.7",
+    "tagline": "Claude's most capable model for reasoning and agentic coding",
+    "productUrl": "https://www.producthunt.com/products/claude-opus-4-7",
+    "phUrl": "https://www.producthunt.com/r/p/1125388?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Rohan Chaubey"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["AI", "developer-platform"],
+    "problem": "Advanced reasoning and agentic coding tasks need state-of-the-art language models",
+    "integrationNeeds": "Anthropic API integration, agent framework SDKs, cloud infrastructure for inference.",
+    "notes": "Anthropic Claude model launch. Posted by Rohan Chaubey (not official Anthropic). Huge developer relevance."
+  },
+  {
+    "name": "Claude Code Desktop App Redesigned",
+    "tagline": "Run parallel coding agents from one desktop workspace",
+    "productUrl": "https://www.producthunt.com/products/claude-redesigned",
+    "phUrl": "https://www.producthunt.com/r/p/1123805?app_id=339",
+    "postedDate": "2026-04-14",
+    "maker": {
+      "name": "fmerian"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["AI", "developer-tools"],
+    "problem": "Running multiple Claude Code agents requires separate windows, lacking unified management",
+    "integrationNeeds": "Claude Code API, desktop app plugin system, task coordination APIs, parallel execution infrastructure.",
+    "notes": "Redesigned Claude Code desktop with parallel agent support. fmerian is an active PH maker. High dev relevance."
+  },
+  {
+    "name": "Cerberus",
+    "tagline": "Cursor for AI hacking that can't go out of scope",
+    "productUrl": "https://www.producthunt.com/products/cerberus-3",
+    "phUrl": "https://www.producthunt.com/r/p/1125424?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Aziz Akhmedkhodjaev"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI"],
+    "problem": "Cursor IDE users need AI coding assistance that stays within project scope and doesn't go off-track",
+    "integrationNeeds": "Cursor IDE plugin API, code context APIs, project filesystem integration.",
+    "notes": "Cursor IDE AI plugin specifically for staying in scope. Indie maker Aziz Akhmedkhodjaev."
+  },
+  {
+    "name": "Navox Agents",
+    "tagline": "Specialist AI engineering team for Claude Code",
+    "productUrl": "https://www.producthunt.com/products/navox-agents",
+    "phUrl": "https://www.producthunt.com/r/p/1125560?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Nahrin Oda"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI"],
+    "problem": "Claude Code users want specialist agents for different engineering domains rather than generalist coding",
+    "integrationNeeds": "Claude Code plugin/extension API, specialist domain knowledge bases, team collaboration APIs.",
+    "notes": "Specialist agent team for Claude Code. Nahrin Oda is an indie maker. Interesting team-of-agents approach."
+  },
+  {
+    "name": "Macaly 4.0",
+    "tagline": "I ship complete websites and apps from a chat",
+    "productUrl": "https://www.producthunt.com/products/macaly",
+    "phUrl": "https://www.producthunt.com/r/p/1125320?app_id=339",
+    "postedDate": "2026-04-16",
+    "maker": {
+      "name": "Juraj Mihalik"
+    },
+    "upvotes": null,
+    "reviews": null,
+    "topics": ["developer-tools", "AI"],
+    "problem": "Building websites and apps requires coding knowledge, limiting who can ship products",
+    "integrationNeeds": "Hosting/cloud deployment APIs, CMS integrations, component library APIs, CDN integrations.",
+    "notes": "Natural language to full app/website. Juraj Mihalik is an indie maker. Could use deployment/hosting integrations."
+  }
+]

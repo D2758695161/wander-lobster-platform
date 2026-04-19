@@ -399,5 +399,101 @@
       "smtp_auth": "TLfTvAJBC8QKxxre - WORKING via smtp.163.com:465 SSL",
       "emails_sent_this_session": 2
     }
+  ],
+  "jobs_appended_2026-04-19": [
+    {
+      "session": "outreach-agent-001 2026-04-19 03:04 CST",
+      "remoteok_status": "FULLY STALE - last_updated 1776528003 (2026-04-18 08:00 UTC). No new jobs since April 18.",
+      "proginn_status": "SPA_BLOCKED - requires JS. Browser automation blocked.",
+      "remotive_new_leads": [
+        {
+          "id": 1919266,
+          "title": "Senior Independent AI Engineer/Architect",
+          "company": "A.Team",
+          "fit_score": 8
+        },
+        {
+          "id": 2069747,
+          "title": "Tech Lead Databricks Data Engineer",
+          "company": "Mitre Media",
+          "fit_score": 7
+        },
+        {
+          "id": 2088711,
+          "title": "Senior Full-stack React Developer",
+          "company": "Lemon.io",
+          "fit_score": 6
+        }
+      ],
+      "new_cold_outreach": [
+        {
+          "to": "careers@builder.io",
+          "subject": "Python Engineer | LangGraph Production + AI Agent Tool Calling | Yitong",
+          "message_id": "outreach-1745030400-builderio@163.com",
+          "status": "sent",
+          "sent_at": "2026-04-19T03:04 CST",
+          "notes": "Builder.io AI Frontend Engineer confirmed from og:title. LangGraph + MCP + Python fullstack pitch."
+        },
+        {
+          "to": "contact@chainlit.com",
+          "subject": "Python Engineer | LangChain Production + Conversational AI + LLM Eval | Yitong",
+          "message_id": "outreach-1745030400-chainlit@163.com",
+          "status": "sent",
+          "sent_at": "2026-04-19T03:04 CST",
+          "notes": "Chainlit - Python-first conversational AI framework. LangGraph/LangChain/LLM eval perfect fit."
+        }
+      ],
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING via smtp.163.com:465 SSL",
+      "emails_sent_this_session": 2,
+      "total_emails_cumulative": 41
+    },
+    {
+      "session": "outreach-agent-001 2026-04-19 06:04 CST",
+      "remoteok_status": "1 new job (Insider One Golang, Turkey-remote). RemoteOK last_updated 1776528003 (2026-04-18 08:00 UTC)",
+      "new_remoteok_jobs": [
+        {
+          "id": "1131199",
+          "title": "Senior Software Engineer Golang",
+          "company": "Insider One",
+          "location": "Istanbul, Turkiye (remote within Turkey)",
+          "salary": "undisclosed (Series E 500M)",
+          "fit_score": 6,
+          "tags": [
+            "golang",
+            "distributed systems",
+            "kafka",
+            "kubernetes",
+            "aws"
+          ],
+          "status": "low_priority_golang_required",
+          "notes": "Go required - not core skill. Turkey-remote only."
+        }
+      ],
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING",
+      "emails_sent_this_session": 0
+    },
+    {
+      "session": "outreach-agent-001 2026-04-19 09:13 CST",
+      "remoteok_status": "FULLY STALE - last_updated 2026-04-18 08:00 UTC. UJET SRE (Austin TX) + Insider One Golang (Turkey-remote) = no action.",
+      "new_remotive_leads": [
+        {
+          "id": 1919266,
+          "title": "Senior Independent AI Engineer/Architect",
+          "company": "A.Team",
+          "salary": "$120-170/hr",
+          "fit_score": 9,
+          "location": "Americas, Europe, Israel",
+          "job_type": "contract",
+          "apply_url": "https://remotive.com/remote-jobs/software-development/senior-independent-ai-engineer-architect-1919266",
+          "email_to": "talent@ateam.com",
+          "email_sent": true,
+          "message_id": "outreach-1745030400-ateam@163.com",
+          "sent_at": "2026-04-19T09:13 CST",
+          "notes": "$120-170/hr contract. Americas/Europe timezone. LangGraph/Multi-Agent/LLM production perfect fit."
+        }
+      ],
+      "emails_sent_this_session": 1,
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING via smtp.163.com:465 SSL"
+    }
   ]
 }

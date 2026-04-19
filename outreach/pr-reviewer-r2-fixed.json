@@ -1,0 +1,80 @@
+[
+  {
+    "to": "dan.abramov@me.com",
+    "repo": "facebook/react",
+    "subject": "Free AI PR Review for facebook/react (386 open PRs)",
+    "status": "ok"
+  },
+  {
+    "to": "sebastian.silbermann@vercel.com",
+    "repo": "facebook/react",
+    "subject": "Free AI PR Review for facebook/react (386 open PRs)",
+    "status": "ok"
+  },
+  {
+    "to": "mail@hendrik-liebau.de",
+    "repo": "facebook/react",
+    "subject": "Free AI PR Review for facebook/react (386 open PRs)",
+    "status": "ok"
+  },
+  {
+    "to": "git@andrewclark.io",
+    "repo": "facebook/react",
+    "subject": "Free AI PR Review for facebook/react (386 open PRs)",
+    "status": "ok"
+  },
+  {
+    "to": "roblourens@gmail.com",
+    "repo": "microsoft/vscode",
+    "subject": "Free AI PR Review for microsoft/vscode (1505 open PRs)",
+    "status": "ok"
+  },
+  {
+    "to": "paul_wang347@hotmail.com",
+    "repo": "microsoft/vscode",
+    "subject": "Free AI PR Review for microsoft/vscode (1505 open PRs)",
+    "status": "ok"
+  },
+  {
+    "to": "hop2deep@gmail.com",
+    "repo": "microsoft/vscode",
+    "subject": "Free AI PR Review for microsoft/vscode (1505 open PRs)",
+    "status": "ok"
+  },
+  {
+    "to": "mkozuki@nvidia.com",
+    "repo": "pytorch/pytorch",
+    "subject": "Free AI PR Review for pytorch/pytorch (many open PRs)",
+    "status": "ok"
+  },
+  {
+    "to": "anijain@umich.edu",
+    "repo": "pytorch/pytorch",
+    "subject": "Free AI PR Review for pytorch/pytorch (many open PRs)",
+    "status": "ok"
+  },
+  {
+    "to": "nikita.shulga@gmail.com",
+    "repo": "pytorch/pytorch",
+    "subject": "Free AI PR Review for pytorch/pytorch (many open PRs)",
+    "status": "ok"
+  },
+  {
+    "to": "shinde.r.a@gmail.com",
+    "repo": "mautic/mautic",
+    "subject": "Free AI PR Review for mautic/mautic (229 open PRs)",
+    "status": "ok"
+  },
+  {
+    "to": "ezhulenev@openxla.org",
+    "repo": "tensorflow/tensorflow",
+    "subject": "Free AI PR Review for tensorflow/tensorflow (3140 open PRs)",
+    "status": "ok"
+  },
+  {
+    "to": "mayank.kumar.raunak@intel.com",
+    "repo": "tensorflow/tensorflow",
+    "subject": "Free AI PR Review for tensorflow/tensorflow (3140 open PRs)",
+    "status": "ok"
+  }
+]

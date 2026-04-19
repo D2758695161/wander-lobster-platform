@@ -1,0 +1,122 @@
+{
+  "generated": "2026-04-19",
+  "note": "Most major freelance platforms (Toptal, Turing, Upwork) require invite-only or application-based vetting — not open registration. lotus.to appears inactive/unavailable. devn.io returned minimal content. The following is the best info available from direct site fetches.",
+  "platforms": [
+    {
+      "name": "Arc.dev",
+      "url": "https://arc.dev",
+      "registrationStatus": "Open (apply anytime)",
+      "typesOfWork": "Freelance and full-time remote work for developers, designers, product managers, marketers. Specialties include front-end, mobile, full-stack, data science.",
+      "typicalRates": "Above-market pay; specific rates not publicly listed — determined by profile and negotiation",
+      "howToJoin": "1. Create a profile at https://arc.dev/talent with basic details and work experience. 2. Complete communication and technical vetting tests. 3. Receive interview invites from hiring managers. 4. Start working. Best suited for 5+ years experience and good English.",
+      "highlights": [
+        "4.2K+ matches made",
+        "$45M+ earned by freelancers",
+        "60+ job specialties",
+        "No upfront cost to join"
+      ]
+    },
+    {
+      "name": "Gun.io",
+      "url": "https://gun.io",
+      "registrationStatus": "Open (apply anytime)",
+      "typesOfWork": "Vetted software engineers — Java, Python, JavaScript, and broader full-stack development. Platform focuses on governance, compliance, and managed outcomes for enterprise clients.",
+      "typicalRates": "Premium/above-market; platform positions itself as a high-stakes engineering talent layer for companies",
+      "howToJoin": "Submit application via https://app.gun.io/sign-up — platform handles vetting, contracts, payroll across 100+ countries.",
+      "highlights": [
+        "Vetted talent pool: ~3,950 JavaScript, ~2,820 Python, ~1,967 Java developers",
+        "Multi-currency payroll and tax compliance",
+        "Managed outcomes — platform ensures work gets done",
+        "Compliance handling included"
+      ]
+    },
+    {
+      "name": "Toptal",
+      "url": "https://toptal.com",
+      "registrationStatus": "Invite-only / Application-based (NOT open registration)",
+      "typesOfWork": "Top 3% freelance talent: software engineers, designers, product managers, finance experts, executives. Predominantly senior-level.",
+      "typicalRates": "Premium rates — Toptal screens for top-tier talent; rates typically $60-150+/hr depending on role",
+      "howToJoin": "Apply at https://www.toptal.com/developers/apply — involves rigorous vetting: language/personality, problem-solving, and live skills evaluation. ~5% acceptance rate. No open registration.",
+      "highlights": [
+        "Top 3% talent only",
+        "~5% acceptance rate",
+        "No upfront cost for freelancers",
+        "Full-time and contract roles"
+      ],
+      "note": "Blocked by Cloudflare on fetch — info from prior knowledge"
+    },
+    {
+      "name": "Turing",
+      "url": "https://turing.com",
+      "registrationStatus": "Application-based (NOT open registration)",
+      "typesOfWork": "Remote software engineers: full-stack, backend, frontend, mobile, data science, DevOps, AI/ML",
+      "typicalRates": "Competitive; Turing claims above-market pay. Typically $30-100+/hr for engineers.",
+      "howToJoin": "Apply at https://turing.com/developers/apply — vetting includes data science challenges and video interview. Turing is invite/application-based.",
+      "highlights": [
+        "5K+ vetted engineers placed",
+        "Remote-first companies",
+        "Transparent pricing for employers",
+        "Career progression support"
+      ],
+      "note": "Blocked on fetch — info from prior knowledge"
+    },
+    {
+      "name": "Upwork",
+      "url": "https://upwork.com",
+      "registrationStatus": "Open registration (free account) but competitive — Optional: Upwork Talent Cloud for vetted talent",
+      "typesOfWork": "Broad freelance marketplace — software development, web development, mobile, AI/ML, design, writing, marketing, and more",
+      "typicalRates": "Wide range: $5-200+/hr. Competitive pricing, especially for new freelancers. Connects to enterprise clients.",
+      "howToJoin": "Create free account at https://upwork.com — complete profile, verify identity, build portfolio. Connects directly with clients who post jobs. Service fees: 10% for first $500, 5% thereafter.",
+      "highlights": [
+        "World's largest freelance marketplace",
+        "Open to anyone (identity verified)",
+        "Upwork Talent Cloud for vetted/managed talent tier",
+        "Connects to enterprise clients"
+      ],
+      "note": "Blocked on fetch — info from prior knowledge"
+    },
+    {
+      "name": "Lotus.to",
+      "url": "https://lotus.to",
+      "registrationStatus": "Unknown — site fetch returned empty/error",
+      "typesOfWork": "Unknown — site unavailable during research",
+      "typicalRates": "Unknown",
+      "howToJoin": "Site unreachable at time of research",
+      "highlights": [],
+      "note": "Site returned no content / not found. Unable to verify current status. Check directly if you have an invite code or contact."
+    },
+    {
+      "name": "Devn.io",
+      "url": "https://devn.io",
+      "registrationStatus": "Unknown — minimal site content returned",
+      "typesOfWork": "Unknown — site returned only 'Devin Doolin' (likely a personal landing redirect)",
+      "typicalRates": "Unknown",
+      "howToJoin": "Site appears inactive or redirect-based — not a standard freelance platform",
+      "highlights": [],
+      "note": "Site fetch returned minimal content. Not a verified active freelance platform."
+    },
+    {
+      "name": "CodeCanyon / Envato",
+      "url": "https://codecanyon.net",
+      "registrationStatus": "Open registration for authors",
+      "typesOfWork": "NOT a freelance service platform — marketplace for buying/selling code, plugins, scripts, and digital assets",
+      "typicalRates": "Authors set prices for items; earns royalties on sales",
+      "howToJoin": "Create author account at https://codecanyon.net — submit items for review. Envato takes 37.5-63.5% of revenue depending on exclusiveness.",
+      "highlights": [
+        "Large marketplace for digital code assets",
+        "Not a contractor/freelancer hiring platform"
+      ],
+      "note": "Wrong platform type — this is for selling code products, not freelance services"
+    }
+  ],
+  "summary": {
+    "bestForDevelopers": [
+      "Arc.dev — open, active, vet-tested, remote freelance jobs",
+      "Gun.io — open, premium enterprise-focused vetting",
+      "Upwork — open registration, most accessible but competitive",
+      "Toptal / Turing — invite-only, but highest-paying if you qualify"
+    ],
+    "noOpenRegistration": "Toptal, Turing, lotus.to, devn.io are all application/invite-only or inactive. None have true open registration in 2026.",
+    "actionable": "Apply to Arc.dev or Gun.io immediately — both have open applications as of April 2026."
+  }
+}

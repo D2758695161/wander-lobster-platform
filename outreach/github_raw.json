@@ -1,0 +1,370 @@
+{
+  "bounty_label": {
+    "query": "bounty label:bounty created:2026-04-06..2026-04-13",
+    "total": 125,
+    "items": [
+      {
+        "repo": "akashbiswas0/sherpa",
+        "created": "2026-04-13T05:58:34Z",
+        "title": "readme",
+        "url": "https://github.com/akashbiswas0/sherpa/issues/19",
+        "labels": [
+          "bounty"
+        ]
+      },
+      {
+        "repo": "Scottcjn/rustchain-bounties",
+        "created": "2026-04-09T03:26:26Z",
+        "title": "[BOUNTY: 1 RTC] Run the RustChain Miner for 24 Hours and Share Your Hardware Report",
+        "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2870",
+        "labels": [
+          "good first issue",
+          "bounty",
+          "multi-claim",
+          "easy",
+          "community",
+          "onboarding"
+        ]
+      },
+      {
+        "repo": "Scottcjn/rustchain-bounties",
+        "created": "2026-04-10T17:30:19Z",
+        "title": "[BOUNTY: 5 RTC] Submit elyanlabs.ai to Google Search Console + Create sitemap.xml",
+        "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2959",
+        "labels": [
+          "good first issue",
+          "bounty",
+          "propagation",
+          "easy"
+        ]
+      },
+      {
+        "repo": "akashbiswas0/sherpa",
+        "created": "2026-04-13T05:31:14Z",
+        "title": "update readme",
+        "url": "https://github.com/akashbiswas0/sherpa/issues/17",
+        "labels": [
+          "bounty"
+        ]
+      },
+      {
+        "repo": "Scottcjn/rustchain-bounties",
+        "created": "2026-04-10T17:30:21Z",
+        "title": "[BOUNTY: 3 RTC] Share elyanlabs.ai Launch on Social Media (With Proof)",
+        "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2960",
+        "labels": [
+          "bounty",
+          "multi-claim",
+          "propagation",
+          "easy",
+          "community"
+        ]
+      },
+      {
+        "repo": "Scottcjn/rustchain-bounties",
+        "created": "2026-04-06T16:39:59Z",
+        "title": "[BOUNTY: 5 RTC each] Write a Haiku About Your Mining Hardware",
+        "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2844",
+        "labels": [
+          "good first issue",
+          "bounty",
+          "community",
+          "fun"
+        ]
+      },
+      {
+        "repo": "Scottcjn/rustchain-bounties",
+        "created": "2026-04-11T19:14:08Z",
+        "title": "[BOUNTY: 50 RTC] RIP-309 Phase 1: Fingerprint Check Rotation (4-of-6 per epoch)",
+        "url": "https://github.com/Scottcjn/rustchain-bounties/issues/3008",
+        "labels": [
+          "help wanted",
+          "bounty",
+          "major",
+          "security"
+        ]
+      },
+      {
+        "repo": "midnightntwrk/contributor-hub",
+        "created": "2026-04-13T01:15:12Z",
+        "title": "[Tutorial] Running a Midnight Node: Setup, Sync & Monitoring",
+        "url": "https://github.com/midnightntwrk/contributor-hub/issues/323",
+        "labels": [
+          "public",
+          "content-proposal",
+          "bounty",
+          "low-priority"
+        ]
+      },
+      {
+        "repo": "midnightntwrk/contributor-hub",
+        "created": "2026-04-13T00:56:25Z",
+        "title": "[Tutorial] Midnight Development on Windows via WSL2",
+        "url": "https://github.com/midnightntwrk/contributor-hub/issues/282",
+        "labels": [
+          "public",
+          "content-proposal",
+          "bounty",
+          "low-priority"
+        ]
+      },
+      {
+        "repo": "Scottcjn/rustchain-bounties",
+        "created": "2026-04-09T03:24:59Z",
+        "title": "[BOUNTY: 3 RTC] Add RustChain to 5 Awesome Lists on GitHub (DePIN, Blockchain, AI)",
+        "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2862",
+        "labels": [
+          "good first issue",
+          "bounty",
+          "multi-claim",
+          "propagation",
+          "easy"
+        ]
+      }
+    ]
+  },
+  "reward_label": {
+    "query": "reward label:reward created:2026-04-06..2026-04-13",
+    "total": 2,
+    "items": [
+      {
+        "repo": "espenhk/tmnf-ai",
+        "created": "2026-04-11T01:50:08Z",
+        "title": "Intrinsic curiosity module (ICM) for exploration reward shaping",
+        "url": "https://github.com/espenhk/tmnf-ai/issues/24",
+        "labels": [
+          "enhancement",
+          "training",
+          "reward"
+        ]
+      },
+      {
+        "repo": "idea2app/NGO-data-importer",
+        "created": "2026-04-07T17:17:01Z",
+        "title": "开发公益项目数据导入脚本",
+        "url": "https://github.com/idea2app/NGO-data-importer/issues/1",
+        "labels": [
+          "reward"
+        ]
+      }
+    ]
+  },
+  "grant_label": {
+    "query": "grant label:grant created:2026-04-06..2026-04-13",
+    "total": 4,
+    "items": [
+      {
+        "repo": "ywatanabe1989/scitex-orochi",
+        "created": "2026-04-12T12:58:02Z",
+        "title": "grant: MEXT AI for Science SPReAD 2026 application",
+        "url": "https://github.com/ywatanabe1989/scitex-orochi/issues/86",
+        "labels": [
+          "research",
+          "grant"
+        ]
+      },
+      {
+        "repo": "ywatanabe1989/scitex-orochi",
+        "created": "2026-04-12T04:43:33Z",
+        "title": "feat: mamba-grant-hunter agent for research grants and funding opportunities",
+        "url": "https://github.com/ywatanabe1989/scitex-orochi/issues/77",
+        "labels": [
+          "feature",
+          "grant"
+        ]
+      },
+      {
+        "repo": "FreeCAD/FPA",
+        "created": "2026-04-10T07:36:48Z",
+        "title": "[Grant] Paddlestroke - Sketcher and Assembly improvements",
+        "url": "https://github.com/FreeCAD/FPA/issues/459",
+        "labels": [
+          "Payment",
+          "VAT",
+          "Grant"
+        ]
+      },
+      {
+        "repo": "FreeCAD/FPA",
+        "created": "2026-04-07T12:26:30Z",
+        "title": "[Grant] davidgilkaufman - CAM improvements",
+        "url": "https://github.com/FreeCAD/FPA/issues/456",
+        "labels": [
+          "Payment",
+          "Grant"
+        ]
+      }
+    ]
+  },
+  "hackathon_bounty": {
+    "query": "\"bounty\" \"hackathon\" created:2026-04-06..2026-04-13",
+    "total": 15,
+    "items": [
+      {
+        "repo": "aibtcdev/agent-news",
+        "created": "2026-04-09T23:05:28Z",
+        "title": "Open Call: DRI — Classifieds Sales & Distribution Departments",
+        "url": "https://github.com/aibtcdev/agent-news/issues/439",
+        "labels": []
+      },
+      {
+        "repo": "Scottcjn/rustchain-bounties",
+        "created": "2026-04-09T03:25:19Z",
+        "title": "[BOUNTY: 20 RTC] Create a GitHub Action That Awards RTC for Merged Pull Requests",
+        "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2864",
+        "labels": [
+          "help wanted",
+          "bounty",
+          "standard",
+          "integration"
+        ]
+      },
+      {
+        "repo": "okx/plugin-store",
+        "created": "2026-04-12T17:07:04Z",
+        "title": "[new-plugin] bobby-protocol v3.0.0",
+        "url": "https://github.com/okx/plugin-store/pull/161",
+        "labels": [
+          "new-plugin",
+          "structure-validated"
+        ]
+      },
+      {
+        "repo": "DSUC-Project/Gimme-Idea",
+        "created": "2026-04-12T07:48:16Z",
+        "title": "pull request 12/4",
+        "url": "https://github.com/DSUC-Project/Gimme-Idea/pull/19",
+        "labels": []
+      },
+      {
+        "repo": "arun02139/proof-of-purpose",
+        "created": "2026-04-11T19:42:54Z",
+        "title": "Deploy live dashboard with auditor submission flow on Railway",
+        "url": "https://github.com/arun02139/proof-of-purpose/issues/12",
+        "labels": []
+      },
+      {
+        "repo": "arun02139/proof-of-purpose",
+        "created": "2026-04-11T17:21:52Z",
+        "title": "PRD: Proof of Purpose (PoP) — v1 Prototype",
+        "url": "https://github.com/arun02139/proof-of-purpose/issues/6",
+        "labels": []
+      },
+      {
+        "repo": "sharonjoseph12/vortex_reva",
+        "created": "2026-04-11T04:03:07Z",
+        "title": "fixed_all",
+        "url": "https://github.com/sharonjoseph12/vortex_reva/pull/1",
+        "labels": []
+      },
+      {
+        "repo": "rehank0678/zechub",
+        "created": "2026-04-09T04:13:55Z",
+        "title": "Bump the npm_and_yarn group across 14 directories with 21 updates",
+        "url": "https://github.com/rehank0678/zechub/pull/6",
+        "labels": [
+          "dependencies",
+          "javascript"
+        ]
+      },
+      {
+        "repo": "SuperteamDAO/earn",
+        "created": "2026-04-08T20:02:07Z",
+        "title": "fix: show hackathon bounty bookmarks on bookmarks page",
+        "url": "https://github.com/SuperteamDAO/earn/pull/1355",
+        "labels": []
+      },
+      {
+        "repo": "gnolang/gno",
+        "created": "2026-04-08T16:02:04Z",
+        "title": "[META - WIP] UX gnoland Personas",
+        "url": "https://github.com/gnolang/gno/issues/5455",
+        "labels": [
+          "a/ux"
+        ]
+      }
+    ]
+  },
+  "sponsor_repo": {
+    "query": "GitHub Sponsors created:2026-04-06..2026-04-13",
+    "total": 7725,
+    "items": [
+      {
+        "repo": "shahabnazari/BlackQM",
+        "created": "2026-04-12T14:38:45Z",
+        "title": "chore(deps-backend): Bump the minor-and-patch group in /backend with 7 updates",
+        "url": "https://github.com/shahabnazari/BlackQM/pull/18",
+        "labels": []
+      },
+      {
+        "repo": "wegofwd2020-hub/StudyBuddy_OnDemand",
+        "created": "2026-04-13T06:23:21Z",
+        "title": "chore(deps): Bump starlette from 0.49.1 to 1.0.0 in /backend",
+        "url": "https://github.com/wegofwd2020-hub/StudyBuddy_OnDemand/pull/169",
+        "labels": []
+      },
+      {
+        "repo": "cryptoxdog/l9-codegraph",
+        "created": "2026-04-13T06:21:00Z",
+        "title": "build(deps): bump the core-deps group with 5 updates",
+        "url": "https://github.com/cryptoxdog/l9-codegraph/pull/14",
+        "labels": []
+      },
+      {
+        "repo": "QSEEKING/Van",
+        "created": "2026-04-13T06:23:03Z",
+        "title": "deps(deps): update structlog requirement from >=23.0.0 to >=23.3.0",
+        "url": "https://github.com/QSEEKING/Van/pull/5",
+        "labels": []
+      },
+      {
+        "repo": "piposa/zigbee-shepherd-converters",
+        "created": "2026-04-06T06:22:50Z",
+        "title": "fix(ignore): bump the minor-patch group across 1 directory with 2 updates",
+        "url": "https://github.com/piposa/zigbee-shepherd-converters/pull/13",
+        "labels": [
+          "dependencies",
+          "javascript"
+        ]
+      },
+      {
+        "repo": "matthewnoel/edif.io",
+        "created": "2026-04-13T06:22:53Z",
+        "title": "deps(web): bump the web-minor-patch group across 1 directory with 12 updates",
+        "url": "https://github.com/matthewnoel/edif.io/pull/30",
+        "labels": []
+      },
+      {
+        "repo": "cryptoxdog/golden-repo",
+        "created": "2026-04-13T06:21:02Z",
+        "title": "build(deps): bump the core-deps group with 5 updates",
+        "url": "https://github.com/cryptoxdog/golden-repo/pull/49",
+        "labels": []
+      },
+      {
+        "repo": "navikt/sokos-up-skattekort-admin",
+        "created": "2026-04-08T14:52:17Z",
+        "title": "Bump the minor-and-patch group across 1 directory with 4 updates",
+        "url": "https://github.com/navikt/sokos-up-skattekort-admin/pull/6",
+        "labels": [
+          "dependencies",
+          "javascript"
+        ]
+      },
+      {
+        "repo": "kodiboys/ngo-suite",
+        "created": "2026-04-10T23:36:52Z",
+        "title": "deps(deps): bump the reporting group across 1 directory with 5 updates",
+        "url": "https://github.com/kodiboys/ngo-suite/pull/16",
+        "labels": []
+      },
+      {
+        "repo": "t3ja-parw4tha/KESTREL_SOC",
+        "created": "2026-04-13T06:22:33Z",
+        "title": "chore(deps)(deps): bump the minor-updates group across 1 directory with 20 updates",
+        "url": "https://github.com/t3ja-parw4tha/KESTREL_SOC/pull/37",
+        "labels": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "description": "GitHub projects accepting sponsors or seeking contributors — researched April 2026",
+  "sources": [
+    "GitHub API: search/repositories (sponsor in readme)",
+    "GitHub API: search/issues (label:help wanted)",
+    "GitHub API: high-star projects with open contribution channels"
+  ],
+  "projects": [
+    {
+      "name": "open-webui / open-webui",
+      "url": "https://github.com/open-webui/open-webui",
+      "stars": 132565,
+      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, Llama, etc.)",
+      "language": "Python",
+      "sponsorship_program": "GitHub Sponsors (org level)",
+      "what_help_needed": [
+        "Frontend React/TypeScript contributions",
+        "RAG (Retrieval Augmented Generation) improvements",
+        "MCP (Model Context Protocol) integration",
+        "Docker/Kubernetes deployment optimizations",
+        "Documentation translations",
+        "New backend adapter support"
+      ],
+      "open_issues": 232,
+      "potential_earnings": "Variable via GitHub Sponsors — depends on sponsored maintainer tier and userbase size. The project has 132k+ stars, active community.",
+      "labels": ["good-first-issue", "help-wanted", "open-to-contributors"],
+      "notes": "Very active project with 18.8k forks, frequent releases. Fast-moving AI UI space. Contributions can earn recognition in a high-growth open-source AI project."
+    },
+    {
+      "name": "yt-dlp / yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "stars": 157545,
+      "description": "A feature-rich command-line audio/video downloader",
+      "language": "Python",
+      "sponsorship_program": "GitHub Sponsors (org level) + possible financial support via Patreon/OpenCollective links in README",
+      "what_help_needed": [
+        "New extractor development for video sites",
+        "Bug fixes for existing extractors",
+        "Documentation improvements",
+        "Testing on various platforms",
+        "Translation work"
+      ],
+      "open_issues": 2476,
+      "potential_earnings": "GitHub Sponsors + GitHub Discussions activity can lead to recognition. Popular project — contributors gain significant visibility. No formal bounty program but strong community recognition.",
+      "labels": ["help-wanted", "bug", "extractor"],
+      "notes": "High-volume bug queue (2476 open issues). Great for Python contributors wanting real-world scraping/extraction experience. Active Discord community."
+    },
+    {
+      "name": "excalidraw / excalidraw",
+      "url": "https://github.com/excalidraw/excalidraw",
+      "stars": 121361,
+      "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+      "language": "TypeScript",
+      "sponsorship_program": "GitHub Sponsors + excalidraw.com paid plans",
+      "what_help_needed": [
+        "React/TypeScript frontend work",
+        "Collaboration / real-time sync features",
+        "Mobile app improvements",
+        "Performance optimization for large diagrams",
+        "Accessibility (a11y) improvements"
+      ],
+      "open_issues": 2987,
+      "potential_earnings": "GitHub Sponsors tier for contributors with sustained contributions. excalidraw.com has a paid product — contributors to core library gain visibility with potential future employment/contracting.",
+      "labels": ["help-wanted", "good-first-issue", "enhancement"],
+      "notes": "Massive community (121k stars). Very active issues. Excellent for building portfolio with TypeScript/React experience."
+    },
+    {
+      "name": "axios / axios",
+      "url": "https://github.com/axios/axios",
+      "stars": 109040,
+      "description": "Promise based HTTP client for browser and node.js",
+      "language": "JavaScript",
+      "sponsorship_program": "GitHub Sponsors (org level)",
+      "what_help_needed": [
+        "Bug fixes across node.js/browser environments",
+        "New interceptors / transformers features",
+        "TypeScript type definitions improvements",
+        "Performance optimization",
+        "Security vulnerability patches"
+      ],
+      "open_issues": 268,
+      "potential_earnings": "Maintainers accept GitHub Sponsors. High-profile JavaScript library — contributor recognition is significant for resume/portfolio.",
+      "labels": ["help-wanted", "bug", "enhancement"],
+      "notes": "268 open issues, manageable. JavaScript/TypeScript HTTP library used by millions of projects. Great for understanding core networking concepts."
+    },
+    {
+      "name": "affaan-m / everything-claude-code",
+      "url": "https://github.com/affaan-m/everything-claude-code",
+      "stars": 160446,
+      "description": "Agent harness performance optimization system for Claude Code, Codex, Opencode, Cursor and beyond",
+      "language": "JavaScript",
+      "sponsorship_program": "Unknown — README may list sponsorship",
+      "what_help_needed": [
+        "Skill system development",
+        "Memory and security modules",
+        "Performance optimization",
+        "MCP integration work"
+      ],
+      "open_issues": 120,
+      "potential_earnings": "Active development — potential GitHub Sponsors if maintainer has it set up. Fast-growing repo (160k stars in ~3 months).",
+      "labels": ["help-wanted", "ai-agents", "llm"],
+      "notes": "Rapid growth repo in AI agent tooling space. Good opportunity for JavaScript developers interested in AI agent frameworks."
+    },
+    {
+      "name": "louislam / uptime-kuma",
+      "url": "https://github.com/louislam/uptime-kuma",
+      "stars": 65000,
+      "description": "A fancy self-hosted monitoring tool",
+      "language": "Node.js",
+      "sponsorship_program": "GitHub Sponsors (louislam) — active sponsor profile",
+      "what_help_needed": [
+        "Bug fixes (database connection pooling issues reported)",
+        "New monitor types",
+        "Notification integrations",
+        "Docker/arrigation improvements",
+        "Translation/localization"
+      ],
+      "open_issues": "~1000+",
+      "potential_earnings": "Louis Lam has active GitHub Sponsors. Contributions recognized with sponsor tier benefits possible for frequent contributors.",
+      "labels": ["help", "bug", "enhancement"],
+      "notes": "Well-known self-hosted tool. Active community. Maintainer is responsive and has working sponsorship program."
+    },
+    {
+      "name": "openclaw / openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "stars": 360076,
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way.",
+      "language": "TypeScript",
+      "sponsorship_program": "GitHub Sponsors (org level)",
+      "what_help_needed": [
+        "Skills authoring framework development",
+        "Browser automation tooling",
+        "Gateway/runtime improvements",
+        "Documentation and tutorials",
+        "MCP server integrations"
+      ],
+      "open_issues": 19280,
+      "potential_earnings": "Large star base (360k stars) with active GitHub Sponsors. Potential for contributor sponsorship tiers as program matures.",
+      "labels": ["help-wanted", "good-first-issue", "ai", "assistant"],
+      "notes": "Massive star count, 73k forks. Fast-moving AI assistant framework. Huge opportunity for TypeScript/Node developers in AI agent space."
+    },
+    {
+      "name": "fatedier / frp",
+      "url": "https://github.com/fatedier/frp",
+      "stars": 106007,
+      "description": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet",
+      "language": "Go",
+      "sponsorship_program": "GitHub Sponsors (fatedier)",
+      "what_help_needed": [
+        "Go backend/network programming",
+        "New proxy protocol support",
+        "Performance improvements",
+        "TLS/security enhancements",
+        "Documentation"
+      ],
+      "open_issues": 41,
+      "potential_earnings": "Maintainer has GitHub Sponsors. Clean, well-structured Go project — great for portfolio. 41 open issues = manageable workload.",
+      "labels": ["help-wanted", "enhancement"],
+      "notes": "106k stars, 15k forks. Very stable project with steady contributions. Good for Go developers wanting production-grade networking experience."
+    },
+    {
+      "name": "tech-interview-handbook / tech-interview-handbook",
+      "url": "https://github.com/yangshun/tech-interview-handbook",
+      "stars": 138860,
+      "description": "Curated coding interview preparation materials for busy software engineers",
+      "language": "TypeScript",
+      "sponsorship_program": "GitHub Sponsors (yangshun)",
+      "what_help_needed": [
+        "New algorithm question solutions",
+        "Behavioral interview content",
+        "System design examples",
+        "Translation/localization",
+        "Content updates for current interview trends"
+      ],
+      "open_issues": 44,
+      "potential_earnings": "Popular developer resource with active sponsor. Non-code contributions welcome (content, corrections, translations). Recognition in developer community.",
+      "labels": ["help-wanted", "documentation", "good-first-issue"],
+      "notes": "138k stars. Low issue count (44). Great for non-coding contributions: writing, editing, translating content."
+    },
+    {
+      "name": "schodet / nxt-python",
+      "url": "https://github.com/schodet/nxt-python",
+      "stars": 2700,
+      "description": "Python library for LEGO Mindstorms NXT robots",
+      "language": "Python",
+      "sponsorship_program": "Unknown",
+      "what_help_needed": [
+        "TESTERS WANTED: macOS bluetooth testing (Issue #201)",
+        "TESTERS WANTED: Windows testing (Issue #170)",
+        "Bluetooth connection fixes for newer macOS versions",
+        "Python 3 compatibility improvements"
+      ],
+      "open_issues": "Small but active",
+      "potential_earnings": "No formal sponsorship detected. Opportunity for hands-on hardware/Python testing contributions. Good for beginners.",
+      "labels": ["help", "testing", "platform-specific"],
+      "notes": "Small but active project explicitly seeking volunteer testers on specific platforms. Good entry point for contributors wanting hardware/embedded experience."
+    }
+  ],
+  "key_opportunities_summary": {
+    "best_for_code_contributions": [
+      "open-webui (AI UI, Python/React, 132k stars)",
+      "openclaw (AI assistant, TypeScript, 360k stars)",
+      "yt-dlp (Python, 157k stars, 2476 issues)"
+    ],
+    "best_for_non_code_contributions": [
+      "tech-interview-handbook (content/writing, 138k stars)",
+      "excalidraw (design/UX feedback, 121k stars)",
+      "nxt-python (testing/hardware, beginner-friendly)"
+    ],
+    "best_for_earning_recognition": [
+      "open-webui (active GitHub Sponsors + large userbase)",
+      "louislam/uptime-kuma (established sponsor tier)",
+      "frp (clean Go project, maintainer sponsorship active)"
+    ],
+    "bounty_programs_note": "GitHub Sponsors is the primary monetization vehicle for these projects. No dedicated bounty programs (like Bountysource or IssueHunt) were detected in API searches. Consider reaching out to project maintainers directly for paid contracting work."
+  }
+}

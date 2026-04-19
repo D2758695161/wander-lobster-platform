@@ -1,0 +1,51 @@
+{
+  "research_date": "2026-04-14T08:43:25.898Z",
+  "sources": {
+    "github": [
+      {
+        "search": "bounty_helpwanted_issues",
+        "count": 0,
+        "items": []
+      },
+      {
+        "search": "grant_reward_issues",
+        "count": 0,
+        "items": []
+      },
+      {
+        "search": "ai_helpwanted_repos",
+        "count": 0,
+        "items": []
+      }
+    ],
+    "producthunt": [],
+    "github_sponsors": [
+      {
+        "source": "github-sponsors",
+        "count": 0,
+        "items": []
+      }
+    ],
+    "rapidapi": [],
+    "freelance_platforms": [
+      {
+        "platform": "gunio",
+        "url": "https://gun.io",
+        "status": "accessible",
+        "title": "The Technical Standard for High Stakes Engineering | Gun.io"
+      },
+      {
+        "platform": "lanceyio",
+        "url": "https://lancey.io",
+        "status": "blocked",
+        "error": "page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://lancey.io/\", waiting u"
+      },
+      {
+        "platform": "toptal",
+        "url": "https://toptal.com",
+        "status": "accessible",
+        "title": "Attention Required! | Cloudflare"
+      }
+    ]
+  }
+}

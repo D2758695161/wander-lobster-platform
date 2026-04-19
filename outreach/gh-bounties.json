@@ -1,0 +1,237 @@
+{
+  "scraped_at": "2026-04-19T09:17:00+08:00",
+  "date_range": "2026-04-12 to 2026-04-19",
+  "summary": "Found 3 active bounty programs with USD/token rewards, plus hackathon events and bounty resource repos. No LayerBank or IssueHunt/Bountysource GitHub activity found this week.",
+  "bounty_programs": [
+    {
+      "platform": "Opire.io",
+      "platform_url": "https://opire.io",
+      "description": "GitHub-native bounty platform that posts bounties on open source repos. USD rewards.",
+      "active_bounties": [
+        {
+          "reward_usd": 50,
+          "title": "Claude Code skill for CHANGELOG.md generation",
+          "description": "Create a Claude Code skill (SKILL.md) or bash script that automatically generates a structured CHANGELOG.md from a project's git history.",
+          "labels": ["bounty", "good first issue", "skill"],
+          "apply_url": "https://github.com/search?q=%22powered+by+Opire%22&type=issues",
+          "note": "Search 'powered by Opire' on GitHub to find the host repo"
+        },
+        {
+          "reward_usd": 75,
+          "title": "CLAUDE.md template for Next.js 15 + SQLite SaaS",
+          "description": "Create an opinionated, production-ready CLAUDE.md for a typical SaaS project built with Next.js 15 App Router and SQLite (better-sqlite3 or Turso).",
+          "labels": ["bounty", "template"],
+          "apply_url": "https://github.com/search?q=%22powered+by+Opire%22&type=issues"
+        },
+        {
+          "reward_usd": 100,
+          "title": "Claude Code pre-tool-use hook for dangerous commands",
+          "description": "Create a Claude Code pre-tool-use hook in Python or bash that intercepts dangerous bash commands before they are executed.",
+          "labels": ["bounty", "hook", "security"],
+          "apply_url": "https://github.com/search?q=%22powered+by+Opire%22&type=issues"
+        },
+        {
+          "reward_usd": 150,
+          "title": "Claude Code PR review agent",
+          "description": "Create a Claude Code agent that takes a PR diff as input, analyzes it, and returns a structured Markdown review comment.",
+          "labels": ["bounty", "agent"],
+          "apply_url": "https://github.com/search?q=%22powered+by+Opire%22&type=issues"
+        },
+        {
+          "reward_usd": 200,
+          "title": "n8n workflow for weekly GitHub repo narrative summary",
+          "description": "Create a complete n8n workflow that automatically generates a weekly narrative summary of a GitHub repo's activity, using the Claude API.",
+          "labels": ["bounty", "workflow"],
+          "apply_url": "https://github.com/search?q=%22powered+by+Opire%22&type=issues"
+        }
+      ],
+      "how_to_apply": "Search GitHub for 'powered by Opire' to find all active bounty issues, or visit opire.io. Bounties are posted directly as GitHub issues with the 'bounty' label."
+    },
+    {
+      "platform": "SolFoundry (FNDRY Token)",
+      "platform_url": "https://solananews.today/solfoundry",
+      "description": "Solana-based open source bounty platform paying in $FNDRY tokens. Multiple active bounties across T1/T2/T3 tiers.",
+      "active_bounties": [
+        {
+          "reward": "100K $FNDRY",
+          "tier": "T1 (Open Race)",
+          "domain": "Creative",
+          "title": "Design SolFoundry Sticker Pack",
+          "description": "Design 10 stickers for a SolFoundry sticker pack (Telegram, Discord, or print format)."
+        },
+        {
+          "reward": "100,000 $FNDRY",
+          "tier": "T1 (Open Race)",
+          "domain": "Frontend",
+          "title": "Bounty Countdown Timer",
+          "description": "Create a countdown timer component that shows time remaining until bounty deadline."
+        },
+        {
+          "reward": "400K $FNDRY",
+          "tier": "T2",
+          "domain": "Backend",
+          "title": "Email Notification System for Bounty Updates",
+          "description": "Implement email notifications that alert contributors when bounties matching their preferences are posted."
+        },
+        {
+          "reward": "450K $FNDRY",
+          "tier": "T2",
+          "domain": "Agent",
+          "title": "AI Bounty Description Enhancer",
+          "description": "Build an AI agent that analyzes vague bounty descriptions and automatically generates improved versions."
+        },
+        {
+          "reward": "450K $FNDRY",
+          "tier": "T2",
+          "domain": "Frontend",
+          "title": "Interactive Bounty Flow Diagram Component",
+          "description": "Build a React component showing the bounty lifecycle flow (post → claim → work → submit → review → pay)."
+        },
+        {
+          "reward": "500K $FNDRY",
+          "tier": "T2",
+          "domain": "Integration",
+          "title": "Telegram Bot for New Bounty Notifications",
+          "description": "Build a Telegram bot that posts new bounties to a dedicated channel with filtering capabilities."
+        },
+        {
+          "reward": "600K $FNDRY",
+          "tier": "T2",
+          "domain": "Backend",
+          "title": "GitHub Issue Scraper for Foundry Bounties",
+          "description": "Build a backend service that automatically scrapes GitHub issues from configured repositories."
+        },
+        {
+          "reward": "600K $FNDRY",
+          "tier": "T2",
+          "domain": "Integration",
+          "title": "VS Code Extension for Browsing Bounties",
+          "description": "Develop a VS Code extension allowing developers to browse SolFoundry bounties without leaving their IDE."
+        },
+        {
+          "reward": "800K $FNDRY",
+          "tier": "T3",
+          "domain": "Frontend, Backend",
+          "title": "Bounty Analytics Dashboard",
+          "description": "Build an analytics dashboard tracking bounty trends, payout distribution, and contributor growth."
+        },
+        {
+          "reward": "900K $FNDRY",
+          "tier": "T3",
+          "domain": "Backend, Docs",
+          "title": "SolFoundry TypeScript SDK",
+          "description": "Build a comprehensive TypeScript SDK for programmatic bounty management and submission handling."
+        },
+        {
+          "reward": "1M $FNDRY",
+          "tier": "T3",
+          "domain": "Agent",
+          "title": "Full Autonomous Bounty-Hunting Agent",
+          "description": "Build a fully autonomous multi-agent system that finds bounties, analyzes requirements, and submits work."
+        },
+        {
+          "reward": "1M $FNDRY",
+          "tier": "T3",
+          "domain": "Creative",
+          "title": "3-Minute Animated Explainer Video with Voiceover",
+          "description": "Produce a professional 3-minute animated explainer video covering SolFoundry ecosystem, agent capabilities, bounty mechanics, and token economics."
+        }
+      ],
+      "how_to_apply": "Search GitHub for '$FNDRY' to find bounty issues. Labels include 'bounty', 'tier-1', 'tier-2', 'tier-3'. The platform appears to be SolFoundry — search 'SolFoundry bounty' on GitHub for the host repo.",
+      "estimated_budget": "Multiple bounties totaling ~6.5M+ $FNDRY tokens (token USD value unknown, depends on listing price)"
+    },
+    {
+      "platform": "RustChain (RTC Token)",
+      "description": "Rust-based blockchain project with ongoing Code Review and Bug Bounty programs paying in RTC tokens.",
+      "active_bounties": [
+        {
+          "reward": "Pool: 200 RTC (ongoing)",
+          "type": "Code Review Bounty",
+          "reward_structure": "Thorough review (line-by-line with actionable feedback): 10-15 RTC per PR; Standard review: lower tier",
+          "labels": ["bounty", "open"],
+          "apply_url": "https://github.com/search?q=%22Code+Review+Bounty%22+RustChain&type=issues",
+          "note": "Search 'Code Review Bounty RustChain' on GitHub"
+        },
+        {
+          "reward": "Pool: 750 RTC (ongoing, replenished)",
+          "type": "Bug Bounty",
+          "severity_rewards": {
+            "Critical": "Fund theft, consensus bypass, RCE — highest tier",
+            "High": "Major vulnerabilities",
+            "Medium": "Moderate issues",
+            "Low": "Minor issues"
+          },
+          "labels": ["bounty", "bug", "open"],
+          "apply_url": "https://github.com/search?q=%22Ongoing+Bug+Bounty%22+RustChain&type=issues"
+        },
+        {
+          "reward": "5-10 RTC",
+          "type": "Good First Issues",
+          "description": "Easy starter tasks for new contributors",
+          "labels": ["good first issue"]
+        }
+      ],
+      "how_to_apply": "Search 'RustChain bounty' on GitHub. Check CONTRIBUTING.md in the RustChain repo for bounty program details.",
+      "estimated_budget": "950+ RTC in active pools (RTC USD price unknown)"
+    }
+  ],
+  "hackathons": [
+    {
+      "name": "Wikimedia Hackathon 2026",
+      "date": "May 1-3, 2026",
+      "location": "Milan, Italy",
+      "details": "Travel scholarship applications open until November 28 (prior year). Multiple hackathon-labeled issues on GitHub related to Wikimedia projects.",
+      "repo": "https://github.com/simon04/Wikimedia-Hackathon-Northwestern-Europe-2026",
+      "how_to_participate": "Search 'hackathon label:Wikimedia' on GitHub issues, or check Wikimedia Phabricator for project ideas"
+    },
+    {
+      "name": "WeMakeDevs Hackathon",
+      "details": "Multiple issues labeled 'hackathon' + 'WeMakeDevs' on GitHub seeking contributions. Contributors can claim issues for the hackathon.",
+      "how_to_participate": "Search 'hackathon WeMakeDevs' on GitHub issues"
+    },
+    {
+      "name": "OpenMetadata Hackathon",
+      "details": "Issues labeled 'hackathon' for OpenMetadata project. Contributors building Observable connectors and OpenMetadata REST API extensions.",
+      "how_to_participate": "Search 'hackathon OpenMetadata' on GitHub issues. Looking for TypeScript developers."
+    }
+  ],
+  "bounty_resource_repos": [
+    {
+      "repo": "arkadiyt/bounty-targets-data",
+      "url": "https://github.com/arkadiyt/bounty-targets-data",
+      "description": "Hourly-updated data dumps of bug bounty platform scopes (HackerOne, Bugcrowd, Intigriti, etc.) — not a bounty program itself but essential tooling for bug bounty hunters. Updated Apr 18, 2026.",
+      "stars": "Not checked — updated very recently",
+      "language": "Ruby"
+    },
+    {
+      "repo": "arkadiyt/bounty-targets",
+      "url": "https://github.com/arkadiyt/bounty-targets",
+      "description": "Crawls bug bounty platform scopes hourly and dumps them into bounty-targets-data repo. Updated Apr 4, 2026.",
+      "language": "Ruby"
+    },
+    {
+      "repo": "Zama Bounty Program",
+      "url": "https://github.com/search?q=Zama+bounty&type=repositories",
+      "description": "Contribute to the FHE (Fully Homomorphic Encryption) space and Zama's open source libraries and get rewarded. Listed on github.com/topics/bounty.",
+      "how_to_apply": "Search 'Zama bounty' on GitHub for their bounty program repo"
+    },
+    {
+      "repo": "algora-io/algora",
+      "url": "https://github.com/algora-io/algora",
+      "description": "Hire the top 1% OSS engineers. Platform for publishing SWE jobs, contracts & bounties. GitHub App creates bounties & rewards tips on issues and PRs. Updated Apr 16, 2026.",
+      "language": "Elixir"
+    }
+  ],
+  "negative_results": {
+    "LayerBank": "No GitHub repos or issues mentioning LayerBank found in the April 12-19 range.",
+    "IssueHunt": "No active IssueHunt bounty campaigns found on GitHub this week.",
+    "Bountysource": "No active Bountysource campaigns found on GitHub this week."
+  },
+  "notes": [
+    "Web search was unavailable (fetch errors) — all data collected via direct GitHub web fetching.",
+    "FNDRY and RTC token values in USD are unknown — token prices not checked.",
+    "Opire bounties are the most accessible (USD-denominated, clear acceptance criteria).",
+    "SolFoundry FNDRY bounties offer the largest nominal rewards but token value is speculative.",
+    "RustChain RTC bounties are legitimate blockchain bug bounties with security-focused rewards."
+  ]
+}

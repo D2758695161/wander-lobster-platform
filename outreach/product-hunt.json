@@ -1,0 +1,334 @@
+{
+  "scraped_at": "2026-04-19T01:22:00Z",
+  "source": "https://producthunt.com/feed (Atom RSS)",
+  "date_range": "2026-04-12 to 2026-04-19",
+  "total_products_found": 19,
+  "products": [
+    {
+      "name": "Claude Design by Anthropic Labs",
+      "launched_date": "2026-04-17",
+      "url": "https://www.producthunt.com/products/claude",
+      "maker": "Anthropic Labs",
+      "poster": "Rohan Chaubey",
+      "what_it_does": "Make prototypes, slides & one-pagers by talking to Claude",
+      "category": "AI Tool",
+      "likely_help_needed": ["Developer integrations", "API partnerships", "Documentation", "Marketing exposure"],
+      "how_to_contact": "Product Hunt discussion page / maker profile @Rohan Chaubey",
+      "contact_url": "https://www.producthunt.com/products/claude",
+      "potential_budget": "Medium-High (Anthropic is well-funded; potential API partnership or co-marketing)",
+      "opportunity_notes": "Claude Design is a new Anthropic product. Likely needs developer ecosystem growth, integrations with design/dev tools, and user onboarding content."
+    },
+    {
+      "name": "GPT-Rosalind",
+      "launched_date": "2026-04-16",
+      "url": "https://www.producthunt.com/products/openai",
+      "maker": "OpenAI",
+      "poster": "Kumar Abhishek",
+      "what_it_does": "Purpose-built model for scientific research & drug discovery",
+      "category": "AI Tool / API",
+      "likely_help_needed": ["Integration partners (biotech, pharma)", "Developer evangelism", "Case studies", "API documentation"],
+      "how_to_contact": "Product Hunt discussion / OpenAI developer relations",
+      "contact_url": "https://www.producthunt.com/products/openai",
+      "potential_budget": "High (OpenAI has massive budget; could be enterprise partnership opportunity)",
+      "opportunity_notes": "Specialized domain model - biotech/pharma integration partners would be valuable. Academic partnerships, drug discovery pipeline integrations."
+    },
+    {
+      "name": "Android CLI",
+      "launched_date": "2026-04-16",
+      "url": "https://www.producthunt.com/products/android-cli",
+      "maker": "Independent / by Rohan Chaubey",
+      "poster": "Rohan Chaubey",
+      "what_it_does": "Build high quality Android apps 3x faster using any agent",
+      "category": "Developer Tool",
+      "likely_help_needed": ["Developer community growth", "Integration testing", "Documentation", "YouTube tutorials", "Blog posts"],
+      "how_to_contact": "Product Hunt discussion / GitHub if linked",
+      "contact_url": "https://www.producthunt.com/products/android-cli",
+      "potential_budget": "Low-Medium (individual maker)",
+      "opportunity_notes": "Individual maker building dev tooling. Likely needs developer advocacy, documentation help, and community. Great for guest blog/tutorial opportunities."
+    },
+    {
+      "name": "Grok Voice API",
+      "launched_date": "2026-04-17",
+      "url": "https://www.producthunt.com/products/grok",
+      "maker": "x.ai / x.com",
+      "poster": "Zac Zuo",
+      "what_it_does": "Fast, accurate STT and TTS APIs at the best price",
+      "category": "API / Developer Tool",
+      "likely_help_needed": ["Developer evangelism", "Integration partners", "Pricing feedback", "Use case expansion"],
+      "how_to_contact": "Product Hunt discussion / maker profile @Zac Zuo",
+      "contact_url": "https://www.producthunt.com/products/grok",
+      "potential_budget": "Medium (x.ai backed; growing developer ecosystem)",
+      "opportunity_notes": "Voice API from x.ai - direct competitor to ElevenLabs, Deepgram, OpenAI TTS. Needs developers to build integrations, sample apps, and use-case content."
+    },
+    {
+      "name": "Vercel Flags",
+      "launched_date": "2026-04-17",
+      "url": "https://www.producthunt.com/products/vercel",
+      "maker": "Vercel",
+      "poster": "fmerian",
+      "what_it_does": "Feature flags, targeting rules, rollouts. All from Vercel.",
+      "category": "Developer Tool / DevOps",
+      "likely_help_needed": ["Developer documentation", "Migration guides from LaunchDarkly/Split", "Integration tutorials"],
+      "how_to_contact": "Product Hunt discussion / Vercel community forum",
+      "contact_url": "https://www.producthunt.com/products/vercel",
+      "potential_budget": "Medium (Vercel has significant resources)",
+      "opportunity_notes": "Vercel's entry into feature flags. Already has massive user base. Community content, migration guides from competitors could be valuable."
+    },
+    {
+      "name": "Codex 2.0 by OpenAI",
+      "launched_date": "2026-04-16",
+      "url": "https://www.producthunt.com/products/openai",
+      "maker": "OpenAI",
+      "poster": "Rohan Chaubey",
+      "what_it_does": "Codex now runs apps, automates tasks, codes & more",
+      "category": "AI Coding Tool",
+      "likely_help_needed": ["API integration developers", "Plugin/extension builders", "Use case documentation", "Enterprise adoption"],
+      "how_to_contact": "Product Hunt discussion / OpenAI developer forum",
+      "contact_url": "https://www.producthunt.com/products/openai",
+      "potential_budget": "High (OpenAI)",
+      "opportunity_notes": "Major OpenAI product update. Codex agent capabilities expanded. Developer ecosystem partners, coding tool integrations, use-case content."
+    },
+    {
+      "name": "Hipocampus",
+      "launched_date": "2026-04-17",
+      "url": "https://www.producthunt.com/products/hipocampus",
+      "maker": "Independent",
+      "poster": "Noureddin Bakir",
+      "what_it_does": "AI operators that own team workflows",
+      "category": "AI Agent Tool",
+      "likely_help_needed": ["Beta testers", "Integration connectors", "Workflow templates", "Marketing", "Case studies"],
+      "how_to_contact": "Product Hunt discussion / maker profile @Noureddin Bakir",
+      "contact_url": "https://www.producthunt.com/products/hipocampus",
+      "potential_budget": "Low-Medium (early-stage startup)",
+      "opportunity_notes": "AI workflow automation. Would benefit from integration partnerships, workflow template creators, and early adopter testimonials."
+    },
+    {
+      "name": "React Email 6.0 by Resend",
+      "launched_date": "2026-04-17",
+      "url": "https://www.producthunt.com/products/react-email-6-0-resend",
+      "maker": "Resend",
+      "poster": "Adithya Shreshti",
+      "what_it_does": "Build, customize, and ship emails — all from your own app",
+      "category": "Developer Tool / Email",
+      "likely_help_needed": ["Developer community content", "Template library contributors", "Integration tutorials", "YouTube demos"],
+      "how_to_contact": "Product Hunt discussion / maker profile @Adithya Shreshti / Resend community",
+      "contact_url": "https://www.producthunt.com/products/react-email-6-0-resend",
+      "potential_budget": "Medium (Resend is a growing startup)",
+      "opportunity_notes": "Major version release from Resend (email API platform). Popular open-source-adjacent tool. Template contributors, tutorial content, integration with React frameworks."
+    },
+    {
+      "name": "Is Your Site Agent-Ready? by Cloudflare",
+      "launched_date": "2026-04-17",
+      "url": "https://www.producthunt.com/products/is-your-site-agent-ready",
+      "maker": "Cloudflare",
+      "poster": "Rohan Chaubey",
+      "what_it_does": "Scan your website to see how ready it is for AI agents.",
+      "category": "AI Tool / Developer Tool",
+      "likely_help_needed": ["Developer evangelism", "Documentation on agent-readiness standards", "Case studies"],
+      "how_to_contact": "Product Hunt discussion / Cloudflare community / developer docs",
+      "contact_url": "https://www.producthunt.com/products/is-your-site-agent-ready",
+      "potential_budget": "Medium (Cloudflare)",
+      "opportunity_notes": "Cloudflare's AI agent readiness tool. Very new category - could benefit from blog posts explaining what makes a site agent-ready, integration guides."
+    },
+    {
+      "name": "Cerberus",
+      "launched_date": "2026-04-16",
+      "url": "https://www.producthunt.com/products/cerberus-3",
+      "maker": "Independent",
+      "poster": "Aziz Akhmedkhodjaev",
+      "what_it_does": "Cursor for AI hacking that can't go out of scope",
+      "category": "Developer Tool / AI Coding",
+      "likely_help_needed": ["Beta testers", "Feature feedback", "Documentation", "Social proof"],
+      "how_to_contact": "Product Hunt discussion / maker profile @Aziz Akhmedkhodjaev",
+      "contact_url": "https://www.producthunt.com/products/cerberus-3",
+      "potential_budget": "Low (individual maker)",
+      "opportunity_notes": "AI coding tool that promises scope stability. Interesting differentiator from Cursor. Early-stage - needs testers, feedback, use-case documentation."
+    },
+    {
+      "name": "Sharpsana",
+      "launched_date": "2026-04-16",
+      "url": "https://www.producthunt.com/products/sharpsana",
+      "maker": "Independent",
+      "poster": "Assylkhan Sarsenbayev",
+      "what_it_does": "The AI agent that runs your entire startup",
+      "category": "AI Agent",
+      "likely_help_needed": ["Early users", "Integration partners", "Use case documentation", "Testimonials"],
+      "how_to_contact": "Product Hunt discussion / maker profile @Assylkhan Sarsenbayev",
+      "contact_url": "https://www.producthunt.com/products/sharpsana",
+      "potential_budget": "Low (early-stage)",
+      "opportunity_notes": "Full-stack AI startup agent. Very ambitious claim. Early-stage startup likely seeking early adopters and integration partners."
+    },
+    {
+      "name": "CalendarPipe",
+      "launched_date": "2026-04-16",
+      "url": "https://www.producthunt.com/products/calendarpipe",
+      "maker": "Independent",
+      "poster": "Jakub Beneš",
+      "what_it_does": "Programmable calendar sync for humans and AI agents",
+      "category": "API / Developer Tool",
+      "likely_help_needed": ["Developer integrations", "Documentation", "API partners", "AI agent framework integrations"],
+      "how_to_contact": "Product Hunt discussion / maker profile @Jakub Beneš",
+      "contact_url": "https://www.producthunt.com/products/calendarpipe",
+      "potential_budget": "Low-Medium (individual/small team)",
+      "opportunity_notes": "Calendar API for both humans and AI agents. Interesting niche - AI agent workflow integrations (n8n, Make, Zapier), calendar app partnerships."
+    },
+    {
+      "name": "Arky",
+      "launched_date": "2026-04-16",
+      "url": "https://www.producthunt.com/products/arky",
+      "maker": "Independent",
+      "poster": "Minseo Kim",
+      "what_it_does": "The canvas for thinking with AI",
+      "category": "AI Tool / Productivity",
+      "likely_help_needed": ["User onboarding content", "Template library", "Marketing", "Integration with note-taking tools"],
+      "how_to_contact": "Product Hunt discussion / maker profile @Minseo Kim",
+      "contact_url": "https://www.producthunt.com/products/arky",
+      "potential_budget": "Low (individual maker)",
+      "opportunity_notes": "AI thinking canvas. Similar to tools like Mem, Notion AI. Needs differentiation content, template creators, early adopter testimonials."
+    },
+    {
+      "name": "Melo",
+      "launched_date": "2026-04-16",
+      "url": "https://www.producthunt.com/products/melo-3",
+      "maker": "Independent",
+      "poster": "Hamza Al Sorkhy",
+      "what_it_does": "One canvas for all your work",
+      "category": "Productivity / AI Tool",
+      "likely_help_needed": ["User growth", "Feature feedback", "Integration partners", "Content marketing"],
+      "how_to_contact": "Product Hunt discussion / maker profile @Hamza Al Sorkhy",
+      "contact_url": "https://www.producthunt.com/products/melo-3",
+      "potential_budget": "Low (individual maker)",
+      "opportunity_notes": "All-in-one workspace canvas. Competing with Notion, Craft, Obsidian. Needs unique differentiation content and early testimonials."
+    },
+    {
+      "name": "Notebooks in Gemini",
+      "launched_date": "2026-04-14",
+      "url": "https://www.producthunt.com/products/google",
+      "maker": "Google",
+      "poster": "Rohan Chaubey",
+      "what_it_does": "Keep every project, chat, and file in one focused space",
+      "category": "AI Tool / Productivity",
+      "likely_help_needed": ["Developer ecosystem", "Integration with Google Workspace", "Documentation", "Use case content"],
+      "how_to_contact": "Product Hunt discussion / Google Developers",
+      "contact_url": "https://www.producthunt.com/products/google",
+      "potential_budget": "High (Google)",
+      "opportunity_notes": "Google's new Gemini feature. Needs developer integrations, use-case demos, and content explaining the workspace feature. Enterprise adoption."
+    },
+    {
+      "name": "Prio",
+      "launched_date": "2026-04-16",
+      "url": "https://www.producthunt.com/products/prio-4",
+      "maker": "Independent",
+      "poster": "Unknown (name truncated in feed)",
+      "what_it_does": "Your AI chief of staff for email, calendar, tasks and more",
+      "category": "AI Assistant",
+      "likely_help_needed": ["Early adopters", "Integration connectors", "Testimonials", "Content marketing"],
+      "how_to_contact": "Product Hunt discussion page",
+      "contact_url": "https://www.producthunt.com/products/prio-4",
+      "potential_budget": "Low-Medium",
+      "opportunity_notes": "AI chief of staff - similar to Motion, Clockwise, x.ai. Early-stage needs users, testimonials, and integration partners."
+    },
+    {
+      "name": ".MD This Page",
+      "launched_date": "2026-04-17",
+      "url": "https://www.producthunt.com/products/md-this-page",
+      "maker": "Independent",
+      "poster": "Adem Kouki",
+      "what_it_does": "Convert any page to clean Markdown instantly",
+      "category": "Developer Tool / Browser Extension",
+      "likely_help_needed": ["Browser extension store listing", "Content creators using the tool", "GitHub stars", "Open source contributions"],
+      "how_to_contact": "Product Hunt discussion / maker profile @Adem Kouki",
+      "contact_url": "https://www.producthunt.com/products/md-this-page",
+      "potential_budget": "Low (utility tool, individual maker)",
+      "opportunity_notes": "Browser extension utility. Simple but useful. Maker likely needs browser store reviews, content creators demonstrating use cases."
+    },
+    {
+      "name": "Lounge",
+      "launched_date": "2026-04-17",
+      "url": "https://www.producthunt.com/products/lounge-2",
+      "maker": "AskToBuild",
+      "poster": "AskToBuild",
+      "what_it_does": "macOS Tahoe menu bar manager with notch-aware icon control",
+      "category": "macOS Tool",
+      "likely_help_needed": ["macOS power users", "Beta testers", "App Store optimization"],
+      "how_to_contact": "Product Hunt discussion / maker profile @AskToBuild",
+      "contact_url": "https://www.producthunt.com/products/lounge-2",
+      "potential_budget": "Low (small indie tool)",
+      "opportunity_notes": "macOS menu bar utility. Niche but specific use case (macOS Tahoe compatibility). App Store presence and Mac community engagement."
+    },
+    {
+      "name": "CapyPlan",
+      "launched_date": "2026-04-17",
+      "url": "https://www.producthunt.com/products/gentle-daily-planner-capyplan",
+      "maker": "Independent",
+      "poster": "Summer Liu",
+      "what_it_does": "Your no stress chearleader for tiny tasks",
+      "category": "Productivity / AI Tool",
+      "likely_help_needed": ["Early users", "Habit/ productivity content creators", "Testimonials", "Social media marketing"],
+      "how_to_contact": "Product Hunt discussion / maker profile @Summer Liu",
+      "contact_url": "https://www.producthunt.com/products/gentle-daily-planner-capyplan",
+      "potential_budget": "Low (early-stage)",
+      "opportunity_notes": "Gentle productivity app. Needs content marketing, productivity blogger partnerships, early testimonials. Friendly for micro-SaaS collaborations."
+    }
+  ],
+  "top_targets_by_budget": [
+    {
+      "name": "OpenAI (GPT-Rosalind + Codex 2.0)",
+      "budget": "High",
+      "contact": "Product Hunt: https://www.producthunt.com/products/openai",
+      "opportunity": "API partnerships, developer ecosystem content, biotech integrations for GPT-Rosalind"
+    },
+    {
+      "name": "Anthropic Labs (Claude Design)",
+      "budget": "High",
+      "contact": "Product Hunt: https://www.producthunt.com/products/claude",
+      "opportunity": "Developer integrations, design tool partnerships, prototype/use-case content"
+    },
+    {
+      "name": "Google (Notebooks in Gemini)",
+      "budget": "High",
+      "contact": "Product Hunt: https://www.producthunt.com/products/google",
+      "opportunity": "Google Workspace integration content, developer documentation"
+    },
+    {
+      "name": "Vercel (Vercel Flags)",
+      "budget": "Medium",
+      "contact": "Product Hunt: https://www.producthunt.com/products/vercel",
+      "opportunity": "Migration guide content, LaunchDarkly/Split user transition campaigns"
+    },
+    {
+      "name": "x.ai (Grok Voice API)",
+      "budget": "Medium",
+      "contact": "Product Hunt: https://www.producthunt.com/products/grok",
+      "opportunity": "Voice API integrations, developer evangelism, sample app builders"
+    }
+  ],
+  "top_targets_by_accessibility": [
+    {
+      "name": "React Email 6.0 (Resend)",
+      "contact": "Product Hunt: https://www.producthunt.com/products/react-email-6-0-resend",
+      "opportunity": "Template library contributions, tutorial content, YouTube demos"
+    },
+    {
+      "name": "Android CLI",
+      "contact": "Product Hunt: https://www.producthunt.com/products/android-cli",
+      "opportunity": "Documentation, tutorial blog posts, Android dev community outreach"
+    },
+    {
+      "name": "CalendarPipe",
+      "contact": "Product Hunt: https://www.producthunt.com/products/calendarpipe",
+      "opportunity": "AI agent framework integrations (n8n, Zapier, Make), calendar app partnerships"
+    },
+    {
+      "name": "Hipocampus",
+      "contact": "Product Hunt: https://www.producthunt.com/products/hipocampus",
+      "opportunity": "Workflow template creators, integration connectors, beta user testimonials"
+    },
+    {
+      "name": ".MD This Page",
+      "contact": "Product Hunt: https://www.producthunt.com/products/md-this-page",
+      "opportunity": "Content creator partnerships, browser extension store reviews, use-case demos"
+    }
+  ],
+  "notes": "Data scraped from Product Hunt Atom feed on 2026-04-19. All times are PST/UTC-7 as reported by Product Hunt. Some April 12-13 products may not appear in current feed (possibly pushed off by newer products). Contact info is based on Product Hunt discussion pages and maker profiles - direct outreach should be done through those channels. Big tech products (OpenAI, Google, Anthropic, Vercel, Cloudflare, x.ai) likely have formal partnership programs and should be approached through official channels rather than individual maker outreach."
+}

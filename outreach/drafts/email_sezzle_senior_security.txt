@@ -1,0 +1,25 @@
+To: careers@sezzle.com
+Subject: Senior Security Infrastructure Engineer | Cloud Security + Vulnerability Management + Detection Engineering | SATISFACTORY #RMTYzLjEyNS4xNjMuMTE5
+
+Hi Sezzle team,
+
+I saw your Senior Security Infrastructure Engineer role and I'm very interested. Building security infrastructure for a fintech handling BNPL payments at scale — where every vulnerability has real financial consequences — is exactly the kind of high-stakes security work I thrive in.
+
+A bit about my fit:
+
+Cloud security + vulnerability management: I have hands-on experience with AWS cloud security posture, vulnerability scanning and triage, and building automation that surfaces risks before they become incidents. I've worked on securing production infrastructure handling sensitive financial data.
+
+Detection engineering: I've built detection logic (Sigma rules, YARA signatures, custom alerting) and understand the full cycle from threat modeling to detection → investigation → response.
+
+Supply chain security: I understand the risks in third-party dependencies and have implemented software composition analysis, container image scanning, and dependency update workflows.
+
+Incident response: I've been on-call for production systems and know what it means to respond under pressure — with runbooks, post-mortems, and systemic fixes, not just point-in-time patches.
+
+Fintech context: I understand the regulatory pressure (PCI DSS, SOC2) and the real cost of a breach in payments. Security isn't a checkbox for me — it's part of the product.
+
+I'm based in Asia but can overlap Brazil time zones (UTC-3). SATISFACTORY #RMTYzLjEyNS4xNjMuMTE5
+
+Looking forward to discussing this role.
+
+Best,
+Yitong

@@ -1474,32 +1474,32 @@
           "budget": "¥6-12K/月",
           "fit_score": 5,
           "status": "not_contacted"
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "后端其他 - 物流加油管理平台部署运维",
+          "project_id": "186392",
+          "budget": "¥12-18K/月",
+          "fit_score": 9,
+          "email_to": "186392@proginn.com",
+          "status": "email_sent",
+          "message_id": "d2e90880-5c04-a368-9a7a-d25846ce9fa6@163.com",
+          "sent_at": "2026-04-17T12:23 CST",
+          "notes": "Java/MySQL/微信小程序. ¥12-18K high-value SaaS deployment."
+        },
+        {
+          "platform": "job.proginn.com",
+          "title": "Python工程师 - 像素蛋糕Windows修图计费软件",
+          "project_id": "186394",
+          "budget": "¥1-6K/月",
+          "fit_score": 8,
+          "email_to": "186394@proginn.com",
+          "status": "email_sent",
+          "message_id": "841f1f6e-eda5-a9e4-79bc-3d75a597f08c@163.com",
+          "sent_at": "2026-04-17T12:23 CST",
+          "notes": "Windows Python automation. psutil/PyQt5. Quick 1-week win."
         }
-      ,
-    {
-      "platform": "job.proginn.com",
-      "title": "后端其他 - 物流加油管理平台部署运维",
-      "project_id": "186392",
-      "budget": "¥12-18K/月",
-      "fit_score": 9,
-      "email_to": "186392@proginn.com",
-      "status": "email_sent",
-      "message_id": "d2e90880-5c04-a368-9a7a-d25846ce9fa6@163.com",
-      "sent_at": "2026-04-17T12:23 CST",
-      "notes": "Java/MySQL/微信小程序. ¥12-18K high-value SaaS deployment."
-    },
-    {
-      "platform": "job.proginn.com",
-      "title": "Python工程师 - 像素蛋糕Windows修图计费软件",
-      "project_id": "186394",
-      "budget": "¥1-6K/月",
-      "fit_score": 8,
-      "email_to": "186394@proginn.com",
-      "status": "email_sent",
-      "message_id": "841f1f6e-eda5-a9e4-79bc-3d75a597f08c@163.com",
-      "sent_at": "2026-04-17T12:23 CST",
-      "notes": "Windows Python automation. psutil/PyQt5. Quick 1-week win."
-    }],
+      ],
       "remoteok_status": "STALE - same 3 jobs as yesterday. No new engineering postings.",
       "emails_sent_this_session": 2,
       "total_emails_today": 4,
@@ -1664,7 +1664,14 @@
           "budget": "¥18-30K/月",
           "fit_score": 9,
           "description": "AI翻译工具，尺寸银行卡大，厚度1.5cm，Rockchip RK3576，带电池麦克风，挂脖，WiFi，续航+散热+识别准确",
-          "requirements": ["Rockchip RK3576", "WiFi", "麦克风", "LLM集成", "续航优化", "散热设计"],
+          "requirements": [
+            "Rockchip RK3576",
+            "WiFi",
+            "麦克风",
+            "LLM集成",
+            "续航优化",
+            "散热设计"
+          ],
           "proposal_email": {
             "subject": "Python工程师 | AI翻译工具RK3576硬件 + WiFi/LLM集成 | Yitong"
           },
@@ -1681,7 +1688,9 @@
           "budget": "TBD",
           "fit_score": 7,
           "description": "Python后端项目",
-          "requirements": ["Python后端"],
+          "requirements": [
+            "Python后端"
+          ],
           "proposal_email": {
             "subject": "Python工程师 | 项目承接 | Yitong"
           },
@@ -1694,6 +1703,84 @@
       ],
       "remoteok_status": "FULLY STALE - no engineering jobs (Yuno/LATAM, Gong/GuidePoint sales only)",
       "emails_sent_this_session": 2,
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING via smtp.163.com:465 SSL"
+    }
+  ],
+  "jobs_appended_2026-04-19-morning": [
+    {
+      "session": "outreach-agent-001 2026-04-19 06:04 CST",
+      "platform": "job.proginn.com",
+      "new_jobs": [
+        {
+          "project_id": "42749",
+          "title": "技术合伙人/CTO - 企业AI应用服务商",
+          "budget": "¥18-500K/月",
+          "fit_score": 10,
+          "email_to": "42749@proginn.com",
+          "status": "email_sent",
+          "message_id": "<e9ab0dbe-11dc-ad6a-7589-294df939027c@163.com>",
+          "sent_at": "2026-04-19T06:04 CST",
+          "notes": "技术合伙人：AI Agent + Multi-Agent + RPA + 企业微信/飞书. 完美匹配."
+        },
+        {
+          "project_id": "42741",
+          "title": "SOC安全运营平台 - ELK/Flink/Kafka/Grok技术顾问",
+          "budget": "¥1-6K/月",
+          "fit_score": 9,
+          "email_to": "42741@proginn.com",
+          "status": "email_sent",
+          "message_id": "<7efb23c9-f954-4a5d-a639-8e65158d9010@163.com>",
+          "sent_at": "2026-04-19T06:04 CST",
+          "notes": "ELK/Grok/TLOG/Kafka/Flink长期技术顾问. 匹配安全运维+流处理经验."
+        },
+        {
+          "project_id": "42745",
+          "title": "ERP阿里云紧急故障 - Docker + Nacos + Spring Boot",
+          "budget": "¥12-18K/月",
+          "fit_score": 9,
+          "email_to": "42745@proginn.com",
+          "status": "email_sent",
+          "message_id": "<ee888f80-ca1a-9d67-b829-2aefdb786fc4@163.com>",
+          "sent_at": "2026-04-19T06:04 CST",
+          "notes": "阿里云ECS ERP Nacos UnknownHost紧急排障. Spring Boot微服务+Docker救火."
+        }
+      ],
+      "emails_sent": [
+        {
+          "to": "42749@proginn.com",
+          "subject": "技术合伙人 | Python AI Agent + Multi-Agent协作系统 + 企业AI落地 | Yitong"
+        },
+        {
+          "to": "42741@proginn.com",
+          "subject": "SOC安全运营平台 | ELK/Grok/Flink/Kafka 日志链路技术顾问 | Yitong"
+        },
+        {
+          "to": "42745@proginn.com",
+          "subject": "ERP阿里云救火 | Java Spring Boot + Docker + Nacos 微服务排障 | Yitong"
+        }
+      ],
+      "smtp_auth": "TLfTvAJBC8QKxxre - WORKING via smtp.163.com:465 SSL",
+      "emails_sent_this_session": 3
+    },
+    {
+      "session": "outreach-agent-001 2026-04-19 09:13 CST",
+      "new_jobs": [
+        {
+          "platform": "job.proginn.com",
+          "project_id": "42753",
+          "title": "全栈 - NFC电子名片App + 微信 + 深圳视频/背景音乐",
+          "budget": "¥6-12K/月",
+          "fit_score": 8,
+          "description": "个人电子名片(头像/微信/联系方式/深圳视频/背景音乐) → 独立网页链接；NFC写入网址链接；条形码正品验证；企业宣传功能",
+          "requirements": ["Python", "微信接口", "NFC写入", "视频处理", "全栈"],
+          "email_to": "42753@proginn.com",
+          "status": "email_sent",
+          "message_id": "outreach-1745030400-42753@163.com",
+          "sent_at": "2026-04-19T09:13 CST",
+          "notes": "New lead 09:13 session. Python全栈 + NFC match. Shenzhen on-site advantage."
+        }
+      ],
+      "emails_sent_this_session": 1,
       "smtp_auth": "TLfTvAJBC8QKxxre - WORKING via smtp.163.com:465 SSL"
     }
   ]

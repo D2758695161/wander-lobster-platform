@@ -1,0 +1,1578 @@
+[
+  {
+    "owner": "Dasharo",
+    "repo": "dasharo-issues",
+    "title": "Provide a banana bread recipe",
+    "url": "https://github.com/Dasharo/dasharo-issues/issues/1824",
+    "labels": [
+      "bug",
+      "doc",
+      "needs review",
+      "bounty-warmup",
+      "bounty"
+    ],
+    "body": "### Component\n\nDasharo documentation\n\n### Device\n\nProtectli V1000\n\n### Dasharo version\n\nv0.9.2\n\n### Dasharo Tools Suite version\n\nn/a\n\n### Test case ID\n\n_No response_\n\n### Brief summary\n\nThe documentation does not contain a recipe for banana bread.\n\n### How reproducible\n\n_No response_\n\n### How to reproduce\n\n- go to docs.dasharo.com\n- look for banana bread recipe\n\n### Expected behavior\n\n- Banana bread recipe is present\n\n### Actual behavior\n\n- Banana bread recipe is absent\n\n### Screenshots\n\n_No res",
+    "comments": 1,
+    "created_at": "2026-04-16T16:15:12Z"
+  },
+  {
+    "owner": "ClementWalter",
+    "repo": "agent-captcha",
+    "title": "$500 Bounty: Fake a Verified Post",
+    "url": "https://github.com/ClementWalter/agent-captcha/issues/1",
+    "labels": [
+      "bounty"
+    ],
+    "body": "## Challenge\n\nPost a message to https://agentcaptcha.chat with a green \"verified\" badge\nwithout running a real model inference on a CommitLLM-compatible GPU.\n\n## Rules\n\n1. The message must appear on the live thread at agentcaptcha.chat\n2. The message must show a green \"verified\" provenance badge\n3. The provenance must include a passing Rust verifier report\n4. You must NOT use a real CommitLLM sidecar to generate the audit binary\n5. You must document your method (write-up or video)\n6. Social engi",
+    "comments": 23,
+    "created_at": "2026-04-16T12:57:10Z"
+  },
+  {
+    "owner": "bolivian-peru",
+    "repo": "marketplace-service-template",
+    "title": "[BOUNTY] Claim:Travel Price Tracker — $50",
+    "url": "https://github.com/bolivian-peru/marketplace-service-template/issues/372",
+    "labels": [
+      "bounty"
+    ],
+    "body": "**Which bounty are you claiming?**  \nTravel Price Tracker ($50 in $SX)\n\n**Description of what I'll build:**  \nPython + Playwright service that tracks real-time flight and hotel prices from Google Flights + Booking.com.  \nStructured JSON output, multi-source comparison, using Proxies.sx mobile proxies + x402 payment gating.\n\n**Tech stack:**  \n- Python + Playwright (stealth mode)  \n- Proxies.sx SDK  \n- Hono/FastAPI + x402 middleware  \n- ETA: 4-7 days\n\nI'm ready to start immediately.",
+    "comments": 10,
+    "created_at": "2026-04-15T16:33:41Z"
+  },
+  {
+    "owner": "Jennycruzy",
+    "repo": "sovereign-genesis",
+    "title": "Optimize GitHub Issue Polling Interval",
+    "url": "https://github.com/Jennycruzy/sovereign-genesis/issues/62",
+    "labels": [
+      "Bounty"
+    ],
+    "body": "## Task\nAnalyze and optimize the polling interval in scanner.js for GitHub Bounty issues to balance between responsiveness and resource usage. Implement a dynamic polling strategy that adjusts based on the number of open issues and recent activity. Acceptance criteria: a pull request with the updated polling logic and performance metrics comparing before and after the change.\n\n**Difficulty:** 🟡 medium\n\nBounty: 0.7 XTZ\nPR: Jennycruzy/sovereign-genesis#62\n\n---\n_This bounty was autonomously created",
+    "comments": 59,
+    "created_at": "2026-04-15T15:55:06Z"
+  },
+  {
+    "owner": "Jennycruzy",
+    "repo": "sovereign-genesis",
+    "title": "Enhance Logging for AI Judge Module",
+    "url": "https://github.com/Jennycruzy/sovereign-genesis/issues/61",
+    "labels": [
+      "Bounty"
+    ],
+    "body": "## Task\nImprove the logging mechanism in the judge.js module to provide more detailed insights during AI PR review. Include timestamps, error details, and review metrics to assist in debugging and performance analysis. Acceptance criteria: a pull request with updated logging functionality, verified through unit tests demonstrating enhanced log outputs in different review scenarios.\n\n**Difficulty:** 🟡 medium\n\nBounty: 0.7 XTZ\nPR: Jennycruzy/sovereign-genesis#61\n\n---\n_This bounty was autonomously c",
+    "comments": 64,
+    "created_at": "2026-04-15T15:55:05Z"
+  },
+  {
+    "owner": "plurigrid",
+    "repo": "nash-portal",
+    "title": "Bounty: Tier S defectors identified (v0.1.0)",
+    "url": "https://github.com/plurigrid/nash-portal/issues/3",
+    "labels": [
+      "bounty"
+    ],
+    "body": "Top-20 scan complete. 6 Tier S + 3 Tier A defectors identified. 10 Neversold wallets verified (excl LP). Artifacts attached to v0.1.0 release: notice.md, mechanism.md, tier-s.edn, neversold-tier.edn, neversold-top20.edn. Hybrid 50/50 burn/lock pool, 180d TTL, GF(3)-conserved.",
+    "comments": 4,
+    "created_at": "2026-04-13T23:40:10Z"
+  },
+  {
+    "owner": "kcolbchain",
+    "repo": "meridian",
+    "title": "Tokenised market-maker shares: ERC-4626 vault per agent, fees → share holders",
+    "url": "https://github.com/kcolbchain/meridian/issues/18",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "bounty"
+    ],
+    "body": "## Why\nThe library currently runs as a self-funded agent. A natural next step is to let third parties fund the agent and earn a share of its quoting profit — turning each strategy into a **tokenised market-maker share**. This is the missing economic primitive that connects `meridian` to the kcolbchain stack:\n- Funded via the `stablecoin-toolkit` issuance flow (CR8-USD or USDC).\n- Compliance-gated for RWA strategies via `rwa-toolkit` (ERC-3643 ONCHAINID).\n- Settled / reported via `switchboard` ag",
+    "comments": 12,
+    "created_at": "2026-04-13T20:12:01Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "sherpa",
+    "title": "add readme",
+    "url": "https://github.com/akashbiswas0/sherpa/issues/21",
+    "labels": [
+      "bounty"
+    ],
+    "body": "write about the tech stack which is used in the sherpa repo in readme",
+    "comments": 1,
+    "created_at": "2026-04-13T13:54:34Z"
+  },
+  {
+    "owner": "priyanshudumps",
+    "repo": "fuel-agent-kit",
+    "title": "missing readme",
+    "url": "https://github.com/priyanshudumps/fuel-agent-kit/issues/3",
+    "labels": [
+      "bounty"
+    ],
+    "body": "the repo is missing readme",
+    "comments": 9,
+    "created_at": "2026-04-13T13:17:55Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Building an Unshielded Token dApp with UI",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/328",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nBuild an unshielded token dApp with a working frontend. This is a simpler entry point for new contributors compared to shielded tokens, covering unshielded token operations end-to-end with a UI.\n\nCovers:\n- Minting with `mintUnshieldedToken`\n- Transferring with `sendUnshielded`\n- Receiving with `receiveUnshielded`\n- React frontend with wallet connection, mint, transfer, and balance display\n- When to use unshielded vs shielded tokens and the privacy tr",
+    "comments": 7,
+    "created_at": "2026-04-13T12:32:15Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Shielded Token Operations: Mint, Transfer & Burn with Test Suite",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/327",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nWalk through the complete shielded token lifecycle in Compact: minting, transferring, and burning, with compilable code and a full test suite. No UI required, this is focused on the contract and testing layer.\n\nCovers:\n- Minting with `mintShieldedToken` and `evolveNonce`\n- Transferring with `sendShielded` and change management via `ShieldedSendResult`\n- Burning via `sendImmediateShielded` to `shieldedBurnAddress()`\n- The Merkle tree constraint (fresh",
+    "comments": 7,
+    "created_at": "2026-04-13T12:32:02Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Building a Shielded Token dApp with UI",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/326",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nBuild a complete shielded token dApp end-to-end: Compact contract for minting, transferring, and burning shielded tokens, TypeScript witness implementations, wallet integration (Lace or 1AM via dApp connector), and a working React frontend that lets users interact with shielded tokens in the browser.\n\nCovers the full lifecycle:\n- Minting with `mintShieldedToken` and `evolveNonce`\n- Transferring with `sendShielded` and change management via `ShieldedS",
+    "comments": 5,
+    "created_at": "2026-04-13T12:31:52Z"
+  },
+  {
+    "owner": "priyanshudumps",
+    "repo": "fuel-agent-kit",
+    "title": "add a python version of the kit",
+    "url": "https://github.com/priyanshudumps/fuel-agent-kit/issues/1",
+    "labels": [
+      "bounty"
+    ],
+    "body": "add a python version of the kit ",
+    "comments": 9,
+    "created_at": "2026-04-13T09:03:37Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "sherpa",
+    "title": "readme",
+    "url": "https://github.com/akashbiswas0/sherpa/issues/19",
+    "labels": [
+      "bounty"
+    ],
+    "body": "write about mt. everest in 5 points",
+    "comments": 1,
+    "created_at": "2026-04-13T05:58:34Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "sherpa",
+    "title": "update readme",
+    "url": "https://github.com/akashbiswas0/sherpa/issues/17",
+    "labels": [
+      "bounty"
+    ],
+    "body": "update readme and add about the snowfall season in 50 words in point",
+    "comments": 1,
+    "created_at": "2026-04-13T05:31:14Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Midnight vs Other Privacy Chains: Architecture Comparison for Developers",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/324",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "medium-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nCompare Midnight's architecture (Compact + ZK circuits + Zswap + dual ledger) with other privacy-focused chains (Aztec's Noir + UTXO, Aleo's Leo + records, Mina's o1js + recursive SNARKs, Zcash's Sapling). Focus on developer experience: language design, state model, privacy model. An honest technical comparison, not marketing.\n\n## Target Audience\n\nDevelopers and Web3 Enthusiasts\n\n## Deliverables\n\n1. **Written tutorial (2,000-3,000 words)** covering:\n",
+    "comments": 11,
+    "created_at": "2026-04-13T01:15:17Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Running a Midnight Node: Setup, Sync & Monitoring",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/323",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nCover full node setup from scratch, initial sync process, block height monitoring, peer connectivity troubleshooting (nodes stuck on block 1 with peers disconnecting), and resource requirements (CPU, RAM, storage). Include how to verify your node is synced and healthy.\n\n## Target Audience\n\nDevelopers and Node Operators\n\n## Deliverables\n\n1. **Written tutorial (3,000-4,000 words)** covering:\n   - Full node setup from scratch\n   - Initial sync process\n ",
+    "comments": 4,
+    "created_at": "2026-04-13T01:15:12Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Getting NIGHT Tokens: Exchanges, Bridging & Wallet Funding on Mainnet",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/322",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "medium-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nWalk through the current paths for acquiring NIGHT tokens: which exchanges list NIGHT, how to withdraw to a Midnight-compatible wallet, and the current state of Cardano-to-Midnight bridging. Note what doesn't exist yet and what's coming.\n\n## Target Audience\n\nDevelopers and Users\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - Which exchanges list NIGHT\n   - Withdrawing to a Midnight-compatible wallet\n   - Current state of",
+    "comments": 11,
+    "created_at": "2026-04-13T01:15:05Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Handling Midnight SDK Breaking Changes: A Developer's Upgrade Playbook",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/321",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "medium-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nA repeatable process for upgrading when Midnight ships breaking changes, not specific to any single version. Cover: identifying which packages changed, resolving `CompactError: Version mismatch` errors, updating compiled artifacts after a compiler upgrade, and a dependency audit workflow. Show before/after package.json examples.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - Identifying wh",
+    "comments": 13,
+    "created_at": "2026-04-13T01:15:01Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Security Checklist for Midnight dApps Before Deployment",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/320",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nA durable checklist any developer can run before deploying: `disclose()` audit (no secret leaks), `ownPublicKey()` usage review (known vulnerability), replay protection verification (nonces or nullifiers), exported ledger field review, witness implementation correctness, version compatibility confirmation, and proof generation testing on testnet.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n ",
+    "comments": 6,
+    "created_at": "2026-04-13T01:14:56Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] When Proofs Fail: Debugging Proof Server Errors & ZK Generation Failures",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/319",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "medium-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nCover: proof server not responding (check `docker logs`), proof timeout (first proof downloads ~30MB ZK params), proof rejection from wire format mismatch, and version mismatch between proof server Docker tag and ledger version. Show how to verify proof server health.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - Proof server not responding: `docker logs` diagnostics\n   - Proof timeout: f",
+    "comments": 11,
+    "created_at": "2026-04-13T01:14:53Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Decoding Error 1010: What 'Invalid Transaction' Actually Means",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/318",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nExplain the error code structure (`POOL_INVALID_TX = AUTHOR(1000) + 10`), map common custom error codes (139 = transaction builder, 154 = BlockLimitExceeded, 168 = batch settlement, 170 = Merkle root pruning, 186 = EffectsCheckFailure), and show diagnostic steps for each. Include the ledger cost model (5 dimensions).\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - Error code structure: `POO",
+    "comments": 6,
+    "created_at": "2026-04-13T01:14:47Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Building Batch Transactions: Multi-Recipient Settlements & Complex Flows",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/317",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nExplain how to compose transactions that affect multiple parties or execute multiple operations atomically. Cover the block weight constraints that cause error 1010, strategies for splitting large operations across multiple transactions, and the difference between guaranteed and fallible transaction segments.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n   - Composing multi-party transactions",
+    "comments": 3,
+    "created_at": "2026-04-13T01:14:42Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Anonymous Membership Proofs: Allowlists, Voter Rolls & Gated Access",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/316",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nBuild a working allowlist contract with sparse Merkle tree, depth-20 path verification, nullifier-based replay prevention, and admin root management. Show the full flow: admin adds members off-chain, pushes root on-chain, member generates proof locally, submits proof to contract, contract verifies Merkle path and records nullifier.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n   - Sparse Merk",
+    "comments": 3,
+    "created_at": "2026-04-13T01:14:37Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Building a Compliance Attestation System with Selective Disclosure",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/315",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nBuild a contract where an authority attests to properties (age, residency, certification) via Merkle tree commitments, and users can selectively prove specific properties without revealing others. Show domain-separated hashing so proofs for different properties can't be correlated. Demonstrate cross-property unlinkability.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n   - Authority attestatio",
+    "comments": 3,
+    "created_at": "2026-04-13T01:14:32Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Full-Stack Midnight dApp: Contract + TypeScript API + React Frontend + Wallet",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/314",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nBuild a complete working dApp from scratch: Compact contract with privacy features, TypeScript witness implementations, wallet provider setup (Lace or 1AM via dApp connector), React frontend with deploy/interact/state-read flows, and a simple backend for off-chain data. Show the full development lifecycle from `compact compile` to interacting with the deployed contract in a browser.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutor",
+    "comments": 5,
+    "created_at": "2026-04-13T01:14:27Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Using midnight-mcp for Contract Development with AI Assistants",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/313",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nShow how to install and configure midnight-mcp with Claude Desktop or Cursor, use the real compilation endpoint to validate Compact code, run contract analysis for security patterns, and search Midnight docs and code examples. Walk through a development session where the AI assistant catches a real bug via the MCP tools.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - Installing and configu",
+    "comments": 6,
+    "created_at": "2026-04-13T01:14:23Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Testing Compact Contracts: Unit Tests, Assertions, and Local Simulation",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/312",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nShow how to build a contract simulator using the real `Contract` class from compiled output, write vitest tests that exercise circuit calls and verify ledger state changes, and set up a GitHub Actions CI pipeline. Cover both unit-style simulator tests and integration tests against a local Docker stack.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n   - Building a contract simulator using the `",
+    "comments": 8,
+    "created_at": "2026-04-13T01:14:18Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Integrating Midnight Proofs into an Existing Backend (Node.js/REST)",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/311",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nShow how to wrap Midnight contract interactions in a Node.js REST API. Cover wallet provider setup in a server context, proof generation via `httpClientProofProvider`, transaction submission, and exposing contract operations as API endpoints. Include error handling for proof timeouts and network failures.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - Wallet provider setup in a server cont",
+    "comments": 6,
+    "created_at": "2026-04-13T01:14:14Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Reading and Reacting to Contract State from a Frontend",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/310",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nShow how to query deployed contract state from a React/TypeScript frontend using the indexer's GraphQL endpoint and `indexerPublicDataProvider`. Cover WebSocket subscriptions for real-time state updates (`contractActions` subscription), parsing ledger fields, and displaying contract state in a UI.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n   - Querying contract state from React/TypeScript ",
+    "comments": 3,
+    "created_at": "2026-04-13T01:14:09Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] DApp Connector API: Connecting a Browser dApp to Midnight Wallets",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/309",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nShow how to detect available wallets (`window.midnight`), connect to Lace or 1AM, handle the `balanceAndProveTransaction` flow, and subscribe to wallet state changes. Cover the difference between `balanceUnboundTransaction` (CLI/backend) and `balanceAndProveTransaction` (browser via dApp connector).\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n   - Detecting available wallets via `window.midn",
+    "comments": 4,
+    "created_at": "2026-04-13T01:14:05Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Proof Server and Indexer: How Midnight Processes Transactions",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/308",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "medium-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nExplain the proof server's role (generates ZK proofs from circuit inputs), show Docker setup for local development, cover Docker tag versioning (must match ledger version), and discuss production deployment options. Cover the indexer's GraphQL queries, WebSocket subscriptions for real-time updates, and how `indexerPublicDataProvider` relates to direct indexer access.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500",
+    "comments": 11,
+    "created_at": "2026-04-13T01:14:01Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Adding Privacy to an Existing dApp: A Retrofit Guide",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/307",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "medium-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nShow how to take a conventional transparent dApp and add Midnight's privacy features. Cover identifying which state should be private, replacing public state with commitments, adding selective disclosure for compliance, and integrating the proof server into an existing deployment pipeline.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (3,000-4,000 words)** covering:\n   - Identifying which state should be private\n   - Replaci",
+    "comments": 11,
+    "created_at": "2026-04-13T01:13:56Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Time and Deadlines in Compact: Block Time, Counters & the Uint<16> Problem",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/306",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nExplain the four block-time query functions (`blockTimeLt`, `blockTimeGte`, etc.), the Counter.increment() `Uint<16>` ceiling (max 65,535 per increment), and workarounds for storing timestamps: hours-since-epoch, multiple increments, or splitting into `deadline_hi` + `deadline_lo` fields.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n   - Four block-time query functions: `blockTimeLt`, `blockT",
+    "comments": 6,
+    "created_at": "2026-04-13T01:13:52Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Contract Size Limits: What Happens When Your dApp Gets Too Complex",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/305",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nDocument the real constraints: Lace's 13-circuit deployment limit, block weight limits that cause error 1010, and proof generation time scaling with circuit complexity. Show strategies for splitting a large contract into multiple smaller ones, using cross-contract references, and keeping individual circuits small.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n   - Lace's 13-circuit deployment ",
+    "comments": 4,
+    "created_at": "2026-04-13T01:13:47Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Bringing External Data On-Chain: Oracle Patterns for Midnight",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/304",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nDemonstrate patterns for getting off-chain data into Compact contracts: (1) witness-provided data with on-chain verification (e.g. signed price feeds), (2) admin-updated ledger fields with access control, (3) cross-contract calls for composed state. Cover the trust tradeoffs. Midnight doesn't have native oracle support.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (3,000-4,000 words)** covering:\n   - Witness-provided data w",
+    "comments": 4,
+    "created_at": "2026-04-13T01:13:43Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Multi-Party Private State and Contracts Between Two+ Users",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/303",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nExtend the two-party pattern from the official examples to N parties. Show how to use a Map of commitments keyed by party identifier, how multiple users can join a deployed contract via `findDeployedContract`, and how to handle concurrent state updates. Use a real scenario like a multi-sig treasury or staking pool.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (3,000-4,000 words)** covering:\n   - Extending two-party patterns",
+    "comments": 6,
+    "created_at": "2026-04-13T01:13:39Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Contract-State Accounting vs UTXO Tokens: Two Models for On-Chain Value",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/302",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "medium-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nCompare the two approaches on Midnight: (1) UTXO-layer shielded/unshielded tokens via `receiveShielded`/`sendShielded`, and (2) ledger-state accounting via Counter/Map fields tracking balances internally. Show when each is appropriate. UTXO for real token transfers, ledger-state for internal bookkeeping when token operations are blocked.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n   - UTXO-",
+    "comments": 12,
+    "created_at": "2026-04-13T01:13:34Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Concurrent Transactions on Midnight: UTXO Race Conditions & Workarounds",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/301",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nExplain why two transactions from the same wallet can fail if they try to spend the same DUST UTXOs. Show the \"stale UTXO\" error, explain the UTXO model vs account model difference, and demonstrate patterns for sequential transaction queuing or multiple wallet instances for parallelism.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n   - Why concurrent transactions from the same wallet can fail",
+    "comments": 5,
+    "created_at": "2026-04-13T01:13:30Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Understanding Wallet Sync: Why Your Deploy Fails Before It Starts",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/300",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "medium-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nExplain what happens when you call `balanceUnboundTransaction` before the wallet syncs. Cover the three sub-wallets (shielded, unshielded, dust) and what each needs to sync. Document the known dust wallet bug where `isStrictlyComplete()` hangs on idle chains. Show the safe sync pattern with `facade.state().pipe(filter(s => s.isSynced))`.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - What ",
+    "comments": 13,
+    "created_at": "2026-04-13T01:13:25Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] DUST Sponsorship: How One Wallet Pays Fees for Another User's Transaction",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/299",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nExplain the sponsorship flow where a backend wallet calls `balanceUnboundTransaction` with `tokenKindsToBalance: [\"dust\"]` on behalf of a user who has no DUST. Show how `ownPublicKey()` still returns the prover's key (not the sponsor's), walk through the full code for a sponsor service, and explain when DUST regenerates vs when it runs out.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - Th",
+    "comments": 2,
+    "created_at": "2026-04-13T01:13:20Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/298",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nDemonstrate the witness-verified division pattern: a `divide()` witness returns `[quotient, remainder]`, and the circuit asserts correctness. Cover the `Uint<16>` ceiling on Counter fields (max 65,535), scaling factors for decimal math, and how to handle amounts larger than what fits in a single field.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - Witness-verified division pattern: `divid",
+    "comments": 1,
+    "created_at": "2026-04-13T01:13:16Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Replay Attack Prevention in Compact: Nonces, Nullifiers & Domain Separation",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/297",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nExplain three replay prevention mechanisms: (1) Counter-based nonces that increment per operation, (2) Set-based nullifiers derived from `persistentCommit(secret, context)`, (3) Domain separation tags in hash functions to prevent cross-circuit replay. Show working examples of each and when to use which pattern.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n   - Counter-based nonces that increm",
+    "comments": 2,
+    "created_at": "2026-04-13T01:13:12Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Building a Commit/Reveal Voting System in Compact",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/296",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nBuild a working DAO-style voting contract with: commit phase (voters submit hash of vote + secret), reveal phase (voters reveal and increment tally), nullifiers preventing double voting, Merkle tree for voter eligibility, and time-locked phase transitions. Show domain-separated nullifier derivation using `persistentCommit`.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (3,000-4,000 words)** covering:\n   - Commit phase: voter",
+    "comments": 3,
+    "created_at": "2026-04-13T01:13:06Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Why ownPublicKey() Can't Be Trusted for Access Control",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/295",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nExplain that `ownPublicKey()` compiles to an unconstrained `private_input` in the ZK circuit - the prover can provide any value. Show the 4-step attack: read the owner's public key from the ledger, build a CircuitContext with that key, generate a valid ZK proof, submit the transaction. Demonstrate with a proof-of-concept on example-bboard. Explain the correct alternative: witness-based secret key + `persistentHash` commitment. Note: this vulnerabilit",
+    "comments": 2,
+    "created_at": "2026-04-13T01:13:02Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Thinking in Compact: A Guide for Circom Developers",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/294",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nMap Circom concepts to Compact equivalents: signals to variables, templates to circuits, components to witness functions, R1CS constraints to assert statements. Key differences: Compact has a state machine (ledger), Circom doesn't; Compact witnesses are off-chain computation, Circom signals are all in-circuit. Show a side-by-side rewrite of a simple Circom circuit (e.g. Merkle proof verifier) in Compact.\n\n## Target Audience\n\nDevelopers and Circom Use",
+    "comments": 7,
+    "created_at": "2026-04-13T01:12:57Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Compact Standard Library: A Practical Guide to Every Export",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/293",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nWalk through the ~30 standard library exports grouped by category: generic types (Maybe, Either), Merkle trees, elliptic curves, kernel types (ContractAddress, ZswapCoinPublicKey, UserAddress, ShieldedCoinInfo), helper circuits (nativeToken, tokenType, evolveNonce, shieldedBurnAddress), shielded token operations, and block-time queries. Include a working example for each.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-",
+    "comments": 1,
+    "created_at": "2026-04-13T01:12:52Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Designing Public vs. Private State: What Goes Where and Why",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/292",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nFramework for deciding what goes in the public ledger vs private state. Cover exported vs non-exported ledger fields, the implications of `disclose()`, shielded vs unshielded token choices, and common mistakes (accidentally disclosing Merkle paths that reveal position, disclosing intermediate values that leak private state). Include decision trees for common dApp patterns.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500",
+    "comments": 1,
+    "created_at": "2026-04-13T01:12:48Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Witnesses in Depth: Patterns, Types, and Real Use Cases",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/291",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nDeep dive into witness functions: what they are (off-chain computation that feeds into the ZK circuit), how they differ from circuit logic, common patterns (secret key verification, division with remainder, external data ingestion), and real use cases from existing Midnight dApps. Show the witness-verified division pattern and witness-based access control.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** c",
+    "comments": 2,
+    "created_at": "2026-04-13T01:12:44Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Selective Disclosure Patterns in Compact",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/290",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nExplain selective disclosure: proving properties about private data without revealing the data itself. Cover `disclose()` usage patterns, what's safe to disclose vs what leaks privacy, domain-separated hashing for cross-property unlinkability, and a privacy audit checklist developers can run on their own contracts.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - What selective disclosure is",
+    "comments": 1,
+    "created_at": "2026-04-13T01:12:39Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Working with Maps and Merkle Trees in Compact",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/289",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nPractical guide to Midnight's two key data structures. Cover Map operations (insert, lookup, delete, iteration), Merkle tree construction and path verification, and when to use each. Show working examples: a Map-based registry and a Merkle-tree-based allowlist with depth-20 path verification.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (2,500-3,500 words)** covering:\n   - Map operations: insert, lookup, delete, iteration\n ",
+    "comments": 4,
+    "created_at": "2026-04-13T01:12:34Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Accepting Token Deposits into a Contract: ReceiveShielded & Escrow Patterns",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/288",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nShow a working contract that accepts shielded coins from users using `receiveShielded`, stores them in a `QualifiedShieldedCoinInfo` ledger field via `writeCoin`, and can later release them with `sendShielded`. Cover coin merging with `mergeCoinImmediate`. Explain the difference between contract-held coins and user-held coins.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - Accepting shield",
+    "comments": 1,
+    "created_at": "2026-04-13T01:12:30Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Building a Shielded Token Vault: Deposit, Accumulate & Withdraw",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/287",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nBuild a working vault contract where users deposit shielded tokens via `receiveShielded`, the contract tracks balances via commitments, and users withdraw via `sendShielded`. Cover coin merging with `mergeCoinImmediate` for accumulating deposits. Explain the difference between contract-held coins and user-held coins. Include tests.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - Vault contr",
+    "comments": 1,
+    "created_at": "2026-04-13T01:12:25Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Deploying a Shielded Token",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/286",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nBuild a complete shielded token from scratch: minting with `mintShieldedToken` and `evolveNonce`, transferring with `sendShielded` and change management via `ShieldedSendResult`, and burning via `sendImmediateShielded` to `shieldedBurnAddress()`. Cover the Merkle tree constraint (freshly minted coins must be committed on-chain before independent spending) and the atomic `mint_and_send` pattern. Include a full test suite.\n\n## Target Audience\n\nDevelope",
+    "comments": 1,
+    "created_at": "2026-04-13T01:12:20Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Shielded vs Unshielded Token Operations in Compact",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/285",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nWalk through the fundamental differences between shielded and unshielded tokens on Midnight. Cover `receiveUnshielded`/`sendUnshielded`/`mintUnshieldedToken` vs `receiveShielded`/`sendShielded`/`mintShieldedToken`. Explain when to use each, the privacy implications, and show working code examples for both paths.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Written tutorial (1,500-2,500 words)** covering:\n   - Shielded vs unshielded token AP",
+    "comments": 1,
+    "created_at": "2026-04-13T01:12:15Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Video] Debugging Midnight dApps: Tools, Techniques & Methodology",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/284",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Video**\n\n## Summary\n\nFocus on the debugging process and tools, not specific errors. Cover: reading error codes and tracing them to root causes, using `docker logs` for proof server diagnostics, checking version compatibility across the SDK dependency chain (compiler, compact-runtime, ledger, proof server, wallet SDK), using `wscat` to verify network connectivity, interpreting wallet sync state, and using the Midnight indexer GraphQL endpoint for contract state inspection. I",
+    "comments": 0,
+    "created_at": "2026-04-13T01:12:11Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Video] Setting Up Your Midnight Developer Environment (2026 Edition)",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/283",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Video**\n\n## Summary\n\nVideo walkthrough of a fresh Midnight dev environment setup. Cover Node.js requirements, Docker configuration, Compact compiler installation, proof server setup, wallet configuration, and deploying a first contract to the local Docker stack. Keep it evergreen by focusing on the process, not specific version numbers.\n\n## Target Audience\n\nDevelopers\n\n## Deliverables\n\n1. **Video (under 10 minutes)** covering:\n   - Node.js and Docker prerequisites\n   - Comp",
+    "comments": 1,
+    "created_at": "2026-04-13T01:12:07Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Midnight Development on Windows via WSL2",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/282",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty",
+      "low-priority"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\n## Summary\n\nMidnight's toolchain runs on Linux and macOS. Windows developers need WSL2, but the setup has undocumented gotchas. This tutorial covers the full path from a fresh Windows machine to a working Midnight dev environment:\n\n- WSL2 installation and configuration\n- Docker Desktop WSL2 backend setup\n- Memory allocation for the proof server (default 1GB crashes, need 4GB+ via `.wslconfig`)\n- Compact compiler PATH setup inside WSL\n- What does **not** work (na",
+    "comments": 2,
+    "created_at": "2026-04-13T00:56:25Z"
+  },
+  {
+    "owner": "midnightntwrk",
+    "repo": "contributor-hub",
+    "title": "[Tutorial] Midnight Development on Windows via WSL2",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/281",
+    "labels": [
+      "public",
+      "content-proposal",
+      "bounty"
+    ],
+    "body": "## Type of Content\n\n**Tutorial**\n\nDetails: Written tutorial with working examples. Documenting the full WSL2 setup path for Midnight development since Midnight does not natively support Windows. Published on Dev.to (default) or your preferred platform.\n\n---\n\n## Summary/Idea\n\n**Core Idea: Midnight Development on Windows via WSL2**\n\nMidnight's toolchain — the Compact compiler, proof server, and Docker-based infrastructure — runs on Linux and macOS. Windows developers need WSL2 to participate, but ",
+    "comments": 1,
+    "created_at": "2026-04-13T00:53:20Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "sherpa",
+    "title": "add required information in Readme",
+    "url": "https://github.com/akashbiswas0/sherpa/issues/15",
+    "labels": [
+      "bounty"
+    ],
+    "body": "add current situation in uttrakhand, add weather, road situation in 4 lines",
+    "comments": 1,
+    "created_at": "2026-04-12T21:32:14Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "sherpa",
+    "title": "readme",
+    "url": "https://github.com/akashbiswas0/sherpa/issues/13",
+    "labels": [
+      "bounty"
+    ],
+    "body": "add about the treks in uttrakhand in india and remove the old readme",
+    "comments": 1,
+    "created_at": "2026-04-12T21:04:34Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "reddit-pipeline",
+    "title": "add readme file",
+    "url": "https://github.com/akashbiswas0/reddit-pipeline/issues/2",
+    "labels": [
+      "bounty"
+    ],
+    "body": "add about the saas distribution in the ai b2b market",
+    "comments": 1,
+    "created_at": "2026-04-12T21:00:51Z"
+  },
+  {
+    "owner": "Scottcjn",
+    "repo": "Rustchain",
+    "title": "RIP-310: Social Mining — Earn RTC by Posting on 4claw, Moltbook, and BoTTube",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/2239",
+    "labels": [
+      "enhancement",
+      "bounty",
+      "community"
+    ],
+    "body": "## RIP-310: Social Mining Protocol\n\n### Summary\n\nUsers earn RTC for quality engagement on 4claw, Moltbook, and BoTTube. Tips between users create a circular economy with a platform fee that replenishes the treasury. Requires Beacon ID + grazer-skill for identity and anti-gaming.\n\n### Motivation\n\nCurrent RTC economy is one-directional: treasury → bounties → contributors. There is no mechanism for:\n- Rewarding content creation outside of GitHub bounties\n- Peer-to-peer value transfer between commun",
+    "comments": 6,
+    "created_at": "2026-04-12T18:25:39Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "sherpa",
+    "title": "new readme",
+    "url": "https://github.com/akashbiswas0/sherpa/issues/11",
+    "labels": [
+      "bounty"
+    ],
+    "body": "add about the delhi tourism and remove the rest of the readme file",
+    "comments": 1,
+    "created_at": "2026-04-12T18:24:15Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "reddit-pipeline",
+    "title": "add readme",
+    "url": "https://github.com/akashbiswas0/reddit-pipeline/issues/1",
+    "labels": [
+      "bounty"
+    ],
+    "body": "add a short detail about reddit",
+    "comments": 1,
+    "created_at": "2026-04-12T17:30:14Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "sherpa",
+    "title": "readme 3 test",
+    "url": "https://github.com/akashbiswas0/sherpa/issues/5",
+    "labels": [
+      "bounty"
+    ],
+    "body": "add 40 words about travel",
+    "comments": 1,
+    "created_at": "2026-04-12T17:12:08Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "sherpa",
+    "title": "readme test",
+    "url": "https://github.com/akashbiswas0/sherpa/issues/4",
+    "labels": [
+      "bounty"
+    ],
+    "body": "add 50 words about  travel in india",
+    "comments": 1,
+    "created_at": "2026-04-12T17:07:58Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "sherpa",
+    "title": "add about the readme",
+    "url": "https://github.com/akashbiswas0/sherpa/issues/3",
+    "labels": [
+      "bounty"
+    ],
+    "body": "add about tourism in india in about 40 words max",
+    "comments": 1,
+    "created_at": "2026-04-12T16:55:51Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "sherpa",
+    "title": "readme v2 version needed",
+    "url": "https://github.com/akashbiswas0/sherpa/issues/2",
+    "labels": [
+      "bounty"
+    ],
+    "body": "add tourism guide for india in 50 words",
+    "comments": 2,
+    "created_at": "2026-04-12T14:51:57Z"
+  },
+  {
+    "owner": "akashbiswas0",
+    "repo": "sherpa",
+    "title": "no readme present",
+    "url": "https://github.com/akashbiswas0/sherpa/issues/1",
+    "labels": [
+      "bounty"
+    ],
+    "body": "add a tour guide readme for uttrakhand india",
+    "comments": 1,
+    "created_at": "2026-04-12T14:45:46Z"
+  },
+  {
+    "owner": "Scottcjn",
+    "repo": "rustchain-bounties",
+    "title": "[BOUNTY: 50 RTC] RIP-309 Phase 1: Fingerprint Check Rotation (4-of-6 per epoch)",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/3008",
+    "labels": [
+      "help wanted",
+      "bounty",
+      "major",
+      "security"
+    ],
+    "body": "## RIP-309 Phase 1: Fingerprint Check Rotation\n\n**Reward: 50 RTC (~$5.00 USD)**\n\n### Context\n\nRIP-309 introduces rotating measurement freshness to prevent Goodhart's Law from hollowing out trust metrics. Phase 1 is the simplest and most impactful change: rotating which 4 of 6 hardware fingerprint checks count toward rewards each epoch.\n\n**Full spec:** [Rustchain#2234](https://github.com/Scottcjn/Rustchain/issues/2234)\n\n### What to Build\n\nModify `node/rip_200_round_robin_1cpu1vote.py` to:\n\n1. **G",
+    "comments": 16,
+    "created_at": "2026-04-11T19:14:08Z"
+  },
+  {
+    "owner": "SPLURT-Station",
+    "repo": "S.P.L.U.R.T-tg",
+    "title": "[BOUNTY] Suggestion #656",
+    "url": "https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/936",
+    "labels": [
+      "bounty"
+    ],
+    "body": "### About the Bounty\n\n## Original issue text:\n\n**Suggestion:**\nAdd penetrative genitals to cyborgs with a toggleable visibility. Chiefly, sheaths/balls and vaginas.\n\n**Reason:**\n[BOUNTY] Requires spritework mostly. Ensure genitals can be toggled both for lore reasons and because cyborgs can't wear clothes.\n\n**Results:**\n26x <:In_help:1056296636348899408>\n1x <:In_harm:1056296637909192794>\n\n\n### Suggestion Reference\n\n**Suggested by:** toastey\nhttps://discord.com/channels/908082639704064051/1404686",
+    "comments": 0,
+    "created_at": "2026-04-10T22:31:35Z"
+  },
+  {
+    "owner": "SPLURT-Station",
+    "repo": "S.P.L.U.R.T-tg",
+    "title": "[BOUNTY] Suggestion #657",
+    "url": "https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/935",
+    "labels": [
+      "bounty"
+    ],
+    "body": "### About the Bounty\n\n## Original issue text:\n\n**Suggestion:**\n(for when Roxy finishes her PR) Belly/vore sprites for cyborg models (principally dogborgs)\n\n**Reason:**\n[BOUNTY] yahuh\n\n**Results:**\n16x <:In_help:1056296636348899408>\n9x <:In_harm:1056296637909192794>\n\n\n### Suggestion Reference\n\n**Suggested by:** toastey\nhttps://discord.com/channels/908082639704064051/1404686278351655055/1492290796630704129\n\n### Contact Information\n\nContact `mos_ley` in discord for payment information.\n\nContact `to",
+    "comments": 0,
+    "created_at": "2026-04-10T22:30:52Z"
+  },
+  {
+    "owner": "Scottcjn",
+    "repo": "Rustchain",
+    "title": "April Showers Star Drive — Help RustChain Hit 512 Stars + Earn RTC with Multipliers",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/2204",
+    "labels": [
+      "good first issue",
+      "bounty",
+      "community"
+    ],
+    "body": "<div align=\"center\">\n\n# 🌧️ April Showers Star Drive\n\n### Help RustChain reach **512 stars** and earn RTC with **new miner multipliers**\n\n**Current: 226 stars → Target: 512 stars**\n\n[![Stars](https://img.shields.io/github/stars/Scottcjn/Rustchain?style=for-the-badge)](https://github.com/Scottcjn/Rustchain/stargazers)\n\n</div>\n\n---\n\n## The Event\n\n**April Showers** runs from now through **April 30, 2026**. Every star gets us closer to 512. Every participant earns RTC. And when we hit milestones, **A",
+    "comments": 11,
+    "created_at": "2026-04-10T18:42:56Z"
+  },
+  {
+    "owner": "Scottcjn",
+    "repo": "Rustchain",
+    "title": "@neosmith1 — Red Team Invitation: Continue Auditing (50-200 RTC Available)",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/2203",
+    "labels": [
+      "bounty",
+      "security"
+    ],
+    "body": "## Direct Invitation to @neosmith1\n\nYou have submitted **2 real security findings** across 2 PRs, both merged:\n\n| PR | Finding | Severity | Payment |\n|----|---------|----------|---------|\n| #2197 | Missing upper-bounds validation on `/utxo/transfer` amounts | Medium | 25 RTC |\n| #2202 | `fee_rtc` not in Ed25519 signed message (MITM manipulation) | Low/Medium | 20 RTC |\n\n**Your finding rate is 100%.** Both findings referenced correct line numbers against real code. Both had PoC tests that importe",
+    "comments": 17,
+    "created_at": "2026-04-10T18:05:59Z"
+  },
+  {
+    "owner": "Scottcjn",
+    "repo": "rustchain-bounties",
+    "title": "[BOUNTY: 3 RTC] Share elyanlabs.ai Launch on Social Media (With Proof)",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2960",
+    "labels": [
+      "bounty",
+      "multi-claim",
+      "propagation",
+      "easy",
+      "community"
+    ],
+    "body": "## Share the elyanlabs.ai Launch\n\n**Reward: 3 RTC (~$0.30 USD) — Multi-claim: first 20 unique posts**\n\n### Goal\n\nShare the elyanlabs.ai quiet launch on any tech community and provide proof.\n\n### Eligible Platforms\n\nReddit, Hacker News, Dev.to, X/Twitter, LinkedIn, Mastodon, Lemmy, Lobsters, 4claw, Moltbook\n\n### What to Share\n\n- Link: https://elyanlabs.ai\n- Context: Elyan Labs builds open-source infrastructure where vintage silicon matters. RustChain blockchain rewards old hardware. 44+ PRs merge",
+    "comments": 27,
+    "created_at": "2026-04-10T17:30:21Z"
+  },
+  {
+    "owner": "Scottcjn",
+    "repo": "rustchain-bounties",
+    "title": "[BOUNTY: 5 RTC] Submit elyanlabs.ai to Google Search Console + Create sitemap.xml",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2959",
+    "labels": [
+      "good first issue",
+      "bounty",
+      "propagation",
+      "easy"
+    ],
+    "body": "## Google Search Console + Sitemap\n\n**Reward: 5 RTC (~$0.50 USD)**\n\n### Goal\n\n1. Create a proper \\`sitemap.xml\\` for elyanlabs.ai listing all pages\n2. Create a \\`robots.txt\\` if one doesn't exist\n3. Submit the sitemap to Google Search Console\n4. Provide screenshot proof of submission\n\n### Deliverable\n\n- PR with \\`sitemap.xml\\` and \\`robots.txt\\` files\n- Screenshot of Google Search Console showing successful submission\n- List of URLs included in the sitemap\n\n### Keywords\n\nsitemap, robots.txt, Goo",
+    "comments": 39,
+    "created_at": "2026-04-10T17:30:19Z"
+  },
+  {
+    "owner": "Scottcjn",
+    "repo": "rustchain-bounties",
+    "title": "[BOUNTY: 15 RTC] Create Upstream Contributions Showcase for elyanlabs.ai",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2958",
+    "labels": [
+      "documentation",
+      "bounty",
+      "standard",
+      "propagation"
+    ],
+    "body": "## Upstream Contributions Showcase Page\n\n**Reward: 15 RTC (~$1.50 USD)**\n\n### Goal\n\nCreate an HTML page or markdown document for elyanlabs.ai that showcases our 44+ merged upstream contributions to major open-source projects.\n\n### Projects to Highlight (All Merged)\n\n| Project | Stars | PR | Impact |\n|---------|-------|-----|--------|\n| **OpenSSL** | 26K | #30437, #30452 | PowerPC AES-GCM security fixes, merged to master + 5 release branches |\n| **libdragon** | — | #849 | N64 homebrew SDK macOS b",
+    "comments": 32,
+    "created_at": "2026-04-10T17:30:17Z"
+  },
+  {
+    "owner": "Scottcjn",
+    "repo": "rustchain-bounties",
+    "title": "[BOUNTY: 10 RTC] SEO Audit + Suggestions for elyanlabs.ai (Quiet Launch)",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2957",
+    "labels": [
+      "good first issue",
+      "bounty",
+      "propagation",
+      "easy"
+    ],
+    "body": "## SEO Audit for elyanlabs.ai — Quiet Launch\n\n**Reward: 10 RTC (~$1.00 USD)**\n\n### Context\n\nWe've quietly launched [elyanlabs.ai](https://elyanlabs.ai) — the main Elyan Labs website. It needs SEO work before we do a public announcement.\n\n### What We Need\n\nAudit the site and provide actionable suggestions in a markdown file:\n\n1. **Meta tags** — title, description, og:image, twitter:card for every page\n2. **Structured data** — JSON-LD for organization, software, and projects\n3. **Internal linking*",
+    "comments": 23,
+    "created_at": "2026-04-10T17:29:37Z"
+  },
+  {
+    "owner": "tari-project",
+    "repo": "tari",
+    "title": "JMT data is very large and should be optimized..",
+    "url": "https://github.com/tari-project/tari/issues/7745",
+    "labels": [
+      "E-good_first_issue",
+      "E-bounty",
+      "bounty",
+      "bounty-L"
+    ],
+    "body": "## Bounty: JMT Data Optimization\n\n**Tier:** L — 150,000 XTM\n\n### Description\n\nJellyfish Merkle Tree (JMT) data is the single largest consumer of storage in the base node database — `jmt_node_data` alone accounts for 6.4 GB out of 11.4 GB total. Investigate the root cause of the excessive size (9.6M entries averaging 669 bytes each), propose an optimization strategy, and implement it. This likely involves changes to node serialization, pruning of historical JMT nodes, or restructuring how JMT dat",
+    "comments": 4,
+    "created_at": "2026-04-10T08:17:13Z"
+  },
+  {
+    "owner": "tari-project",
+    "repo": "tari-ootle",
+    "title": "Add rate limiting to indexer REST API endpoints",
+    "url": "https://github.com/tari-project/tari-ootle/issues/1997",
+    "labels": [
+      "E-good_first_issue",
+      "C-enhancement",
+      "E-vibe-me",
+      "bounty",
+      "bounty-M"
+    ],
+    "body": "## Bounty: Add rate limiting to indexer REST API endpoints\n\n**Tier:** M — 60,000 XTM\n\n### Description\n\nThe indexer REST API currently has minimal rate limiting — only `POST /transactions/dry-run` is rate-limited. Several other endpoints are expensive or abusable and need per-IP rate limiting to protect indexer nodes from excessive load. This bounty covers adding configurable token-bucket rate limits to write/compute-heavy endpoints (e.g. `POST /transactions`, `POST /substates/fetch`, `POST /utxo",
+    "comments": 16,
+    "created_at": "2026-04-10T06:35:28Z"
+  },
+  {
+    "owner": "idea2app",
+    "repo": "MobX-Lark",
+    "title": "封装飞书【智能文档解析】非证照、票据类接口",
+    "url": "https://github.com/idea2app/MobX-Lark/issues/27",
+    "labels": [
+      "reward"
+    ],
+    "body": "### Task description\n\n后端接口文档：\n\n1. OCR：https://open.feishu.cn/document/server-docs/ai/optical_char_recognition-v1/basic_recognize\n2. 银行卡：https://open.feishu.cn/document/ai/document_ai-v1/bank_card/recognize\n3. 简历：https://open.feishu.cn/document/ai/document_ai-v1/resume/parse?appId=cli_a8094a652022900d\n4. 合同：https://open.feishu.cn/document/server-docs/ai/document_ai-v1/contract/field_extraction\n\n### Reward currency\n\nTQT $\n\n### Reward amount\n\n90\n\n### Reward payer\n\n石垚 <tech-query@idea2app.cn>\n\n### T",
+    "comments": 2,
+    "created_at": "2026-04-15T21:34:44Z"
+  },
+  {
+    "owner": "Open-Source-Bazaar",
+    "repo": "Open-Source-Bazaar.github.io",
+    "title": "重新设计飞书黑客松参赛项目详情页",
+    "url": "https://github.com/Open-Source-Bazaar/Open-Source-Bazaar.github.io/issues/64",
+    "labels": [
+      "reward"
+    ],
+    "body": "### Task description\n\n- 设计样板：https://bazaar.fcc-cd.dev/hackathon/Labor-AI-hackathon-2026\n- 目标页面：https://bazaar.fcc-cd.dev/hackathon/Labor-AI-hackathon-2026/team/recT2jcMWC\n- 目标代码：https://github.com/Open-Source-Bazaar/Open-Source-Bazaar.github.io/blob/dbefb17868f1bcc3d1c4eb792729125a51f4fd5f/pages/hackathon/%5Bid%5D/team/%5Btid%5D.tsx#L65-L203\n\n### Reward currency\n\nTQT $\n\n### Reward amount\n\n45\n\n### Reward payer\n\n水歌 <tech-query@fcc-cd.dev>\n\n### Task source\n\nhttps://open-source-bazaar.feishu.cn/rec",
+    "comments": 2,
+    "created_at": "2026-04-15T15:11:49Z"
+  },
+  {
+    "owner": "espenhk",
+    "repo": "tmnf-ai",
+    "title": "Intrinsic curiosity module (ICM) for exploration reward shaping",
+    "url": "https://github.com/espenhk/tmnf-ai/issues/24",
+    "labels": [
+      "enhancement",
+      "training",
+      "reward"
+    ],
+    "body": "## Summary\n\nAdd an **Intrinsic Curiosity Module (ICM)** as an optional reward shaping component in `rl/reward.py`. ICM generates an intrinsic reward signal proportional to the prediction error of a learned forward model, driving the agent to explore novel states rather than getting stuck in local loops.\n\n## Motivation\n\nObservations from current training runs:\n\n1. **Early episode collapse**: policies frequently stall at the start line or drive in circles — the extrinsic `progress_weight` reward i",
+    "comments": 2,
+    "created_at": "2026-04-11T01:50:08Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "feat: pluggable guardrail pipeline for agent inputs and outputs",
+    "url": "https://github.com/chernistry/bernstein/issues/812",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "size/m",
+      "hacktoberfest",
+      "security"
+    ],
+    "body": "## Summary\n\nProduction agent systems need input/output guardrails — content filtering, PII detection, prompt injection defense, and output validation. NVIDIA NeMo Guardrails and Meta LlamaFirewall are industry standards. Bernstein has no guardrail pipeline.\n\n## Why this matters\n\n- Prompt injection appeared in 73% of production AI deployments in 2025\n- Current detection methods catch only 23% of sophisticated attempts\n- Enterprise customers require content safety controls\n- OWASP Top 10 for Agent",
+    "comments": 1,
+    "created_at": "2026-04-16T08:53:52Z"
+  },
+  {
+    "owner": "yogesh-7",
+    "repo": "AppFence",
+    "title": "Add light theme support",
+    "url": "https://github.com/yogesh-7/AppFence/issues/2",
+    "labels": [
+      "enhancement",
+      "good first issue",
+      "hacktoberfest",
+      "ui/ux"
+    ],
+    "body": "## 🎨 Add Light Theme Support\n\nCurrently AppFence only supports dark mode. Let's add a proper light theme and a toggle in settings.\n\n### What to do\n\n1. Create a light color palette in `ui/theme/Color.kt`\n2. Update `AppFenceTheme` in `ui/theme/Theme.kt` to switch between light/dark based on system setting\n3. Add a theme toggle preference in `SettingsScreen.kt`:\n   - System default\n   - Light\n   - Dark\n4. Persist the choice via `SharedPreferences` or DataStore\n5. Test that status badge colors remai",
+    "comments": 0,
+    "created_at": "2026-04-14T20:13:26Z"
+  },
+  {
+    "owner": "Orange-OpenSource",
+    "repo": "ouds-ios",
+    "title": "For `toolbar top` and `toolbar bottom` components, add UI test to check if items when tapped have their actions triggered",
+    "url": "https://github.com/Orange-OpenSource/ouds-ios/issues/1419",
+    "labels": [
+      "good first issue",
+      "⚛️ component",
+      "🔍 triage",
+      "🧰 library",
+      "🛠️ technical",
+      "hacktoberfest"
+    ],
+    "body": "# Description\n\n_As a maintainer,\nI want UI test on my `toolbars` components,\nSo that I can be sure any callback I gave to the bar items are called on click_\n\n# Steps\n\n- In the *design system toolbox*, add callback triggered on _toolbars items_ action\n- Such callbacks can display a test dialog or something else\n- The UI test must be able to check if the dialog appeared (and dismiss then)\n- If the dialog does not appear, we suppose the callback is not called, thus the test must fail. Otherwise it ",
+    "comments": 0,
+    "created_at": "2026-04-14T11:05:45Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "feat: `bernstein benchmark` — measure and compare orchestration speed vs manual development",
+    "url": "https://github.com/chernistry/bernstein/issues/771",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "good first issue",
+      "size/s",
+      "hacktoberfest",
+      "cli",
+      "testing"
+    ],
+    "body": "## Description\n\n\\`bernstein benchmark\\` runs a standardized task and reports how long it takes vs estimated manual time:\n\n\\`\\`\\`bash\n$ bernstein benchmark --task add-tests\n\nBenchmark: Add Tests to Untested Module\n  Task: generate tests for src/bernstein/core/cost/pareto_frontier.py\n\n  Bernstein (3 agents): 2m 14s\n  Manual estimate: ~25 minutes\n  Speedup: 11.2x\n\n  Tests generated: 18\n  Tests passing: 18\n  Coverage delta: +34%\n  Cost: \\$0.42\n\\`\\`\\`\n\n### Built-in benchmarks\n1. \\`add-tests\\` — gener",
+    "comments": 1,
+    "created_at": "2026-04-14T02:17:45Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "docs: add GitHub Sponsors page with tier descriptions and perks",
+    "url": "https://github.com/chernistry/bernstein/issues/770",
+    "labels": [
+      "documentation",
+      "help wanted",
+      "good first issue",
+      "size/s",
+      "beginner-friendly",
+      "hacktoberfest"
+    ],
+    "body": "## Description\n\nSet up GitHub Sponsors for the Bernstein project with clear tiers:\n\n### Tiers\n\n1. **\\$5/mo — Supporter**\n   - Name in CONTRIBUTORS.md under \\\"Sponsors\\\" section\n   - Early access to release notes\n\n2. **\\$25/mo — Backer**\n   - Everything in Supporter\n   - Priority issue responses (24h SLA)\n   - Vote on roadmap priorities\n\n3. **\\$100/mo — Enterprise Sponsor**\n   - Everything in Backer\n   - Monthly 30-min call for setup help\n   - Logo on README\n\n### Implementation\n- Enable GitHub Sp",
+    "comments": 1,
+    "created_at": "2026-04-14T02:17:44Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "feat: team leaderboard showing top contributors by tasks completed and cost efficiency",
+    "url": "https://github.com/chernistry/bernstein/issues/769",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "good first issue",
+      "size/s",
+      "beginner-friendly",
+      "hacktoberfest",
+      "cli"
+    ],
+    "body": "## Description\n\n\\`bernstein leaderboard\\` shows which agents/models performed best this week:\n\n\\`\\`\\`\nBernstein Leaderboard (last 7 days)\n\n  Most Productive Agent Sessions:\n    1. backend-sonnet — 34 tasks, 92% success, \\$0.012/task\n    2. qa-haiku — 28 tasks, 100% success, \\$0.003/task\n    3. architect-opus — 12 tasks, 83% success, \\$0.089/task\n\n  Best Cost Efficiency:\n    1. haiku — \\$0.003/task avg (28 tasks)\n    2. sonnet — \\$0.012/task avg (47 tasks)\n    3. opus — \\$0.089/task avg (18 tasks",
+    "comments": 1,
+    "created_at": "2026-04-14T02:17:43Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "feat: `bernstein analyze` — assess repo readiness for multi-agent orchestration",
+    "url": "https://github.com/chernistry/bernstein/issues/768",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "good first issue",
+      "size/s",
+      "beginner-friendly",
+      "hacktoberfest",
+      "cli"
+    ],
+    "body": "## Description\n\n\\`bernstein analyze\\` scans a repo and tells you how well it would work with multi-agent orchestration:\n\n\\`\\`\\`bash\n$ bernstein analyze\n\nRepo Analysis — your-project/\n\n  Codebase:\n    Language: Python (92%), TypeScript (8%)\n    Files: 234 (.py: 189, .ts: 45)\n    Lines: 48,291\n    Test coverage: ~67% (estimated from test file count)\n\n  Orchestration readiness: 8.5/10 ✅\n\n  Strengths:\n    ✅ Good test coverage — agents can verify their work\n    ✅ Modular structure — easy to assign fi",
+    "comments": 0,
+    "created_at": "2026-04-14T02:15:03Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "feat: opt-in weekly usage digest email with run summaries and tips",
+    "url": "https://github.com/chernistry/bernstein/issues/767",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "size/m",
+      "hacktoberfest",
+      "integration"
+    ],
+    "body": "## Description\n\nUsers can opt in to a weekly digest summarizing their Bernstein usage:\n\n\\`\\`\\`\nYour Bernstein Week in Review\n\n  This week:\n    Runs: 12\n    Tasks completed: 89\n    Cost: \\$34.21 (down 12% from last week)\n    Time saved: ~8 hours\n    Top adapter: claude-sonnet (67% of tasks)\n\n  Tips:\n    - 23% of your opus tasks were simple scope — try routing\n      them to sonnet to save ~\\$4/week\n    - You have 3 untested modules — try: bernstein -g \"add tests\"\n\n  What is new in Bernstein:\n    -",
+    "comments": 1,
+    "created_at": "2026-04-14T02:14:37Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "feat: `bernstein doctor` — diagnose common setup issues and check for updates",
+    "url": "https://github.com/chernistry/bernstein/issues/766",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "good first issue",
+      "size/s",
+      "beginner-friendly",
+      "hacktoberfest",
+      "cli"
+    ],
+    "body": "## Description\n\n\\`bernstein doctor\\` checks your setup for common issues and suggests fixes:\n\n\\`\\`\\`bash\n$ bernstein doctor\n\nBernstein Doctor 🩺\n\n  Version: 1.7.0 ✅ (latest)\n  Python: 3.12.4 ✅\n  OS: macOS 15.2 (arm64)\n\n  Adapters:\n    claude — found ✅ (v1.2.3)\n    codex — found ✅\n    gemini — not found ⚠️ (install: npm i -g @google/gemini-cli)\n    aider — not found (optional)\n\n  Config:\n    bernstein.yaml — found ✅\n    .sdd/ directory — found ✅\n    Git worktrees — clean ✅ (no orphaned worktrees)\n",
+    "comments": 1,
+    "created_at": "2026-04-14T02:14:13Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "feat: auto-comment on GitHub PR with Bernstein run summary and quality results",
+    "url": "https://github.com/chernistry/bernstein/issues/765",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "good first issue",
+      "ci",
+      "size/s",
+      "hacktoberfest",
+      "integration"
+    ],
+    "body": "## Description\n\nWhen Bernstein creates or contributes to a PR, automatically post a summary comment:\n\n\\`\\`\\`markdown\n### 🎼 Bernstein Run Summary\n\n| Metric | Value |\n|--------|-------|\n| Tasks completed | 8 |\n| Agents used | 3 (opus x1, sonnet x2) |\n| Duration | 12 min |\n| Cost | \\$3.41 |\n| Quality gates | 8/8 passed ✅ |\n\n**Changes by agent:**\n- \\`backend-agent\\`: Added JWT auth middleware, updated routes\n- \\`qa-agent\\`: Generated 24 tests, all passing\n- \\`docs-agent\\`: Updated API documentation\n",
+    "comments": 1,
+    "created_at": "2026-04-14T02:13:50Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "feat: one-line install script (curl | sh) with OS detection",
+    "url": "https://github.com/chernistry/bernstein/issues/752",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "good first issue",
+      "size/s",
+      "beginner-friendly",
+      "hacktoberfest",
+      "cli"
+    ],
+    "body": "## Description\n\nMake installation as frictionless as possible with a one-liner:\n\n\\`\\`\\`bash\ncurl -fsSL https://get.bernstein.dev/install.sh | sh\n\\`\\`\\`\n\nThe script should auto-detect OS, install pipx if needed, and install bernstein.\n\n## Implementation\n\n### Create \\`scripts/install.sh\\`\n\n\\`\\`\\`bash\n#!/bin/sh\nset -e\n\n# Detect OS\nOS=\\$(uname -s | tr '[:upper:]' '[:lower:]')\nARCH=\\$(uname -m)\n\necho \"Installing Bernstein on \\$OS/\\$ARCH...\"\n\n# Check for Python 3.12+\nif ! command -v python3 >/dev/null",
+    "comments": 4,
+    "created_at": "2026-04-13T20:41:48Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "feat: cost savings report showing money saved vs running agents manually",
+    "url": "https://github.com/chernistry/bernstein/issues/750",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "good first issue",
+      "cost",
+      "size/s",
+      "beginner-friendly",
+      "hacktoberfest",
+      "cli"
+    ],
+    "body": "## Description\n\nAfter a run completes, show a summary of how much money and time the user saved by using Bernstein vs running agents one-by-one manually.\n\n## Example output\n\n```\nRun Summary\n  Tasks completed: 12\n  Agents used: 5 (parallel)\n  Wall clock: 18 minutes\n  Sequential estimate: 2h 15m (if run one-by-one)\n  Time saved: 1h 57m (87%)\n\n  Total cost: $4.82\n  Cost per task: $0.40\n  Model routing savings: $2.14 (haiku for boilerplate, opus for architecture)\n```\n\n## Implementation\n\n### Files to",
+    "comments": 0,
+    "created_at": "2026-04-13T20:41:16Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "Cost-per-quality Pareto frontier optimization across model configurations",
+    "url": "https://github.com/chernistry/bernstein/issues/696",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "orchestrator",
+      "cost",
+      "ai-coding",
+      "size/m",
+      "hacktoberfest",
+      "roadmap",
+      "P2",
+      "python"
+    ],
+    "body": "## Description\n\nFor each task type, compute the Pareto frontier of (cost, quality) across all available model configurations. Present to users: \"You can achieve 95% quality at $0.08/task with Sonnet, or 99% quality at $0.52/task with Opus. The Pareto-optimal choice depends on your quality requirement.\" Helps users make informed cost-quality tradeoffs.\n\n## Implementation Guide\n\n### Files to create/modify\n- Create: `src/bernstein/core/pareto_optimizer.py`\n- Modify: `src/bernstein/core/agent_cost_l",
+    "comments": 1,
+    "created_at": "2026-04-10T23:12:56Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "Real-time cost-per-line-of-code efficiency metric",
+    "url": "https://github.com/chernistry/bernstein/issues/673",
+    "labels": [
+      "help wanted",
+      "good first issue",
+      "cost",
+      "size/s",
+      "beginner-friendly",
+      "hacktoberfest",
+      "roadmap",
+      "P2",
+      "python",
+      "observability"
+    ],
+    "body": "## Description\n\nCalculate and display cost efficiency as the run progresses: \"Current efficiency: $0.003/line. Run average: $0.005/line. Historical average: $0.004/line.\" Helps users understand if this run is unusually expensive.\n\n## Implementation Guide\n\n### Files to create/modify\n- Create: `src/bernstein/core/cost_efficiency.py`\n- Modify: `src/bernstein/core/agent_cost_ledger.py` (add efficiency tracking)\n- Test: `tests/unit/test_cost_efficiency.py`\n\n### Data model\n```python\n@dataclass(frozen=",
+    "comments": 4,
+    "created_at": "2026-04-10T23:12:29Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "Custom metric definition language for domain-specific KPIs",
+    "url": "https://github.com/chernistry/bernstein/issues/667",
+    "labels": [
+      "help wanted",
+      "size/m",
+      "hacktoberfest",
+      "roadmap",
+      "web-dashboard",
+      "config",
+      "security",
+      "P2",
+      "python"
+    ],
+    "body": "## Description\n\nAllow users to define custom metrics in `bernstein.yaml`: `metrics: code_per_dollar: { formula: \"lines_changed / total_cost\", unit: \"lines/$\" }`. Custom metrics appear in dashboards, reports, and alerts alongside built-in metrics.\n\n## Implementation Guide\n\n### Files to create/modify\n- Create: `src/bernstein/core/custom_metrics.py`\n- Modify: `src/bernstein/core/telemetry.py` (integrate custom metrics)\n- Test: `tests/unit/test_custom_metrics.py`\n\n### Data model\n```python\n@dataclass",
+    "comments": 1,
+    "created_at": "2026-04-10T23:12:18Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "Automated vulnerability disclosure program with bug bounty integration",
+    "url": "https://github.com/chernistry/bernstein/issues/666",
+    "labels": [
+      "help wanted",
+      "good first issue",
+      "size/s",
+      "beginner-friendly",
+      "hacktoberfest",
+      "roadmap",
+      "security",
+      "P2",
+      "python"
+    ],
+    "body": "## Description\n\nSet up a security.txt, SECURITY.md, and integration with a bug bounty platform (HackerOne, Bugcrowd). Define scope, rewards, and response SLAs. Provide a sandboxed Bernstein instance for security researchers to test against.\n\n## Implementation Guide\n\n### Files to create/modify\n- Create: `src/bernstein/core/vuln_disclosure.py`\n- Create: `.well-known/security.txt`\n- Create: `SECURITY.md`\n- Test: `tests/unit/test_vuln_disclosure.py`\n\n### Data model\n```python\n@dataclass(frozen=True)\n",
+    "comments": 9,
+    "created_at": "2026-04-10T23:12:17Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "Agent sandbox profiles with composable capability sets",
+    "url": "https://github.com/chernistry/bernstein/issues/649",
+    "labels": [
+      "help wanted",
+      "orchestrator",
+      "size/m",
+      "hacktoberfest",
+      "roadmap",
+      "config",
+      "security",
+      "P2",
+      "python",
+      "infrastructure"
+    ],
+    "body": "## Description\n\nDefine composable sandbox profiles: `sandbox: web-backend` grants network access to localhost:5432 and localhost:6379 but nothing else. `sandbox: frontend` grants no network but allows npm install. Profiles are composed: `sandbox: [web-backend, ci-runner]` unions the capabilities. Different from the existing sandbox.py (which has binary on/off) -- this is composable profiles.\n\n## Implementation Guide\n\n### Files to create/modify\n- Create: `src/bernstein/core/sandbox_profiles.py`\n-",
+    "comments": 1,
+    "created_at": "2026-04-10T23:11:56Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "Datadog/New Relic APM integration for production observability",
+    "url": "https://github.com/chernistry/bernstein/issues/635",
+    "labels": [
+      "help wanted",
+      "size/m",
+      "core",
+      "hacktoberfest",
+      "roadmap",
+      "enterprise",
+      "P2",
+      "python",
+      "integration"
+    ],
+    "body": "## Description\n\nExport Bernstein telemetry (spans, metrics, logs) to Datadog and New Relic using their native agents/SDKs. Different from the existing Prometheus/OTLP export -- this is native integration with proprietary APM platforms that most enterprises already use.\n\n## Implementation Guide\n\n### Files to create/modify\n- Create: `src/bernstein/core/apm_datadog.py`\n- Create: `src/bernstein/core/apm_newrelic.py`\n- Modify: `src/bernstein/core/telemetry.py` (add APM export targets)\n- Test: `tests/",
+    "comments": 1,
+    "created_at": "2026-04-10T23:11:37Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "Causal inference engine for root cause analysis of orchestration failures",
+    "url": "https://github.com/chernistry/bernstein/issues/631",
+    "labels": [
+      "help wanted",
+      "orchestrator",
+      "ai-coding",
+      "size/xl",
+      "reliability",
+      "hacktoberfest",
+      "roadmap",
+      "P2",
+      "python",
+      "integration"
+    ],
+    "body": "## Description\n\nBeyond correlation (ROAD-064), use causal inference methods (do-calculus, instrumental variables) to determine actual causes: \"Task failures increased after switching to the new prompt template\" vs \"Task failures increased because the repo complexity increased (coincidentally at the same time as the prompt change).\" Distinguish confounders from causes.\n\n## Implementation Guide\n\n### Files to create/modify\n- Create: `src/bernstein/core/causal_inference.py`\n- Modify: `src/bernstein/",
+    "comments": 1,
+    "created_at": "2026-04-10T23:11:32Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "Formal verification of orchestrator state machine transitions using TLA+ or Alloy",
+    "url": "https://github.com/chernistry/bernstein/issues/620",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "orchestrator",
+      "size/xl",
+      "reliability",
+      "hacktoberfest",
+      "roadmap",
+      "P2",
+      "python"
+    ],
+    "body": "## Description\n\nModel the orchestrator state machine (task states, agent states, concurrent operations) in TLA+ or Alloy and verify: no deadlocks, no task duplication, no lost updates, eventual progress. Run the model checker in CI to catch state machine regressions. Different from formal_verification.py (which exists but is not a real model checker) -- this is actual formal methods.\n\n## Implementation Guide\n\n### Files to create/modify\n- Create: `specs/orchestrator.tla`\n- Create: `src/bernstein/",
+    "comments": 1,
+    "created_at": "2026-04-10T23:11:19Z"
+  },
+  {
+    "owner": "chernistry",
+    "repo": "bernstein",
+    "title": "Free-tier cloud-hosted Bernstein for evaluation (no install required)",
+    "url": "https://github.com/chernistry/bernstein/issues/617",
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "size/xl",
+      "hacktoberfest",
+      "P1",
+      "roadmap",
+      "web-dashboard",
+      "enterprise",
+      "python"
+    ],
+    "body": "## Description\n\nHost a sandboxed Bernstein instance where prospects can paste a GitHub URL, select a solution pack, and watch agents work on their repo. Limited to 3 agents, $2 budget, public repos only. Eliminates the \"I don't have time to install it\" objection.\n\n## Implementation Guide\n\n### Files to create/modify\n- Create: `src/bernstein/core/hosted_sandbox.py`\n- Create: `src/bernstein/core/sandbox_limits.py`\n- Create: `src/bernstein/cli/demo_cmd.py`\n- Test: `tests/unit/test_hosted_sandbox.py`",
+    "comments": 1,
+    "created_at": "2026-04-10T23:11:15Z"
+  }
+]

@@ -1,0 +1,15 @@
+TO: careers@oaknorth.com
+SUBJECT: Staff Engineer | Go/React/Cloud for Digital Lending Platform
+
+Hi OakNorth team,
+
+Your Staff Engineer Digital Lending role is a strong match. I'm a staff-level engineer who has worked across the full stack (Go, React, Python, Node) with deep backend systems experience — API design, microservices, data pipelines, and cloud infrastructure.
+
+For your lending platform, I bring: cross-squad technical leadership, ability to make right trade-offs between speed and quality, and a track record of delivering complex financial systems to production. I've worked with analytics-heavy systems where correctness and observability are non-negotiable.
+
+Your mention of working across multiple squads to manage trade-offs and dependencies matches how I approach staff-level work — focusing on unblocking teams, setting technical direction, and ensuring the right architectural decisions get made even under pressure.
+
+I'm drawn to OakNorth's mission of empowering ambitious UK businesses. Available to start immediately.
+
+Best,
+Yitong

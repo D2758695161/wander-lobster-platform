@@ -1,0 +1,107 @@
+{
+  "date": "2026-04-17",
+  "sent": 20,
+  "failed": 0,
+  "results": [
+    {
+      "to": "hello@indiehackers.com",
+      "tag": "IH社区",
+      "status": "SENT"
+    },
+    {
+      "to": "founders@bootstrapped.fm",
+      "tag": "bootstrapped社区",
+      "status": "SENT"
+    },
+    {
+      "to": "team@producthunt.com",
+      "tag": "PH",
+      "status": "SENT"
+    },
+    {
+      "to": "hello@ycombinator.com",
+      "tag": "YC社区",
+      "status": "SENT"
+    },
+    {
+      "to": "dev@ethereum.org",
+      "tag": "ETH社区",
+      "status": "SENT"
+    },
+    {
+      "to": "dev@solana.com",
+      "tag": "SOL社区",
+      "status": "SENT"
+    },
+    {
+      "to": "info@gitcoin.co",
+      "tag": "Gitcoin",
+      "status": "SENT"
+    },
+    {
+      "to": "hello@layer3.xyz",
+      "tag": "Layer3",
+      "status": "SENT"
+    },
+    {
+      "to": "hello@superteam.finance",
+      "tag": "Superteam",
+      "status": "SENT"
+    },
+    {
+      "to": "submissions@dev.to",
+      "tag": "DevTo",
+      "status": "SENT"
+    },
+    {
+      "to": "newsletter@programmingdigest.co",
+      "tag": "Digest",
+      "status": "SENT"
+    },
+    {
+      "to": "editor@devweekly.com",
+      "tag": "DevWeekly",
+      "status": "SENT"
+    },
+    {
+      "to": "hello@bytes.dev",
+      "tag": "Bytes",
+      "status": "SENT"
+    },
+    {
+      "to": "contact@degen.xyz",
+      "tag": "Degen社区",
+      "status": "SENT"
+    },
+    {
+      "to": "hello@farcaster.xyz",
+      "tag": "Farcaster",
+      "status": "SENT"
+    },
+    {
+      "to": "edm@cngold.org",
+      "tag": "稀土",
+      "status": "SENT"
+    },
+    {
+      "to": "bd@csdn.net",
+      "tag": "CSDN",
+      "status": "SENT"
+    },
+    {
+      "to": "careers@alchemy.com",
+      "tag": "Alchemy",
+      "status": "SENT"
+    },
+    {
+      "to": "devrel@quicknode.com",
+      "tag": "QuickNode",
+      "status": "SENT"
+    },
+    {
+      "to": "hello@magical",
+      "tag": "AI产品",
+      "status": "SENT"
+    }
+  ]
+}

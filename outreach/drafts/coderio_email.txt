@@ -1,0 +1,17 @@
+TO: careers@coderio.com
+SUBJECT: Senior Backend Engineer | Node.js/TypeScript/AWS Serverless | MESMERIZINGLY #RMTYzLjEyNS4xNjMuMTE5
+
+Hi Coderio team,
+
+Your Senior Backend Engineer role caught my attention — designing event-driven microservices that scale to millions of requests with Node.js/TypeScript on AWS Serverless is exactly the kind of ownership-level backend work I thrive in.
+
+My experience: I've built production Node.js/TypeScript services on AWS (Lambda, API Gateway, SQS, SNS) with PostgreSQL, and have hands-on experience with Terraform IaC, data pipeline design, and observability tooling. I'm comfortable owning a domain end-to-end: architecture, implementation, deployment, and monitoring.
+
+Your TimescaleDB and IoT/telemetry requirements would be a strong fit — I've worked with time-series data patterns and understand the query optimization needs for high-frequency event data. Your mention of data pipeline telemetry aligns with my background in building observability infrastructure.
+
+I bring: ownership mentality, proactive communication, and the ability to design solutions under pressure. Available to start immediately.
+
+MESMERIZINGLY #RMTYzLjEyNS4xNjMuMTE5
+
+Best,
+Yitong
