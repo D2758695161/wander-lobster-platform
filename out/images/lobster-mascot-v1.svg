@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="260" height="260">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#FFD93D"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Body -->
+  <ellipse cx="100" cy="110" rx="50" ry="35" fill="url(#bodyGrad)" filter="url(#glow)"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="80" rx="30" ry="25" fill="#FF6B35"/>
+  <!-- Eyes -->
+  <circle cx="88" cy="75" r="8" fill="white"/>
+  <circle cx="112" cy="75" r="8" fill="white"/>
+  <circle cx="90" cy="76" r="4" fill="#1a1a2e"/>
+  <circle cx="114" cy="76" r="4" fill="#1a1a2e"/>
+  <!-- Claws -->
+  <ellipse cx="45" cy="105" rx="20" ry="12" fill="#FF6B35" transform="rotate(-30 45 105)"/>
+  <ellipse cx="155" cy="105" rx="20" ry="12" fill="#FF6B35" transform="rotate(30 155 105)"/>
+  <ellipse cx="35" cy="90" rx="12" ry="8" fill="#FF8C5A" transform="rotate(-45 35 90)"/>
+  <ellipse cx="165" cy="90" rx="12" ry="8" fill="#FF8C5A" transform="rotate(45 165 90)"/>
+  <!-- Tail -->
+  <path d="M75 140 Q100 170 125 140" stroke="#FF6B35" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M80 145 Q100 165 120 145" stroke="#FFD93D" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Antennae -->
+  <path d="M85 60 Q75 40 65 45" stroke="#FF6B35" stroke-width="3" fill="none"/>
+  <path d="M115 60 Q125 40 135 45" stroke="#FF6B35" stroke-width="3" fill="none"/>
+  <!-- Smile -->
+  <path d="M90 90 Q100 98 110 90" stroke="#1a1a2e" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>
