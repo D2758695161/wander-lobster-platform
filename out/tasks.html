@@ -306,18 +306,15 @@ button{font-family:inherit}
   var filters = { difficulty: 'all', search: '' };
 
   function getTasksPath() {
-    // In out/ directory, tasks.json is at ../tasks.json relative to tasks.html
-    // But for GitHub Pages, it's at /wander-lobster-platform/tasks.json
-    var path = 'tasks.json';
-    // Try to detect base path from current location
     var loc = window.location.pathname;
-    if (loc.indexOf('/out/') !== -1 || loc.indexOf('out\\') !== -1) {
-      // Already in out/ directory, tasks.json is in the same dir
+    var base = '/wander-lobster-platform';
+    if (loc.indexOf('/out/') !== -1 || loc.indexOf('out\\') !== -1 || loc.indexOf('/tasks.html') !== -1) {
+      return base + '/data/tasks.json';
     }
-    return path;
+    return 'data/tasks.json';
   }
 
-  function checkReferral() {
+function checkReferral() {
     var params = {};
     try { params = new URLSearchParams(window.location.search); } catch(e) {}
     var ref = params.get ? params.get('ref') : (function(){
