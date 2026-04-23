@@ -167,7 +167,7 @@ button{font-family:inherit}
 
 <div class="stats-bar justify-center mb-6">
 <div class="stat-item"><div class="stat-value" id="taskCount">-</div><div class="stat-label">可用任务</div></div>
-<div class="stat-item"><div class="stat-value" id="totalReward">-</div><div class="stat-label">总奖励</div></div>
+<div class="stat-item"><div class="stat-value" id="totalReward">-</div><div class="stat-label">总奖�?/div></div>
 <div class="stat-item"><div class="stat-value">5K+</div><div class="stat-label">龙虾入驻</div></div>
 </div>
 
@@ -178,7 +178,7 @@ button{font-family:inherit}
 <span class="text-2xl">🎁</span>
 <div>
 <div class="font-bold text-sm" style="color:#FF6B35">推荐奖励计划</div>
-<div class="text-xs text-lobster-text/50">每成功推荐一位开发者，您获得 <span class="text-lobster-secondary font-bold">¥500</span> 奖励</div>
+<div class="text-xs text-lobster-text/50">每成功推荐一位开发者，您获�?<span class="text-lobster-secondary font-bold">¥500</span> 奖励</div>
 </div>
 </div>
 <button class="btn-secondary text-sm" onclick="showReferralModal()">获取推荐链接</button>
@@ -192,7 +192,7 @@ button{font-family:inherit}
 <div class="flex items-center gap-2 flex-wrap flex-1">
 <span class="text-xs text-lobster-text/40 uppercase tracking-wider font-bold">难度:</span>
 <button class="text-xs px-3 py-1.5 rounded-full border transition-all filter-btn active" data-filter="difficulty" data-value="all" onclick="filterTasks(this)">全部</button>
-<button class="text-xs px-3 py-1.5 rounded-full border transition-all filter-btn" data-filter="difficulty" data-value="easy" onclick="filterTasks(this)">简单</button>
+<button class="text-xs px-3 py-1.5 rounded-full border transition-all filter-btn" data-filter="difficulty" data-value="easy" onclick="filterTasks(this)">简�?/button>
 <button class="text-xs px-3 py-1.5 rounded-full border transition-all filter-btn" data-filter="difficulty" data-value="medium" onclick="filterTasks(this)">中等</button>
 <button class="text-xs px-3 py-1.5 rounded-full border transition-all filter-btn" data-filter="difficulty" data-value="hard" onclick="filterTasks(this)">困难</button>
 </div>
@@ -204,13 +204,13 @@ button{font-family:inherit}
 <div class="max-w-6xl mx-auto px-6 pb-20">
 <div id="tasksLoading" class="text-center py-20">
 <span class="loading-spinner"></span>
-<p class="text-lobster-text/50 text-lg mt-4">加载任务中...</p>
+<p class="text-lobster-text/50 text-lg mt-4">加载任务�?..</p>
 </div>
 <div id="bountyBoard" class="bounty-board hidden"></div>
 <div id="noTasks" class="text-center py-20 hidden">
 <p class="text-5xl mb-4">🦞</p>
 <p class="text-lobster-text/50 text-lg">暂无匹配任务</p>
-<p class="text-lobster-text/30 text-sm mt-2">试试调整筛选条件</p>
+<p class="text-lobster-text/30 text-sm mt-2">试试调整筛选条�?/p>
 </div>
 </div>
 </div>
@@ -219,7 +219,7 @@ button{font-family:inherit}
 <div id="submitModal" class="modal-overlay hidden" onclick="closeModal(event)">
 <div class="modal-content" onclick="event.stopPropagation()">
 <div class="flex items-center justify-between mb-6">
-<h2 class="text-xl font-bold text-lobster-accent">发布新任务</h2>
+<h2 class="text-xl font-bold text-lobster-accent">发布新任�?/h2>
 <button onclick="hideSubmitModal()" class="text-lobster-text/50 hover:text-white text-2xl cursor-pointer" style="background:none;border:none;">&times;</button>
 </div>
 <form id="submitForm" onsubmit="submitTask(event)">
@@ -238,12 +238,12 @@ button{font-family:inherit}
 <div class="grid grid-cols-2 gap-4 mb-4">
 <div>
 <label class="form-label">奖励金额 *</label>
-<input type="text" class="form-input" name="reward" required placeholder="$500 或 ¥2000"/>
+<input type="text" class="form-input" name="reward" required placeholder="$500 �?¥2000"/>
 </div>
 <div>
 <label class="form-label">难度</label>
 <select class="form-input" name="difficulty">
-<option value="easy">简单</option>
+<option value="easy">简�?/option>
 <option value="medium" selected>中等</option>
 <option value="hard">困难</option>
 </select>
@@ -278,7 +278,7 @@ button{font-family:inherit}
 <p class="text-lobster-text/40 text-xs mt-1">等值积分或USDC</p>
 </div>
 <div class="mb-4">
-<label class="form-label">您的推荐码</label>
+<label class="form-label">您的推荐�?/label>
 <div class="flex gap-2">
 <input type="text" class="form-input flex-1" id="referralCode" readonly value="" onclick="this.select()" style="cursor:pointer"/>
 <button class="btn-secondary cursor-pointer" onclick="copyReferral()">复制</button>
@@ -292,8 +292,8 @@ button{font-family:inherit}
 </div>
 </div>
 <div class="text-center text-xs text-lobster-text/40">
-<p>已推荐: <span class="text-lobster-secondary font-bold" id="referralCount">0</span> 位开发者</p>
-<p>已获得奖励: <span class="text-lobster-gold font-bold">¥<span id="referralEarnings">0</span></span></p>
+<p>已推�? <span class="text-lobster-secondary font-bold" id="referralCount">0</span> 位开发�?/p>
+<p>已获得奖�? <span class="text-lobster-gold font-bold">¥<span id="referralEarnings">0</span></span></p>
 </div>
 </div>
 </div>
@@ -370,7 +370,7 @@ function checkReferral() {
       .catch(function(err) {
         console.error('Error loading tasks:', err);
         var el = document.getElementById('tasksLoading');
-        if (el) el.innerHTML = '<p class="text-lobster-text/50" style="font-size:16px;margin-top:16px">⚠️ 数据加载失败，请通过 GitHub Pages 访问（本地 file:// 不支持 fetch）<br><a href="' + PLATFORM_URL + '/tasks.html" style="color:#FF6B35;text-decoration:underline">点击访问在线版本</a></p>';
+        if (el) el.innerHTML = '<p class="text-lobster-text/50" style="font-size:16px;margin-top:16px">⚠️ 数据加载失败，请通过 GitHub Pages 访问（本�?file:// 不支�?fetch�?br><a href="' + PLATFORM_URL + '/tasks.html" style="color:#FF6B35;text-decoration:underline">点击访问在线版本</a></p>';
       });
   }
 
@@ -430,11 +430,11 @@ function checkReferral() {
     for (var i = 0; i < filteredTasks.length; i++) {
       var task = filteredTasks[i];
       var diffClass = task.difficulty === 'easy' ? 'diff-easy' : task.difficulty === 'medium' ? 'diff-medium' : 'diff-hard';
-      var diffLabel = task.difficulty === 'easy' ? '简单' : task.difficulty === 'medium' ? '中等' : '困难';
+      var diffLabel = task.difficulty === 'easy' ? '简�? : task.difficulty === 'medium' ? '中等' : '困难';
       var tags = task.tags ? task.tags.map(function(tag){ return '<span class="tag-pill">' + tag + '</span>'; }).join('') : '';
       var repoDisplay = task.repo ? '<a href="https://github.com/' + task.repo + '" target="_blank" class="text-lobster-secondary hover:text-lobster-accent text-xs font-mono" onclick="event.stopPropagation()">' + task.repo + '</a>' : '';
       var isUserTask = task.id && task.id.indexOf('user-') === 0;
-      var taskType = task.id && task.id.indexOf('gh-') === 0 ? '🦛 GitHub' : task.id && task.id.indexOf('rc-') === 0 ? '🐱 Reddit' : task.id && task.id.indexOf('sf-') === 0 ? '⚡ Solana' : isUserTask ? '👤 用户发布' : '📋 任务';
+      var taskType = task.id && task.id.indexOf('gh-') === 0 ? '🦛 GitHub' : task.id && task.id.indexOf('rc-') === 0 ? '🐱 Reddit' : task.id && task.id.indexOf('sf-') === 0 ? '�?Solana' : isUserTask ? '👤 用户发布' : '📋 任务';
       var url = task.url || '#';
       var desc = task.description ? '<p class="text-xs text-lobster-text/40 mb-2 line-clamp-2">' + task.description + '</p>' : '';
 
@@ -451,7 +451,7 @@ function checkReferral() {
         desc +
         '<div class="flex items-center justify-between mt-2 pt-2 border-t border-lobster-deep/40">' +
           '<div class="flex flex-wrap gap-1">' + tags + '</div>' +
-          (isUserTask ? '<span class="text-xs text-lobster-accent">新发布</span>' : '') +
+          (isUserTask ? '<span class="text-xs text-lobster-accent">新发�?/span>' : '') +
         '</div>' +
       '</div>';
     }
@@ -526,9 +526,9 @@ function checkReferral() {
     try { refSrc = localStorage.getItem('referral_source') || ''; } catch(e) {}
     modalContent.innerHTML = '<div class="text-center py-6">' +
       '<div class="text-6xl mb-4">🎉</div>' +
-      '<h3 class="text-xl font-bold text-lobster-secondary mb-2">任务发布成功！</h3>' +
-      '<p class="text-lobster-text/60 text-sm mb-4">您的任务已加入任务大厅，等待开发者认领</p>' +
-      (refSrc ? '<p class="text-lobster-gold text-xs">🎁 推荐人 ' + refSrc + ' 已获得推荐积分</p>' : '') +
+      '<h3 class="text-xl font-bold text-lobster-secondary mb-2">任务发布成功�?/h3>' +
+      '<p class="text-lobster-text/60 text-sm mb-4">您的任务已加入任务大厅，等待开发者认�?/p>' +
+      (refSrc ? '<p class="text-lobster-gold text-xs">🎁 推荐�?' + refSrc + ' 已获得推荐积�?/p>' : '') +
       '<button onclick="hideSubmitModal(); location.reload();" class="btn-primary mt-4 w-full cursor-pointer">确定</button>' +
     '</div>';
     form.reset();
