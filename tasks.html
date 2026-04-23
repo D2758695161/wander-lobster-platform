@@ -1,57 +1,177 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/wander-lobster-platform/_next/static/css/4c5341364ec0a603.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/wander-lobster-platform/_next/static/chunks/webpack-9bfb44754f2aeab4.js"/><script src="/wander-lobster-platform/_next/static/chunks/fd9d1056-ea949d58b73d551c.js" async=""></script><script src="/wander-lobster-platform/_next/static/chunks/117-b8118b2cd457bf6e.js" async=""></script><script src="/wander-lobster-platform/_next/static/chunks/main-app-49c61205beba0d95.js" async=""></script><script src="/wander-lobster-platform/_next/static/chunks/241-c32005e5554bad04.js" async=""></script><script src="/wander-lobster-platform/_next/static/chunks/648-c65024946753e1f0.js" async=""></script><script src="/wander-lobster-platform/_next/static/chunks/app/tasks/page-7061e69210325587.js" async=""></script><script src="/wander-lobster-platform/_next/static/chunks/app/layout-217f5d38f4887e40.js" async=""></script><title>🦞 任务大厅 - Wander Lobster Platform</title><meta name="description" content="Every lobster has its own dock. Browse and submit freelance tasks on the marketplace."/><meta property="og:title" content="🦞 任务大厅 - Wander Lobster Platform"/><meta property="og:description" content="Browse and submit freelance tasks on the Wander Lobster marketplace."/><meta property="og:type" content="website"/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 100 100&#x27;&gt;&lt;text y=&#x27;.9em&#x27; font-size=&#x27;90&#x27;&gt;🦞&lt;/text&gt;&lt;/svg&gt;"/><script src="/wander-lobster-platform/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script><style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>🦞 任务大厅 - Wander Lobster Platform</title>
+<meta name="description" content="Every lobster has its own dock. Browse and submit freelance tasks on the marketplace."/>
+<meta property="og:title" content="🦞 任务大厅 - Wander Lobster Platform"/>
+<meta property="og:description" content="Browse and submit freelance tasks on the Wander Lobster marketplace."/>
+<meta property="og:type" content="website"/>
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🦞&lt;/text&gt;&lt;/svg&gt;"/>
+<style>
 :root {
   --lobster-accent: #FF6B35;
   --lobster-secondary: #4ECDC4;
   --lobster-deep: #0a1628;
+  --lobster-primary: #0d1b2a;
   --lobster-text: #e8e8e8;
   --lobster-gold: #FFD93D;
+  --lobster-purple: #a855f7;
 }
-body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: linear-gradient(135deg, #0a1628 0%, #1a0a2e 50%, #0a1628 100%); min-height: 100vh; color: var(--lobster-text); }
-.glass-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); }
-.task-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 16px; transition: all 0.3s ease; cursor: pointer; }
-.task-card:hover { background: rgba(255,255,255,0.08); border-color: var(--lobster-accent); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(255,107,53,0.2); }
-.bounty-board { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
-.diff-easy { background: rgba(78,205,196,0.2); color: #4ECDC4; border: 1px solid rgba(78,205,196,0.3); }
-.diff-medium { background: rgba(255,217,61,0.2); color: #FFD93D; border: 1px solid rgba(255,217,61,0.3); }
-.diff-hard { background: rgba(255,107,53,0.2); color: #FF6B35; border: 1px solid rgba(255,107,53,0.3); }
-.tag-pill { background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 12px; font-size: 11px; margin: 2px; display: inline-block; }
-.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(4px); z-index: 1000; display: flex; align-items: center; justify-content: center; }
-.modal-content { background: linear-gradient(135deg, #1a0a2e 0%, #0a1628 100%); border: 1px solid rgba(255,107,53,0.3); border-radius: 20px; padding: 32px; max-width: 500px; width: 90%; max-height: 90vh; overflow-y: auto; }
-.form-input { width: 100%; padding: 12px 16px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; color: white; font-size: 14px; box-sizing: border-box; }
-.form-input:focus { outline: none; border-color: var(--lobster-accent); }
-.form-label { display: block; margin-bottom: 8px; font-size: 13px; color: rgba(255,255,255,0.7); }
-.btn-primary { background: linear-gradient(135deg, #FF6B35, #FFD93D); color: white; border: none; padding: 12px 24px; border-radius: 12px; font-weight: bold; cursor: pointer; font-size: 14px; transition: all 0.3s; }
-.btn-primary:hover { transform: scale(1.02); box-shadow: 0 4px 20px rgba(255,107,53,0.4); }
-.btn-secondary { background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2); padding: 12px 24px; border-radius: 12px; cursor: pointer; font-size: 14px; transition: all 0.3s; }
-.btn-secondary:hover { background: rgba(255,255,255,0.15); }
-.loading-spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid rgba(255,255,255,0.3); border-top-color: #FF6B35; border-radius: 50%; animation: spin 1s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
-.referral-banner { background: linear-gradient(135deg, rgba(255,107,53,0.2), rgba(78,205,196,0.2)); border: 1px solid rgba(255,107,53,0.4); border-radius: 12px; padding: 12px 16px; margin-bottom: 16px; }
-.stats-bar { display: flex; gap: 24px; flex-wrap: wrap; }
-.stat-item { text-align: center; }
-.stat-value { font-size: 24px; font-weight: bold; color: var(--lobster-accent); }
-.stat-label { font-size: 11px; color: rgba(255,255,255,0.5); text-transform: uppercase; }
-.filter-btn.active { background: var(--lobster-accent); border-color: var(--lobster-accent); color: white; }
-.hidden { display: none !important; }
-.line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-</style></head><body class="antialiased"><div class="min-h-screen lobster-bg text-lobster-text relative">
-<div class="bubbles-container" aria-hidden="true"><div class="bubble" style="left:33.844934947052664%;width:6.282413909825545px;height:6.282413909825545px;background:radial-gradient(circle at 30% 30%, #FF6B35, transparent);animation-duration:11.982059313561592s;animation-delay:3.829013822658789s;opacity:0.25516571679298744;border:1px solid #FF6B35"></div><div class="bubble" style="left:19.251244781019217%;width:9.187741641810923px;height:9.187741641810923px;background:radial-gradient(circle at 30% 30%, #FF6B35, transparent);animation-duration:10.381013131569734s;animation-delay:4.9954830078329s;opacity:0.2727647849907604;border:1px solid #FF6B35"></div><div class="bubble" style="left:8.193425117250431%;width:12.981382022650946px;height:12.981382022650946px;background:radial-gradient(circle at 30% 30%, #FF6B35, transparent);animation-duration:6.891336372361214s;animation-delay:1.6636665326812148s;opacity:0.2092471524905346;border:1px solid #FF6B35"></div><div class="bubble" style="left:50.462492366708865%;width:13.239140647963067px;height:13.239140647963067px;background:radial-gradient(circle at 30% 30%, #FF6B35, transparent);animation-duration:10.441260232419362s;animation-delay:4.565606059538175s;opacity:0.330617347746897;border:1px solid #FF6B35"></div><div class="bubble" style="left:2.5071303694419234%;width:5.358487363183243px;height:5.358487363183243px;background:radial-gradient(circle at 30% 30%, #4ECDC4, transparent);animation-duration:11.756062137375146s;animation-delay:5.110756134560662s;opacity:0.16535131829809302;border:1px solid #4ECDC4"></div><div class="bubble" style="left:18.314757107748047%;width:6.572666468627126px;height:6.572666468627126px;background:radial-gradient(circle at 30% 30%, #FF6B35, transparent);animation-duration:9.815495569815873s;animation-delay:5.497797564273747s;opacity:0.0684920118471931;border:1px solid #FF6B35"></div><div class="bubble" style="left:80.93163073585568%;width:5.429011693648285px;height:5.429011693648285px;background:radial-gradient(circle at 30% 30%, #FF6B35, transparent);animation-duration:12.823520846203621s;animation-delay:4.794778256237703s;opacity:0.3306945643765257;border:1px solid #FF6B35"></div><div class="bubble" style="left:44.68004777458287%;width:11.325048625390554px;height:11.325048625390554px;background:radial-gradient(circle at 30% 30%, #FF6B35, transparent);animation-duration:10.064145370996476s;animation-delay:6.313819838729264s;opacity:0.24536293735443782;border:1px solid #FF6B35"></div><div class="bubble" style="left:45.1710708591049%;width:8.812154388755141px;height:8.812154388755141px;background:radial-gradient(circle at 30% 30%, #4ECDC4, transparent);animation-duration:10.740991231600223s;animation-delay:0.8855437666783184s;opacity:0.1195197870449137;border:1px solid #4ECDC4"></div><div class="bubble" style="left:89.42376203374288%;width:11.971407266724114px;height:11.971407266724114px;background:radial-gradient(circle at 30% 30%, #FF6B35, transparent);animation-duration:9.244160947121898s;animation-delay:0.6266200534928563s;opacity:0.18126375845960913;border:1px solid #FF6B35"></div><div class="bubble" style="left:15.00802657192274%;width:7.911932941077597px;height:7.911932941077597px;background:radial-gradient(circle at 30% 30%, #FF6B35, transparent);animation-duration:8.429653227111789s;animation-delay:7.309386970430588s;opacity:0.3174093005683383;border:1px solid #FF6B35"></div><div class="bubble" style="left:6.782031379484621%;width:10.460557356755166px;height:10.460557356755166px;background:radial-gradient(circle at 30% 30%, #4ECDC4, transparent);animation-duration:10.434923387452438s;animation-delay:1.7520590446914968s;opacity:0.23844777036558829;border:1px solid #4ECDC4"></div><div class="bubble" style="left:14.720076751110279%;width:4.927298752878843px;height:4.927298752878843px;background:radial-gradient(circle at 30% 30%, #FF6B35, transparent);animation-duration:12.111936515302025s;animation-delay:7.673366671974499s;opacity:0.17769523126690723;border:1px solid #FF6B35"></div><div class="bubble" style="left:76.48147644796815%;width:7.548620892215563px;height:7.548620892215563px;background:radial-gradient(circle at 30% 30%, #FF6B35, transparent);animation-duration:7.987551355859223s;animation-delay:3.8405019031987537s;opacity:0.1827581808770425;border:1px solid #FF6B35"></div><div class="bubble" style="left:98.592666431427%;width:8.475183485702583px;height:8.475183485702583px;background:radial-gradient(circle at 30% 30%, #4ECDC4, transparent);animation-duration:9.178115767520001s;animation-delay:6.734707596262645s;opacity:0.21627658941383887;border:1px solid #4ECDC4"></div><div class="bubble" style="left:63.95193456738232%;width:8.884817988369527px;height:8.884817988369527px;background:radial-gradient(circle at 30% 30%, #4ECDC4, transparent);animation-duration:8.20908221617065s;animation-delay:1.4842997370664328s;opacity:0.32796860458329524;border:1px solid #4ECDC4"></div><div class="bubble" style="left:56.23023696946691%;width:6.5140716257043225px;height:6.5140716257043225px;background:radial-gradient(circle at 30% 30%, #FF6B35, transparent);animation-duration:11.606160628769041s;animation-delay:7.8921557057966005s;opacity:0.1426138336632095;border:1px solid #FF6B35"></div><div class="bubble" style="left:11.163814204673528%;width:13.975547403083405px;height:13.975547403083405px;background:radial-gradient(circle at 30% 30%, #4ECDC4, transparent);animation-duration:8.895914790697745s;animation-delay:4.917435879573174s;opacity:0.32213436357091757;border:1px solid #4ECDC4"></div><div class="bubble" style="left:81.1725261775234%;width:11.964382078914603px;height:11.964382078914603px;background:radial-gradient(circle at 30% 30%, #4ECDC4, transparent);animation-duration:11.853317019998517s;animation-delay:1.0479596299971083s;opacity:0.2039937648415553;border:1px solid #4ECDC4"></div><div class="bubble" style="left:79.50746008707759%;width:9.099183071439768px;height:9.099183071439768px;background:radial-gradient(circle at 30% 30%, #4ECDC4, transparent);animation-duration:10.40765835361793s;animation-delay:7.719541521858676s;opacity:0.30462530209922006;border:1px solid #4ECDC4"></div></div>
-<nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4"><div class="max-w-6xl mx-auto flex items-center justify-between"><div class="flex items-center gap-2"><span class="text-2xl">🦞</span><a class="font-heading font-bold text-lobster-text tracking-wide hover:text-lobster-accent transition-colors" href="/wander-lobster-platform">流浪龙虾</a></div><div class="hidden md:flex items-center gap-8 text-sm text-lobster-text/70"><a class="hover:text-lobster-accent transition-colors" href="/wander-lobster-platform#about">什么是龙虾</a><a class="hover:text-lobster-accent transition-colors" href="/wander-lobster-platform#features">核心功能</a><a class="text-lobster-accent hover:text-lobster-secondary transition-colors font-bold" href="/wander-lobster-platform/tasks">任务大厅</a><a class="hover:text-lobster-accent transition-colors" href="/wander-lobster-platform#join">加入漂流</a></div></div></nav>
+*,:after,:before{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Inter,"Noto Sans SC",sans-serif;
+  background:linear-gradient(135deg,#0a1628 0%,#1a0a2e 50%,#0a1628 100%);
+  min-height:100vh;
+  color:var(--lobster-text);
+}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+.lobster-bg{min-height:100vh}
+.relative{position:relative}
+.fixed{position:fixed}
+.z-50{z-index:50}
+.top-0{top:0}
+.left-0{left:0}
+.right-0{right:0}
+.px-6{padding-left:1.5rem;padding-right:1.5rem}
+.py-4{padding-top:1rem;padding-bottom:1rem}
+.max-w-6xl{max-width:72rem}
+.mx-auto{margin-left:auto;margin-right:auto}
+.flex{display:flex}
+.items-center{align-items:center}
+.justify-between{justify-content:space-between}
+.gap-2{gap:0.5rem}
+.gap-8{gap:2rem}
+.text-sm{font-size:0.875rem}
+.text-lobster-text\\/70{color:rgba(232,244,253,0.7)}
+.font-bold{font-weight:700}
+.tracking-wide{letter-spacing:0.025em}
+.hover\\:text-lobster-accent:hover{color:var(--lobster-accent)}
+.hover\\:text-lobster-secondary:hover{color:var(--lobster-secondary)}
+.transition-colors{transition:color 0.2s}
+.glass-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);backdrop-filter:blur(10px)}
+.bounty-board{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.task-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:16px;transition:all 0.3s ease;cursor:pointer}
+.task-card:hover{background:rgba(255,255,255,0.08);border-color:var(--lobster-accent);transform:translateY(-2px);box-shadow:0 8px 32px rgba(255,107,53,0.2)}
+.diff-easy{background:rgba(78,205,196,0.2);color:#4ECDC4;border:1px solid rgba(78,205,196,0.3)}
+.diff-medium{background:rgba(255,217,61,0.2);color:#FFD93D;border:1px solid rgba(255,217,61,0.3)}
+.diff-hard{background:rgba(255,107,53,0.2);color:#FF6B35;border:1px solid rgba(255,107,53,0.3)}
+.tag-pill{background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(4px);z-index:1000;display:flex;align-items:center;justify-content:center}
+.modal-content{background:linear-gradient(135deg,#1a0a2e 0%,#0a1628 100%);border:1px solid rgba(255,107,53,0.3);border-radius:20px;padding:32px;max-width:500px;width:90%;max-height:90vh;overflow-y:auto}
+.form-input{width:100%;padding:12px 16px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.2);border-radius:12px;color:white;font-size:14px;box-sizing:border-box}
+.form-input:focus{outline:none;border-color:var(--lobster-accent)}
+.form-label{display:block;margin-bottom:8px;font-size:13px;color:rgba(255,255,255,0.7)}
+.btn-primary{background:linear-gradient(135deg,#FF6B35,#FFD93D);color:white;border:none;padding:12px 24px;border-radius:12px;font-weight:bold;cursor:pointer;font-size:14px;transition:all 0.3s;display:inline-block;text-align:center}
+.btn-primary:hover{transform:scale(1.02);box-shadow:0 4px 20px rgba(255,107,53,0.4)}
+.btn-secondary{background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.2);padding:12px 24px;border-radius:12px;cursor:pointer;font-size:14px;transition:all 0.3s}
+.btn-secondary:hover{background:rgba(255,255,255,0.15)}
+.loading-spinner{display:inline-block;width:20px;height:20px;border:2px solid rgba(255,255,255,0.3);border-top-color:#FF6B35;border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.referral-banner{background:linear-gradient(135deg,rgba(255,107,53,0.2),rgba(78,205,196,0.2));border:1px solid rgba(255,107,53,0.4);border-radius:12px;padding:12px 16px;margin-bottom:16px}
+.stats-bar{display:flex;gap:24px;flex-wrap:wrap}
+.stat-item{text-align:center}
+.stat-value{font-size:24px;font-weight:bold;color:var(--lobster-accent)}
+.stat-label{font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase}
+.filter-btn.active{background:var(--lobster-accent);border-color:var(--lobster-accent);color:white}
+.hidden{display:none!important}
+.line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.flex-wrap{flex-wrap:wrap}
+.items-start{align-items:flex-start}
+.justify-end{justify-content:flex-end}
+.gap-3{gap:0.75rem}
+.gap-4{gap:1rem}
+.flex-1{flex:1 1 0%}
+.mt-2{margin-top:0.5rem}
+.mt-4{margin-top:1rem}
+.mb-2{margin-bottom:0.5rem}
+.mb-4{margin-bottom:1rem}
+.mb-6{margin-bottom:1.5rem}
+.pt-2{padding-top:0.5rem}
+.border-t{border-top:1px solid}
+.border-lobster-deep\\/40{border-color:rgba(10,22,40,0.4)}
+.text-xs{font-size:0.75rem}
+.text-lg{font-size:1.125rem}
+.text-2xl{font-size:1.5rem}
+.text-xl{font-size:1.25rem}
+.font-black{font-weight:900}
+.font-bold{font-weight:700}
+.text-center{text-align:center}
+.text-lobster-text{color:var(--lobster-text)}
+.text-lobster-accent{color:var(--lobster-accent)}
+.text-lobster-secondary{color:var(--lobster-secondary)}
+.text-lobster-gold{color:var(--lobster-gold)}
+.text-lobster-text\\/50{color:rgba(232,244,253,0.5)}
+.text-lobster-text\\/40{color:rgba(232,244,253,0.4)}
+.text-lobster-text\\/60{color:rgba(232,244,253,0.6)}
+.text-sm{font-size:0.875rem}
+.text-xs{font-size:0.75rem}
+.rounded-full{border-radius:9999px}
+.rounded-2xl{border-radius:1rem}
+.p-4{padding:1rem}
+.p-6{padding:1.5rem}
+.px-3{padding-left:0.75rem;padding-right:0.75rem}
+.py-1\\.5{padding-top:0.375rem;padding-bottom:0.375rem}
+.leading-snug{line-height:1.375}
+.grid{display:grid}
+.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.w-full{width:100%}
+.cursor-pointer{cursor:pointer}
+.select-none{-webkit-user-select:none;user-select:none}
+.ml-auto{margin-left:auto}
+.whitespace-nowrap{white-space:nowrap}
+.font-mono{font-family:ui-monospace,monospace}
+.inline-block{display:inline-block}
+.overflow-hidden{overflow:hidden}
+.block{display:block}
+.min-w-0{min-width:0}
+.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.shrink-0{flex-shrink:0}
+.text-right{text-align:right}
+.uppercase{text-transform:uppercase}
+.tracking-wider{letter-spacing:0.05em}
+.steps-list{list-style:none;margin:0;padding:0;counter-reset:step}
+.steps-list li{display:flex;align-items:flex-start;gap:16px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.steps-list li:last-child{border-bottom:none}
+.step-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:14px;background:linear-gradient(135deg,#FF6B35,#FFD93D);color:white}
+</style>
+</head>
+<body class="antialiased">
+<div class="min-h-screen lobster-bg text-lobster-text relative">
+
+<nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4">
+<div class="max-w-6xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-2xl select-none">🦞</span>
+<a class="font-bold text-lobster-text tracking-wide hover:text-lobster-accent transition-colors" href="index.html">流浪龙虾</a>
+</div>
+<div class="hidden md:flex items-center gap-8 text-sm text-lobster-text/70">
+<a class="hover:text-lobster-accent transition-colors" href="index.html#about">什么是龙虾</a>
+<a class="hover:text-lobster-accent transition-colors" href="index.html#features">核心功能</a>
+<a class="text-lobster-accent hover:text-lobster-secondary transition-colors font-bold" href="tasks.html">任务大厅</a>
+<a class="hover:text-lobster-accent transition-colors" href="index.html#join">加入漂流</a>
+</div>
+</div>
+</nav>
 
 <div class="relative pt-28 pb-10 px-6 text-center">
-<div style="opacity:1;transform:translateY(0)">
-<div class="inline-flex items-center gap-3 mb-4"><span class="text-5xl lobster-glow">🦞</span><h1 class="text-4xl md:text-5xl font-black font-heading neon-text text-lobster-accent">任务大厅</h1></div>
+<div>
+<div class="inline-flex items-center gap-3 mb-4">
+<span class="text-5xl select-none">🦞</span>
+<h1 class="text-4xl md:text-5xl font-black neon-text text-lobster-accent" style="font-family:Orbitron,sans-serif">任务大厅</h1>
+</div>
 <p class="text-lobster-text/60 text-lg max-w-xl mx-auto mb-4">自由职业者的技能撮合市场，让龙虾们找到合适的码头</p>
 
-<!-- Stats Bar -->
-<div class="stats-bar justify-center mb-6" id="statsBar">
+<div class="stats-bar justify-center mb-6">
 <div class="stat-item"><div class="stat-value" id="taskCount">-</div><div class="stat-label">可用任务</div></div>
 <div class="stat-item"><div class="stat-value" id="totalReward">-</div><div class="stat-label">总奖励</div></div>
 <div class="stat-item"><div class="stat-value">5K+</div><div class="stat-label">龙虾入驻</div></div>
 </div>
 
-<!-- Referral Banner -->
-<div class="max-w-4xl mx-auto mb-6" id="referralBanner">
+<div class="max-w-4xl mx-auto mb-6">
 <div class="referral-banner">
 <div class="flex items-center justify-between flex-wrap gap-4">
 <div class="flex items-center gap-3">
@@ -66,17 +186,10 @@ body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background:
 </div>
 </div>
 </div>
-</div>
 
 <div class="max-w-6xl mx-auto px-6 mb-8">
 <div class="glass-card rounded-2xl p-4 flex flex-wrap items-center gap-3">
 <div class="flex items-center gap-2 flex-wrap flex-1">
-<span class="text-xs text-lobster-text/40 uppercase tracking-wider font-bold">类型:</span>
-<button class="text-xs px-3 py-1.5 rounded-full border transition-all filter-btn active" data-filter="type" data-value="all" onclick="filterTasks(this)">全部</button>
-<button class="text-xs px-3 py-1.5 rounded-full border transition-all filter-btn" data-filter="type" data-value="bounty" onclick="filterTasks(this)">赏金</button>
-<button class="text-xs px-3 py-1.5 rounded-full border transition-all filter-btn" data-filter="type" data-value="local" onclick="filterTasks(this)">本地任务</button>
-</div>
-<div class="flex items-center gap-2 flex-wrap">
 <span class="text-xs text-lobster-text/40 uppercase tracking-wider font-bold">难度:</span>
 <button class="text-xs px-3 py-1.5 rounded-full border transition-all filter-btn active" data-filter="difficulty" data-value="all" onclick="filterTasks(this)">全部</button>
 <button class="text-xs px-3 py-1.5 rounded-full border transition-all filter-btn" data-filter="difficulty" data-value="easy" onclick="filterTasks(this)">简单</button>
@@ -107,7 +220,7 @@ body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background:
 <div class="modal-content" onclick="event.stopPropagation()">
 <div class="flex items-center justify-between mb-6">
 <h2 class="text-xl font-bold text-lobster-accent">发布新任务</h2>
-<button onclick="hideSubmitModal()" class="text-lobster-text/50 hover:text-white text-2xl">&times;</button>
+<button onclick="hideSubmitModal()" class="text-lobster-text/50 hover:text-white text-2xl cursor-pointer" style="background:none;border:none;">&times;</button>
 </div>
 <form id="submitForm" onsubmit="submitTask(event)">
 <div class="mb-4">
@@ -145,8 +258,8 @@ body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background:
 <textarea class="form-input" name="description" rows="3" placeholder="详细描述任务要求..."></textarea>
 </div>
 <div class="flex gap-3">
-<button type="button" onclick="hideSubmitModal()" class="btn-secondary flex-1">取消</button>
-<button type="submit" class="btn-primary flex-1">发布任务</button>
+<button type="button" onclick="hideSubmitModal()" class="btn-secondary flex-1 cursor-pointer">取消</button>
+<button type="submit" class="btn-primary flex-1 cursor-pointer">发布任务</button>
 </div>
 </form>
 </div>
@@ -157,7 +270,7 @@ body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background:
 <div class="modal-content" onclick="event.stopPropagation()">
 <div class="flex items-center justify-between mb-6">
 <h2 class="text-xl font-bold text-lobster-accent">🎁 推荐奖励</h2>
-<button onclick="hideReferralModal()" class="text-lobster-text/50 hover:text-white text-2xl">&times;</button>
+<button onclick="hideReferralModal()" class="text-lobster-text/50 hover:text-white text-2xl cursor-pointer" style="background:none;border:none;">&times;</button>
 </div>
 <div class="text-center mb-6">
 <p class="text-lobster-text/70 text-sm mb-4">每成功推荐一位开发者完成首个任务，您将获得</p>
@@ -167,15 +280,15 @@ body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background:
 <div class="mb-4">
 <label class="form-label">您的推荐码</label>
 <div class="flex gap-2">
-<input type="text" class="form-input flex-1" id="referralCode" readonly value="" onclick="this.select()"/>
-<button class="btn-secondary" onclick="copyReferral()">复制</button>
+<input type="text" class="form-input flex-1" id="referralCode" readonly value="" onclick="this.select()" style="cursor:pointer"/>
+<button class="btn-secondary cursor-pointer" onclick="copyReferral()">复制</button>
 </div>
 </div>
 <div class="mb-4">
 <label class="form-label">推荐链接</label>
 <div class="flex gap-2">
-<input type="text" class="form-input flex-1" id="referralLink" readonly value="" onclick="this.select()"/>
-<button class="btn-secondary" onclick="copyReferral()">复制</button>
+<input type="text" class="form-input flex-1" id="referralLink" readonly value="" onclick="this.select()" style="cursor:pointer"/>
+<button class="btn-secondary cursor-pointer" onclick="copyReferral()">复制</button>
 </div>
 </div>
 <div class="text-center text-xs text-lobster-text/40">
@@ -186,245 +299,274 @@ body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background:
 </div>
 
 <script>
-const PLATFORM_URL = 'https://d2758695161.github.io/wander-lobster-platform';
-let allTasks = [];
-let filteredTasks = [];
-let filters = { type: 'all', difficulty: 'all', search: '' };
+(function(){
+  var PLATFORM_URL = 'https://d2758695161.github.io/wander-lobster-platform';
+  var allTasks = [];
+  var filteredTasks = [];
+  var filters = { difficulty: 'all', search: '' };
 
-// Initialize
-document.addEventListener('DOMContentLoaded', () => {
-  checkReferral();
-  loadTasks();
-  initReferralCode();
-});
-
-function checkReferral() {
-  const params = new URLSearchParams(window.location.search);
-  const ref = params.get('ref');
-  if (ref) {
-    localStorage.setItem('referral_source', ref);
-    console.log('Referral source tracked:', ref);
-  }
-}
-
-function initReferralCode() {
-  let code = localStorage.getItem('user_referral_code');
-  if (!code) {
-    code = 'LR' + Math.random().toString(36).substring(2, 8).toUpperCase();
-    localStorage.setItem('user_referral_code', code);
-  }
-  const link = `${PLATFORM_URL}/tasks?ref=${code}`;
-  document.getElementById('referralCode').value = code;
-  document.getElementById('referralLink').value = link;
-  
-  // Update referral stats
-  const refData = JSON.parse(localStorage.getItem('referral_credits') || '{}');
-  const myCode = localStorage.getItem('user_referral_code');
-  const myCount = refData[myCode] || 0;
-  const myEarnings = myCount * 500;
-  document.getElementById('referralCount').textContent = myCount;
-  document.getElementById('referralEarnings').textContent = myEarnings;
-}
-
-async function loadTasks() {
-  try {
-    // Use relative path for compatibility with both local file:// and GitHub Pages
-    const response = await fetch('data/tasks.json');
-    if (!response.ok) throw new Error('Failed to load tasks');
-    allTasks = await response.json();
-    updateStats();
-    applyFilters();
-    document.getElementById('tasksLoading').classList.add('hidden');
-    document.getElementById('bountyBoard').classList.remove('hidden');
-  } catch (error) {
-    console.error('Error loading tasks:', error);
-    document.getElementById('tasksLoading').innerHTML = '<p class="text-lobster-text/50">⚠️ 数据加载失败，请确保在服务器环境打开（不支持 file:// 直接打开）</p>';
-  }
-}
-
-function updateStats() {
-  const count = allTasks.length;
-  document.getElementById('taskCount').textContent = count + '+';
-  
-  // Calculate total reward value
-  let total = 0;
-  allTasks.forEach(t => {
-    const match = t.reward.match(/[\d,]+/);
-    if (match) total += parseInt(match[0].replace(',', ''));
-  });
-  document.getElementById('totalReward').textContent = '¥' + (total > 1000 ? (total/1000).toFixed(0) + 'K' : total);
-}
-
-function filterTasks(btn) {
-  if (btn) {
-    const filterType = btn.dataset.filter;
-    const value = btn.dataset.value;
-    filters[filterType] = value;
-    
-    // Update active state
-    document.querySelectorAll(`[data-filter="${filterType}"]`).forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-  }
-  
-  filters.search = document.getElementById('searchInput')?.value?.toLowerCase() || '';
-  
-  filteredTasks = allTasks.filter(task => {
-    if (filters.type !== 'all') {
-      const isBounty = task.id.includes('bounty') || task.id.startsWith('gh-') || task.id.startsWith('rc-') || task.id.startsWith('sf-');
-      if (filters.type === 'bounty' && !isBounty) return false;
-      if (filters.type === 'local' && !task.id.startsWith('user-')) return false;
+  function getTasksPath() {
+    // In out/ directory, tasks.json is at ../tasks.json relative to tasks.html
+    // But for GitHub Pages, it's at /wander-lobster-platform/tasks.json
+    var path = 'tasks.json';
+    // Try to detect base path from current location
+    var loc = window.location.pathname;
+    if (loc.indexOf('/out/') !== -1 || loc.indexOf('out\\') !== -1) {
+      // Already in out/ directory, tasks.json is in the same dir
     }
-    if (filters.difficulty !== 'all' && task.difficulty !== filters.difficulty) return false;
-    if (filters.search) {
-      const searchStr = (task.title + ' ' + task.repo + ' ' + task.tags?.join(' ')).toLowerCase();
-      if (!searchStr.includes(filters.search)) return false;
-    }
-    return true;
-  });
-  
-  renderTasks();
-}
-
-function renderTasks() {
-  const board = document.getElementById('bountyBoard');
-  const noTasks = document.getElementById('noTasks');
-  
-  if (filteredTasks.length === 0) {
-    board.classList.add('hidden');
-    noTasks.classList.remove('hidden');
-    return;
+    return path;
   }
-  
-  board.classList.remove('hidden');
-  noTasks.classList.add('hidden');
-  
-  board.innerHTML = filteredTasks.map(task => {
-    const diffClass = task.difficulty === 'easy' ? 'diff-easy' : task.difficulty === 'medium' ? 'diff-medium' : 'diff-hard';
-    const diffLabel = task.difficulty === 'easy' ? '简单' : task.difficulty === 'medium' ? '中等' : '困难';
-    const tags = task.tags?.map(tag => `<span class="tag-pill">${tag}</span>`).join('') || '';
-    const repoDisplay = task.repo ? `<a href="https://github.com/${task.repo}" target="_blank" onclick="event.stopPropagation()" class="text-lobster-secondary hover:text-lobster-accent text-xs font-mono">${task.repo}</a>` : '';
-    const isUserTask = task.id.startsWith('user-');
-    const taskType = task.id.startsWith('gh-bounty-') ? '🦛 GitHub赏金' : task.id.startsWith('rc-bounty-') ? '🐱 Reddit赏金' : task.id.startsWith('sf-bounty-') ? '⚡ Solana赏金' : task.id.startsWith('gh-') ? '🦛 GitHub' : task.id.startsWith('rc-') ? '🐱 Reddit' : task.id.startsWith('sf-') ? '⚡ Solana' : isUserTask ? '👤 用户发布' : '📋 任务';
-    
-    return `
-    <div class="task-card" onclick="window.open('${task.url || '#'}', '_blank')">
-      <div class="flex items-start justify-between mb-2 gap-2">
-        <div class="flex items-center gap-2 flex-shrink-0">
-          <span class="text-xs px-2 py-0.5 rounded-full bg-lobster-deep/60 text-lobster-text/50">${taskType}</span>
-          <span class="text-xs px-2 py-0.5 rounded-full ${diffClass}">${diffLabel}</span>
-        </div>
-        <span class="text-lg font-black whitespace-nowrap" style="color:#FFD93D">${task.reward}</span>
-      </div>
-      <h3 class="text-sm font-bold text-lobster-text mb-2 leading-snug">${task.title}</h3>
-      ${repoDisplay ? `<div class="mb-2">${repoDisplay}</div>` : ''}
-      ${task.description ? `<p class="text-xs text-lobster-text/40 mb-2 line-clamp-2">${task.description}</p>` : ''}
-      <div class="flex items-center justify-between mt-2 pt-2 border-t border-lobster-deep/40">
-        <div class="flex flex-wrap gap-1">${tags}</div>
-        ${isUserTask ? '<span class="text-xs text-lobster-accent">新发布</span>' : ''}
-      </div>
-    </div>
-    `;
-  }).join('');
-}
 
-function showSubmitModal() {
-  document.getElementById('submitModal').classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
-}
+  function checkReferral() {
+    var params = {};
+    try { params = new URLSearchParams(window.location.search); } catch(e) {}
+    var ref = params.get ? params.get('ref') : (function(){
+      var m = window.location.search.match(/[\?&]ref=([^&]+)/);
+      return m ? m[1] : null;
+    })();
+    if (ref) {
+      try { localStorage.setItem('referral_source', ref); } catch(e) {}
+    }
+  }
 
-function hideSubmitModal() {
-  document.getElementById('submitModal').classList.add('hidden');
-  document.body.style.overflow = '';
-}
+  function initReferralCode() {
+    var code;
+    try {
+      code = localStorage.getItem('user_referral_code');
+      if (!code) {
+        code = 'LR' + Math.random().toString(36).substring(2, 8).toUpperCase();
+        localStorage.setItem('user_referral_code', code);
+      }
+    } catch(e) { code = 'LR' + Math.random().toString(36).substring(2, 8).toUpperCase(); }
+    var link = PLATFORM_URL + '/tasks.html?ref=' + code;
+    var rc = document.getElementById('referralCode');
+    var rl = document.getElementById('referralLink');
+    if (rc) rc.value = code;
+    if (rl) rl.value = link;
 
-function showReferralModal() {
-  // Refresh referral stats before showing
-  initReferralCode();
-  document.getElementById('referralModal').classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
-}
+    var refData = {};
+    try { refData = JSON.parse(localStorage.getItem('referral_credits') || '{}'); } catch(e) {}
+    var myCode;
+    try { myCode = localStorage.getItem('user_referral_code'); } catch(e) { myCode = code; }
+    var myCount = refData[myCode] || 0;
+    var myEarnings = myCount * 500;
+    var rcEl = document.getElementById('referralCount');
+    var reEl = document.getElementById('referralEarnings');
+    if (rcEl) rcEl.textContent = myCount;
+    if (reEl) reEl.textContent = myEarnings;
+  }
 
-function hideReferralModal() {
-  document.getElementById('referralModal').classList.add('hidden');
-  document.body.style.overflow = '';
-}
+  function loadTasks() {
+    var path = getTasksPath();
+    fetch(path)
+      .then(function(res) {
+        if (!res.ok) throw new Error('Failed to load tasks');
+        return res.json();
+      })
+      .then(function(data) {
+        allTasks = data;
+        updateStats();
+        applyFilters();
+        document.getElementById('tasksLoading').classList.add('hidden');
+        document.getElementById('bountyBoard').classList.remove('hidden');
+      })
+      .catch(function(err) {
+        console.error('Error loading tasks:', err);
+        var el = document.getElementById('tasksLoading');
+        if (el) el.innerHTML = '<p class="text-lobster-text/50" style="font-size:16px;margin-top:16px">⚠️ 数据加载失败，请通过 GitHub Pages 访问（本地 file:// 不支持 fetch）<br><a href="' + PLATFORM_URL + '/tasks.html" style="color:#FF6B35;text-decoration:underline">点击访问在线版本</a></p>';
+      });
+  }
 
-function closeModal(event) {
-  if (event.target.classList.contains('modal-overlay')) {
-    document.querySelectorAll('.modal-overlay').forEach(m => m.classList.add('hidden'));
+  function updateStats() {
+    var count = allTasks.length;
+    var tc = document.getElementById('taskCount');
+    if (tc) tc.textContent = count + '+';
+
+    var total = 0;
+    for (var i = 0; i < allTasks.length; i++) {
+      var match = allTasks[i].reward.match(/[\d,]+/);
+      if (match) total += parseInt(match[0].replace(',', ''), 10);
+    }
+    var tr = document.getElementById('totalReward');
+    if (tr) tr.textContent = '¥' + (total > 1000 ? (total/1000).toFixed(0) + 'K' : total);
+  }
+
+  function filterTasks(btn) {
+    if (btn) {
+      var filterType = btn.getAttribute('data-filter');
+      var value = btn.getAttribute('data-value');
+      filters[filterType] = value;
+      var siblings = document.querySelectorAll('[data-filter="' + filterType + '"]');
+      for (var i = 0; i < siblings.length; i++) siblings[i].classList.remove('active');
+      btn.classList.add('active');
+    }
+
+    var searchEl = document.getElementById('searchInput');
+    filters.search = searchEl ? (searchEl.value || '').toLowerCase() : '';
+
+    filteredTasks = allTasks.filter(function(task) {
+      if (filters.difficulty !== 'all' && task.difficulty !== filters.difficulty) return false;
+      if (filters.search) {
+        var searchStr = (task.title + ' ' + (task.repo||'') + ' ' + ((task.tags||[]).join(' '))).toLowerCase();
+        if (searchStr.indexOf(filters.search) === -1) return false;
+      }
+      return true;
+    });
+
+    renderTasks();
+  }
+
+  function renderTasks() {
+    var board = document.getElementById('bountyBoard');
+    var noTasks = document.getElementById('noTasks');
+
+    if (filteredTasks.length === 0) {
+      board.classList.add('hidden');
+      noTasks.classList.remove('hidden');
+      return;
+    }
+
+    board.classList.remove('hidden');
+    noTasks.classList.add('hidden');
+
+    var html = '';
+    for (var i = 0; i < filteredTasks.length; i++) {
+      var task = filteredTasks[i];
+      var diffClass = task.difficulty === 'easy' ? 'diff-easy' : task.difficulty === 'medium' ? 'diff-medium' : 'diff-hard';
+      var diffLabel = task.difficulty === 'easy' ? '简单' : task.difficulty === 'medium' ? '中等' : '困难';
+      var tags = task.tags ? task.tags.map(function(tag){ return '<span class="tag-pill">' + tag + '</span>'; }).join('') : '';
+      var repoDisplay = task.repo ? '<a href="https://github.com/' + task.repo + '" target="_blank" class="text-lobster-secondary hover:text-lobster-accent text-xs font-mono" onclick="event.stopPropagation()">' + task.repo + '</a>' : '';
+      var isUserTask = task.id && task.id.indexOf('user-') === 0;
+      var taskType = task.id && task.id.indexOf('gh-') === 0 ? '🦛 GitHub' : task.id && task.id.indexOf('rc-') === 0 ? '🐱 Reddit' : task.id && task.id.indexOf('sf-') === 0 ? '⚡ Solana' : isUserTask ? '👤 用户发布' : '📋 任务';
+      var url = task.url || '#';
+      var desc = task.description ? '<p class="text-xs text-lobster-text/40 mb-2 line-clamp-2">' + task.description + '</p>' : '';
+
+      html += '<div class="task-card" onclick="window.open(\'' + url.replace(/'/g, "\\'") + '\', \'_blank\')">' +
+        '<div class="flex items-start justify-between mb-2 gap-2">' +
+          '<div class="flex items-center gap-2 flex-shrink-0">' +
+            '<span class="text-xs px-2 py-0.5 rounded-full bg-lobster-deep/60 text-lobster-text/50">' + taskType + '</span>' +
+            '<span class="text-xs px-2 py-0.5 rounded-full ' + diffClass + '">' + diffLabel + '</span>' +
+          '</div>' +
+          '<span class="text-lg font-black whitespace-nowrap" style="color:#FFD93D">' + task.reward + '</span>' +
+        '</div>' +
+        '<h3 class="text-sm font-bold text-lobster-text mb-2 leading-snug">' + task.title + '</h3>' +
+        (repoDisplay ? '<div class="mb-2">' + repoDisplay + '</div>' : '') +
+        desc +
+        '<div class="flex items-center justify-between mt-2 pt-2 border-t border-lobster-deep/40">' +
+          '<div class="flex flex-wrap gap-1">' + tags + '</div>' +
+          (isUserTask ? '<span class="text-xs text-lobster-accent">新发布</span>' : '') +
+        '</div>' +
+      '</div>';
+    }
+    board.innerHTML = html;
+  }
+
+  function showSubmitModal() {
+    document.getElementById('submitModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function hideSubmitModal() {
+    document.getElementById('submitModal').classList.add('hidden');
     document.body.style.overflow = '';
   }
-}
 
-function submitTask(event) {
-  event.preventDefault();
-  const form = event.target;
-  const formData = new FormData(form);
-  
-  const newTask = {
-    id: 'user-' + Date.now(),
-    title: formData.get('title'),
-    repo: formData.get('repo'),
-    url: formData.get('url'),
-    reward: formData.get('reward'),
-    difficulty: formData.get('difficulty'),
-    tags: formData.get('tags').split(',').map(t => t.trim()).filter(Boolean),
-    description: formData.get('description'),
-    submittedAt: new Date().toISOString()
-  };
-  
-  // Save to localStorage
-  const submittedTasks = JSON.parse(localStorage.getItem('submitted_tasks') || '[]');
-  submittedTasks.push(newTask);
-  localStorage.setItem('submitted_tasks', JSON.stringify(submittedTasks));
-  
-  // Credit referral source if any
-  const refSource = localStorage.getItem('referral_source');
-  if (refSource) {
-    const refData = JSON.parse(localStorage.getItem('referral_credits') || '{}');
-    refData[refSource] = (refData[refSource] || 0) + 1;
-    localStorage.setItem('referral_credits', JSON.stringify(refData));
+  function showReferralModal() {
+    initReferralCode();
+    document.getElementById('referralModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
   }
-  
-  // Add to current list and re-render
-  allTasks.unshift(newTask);
-  updateStats();
-  applyFilters();
-  
-  // Show success message in modal instead of alert
-  const modalContent = document.querySelector('#submitModal .modal-content');
-  modalContent.innerHTML = `
-    <div class="text-center py-6">
-      <div class="text-6xl mb-4">🎉</div>
-      <h3 class="text-xl font-bold text-lobster-secondary mb-2">任务发布成功！</h3>
-      <p class="text-lobster-text/60 text-sm mb-4">您的任务已加入任务大厅，等待开发者认领</p>
-      ${refSource ? '<p class="text-lobster-gold text-xs">🎁 推荐人 ' + refSource + ' 已获得推荐积分</p>' : ''}
-      <button onclick="hideSubmitModal(); location.reload();" class="btn-primary mt-4 w-full">确定</button>
-    </div>
-  `;
-  form.reset();
-}
 
-function copyReferral() {
-  const link = document.getElementById('referralLink').value;
-  navigator.clipboard.writeText(link).then(() => {
-    alert('推荐链接已复制到剪贴板！');
-  }).catch(() => {
-    // Fallback
-    document.getElementById('referralLink').select();
-    document.execCommand('copy');
-    alert('推荐链接已复制到剪贴板！');
-  });
-}
+  function hideReferralModal() {
+    document.getElementById('referralModal').classList.add('hidden');
+    document.body.style.overflow = '';
+  }
 
-function applyFilters() {
-  filterTasks();
-}
+  function closeModal(event) {
+    if (event.target.classList.contains('modal-overlay')) {
+      var modals = document.querySelectorAll('.modal-overlay');
+      for (var i = 0; i < modals.length; i++) modals[i].classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function submitTask(event) {
+    event.preventDefault();
+    var form = event.target;
+    var fd = new FormData(form);
+
+    var newTask = {
+      id: 'user-' + Date.now(),
+      title: fd.get('title'),
+      repo: fd.get('repo'),
+      url: fd.get('url'),
+      reward: fd.get('reward'),
+      difficulty: fd.get('difficulty'),
+      tags: fd.get('tags').split(',').map(function(t){ return t.trim(); }).filter(Boolean),
+      description: fd.get('description'),
+      submittedAt: new Date().toISOString()
+    };
+
+    try {
+      var submittedTasks = JSON.parse(localStorage.getItem('submitted_tasks') || '[]');
+      submittedTasks.push(newTask);
+      localStorage.setItem('submitted_tasks', JSON.stringify(submittedTasks));
+
+      var refSource = localStorage.getItem('referral_source');
+      if (refSource) {
+        var refData = JSON.parse(localStorage.getItem('referral_credits') || '{}');
+        refData[refSource] = (refData[refSource] || 0) + 1;
+        localStorage.setItem('referral_credits', JSON.stringify(refData));
+      }
+    } catch(e) {}
+
+    allTasks.unshift(newTask);
+    updateStats();
+    applyFilters();
+
+    var modalContent = document.querySelector('#submitModal .modal-content');
+    var refSrc = '';
+    try { refSrc = localStorage.getItem('referral_source') || ''; } catch(e) {}
+    modalContent.innerHTML = '<div class="text-center py-6">' +
+      '<div class="text-6xl mb-4">🎉</div>' +
+      '<h3 class="text-xl font-bold text-lobster-secondary mb-2">任务发布成功！</h3>' +
+      '<p class="text-lobster-text/60 text-sm mb-4">您的任务已加入任务大厅，等待开发者认领</p>' +
+      (refSrc ? '<p class="text-lobster-gold text-xs">🎁 推荐人 ' + refSrc + ' 已获得推荐积分</p>' : '') +
+      '<button onclick="hideSubmitModal(); location.reload();" class="btn-primary mt-4 w-full cursor-pointer">确定</button>' +
+    '</div>';
+    form.reset();
+  }
+
+  function copyReferral() {
+    var link = document.getElementById('referralLink').value;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(link).then(function() {
+        var btn = document.querySelector('#referralModal .btn-secondary:last-of-type') || document.querySelector('#referralModal button');
+        alert('推荐链接已复制到剪贴板！');
+      }).catch(function() { fallbackCopy(link); });
+    } else {
+      fallbackCopy(link);
+    }
+  }
+
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); alert('推荐链接已复制到剪贴板！'); } catch(e) { alert('复制失败，请手动复制'); }
+    document.body.removeChild(ta);
+  }
+
+  function applyFilters() { filterTasks(); }
+
+  // Init
+  checkReferral();
+  initReferralCode();
+  loadTasks();
+})();
 </script>
-
-<script src="/wander-lobster-platform/_next/static/chunks/webpack-9bfb44754f2aeab4.js" async=""></script>
-<script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script>
-<script>self.__next_f.push([1,"1:HL[\"/wander-lobster-platform/_next/static/css/4c5341364ec0a603.css\",\"style\"]\n"])</script>
-<script>self.__next_f.push([1,"2:I[2846,[],\"\"]\n4:I[9107,[],\"ClientPageRoot\"]\n5:I[2834,[\"241\",\"static/chunks/241-c32005e5554bad04.js\",\"648\",\"static/chunks/648-c65024946753e1f0.js\",\"289\",\"static/chunks/app/tasks/page-7061e69210325587.js\"],\"default\",1]\n6:I[4707,[],\"\"]\n7:I[6423,[],\"\"]\n8:I[4421,[\"185\",\"static/chunks/app/layout-217f5d38f4887e40.js\"],\"LanguageProvider\"]\na:I[1060,[],\"\"]\nb:[]\n"])</script>
-<script>self.__next_f.push([1,"0:[\"$\",\"$L2\",null,{\"buildId\":\"5jTtBz0VbjpCn8_KzQ8Ot\",\"assetPrefix\":\"/wander-lobster-platform\",\"urlParts\":[\"\",\"tasks\"],\"initialTree\":[\"\",{\"children\":[\"tasks\",{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"tasks\",{\"children\":[\"__PAGE__\",{},[[\"$L3\",[\"$\",\"$L4\",null,{\"props\":{\"params\":{},\"searchParams\":{}},\"Component\":\"$5\"}],null],null],null]},[null,[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"tasks\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"[[$\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\"$\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\",\\\"Segoe UI Emoji\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[[\"$\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\"$\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":\\\"404\\\"}],[\"$\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\"$\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]]}]]}],\\\"notFoundStyles\\\":[]}],null]},[[[[\"$\\\"link\\\",\\\"0\\\",{\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"wander-lobster-platform/_next/static/css/4c5341364ec0a603.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\"}]],[\"$\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\"$\\\"body\\\",null,{\\\"className\\\":\\\"antialiased\\\",\\\"children\\\":[\"$\\\"$\\\",\\\"null\\\",{\\\"children\\\":[\"$\\\"$\\\",\\\"null\\\",{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"segmentPath\\\":[\"children\"],\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\"$\\\"$\\\",\\\"null\\\",{\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[\"$\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\"$\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[[\"$\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\"$\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":\\\"404\\\"}],[\"$\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\"$\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]]}]]}],\\\"notFoundStyles\\\":[]}]}]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L9\"],\"globalErrorComponent\":\"$a\",\"missingSlots\":\"$Wb\"}]\n"])</script>
-<script>self.__next_f.push([1,"9:[[\"$\\\"meta\\\",\\\"0\\\",{\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}],[\"$\\\"meta\\\",\\\"1\\\",{\"charSet\\\":\\\"utf-8\\\"}],[\"$\\\"title\\\",\\\"2\\\",{\"children\\\":\\\"🦞 任务大厅 - Wander Lobster Platform\\\"}],[\"$\\\"meta\\\",\\\"3\\\",{\"name\\\":\\\"description\\\",\\\"content\\\":\\\"Every lobster has its own dock. Browse and submit freelance tasks on the marketplace.\\\"}],[\"$\\\"meta\\\",\\\"4\\\",{\"property\\\":\\\"og:title\\\",\\\"content\\\":\\\"🦞 任务大厅 - Wander Lobster Platform\\\"}],[\"$\\\"meta\\\",\\\"5\\\",{\"property\\\":\\\"og:description\\\",\\\"content\\\":\\\"Browse and submit freelance tasks on the Wander Lobster marketplace.\\\"}],[\"$\\\"meta\\\",\\\"6\\\",{\"property\\\":\\\"og:type\\\",\\\"content\\\":\\\"website\\\"}],[\"$\\\"meta\\\",\\\"7\\\",{\"name\\\":\\\"twitter:card\\\",\\\"content\\\":\\\"summary_large_image\\\"}],[\"$\\\"meta\\\",\\\"8\\\",{\"name\\\":\\\"twitter:title\\\",\\\"content\\\":\\\"🦞 任务大厅 - Wander Lobster Platform\\\"}],[\"$\\\"meta\\\",\\\"9\\\",{\"name\\\":\\\"twitter:description\\\",\\\"content\\\":\\\"Browse and submit freelance tasks on the Wander Lobster marketplace.\\\"}],[\"$\\\"meta\\\",\\\"10\\\",{\"name\\\":\\\"twitter:image\\\",\\\"content\\\":\\\"https://d2758695161.github.io/wander-lobster-platform/images/og-image.png\\\"}],[\"$\\\"link\\\",\\\"11\\\",{\"rel\\\":\\\"icon\\\",\\\"href\\\":\\\"data:image/svg+xml,&lt;svg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 100 100&#x27;&gt;&lt;text y=&#x27;.9em&#x27; font-size=&#x27;90&#x27;&gt;🦞&lt;/text&gt;&lt;/svg&gt;\\\"}]]\n3:null\n"])</script></body></html>
+</body>
+</html>
