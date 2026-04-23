@@ -1,0 +1,272 @@
+[
+  {
+    "id": "gh-bounty-001",
+    "title": "[$250] 88394 - Unexpected error does not appear in created report after enabling Failing notification",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88500",
+    "reward": "$250",
+    "difficulty": "medium",
+    "tags": ["react-native", "bug", "reports", "notifications"]
+  },
+  {
+    "id": "gh-bounty-002",
+    "title": "[$250] Company Cards - Imported cards are not displayed until multiple page refreshes",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88496",
+    "reward": "$250",
+    "difficulty": "medium",
+    "tags": ["react-native", "bug", "company-cards", "ui"]
+  },
+  {
+    "id": "gh-bounty-003",
+    "title": "[$250] Home - Getting Started section not displayed after onboarding",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88482",
+    "reward": "$250",
+    "difficulty": "easy",
+    "tags": ["react-native", "bug", "onboarding", "ui"]
+  },
+  {
+    "id": "gh-bounty-004",
+    "title": "[$250] Task - Type 'ship to @someone@domain.com' doesn't assign to the user mentioned",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88471",
+    "reward": "$250",
+    "difficulty": "medium",
+    "tags": ["react-native", "bug", "task", "assignee"]
+  },
+  {
+    "id": "gh-bounty-005",
+    "title": "[$250] [EX-174] - No banner shown",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88469",
+    "reward": "$250",
+    "difficulty": "medium",
+    "tags": ["react-native", "bug", "banner", "ui"]
+  },
+  {
+    "id": "gh-bounty-006",
+    "title": "[$250] Chat - Go back to home deeplink opens inbox",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88443",
+    "reward": "$250",
+    "difficulty": "medium",
+    "tags": ["react-native", "bug", "deeplink", "navigation"]
+  },
+  {
+    "id": "gh-bounty-007",
+    "title": "[$250] Scan - Crop option not displayed for PDF Receipts",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88432",
+    "reward": "$250",
+    "difficulty": "easy",
+    "tags": ["react-native", "bug", "scan", "pdf"]
+  },
+  {
+    "id": "gh-bounty-008",
+    "title": "[$250] Home - No expected banner shown after running a snippet",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88447",
+    "reward": "$250",
+    "difficulty": "medium",
+    "tags": ["react-native", "bug", "banner", "snippet"]
+  },
+  {
+    "id": "gh-bounty-009",
+    "title": "[$250] Add Withdrawal ID to Custom Columns in Expenses Search",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88384",
+    "reward": "$250",
+    "difficulty": "medium",
+    "tags": ["react-native", "feature", "expenses", "search"]
+  },
+  {
+    "id": "gh-bounty-010",
+    "title": "[$250] Expense - Split action does not trigger paywall in expired workspace",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88454",
+    "reward": "$250",
+    "difficulty": "medium",
+    "tags": ["react-native", "bug", "expense", "paywall"]
+  },
+  {
+    "id": "gh-bounty-011",
+    "title": "[$250] Travel - App crashes after clicking Book travel",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88383",
+    "reward": "$250",
+    "difficulty": "hard",
+    "tags": ["react-native", "bug", "crash", "travel"]
+  },
+  {
+    "id": "gh-bounty-012",
+    "title": "[$250] Rejected and Held Expenses Not Handled Correctly During Approval Flow",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88355",
+    "reward": "$250",
+    "difficulty": "hard",
+    "tags": ["react-native", "bug", "approval", "expense"]
+  },
+  {
+    "id": "gh-bounty-013",
+    "title": "[$250] Expense - Tax field is missing when bulk editing unreported expenses",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88258",
+    "reward": "$250",
+    "difficulty": "medium",
+    "tags": ["react-native", "bug", "expense", "tax"]
+  },
+  {
+    "id": "gh-bounty-014",
+    "title": "[$500] Fix linter warnings across codebase",
+    "repo": "Expensify/App",
+    "url": "https://github.com/Expensify/App/issues/88401",
+    "reward": "$500",
+    "difficulty": "easy",
+    "tags": ["react-native", "linting", "chore"]
+  },
+  {
+    "id": "gh-bounty-015",
+    "title": "[BOUNTY CAMPAIGN] Bring Your Human to Work Day — Match Agent Engagement",
+    "repo": "Scottcjn/Rustchain",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/2634",
+    "reward": "$500",
+    "difficulty": "medium",
+    "tags": ["rust", "crypto", "p2p", "agents"]
+  },
+  {
+    "id": "gh-bounty-016",
+    "title": "Watchlist panel UI alignment & watchlist controls",
+    "repo": "entrius/gittensor-ui",
+    "url": "https://github.com/entrius/gittensor-ui/issues/706",
+    "reward": "bounty",
+    "difficulty": "medium",
+    "tags": ["react", "ui", "watchlist", "panels"]
+  },
+  {
+    "id": "gh-bounty-017",
+    "title": "refactor: flatten `get` command nesting to top-level resource commands",
+    "repo": "sebrandon1/go-skylight",
+    "url": "https://github.com/sebrandon1/go-skylight/issues/45",
+    "reward": "bounty",
+    "difficulty": "easy",
+    "tags": ["go", "cli", "refactor", "ux"]
+  },
+  {
+    "id": "gh-bounty-018",
+    "title": "Quest giver Gail 'Grinder' Graves has no quests",
+    "repo": "cory-johannsen/mud",
+    "url": "https://github.com/cory-johannsen/mud/issues/243",
+    "reward": "bounty",
+    "difficulty": "medium",
+    "tags": ["game", "quest", "npc", "bug"]
+  },
+  {
+    "id": "gh-bounty-019",
+    "title": "PDX International has no boss quests",
+    "repo": "cory-johannsen/mud",
+    "url": "https://github.com/cory-johannsen/mud/issues/238",
+    "reward": "bounty",
+    "difficulty": "medium",
+    "tags": ["game", "quest", "npc", "bug"]
+  },
+  {
+    "id": "gh-bounty-020",
+    "title": "Contracts: Bonuses for Bug Bounties",
+    "repo": "StellAIverse/luminarytrade",
+    "url": "https://github.com/StellAIverse/luminarytrade/issues/275",
+    "reward": "bounty",
+    "difficulty": "medium",
+    "tags": ["solidity", "smart-contract", "bug-bounty"]
+  },
+  {
+    "id": "gh-bounty-021",
+    "title": "[Feature] Training workload for GCN on Cora (single-chip N150, PyTorch)",
+    "repo": "tenstorrent/tt-blacksmith",
+    "url": "https://github.com/tenstorrent/tt-blacksmith/issues/538",
+    "reward": "$150",
+    "difficulty": "hard",
+    "tags": ["python", "pytorch", "ml", "training"]
+  },
+  {
+    "id": "gh-bounty-022",
+    "title": "Malicious Peer Can Disrupt Blocksync Synchronization",
+    "repo": "cometbft/cometbft",
+    "url": "https://github.com/cometbft/cometbft/issues/5801",
+    "reward": "bounty",
+    "difficulty": "hard",
+    "tags": ["go", "p2p", "security", "consensus"]
+  },
+  {
+    "id": "gh-bounty-023",
+    "title": "Provide a banana bread recipe in Dasharo docs",
+    "repo": "Dasharo/dasharo-issues",
+    "url": "https://github.com/Dasharo/dasharo-issues/issues/1824",
+    "reward": "bounty",
+    "difficulty": "easy",
+    "tags": ["documentation", "docs", "fun"]
+  },
+  {
+    "id": "gh-bounty-024",
+    "title": "mailto links fail with tracking; dynamic href tokens not rendered when tracking is turned off",
+    "repo": "mautic/mautic",
+    "url": "https://github.com/mautic/mautic/issues/16043",
+    "reward": "bounty",
+    "difficulty": "medium",
+    "tags": ["php", "bug", "email", "tracking"]
+  },
+  {
+    "id": "gh-bounty-025",
+    "title": "CKEditorError: license-key-missing, if you use HTML-Templates",
+    "repo": "mautic/mautic",
+    "url": "https://github.com/mautic/mautic/issues/16036",
+    "reward": "bounty",
+    "difficulty": "easy",
+    "tags": ["php", "bug", "ckeditor", "html-templates"]
+  },
+  {
+    "id": "gh-bounty-026",
+    "title": "Open redirect in /set-locale redirects to attacker-controlled Referer",
+    "repo": "Kit3713/resume-site",
+    "url": "https://github.com/Kit3713/resume-site/issues/21",
+    "reward": "bounty",
+    "difficulty": "hard",
+    "tags": ["security", "open-redirect", "xss"]
+  },
+  {
+    "id": "gh-bounty-027",
+    "title": "transfer_deposit withdrawal branch skips verify_healthy() — permissionless atomic drain",
+    "repo": "code-423n4/glow-finance-bug-bounty",
+    "url": "https://github.com/code-423n4/glow-finance-bug-bounty/issues/58",
+    "reward": "bounty",
+    "difficulty": "hard",
+    "tags": ["solidity", "security", "defi", "audit"]
+  },
+  {
+    "id": "gh-bounty-028",
+    "title": "Authority transfer deadlock - no recovery path after valid proposal",
+    "repo": "code-423n4/glow-finance-bug-bounty",
+    "url": "https://github.com/code-423n4/glow-finance-bug-bounty/issues/56",
+    "reward": "bounty",
+    "difficulty": "hard",
+    "tags": ["solidity", "security", "defi", "audit"]
+  },
+  {
+    "id": "gh-bounty-029",
+    "title": "Retire /api/paid-attention — point deployed agents at its successor, the x402 inbox",
+    "repo": "aibtcdev/landing-page",
+    "url": "https://github.com/aibtcdev/landing-page/issues/628",
+    "reward": "$402",
+    "difficulty": "easy",
+    "tags": ["python", "api", "deprecation", "agents"]
+  },
+  {
+    "id": "gh-bounty-030",
+    "title": "PlatformNetwork bounty challenge: Hello, When do you start this?",
+    "repo": "PlatformNetwork/bounty-challenge",
+    "url": "https://github.com/PlatformNetwork/bounty-challenge/issues/53422",
+    "reward": "$50",
+    "difficulty": "easy",
+    "tags": ["challenge", "bug", "bounty"]
+  }
+]
