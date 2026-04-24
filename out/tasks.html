@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>🦞 任务大厅 - 流浪龙虾</title>
+<meta name="description" content="65个真实可做任务，Bounty Hunters 新码头。覆盖 React Native / Rust / Solidity，奖励 $0-$5000"/>
+<style>
+:root{--accent:#FF6B35;--secondary:#4ECDC4;--deep:#0a1628;--text:#e8e8e8;--gold:#FFD93D;--purple:#a855f7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Inter,"Noto Sans SC",sans-serif;background:linear-gradient(135deg,#0a1628 0%,#1a0a2e 100%);min-height:100vh;color:var(--text)}
+a{color:inherit;text-decoration:none}
+.lobster-bg{min-height:100vh}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:1rem 1.5rem}
+.nav-inner{max-width:72rem;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:0.5rem;font-weight:700;font-size:1.1rem}
+.nav-links{display:flex;gap:1.5rem;font-size:0.9rem;color:rgba(255,255,255,0.7)}
+.nav-links a:hover{color:var(--accent)}
+.main{padding-top:5rem;max-width:72rem;margin:0 auto;padding-left:1.5rem;padding-right:1.5rem;padding-bottom:4rem}
+.hero{text-align:center;padding:3rem 0 2rem}
+.hero h1{font-size:2.5rem;font-weight:900;margin-bottom:0.75rem;background:linear-gradient(135deg,#FF6B35,#FFD93D);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:1.1rem;color:rgba(255,255,255,0.6);margin-bottom:2rem}
+.stats-bar{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-bottom:2rem}
+.stat{text-align:center}
+.stat-val{font-size:1.8rem;font-weight:700;color:var(--accent)}
+.stat-lbl{font-size:0.75rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.05em}
+.filter-section{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
+.filter-btn{padding:0.5rem 1.25rem;border-radius:9999px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.7);cursor:pointer;font-size:0.875rem;transition:all 0.2s}
+.filter-btn:hover{border-color:var(--accent);color:white}
+.filter-btn.active{background:var(--accent);border-color:var(--accent);color:white}
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1rem}
+.card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;padding:1.25rem;cursor:pointer;transition:all 0.3s}
+.card:hover{background:rgba(255,255,255,0.08);border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 32px rgba(255,107,53,0.15)}
+.card-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;gap:0.5rem}
+.card-title{font-size:0.95rem;font-weight:600;line-height:1.4;flex:1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.diff{padding:0.25rem 0.75rem;border-radius:9999px;font-size:0.7rem;font-weight:600;text-transform:uppercase}
+.diff-easy{background:rgba(78,205,196,0.2);color:#4ECDC4}
+.diff-medium{background:rgba(255,217,61,0.2);color:#FFD93D}
+.diff-hard{background:rgba(255,107,53,0.2);color:#FF6B35}
+.card-repo{font-size:0.75rem;color:rgba(255,255,255,0.4);margin-bottom:0.5rem;font-family:ui-monospace,monospace}
+.card-tags{display:flex;flex-wrap:wrap;gap:0.25rem;margin-bottom:0.75rem}
+.tag{background:rgba(255,255,255,0.08);padding:0.2rem 0.5rem;border-radius:0.5rem;font-size:0.65rem;color:rgba(255,255,255,0.5)}
+.card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:0.75rem;border-top:1px solid rgba(255,255,255,0.06)}
+.reward{font-weight:700;color:var(--gold);font-size:1rem}
+.card-link{font-size:0.8rem;color:var(--secondary);padding:0.35rem 0.75rem;border:1px solid var(--secondary);border-radius:9999px;transition:all 0.2s}
+.card-link:hover{background:var(--secondary);color:var(--deep)}
+.loading{text-align:center;padding:4rem;color:rgba(255,255,255,0.5)}
+.spinner{display:inline-block;width:24px;height:24px;border:2px solid rgba(255,255,255,0.2);border-top-color:var(--accent);border-radius:50%;animation:spin 1s linear infinite;vertical-align:middle;margin-right:0.5rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+.empty{text-align:center;padding:4rem;color:rgba(255,255,255,0.4)}
+.hidden{display:none!important}
+.footer{padding:2rem 1.5rem;text-align:center;color:rgba(255,255,255,0.3);font-size:0.8rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:3rem}
+.footer a{color:var(--secondary)}
+@media(max-width:600px){.hero h1{font-size:1.8rem}.stats-bar{gap:1.5rem}.board{grid-template-columns:1fr}}
+</style>
+</head>
+<body class="lobster-bg">
+
+<nav class="nav">
+<div class="nav-inner">
+<div class="logo"><span>🦞</span><a href="index.html">流浪龙虾</a></div>
+<div class="nav-links">
+<a href="index.html">首页</a>
+<a href="tasks.html">任务大厅</a>
+<a href="about.html">关于我们</a>
+</div>
+</div>
+</nav>
+
+<main class="main">
+<div class="hero">
+<h1>🦞 任务大厅</h1>
+<p>自由职业者的技能撮合市场，让龙虾找到合适的码头</p>
+<div class="stats-bar">
+<div class="stat"><div class="stat-val" id="total-count">--</div><div class="stat-lbl">可用任务</div></div>
+<div class="stat"><div class="stat-val" id="easy-count">--</div><div class="stat-lbl">🟢 简单</div></div>
+<div class="stat"><div class="stat-val" id="medium-count">--</div><div class="stat-lbl">🟡 中等</div></div>
+<div class="stat"><div class="stat-val" id="hard-count">--</div><div class="stat-lbl">🔴 困难</div></div>
+</div>
+</div>
+
+<div class="filter-section">
+<div style="display:flex;justify-content:center;margin-bottom:1rem">
+<input type="text" id="search-input" placeholder="🔍 搜索任务..." style="padding:0.5rem 1rem;border-radius:9999px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.06);color:#fff;font-size:0.875rem;width:280px;max-width:100%;outline:none;font-family:inherit">
+</div>
+<button class="filter-btn active" data-filter="all">全部</button>
+<button class="filter-btn" data-filter="easy">🟢 简单</button>
+<button class="filter-btn" data-filter="medium">🟡 中等</button>
+<button class="filter-btn" data-filter="hard">🔴 困难</button>
+</div>
+
+<div id="loading" class="loading"><span class="spinner"></span>加载任务中...</div>
+<div id="board" class="board hidden"></div>
+<div id="empty" class="empty hidden">暂无符合条件的任务</div>
+</main>
+
+<footer class="footer">
+<a href="https://github.com/D2758695161/wander-lobster-platform">GitHub</a> · 流浪龙虾平台 · 2026
+</footer>
+
+<script>
+(function(){
+  var allTasks = [];
+  var currentFilter = 'all';
+
+  function getDifficultyLabel(d) {
+    return {easy:'🟢 简单', medium:'🟡 中等', hard:'🔴 困难'}[d] || d;
+  }
+  function getDifficultyClass(d) {
+    return {easy:'diff-easy', medium:'diff-medium', hard:'diff-hard'}[d] || '';
+  }
+
+  function renderTasks(tasks) {
+    var board = document.getElementById('board');
+    var empty = document.getElementById('empty');
+    if (!tasks.length) {
+      board.classList.add('hidden');
+      empty.classList.remove('hidden');
+      return;
+    }
+    empty.classList.add('hidden');
+    board.classList.remove('hidden');
+    board.innerHTML = tasks.map(function(t) {
+      var tags = (t.tags || []).slice(0,4).map(function(tag){return'<span class="tag">'+tag+'</span>'}).join('');
+      return '<div class="card" onclick="window.open(\''+t.url+'\',\'_blank\')">'+
+        '<div class="card-header">'+
+          '<div class="card-title">'+t.title+'</div>'+
+          '<span class="diff '+getDifficultyClass(t.difficulty)+'">'+getDifficultyLabel(t.difficulty)+'</span>'+
+        '</div>'+
+        '<div class="card-repo">'+t.repo+'</div>'+
+        '<div class="card-tags">'+tags+'</div>'+
+        '<div class="card-footer">'+
+          '<span class="reward">'+t.reward+'</span>'+
+          '<span class="card-link">去领取 →</span>'+
+        '</div>'+
+      '</div>';
+    }).join('');
+  }
+
+  function updateStats() {
+    var easy=allTasks.filter(function(t){return t.difficulty==='easy'}).length;
+    var medium=allTasks.filter(function(t){return t.difficulty==='medium'}).length;
+    var hard=allTasks.filter(function(t){return t.difficulty==='hard'}).length;
+    document.getElementById('total-count').textContent = allTasks.length;
+    document.getElementById('easy-count').textContent = easy;
+    document.getElementById('medium-count').textContent = medium;
+    document.getElementById('hard-count').textContent = hard;
+  }
+
+  function applyFilter() {
+    var term = (document.getElementById('search-input').value || '').toLowerCase().trim();
+    var filtered = allTasks.filter(function(t){
+      var matchFilter = currentFilter==='all' || t.difficulty===currentFilter;
+      var matchSearch = !term || t.title.toLowerCase().includes(term) || (t.tags||[]).some(function(tag){return tag.toLowerCase().includes(term)});
+      return matchFilter && matchSearch;
+    });
+    renderTasks(filtered);
+  }
+
+  function initSearch() {
+    var input = document.getElementById('search-input');
+    input.addEventListener('input', applyFilter);
+  }
+
+  function initFilterButtons() {
+    var btns = document.querySelectorAll('.filter-btn');
+    btns.forEach(function(btn){
+      btn.addEventListener('click',function(){
+        btns.forEach(function(b){b.classList.remove('active')});
+        btn.classList.add('active');
+        currentFilter = btn.getAttribute('data-filter');
+        applyFilter();
+      });
+    });
+  }
+
+  function loadTasks() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET','data/tasks.json',true);
+    xhr.onreadystatechange = function(){
+      if (xhr.readyState===4) {
+        document.getElementById('loading').classList.add('hidden');
+        if (xhr.status===200) {
+          try {
+            allTasks = JSON.parse(xhr.responseText);
+            updateStats();
+            applyFilter();
+          } catch(e) {
+            document.getElementById('board').innerHTML = '<div class="empty">数据加载失败</div>';
+          }
+        } else {
+          document.getElementById('board').innerHTML = '<div class="empty">任务列表加载失败，请刷新重试</div>';
+        }
+      }
+    };
+    xhr.send();
+  }
+
+  initSearch();
+  initFilterButtons();
+  loadTasks();
+})();
+</script>
+
+</body>
+</html>
