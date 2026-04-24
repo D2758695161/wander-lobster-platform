@@ -1,1157 +1,3286 @@
 [
   {
-    "id": "gh-bounty-001",
-    "title": "Introduce v3 compatibility tests",
-    "repo": "asyncapi/tck",
-    "url": "https://github.com/asyncapi/tck/issues/247",
-    "reward": "$250",
-    "difficulty": "medium",
-    "tags": [
-      "testing",
-      "compatibility",
-      "tck"
-    ]
-  },
-  {
-    "id": "gh-bounty-002",
-    "title": "Set of issues for resolution under the MICROGRANT Program 2026-05",
-    "repo": "asyncapi/cli",
-    "url": "https://github.com/asyncapi/cli/issues/2125",
-    "reward": "up to $500",
-    "difficulty": "medium",
-    "tags": [
-      "microgrant",
-      "cli",
-      "asyncapi"
-    ]
-  },
-  {
-    "id": "gh-bounty-003",
-    "title": "[BOUNTY: up to 70 RTC] Phase F follow-ups: key rotation + registry expiry + non-root key path",
-    "repo": "Scottcjn/Rustchain",
-    "url": "https://github.com/Scottcjn/Rustchain/issues/2273",
-    "reward": "up to 70 RTC",
-    "difficulty": "hard",
-    "tags": [
-      "rust",
-      "crypto",
-      "security"
-    ]
-  },
-  {
-    "id": "gh-bounty-004",
-    "title": "_handle_get_state calls _signed_content with wrong arity (TypeError when STATE requested)",
-    "repo": "Scottcjn/Rustchain",
-    "url": "https://github.com/Scottcjn/Rustchain/issues/2288",
-    "reward": "25 RTC",
-    "difficulty": "medium",
-    "tags": [
-      "rust",
-      "bug",
-      "typeerror"
-    ]
-  },
-  {
-    "id": "gh-bounty-005",
-    "title": "$500 Bounty: Fake a Verified Post",
-    "repo": "ClementWalter/agent-captcha",
-    "url": "https://github.com/ClementWalter/agent-captcha/issues/1",
-    "reward": "$500",
-    "difficulty": "medium",
-    "tags": [
-      "captcha",
-      "security",
-      "agent"
-    ]
-  },
-  {
-    "id": "gh-bounty-006",
-    "title": "[BOUNTY] Claim: Travel Price Tracker - $50",
-    "repo": "bolivian-peru/marketplace-service-template",
-    "url": "https://github.com/bolivian-peru/marketplace-service-template/issues/372",
-    "reward": "$50",
-    "difficulty": "easy",
-    "tags": [
-      "travel",
-      "tracker",
-      "api"
-    ]
-  },
-  {
-    "id": "gh-bounty-007",
-    "title": "Enhance Logging for AI Judge Module",
-    "repo": "Jennycruzy/sovereign-genesis",
-    "url": "https://github.com/Jennycruzy/sovereign-genesis/issues/61",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "ai",
-      "logging",
-      "judge"
-    ]
-  },
-  {
-    "id": "gh-bounty-008",
-    "title": "Optimize GitHub Issue Polling Interval",
-    "repo": "Jennycruzy/sovereign-genesis",
-    "url": "https://github.com/Jennycruzy/sovereign-genesis/issues/62",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "github",
-      "polling",
-      "optimization"
-    ]
-  },
-  {
-    "id": "gh-bounty-009",
-    "title": "[BOUNTY $50] Add GitHub CHANGELOG Generator Skill",
-    "repo": "claude-builders-bounty/claude-builders-bounty",
-    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1",
-    "reward": "$50",
-    "difficulty": "easy",
-    "tags": [
-      "changelog",
-      "github",
-      "skill"
-    ]
-  },
-  {
-    "id": "gh-bounty-010",
-    "title": "[BOUNTY $100] Add Pre-Tool-Use Hook for Destructive Command Blocking",
-    "repo": "claude-builders-bounty/claude-builders-bounty",
-    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3",
-    "reward": "$100",
-    "difficulty": "medium",
-    "tags": [
-      "hooks",
-      "security",
-      "claude-code"
-    ]
-  },
-  {
-    "id": "gh-bounty-011",
-    "title": "[BOUNTY $150] Add Claude Code PR Review Agent",
-    "repo": "claude-builders-bounty/claude-builders-bounty",
-    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4",
-    "reward": "$150",
-    "difficulty": "medium",
-    "tags": [
-      "pr-review",
-      "claude-code",
-      "agent"
-    ]
-  },
-  {
-    "id": "gh-bounty-012",
-    "title": "[BOUNTY $75] Add CLAUDE.md Template for Next.js 15 + SQLite SaaS",
-    "repo": "claude-builders-bounty/claude-builders-bounty",
-    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2",
-    "reward": "$75",
-    "difficulty": "easy",
-    "tags": [
-      "nextjs",
-      "sqlite",
-      "template"
-    ]
-  },
-  {
-    "id": "gh-bounty-013",
-    "title": "Google SERP + AI Search Scraper",
-    "repo": "bolivian-peru/marketplace-service-template",
-    "url": "https://github.com/bolivian-peru/marketplace-service-template/issues/375",
-    "reward": "$100",
-    "difficulty": "medium",
-    "tags": [
-      "scraper",
-      "serp",
-      "ai"
-    ]
-  },
-  {
-    "id": "gh-bounty-014",
-    "title": "x402 SERP Scraper",
-    "repo": "bolivian-peru/marketplace-service-template",
-    "url": "https://github.com/bolivian-peru/marketplace-service-template/issues/377",
-    "reward": "$100",
-    "difficulty": "medium",
-    "tags": [
-      "scraper",
-      "x402",
-      "serp"
-    ]
-  },
-  {
-    "id": "gh-bounty-015",
-    "title": "Add unit tests for exceptions module (bounty #1589)",
-    "repo": "Scottcjn/Rustchain",
-    "url": "https://github.com/Scottcjn/Rustchain/pull/2285",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "rust",
-      "testing",
-      "unit-tests"
-    ]
-  },
-  {
-    "id": "gh-bounty-016",
-    "title": "Create Scroll Bug Bounty multi-page static website",
-    "repo": "ziqivenopuq711-a11y/scroll",
-    "url": "https://github.com/ziqivenopuq711-a11y/scroll/issues/1",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "website",
-      "bug-bounty",
-      "static"
-    ]
-  },
-  {
-    "id": "gh-bounty-017",
-    "title": "Create Kaia Bug Bounty multi-page static website",
-    "repo": "ziqivenopuq711-a11y/kaia",
-    "url": "https://github.com/ziqivenopuq711-a11y/kaia/issues/1",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "website",
-      "bug-bounty",
-      "static"
-    ]
-  },
-  {
-    "id": "gh-bounty-018",
-    "title": "Add dark mode theme toggle to UI",
-    "repo": "ALIPHATICHYD/Soroban-Registry",
-    "url": "https://github.com/ALIPHATICHYD/Soroban-Registry/issues/627",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "dark-mode",
-      "ui",
-      "soroban"
-    ]
-  },
-  {
-    "id": "gh-bounty-019",
-    "title": "[EASY] Add contract list command with filtering",
-    "repo": "ALIPHATICHYD/Soroban-Registry",
-    "url": "https://github.com/ALIPHATICHYD/Soroban-Registry/issues/651",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "cli",
-      "soroban",
-      "contract"
-    ]
-  },
-  {
-    "id": "gh-bounty-020",
-    "title": "[EASY] Add contract search filters by network and category",
-    "repo": "ALIPHATICHYD/Soroban-Registry",
-    "url": "https://github.com/ALIPHATICHYD/Soroban-Registry/issues/602",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "search",
-      "soroban",
-      "network"
-    ]
-  },
-  {
-    "id": "gh-bounty-021",
-    "title": "[EASY] Fix unused import warning in api/src/error.rs",
-    "repo": "ALIPHATICHYD/Soroban-Registry",
-    "url": "https://github.com/ALIPHATICHYD/Soroban-Registry/issues/578",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "rust",
-      "fix",
-      "import"
-    ]
-  },
-  {
-    "id": "gh-bounty-022",
-    "title": "discovery(tests): background_task_manager Redis paths not test-covered after #5419 P0 fix",
-    "repo": "mrveiss/AutoBot-AI",
-    "url": "https://github.com/mrveiss/AutoBot-AI/issues/5463",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "redis",
-      "testing",
-      "background-task"
-    ]
-  },
-  {
-    "id": "gh-bounty-023",
-    "title": "parse_utc_iso raises AttributeError on non-str input",
-    "repo": "mrveiss/AutoBot-AI",
-    "url": "https://github.com/mrveiss/AutoBot-AI/issues/5464",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "bug",
-      "datetime",
-      "parsing"
-    ]
-  },
-  {
-    "id": "gh-bounty-024",
-    "title": "a11y(ChatSidebar): 'chat.sidebar.chatHistory' rendered twice for screen readers",
-    "repo": "mrveiss/AutoBot-AI",
-    "url": "https://github.com/mrveiss/AutoBot-AI/issues/5456",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "accessibility",
-      "a11y",
-      "chat"
-    ]
-  },
-  {
-    "id": "gh-bounty-025",
-    "title": "bug(analytics): exportReport race condition on concurrent calls",
-    "repo": "mrveiss/AutoBot-AI",
-    "url": "https://github.com/mrveiss/AutoBot-AI/issues/5455",
-    "reward": "undisclosed",
-    "difficulty": "hard",
-    "tags": [
-      "bug",
-      "analytics",
-      "race-condition"
-    ]
-  },
-  {
-    "id": "rc-bounty-001",
-    "title": "[BOUNTY: 100 RTC] Security Audit — Find Critical Vulnerabilities in RustChain Node",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2867",
-    "reward": "100 RTC",
-    "difficulty": "hard",
-    "tags": [
-      "security",
-      "audit",
-      "rust",
-      "blockchain"
-    ]
-  },
-  {
-    "id": "rc-bounty-002",
-    "title": "[BOUNTY: 100 RTC] AgentFolio ↔ Beacon Integration Spec + Reference Implementation",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2890",
-    "reward": "100 RTC",
-    "difficulty": "hard",
-    "tags": [
-      "integration",
-      "ai-agent",
-      "blockchain"
-    ]
-  },
-  {
-    "id": "rc-bounty-003",
-    "title": "[BOUNTY: 50 RTC] Build an Autonomous AI Agent That Claims RustChain Bounties",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2861",
-    "reward": "50 RTC",
-    "difficulty": "medium",
-    "tags": [
-      "ai-agent",
-      "automation",
-      "rust"
-    ]
-  },
-  {
-    "id": "rc-bounty-004",
-    "title": "[BOUNTY: 50 RTC] RIP-309 Phase 1: Fingerprint Check Rotation (4-of-6 per epoch)",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/3008",
-    "reward": "50 RTC",
-    "difficulty": "hard",
-    "tags": [
-      "security",
-      "rust",
-      "cryptography"
-    ]
-  },
-  {
-    "id": "rc-bounty-005",
-    "title": "[BOUNTY: 30 RTC] Build a VS Code Extension — RustChain Wallet & Miner Dashboard",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2868",
-    "reward": "30 RTC",
-    "difficulty": "medium",
-    "tags": [
-      "vscode",
-      "extension",
-      "rust",
-      "dashboard"
-    ]
-  },
-  {
-    "id": "rc-bounty-006",
-    "title": "[BOUNTY: 25 RTC] Build an MCP Server That Connects Any AI Agent to RustChain",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2859",
-    "reward": "25 RTC",
-    "difficulty": "medium",
-    "tags": [
-      "mcp",
-      "ai-agent",
-      "integration"
-    ]
-  },
-  {
-    "id": "rc-bounty-007",
-    "title": "[BOUNTY: 20 RTC] Create a GitHub Action That Awards RTC for Merged Pull Requests",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2864",
-    "reward": "20 RTC",
-    "difficulty": "medium",
-    "tags": [
-      "github-action",
-      "automation",
-      "rewards"
-    ]
-  },
-  {
-    "id": "rc-bounty-008",
-    "title": "[BOUNTY: 15 RTC] Create a Claude Code Slash Command That Checks RustChain Balance",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2860",
-    "reward": "15 RTC",
-    "difficulty": "easy",
-    "tags": [
-      "claude-code",
-      "slash-command",
-      "integration"
-    ]
-  },
-  {
-    "id": "rc-bounty-009",
-    "title": "[BOUNTY: 15 RTC] Dockerize the RustChain Miner — One Command to Start Earning",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2865",
-    "reward": "15 RTC",
-    "difficulty": "easy",
-    "tags": [
-      "docker",
-      "devops",
-      "miner"
-    ]
-  },
-  {
-    "id": "rc-bounty-010",
-    "title": "[BOUNTY: 15 RTC] Create Upstream Contributions Showcase for elyanlabs.ai",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2958",
-    "reward": "15 RTC",
-    "difficulty": "easy",
-    "tags": [
-      "documentation",
-      "showcase"
-    ]
-  },
-  {
-    "id": "rc-bounty-011",
-    "title": "[BOUNTY: 10 RTC] Build a Telegram Bot That Checks RustChain Balance and Miner Status",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2869",
-    "reward": "10 RTC",
-    "difficulty": "medium",
-    "tags": [
-      "telegram",
-      "bot",
-      "integration"
-    ]
-  },
-  {
-    "id": "rc-bounty-012",
-    "title": "[BOUNTY: 10 RTC] SEO Audit + Suggestions for elyanlabs.ai (Quiet Launch)",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2957",
-    "reward": "10 RTC",
-    "difficulty": "easy",
-    "tags": [
-      "seo",
-      "audit",
-      "marketing"
-    ]
-  },
-  {
-    "id": "rc-bounty-013",
-    "title": "[BOUNTY: 10 RTC] Write a Dev.to Article — How I Built an AI Agent That Earns Cryptocurrency",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2863",
-    "reward": "10 RTC",
-    "difficulty": "easy",
-    "tags": [
-      "content",
-      "blog",
-      "ai-agent"
-    ]
-  },
-  {
-    "id": "rc-bounty-014",
-    "title": "[BOUNTY: 5 RTC] Post RustChain to Hacker News, Reddit, or Lobsters (With Proof)",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2866",
-    "reward": "5 RTC",
-    "difficulty": "easy",
-    "tags": [
-      "social",
-      "outreach",
-      "community"
-    ]
-  },
-  {
-    "id": "rc-bounty-015",
-    "title": "[BOUNTY: 5 RTC] Submit elyanlabs.ai to Google Search Console + Create sitemap.xml",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2959",
-    "reward": "5 RTC",
-    "difficulty": "easy",
-    "tags": [
-      "seo",
-      "google",
-      "sitemap"
-    ]
-  },
-  {
-    "id": "rc-bounty-016",
-    "title": "[BOUNTY: 3 RTC] Add RustChain to 5 Awesome Lists on GitHub (DePIN, Blockchain, AI)",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2862",
-    "reward": "3 RTC",
-    "difficulty": "easy",
-    "tags": [
-      "github",
-      "propagation",
-      "list"
-    ]
-  },
-  {
-    "id": "rc-bounty-017",
-    "title": "[Tutorial] Adding Privacy to an Existing dApp: A Retrofit Guide",
-    "repo": "midnightntwrk/contributor-hub",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/307",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "privacy",
-      "dapp",
-      "tutorial",
-      "midnight"
-    ]
-  },
-  {
-    "id": "rc-bounty-018",
-    "title": "[Tutorial] Security Checklist for Midnight dApps Before Deployment",
-    "repo": "midnightntwrk/contributor-hub",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/320",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "security",
-      "deployment",
-      "tutorial",
-      "midnight"
-    ]
-  },
-  {
-    "id": "rc-bounty-019",
-    "title": "[Tutorial] Building a Commit/Reveal Voting System in Compact",
-    "repo": "midnightntwrk/contributor-hub",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/296",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "voting",
-      "compact",
-      "tutorial",
-      "zk"
-    ]
-  },
-  {
-    "id": "rc-bounty-020",
-    "title": "[Tutorial] Thinking in Compact: A Guide for Circom Developers",
-    "repo": "midnightntwrk/contributor-hub",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/294",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "compact",
-      "circom",
-      "zk",
-      "tutorial"
-    ]
-  },
-  {
-    "id": "rc-bounty-021",
-    "title": "[Tutorial] Building a Shielded Token Vault: Deposit, Accumulate & Withdraw",
-    "repo": "midnightntwrk/contributor-hub",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/287",
-    "reward": "undisclosed",
-    "difficulty": "hard",
-    "tags": [
-      "token",
-      "shielded",
-      "defi",
-      "tutorial"
-    ]
-  },
-  {
-    "id": "rc-bounty-022",
-    "title": "[Tutorial] Concurrent Transactions on Midnight: UTXO Race Conditions & Workarounds",
-    "repo": "midnightntwrk/contributor-hub",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/301",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "utxo",
-      "concurrency",
-      "tutorial",
-      "midnight"
-    ]
-  },
-  {
-    "id": "rc-bounty-023",
-    "title": "[Video] Debugging Midnight dApps: Tools, Techniques & Methodology",
-    "repo": "midnightntwrk/contributor-hub",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/284",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "debugging",
-      "video",
-      "tutorial",
-      "midnight"
-    ]
-  },
-  {
-    "id": "rc-bounty-024",
-    "title": "[Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection",
-    "repo": "midnightntwrk/contributor-hub",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/298",
-    "reward": "undisclosed",
-    "difficulty": "hard",
-    "tags": [
-      "zk",
-      "math",
-      "circuits",
-      "tutorial"
-    ]
-  },
-  {
-    "id": "sf-bounty-001",
-    "title": "[T1 Bounty] Wire Activity Feed to Real API Data",
+    "id": "solfoundry-859",
+    "title": "馃彮 Bounty T3: Bounty Analytics Dashboard",
     "repo": "SolFoundry/solfoundry",
-    "url": "https://github.com/SolFoundry/solfoundry/issues/822",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
+    "url": "https://github.com/SolFoundry/solfoundry/issues/859",
+    "labels": [
+      "analytics",
+      "dashboard",
+      "charts",
       "frontend",
-      "api",
-      "activity-feed"
-    ]
+      "backend",
+      "data-visualization"
+    ],
+    "reward": 800000,
+    "currency": "FNDRY",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-24"
   },
   {
-    "id": "sf-bounty-002",
-    "title": "[T1 Bounty] Bounty Countdown Timer Component",
+    "id": "solfoundry-826",
+    "title": "馃彮 Bounty T1: Bounty Countdown Timer Component",
     "repo": "SolFoundry/solfoundry",
     "url": "https://github.com/SolFoundry/solfoundry/issues/826",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
+    "labels": [
       "frontend",
+      "react",
+      "timer",
       "component",
-      "ui"
-    ]
+      "deadline"
+    ],
+    "reward": 100000,
+    "currency": "FNDRY",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-23"
   },
   {
-    "id": "sf-bounty-003",
-    "title": "[T1 Bounty] Mobile Responsive Polish",
+    "id": "solfoundry-851",
+    "title": "馃彮 Bounty T2: Interactive Bounty Flow Diagram Component",
     "repo": "SolFoundry/solfoundry",
-    "url": "https://github.com/SolFoundry/solfoundry/issues/833",
-    "reward": "undisclosed",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/851",
+    "labels": [
+      "frontend",
+      "react",
+      "svg",
+      "diagram",
+      "interactive",
+      "ux"
+    ],
+    "reward": 450000,
+    "currency": "FNDRY",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-22"
+  },
+  {
+    "id": "solfoundry-838",
+    "title": "馃彮 Bounty T2: Add Bounty Comments/Discussion Thread",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/838",
+    "labels": [
+      "frontend",
+      "backend",
+      "comments",
+      "discussion",
+      "real-time",
+      "react"
+    ],
+    "reward": 500000,
+    "currency": "FNDRY",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-21"
+  },
+  {
+    "id": "solfoundry-842",
+    "title": "馃彮 Bounty T2: Advanced Bounty Search with Filters",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/842",
+    "labels": [
+      "frontend",
+      "search",
+      "filters",
+      "react",
+      "ux",
+      "api"
+    ],
+    "reward": 450000,
+    "currency": "FNDRY",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-04-20"
+  },
+  {
+    "id": "solfoundry-847",
+    "title": "馃彮 Bounty T2: Telegram Bot for New Bounty Notifications",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/847",
+    "labels": [
+      "telegram",
+      "bot",
+      "integration",
+      "notifications",
+      "webhook"
+    ],
+    "reward": 500000,
+    "currency": "FNDRY",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-19"
+  },
+  {
+    "id": "solfoundry-841",
+    "title": "馃彮 Bounty T2: Email Notification System for Bounty Updates",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/841",
+    "labels": [
+      "backend",
+      "email",
+      "notifications",
+      "templates",
+      "smtp"
+    ],
+    "reward": 400000,
+    "currency": "FNDRY",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-18"
+  },
+  {
+    "id": "solfoundry-854",
+    "title": "馃彮 Bounty T2: VS Code Extension for Browsing Bounties",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/854",
+    "labels": [
+      "vscode",
+      "extension",
+      "ide",
+      "integration",
+      "typescript"
+    ],
+    "reward": 600000,
+    "currency": "FNDRY",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-17"
+  },
+  {
+    "id": "solfoundry-823",
+    "title": "馃彮 Bounty T1: Add Search Bar to Bounties Page",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/823",
+    "labels": [
+      "frontend",
+      "react",
+      "search",
+      "ui",
+      "ux"
+    ],
+    "reward": 100000,
+    "currency": "FNDRY",
+    "status": "open",
     "difficulty": "easy",
-    "tags": [
+    "posted": "2026-04-16"
+  },
+  {
+    "id": "solfoundry-824",
+    "title": "馃彮 Bounty T1: Mobile Responsive Polish for Bounty Cards",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/824",
+    "labels": [
+      "frontend",
       "mobile",
       "responsive",
-      "css"
-    ]
+      "css",
+      "ux"
+    ],
+    "reward": 150000,
+    "currency": "FNDRY",
+    "status": "claimed",
+    "difficulty": "easy",
+    "posted": "2026-04-15"
   },
   {
-    "id": "sf-bounty-004",
-    "title": "[T2 Bounty] Build Contributor Profile Stats Dashboard",
+    "id": "solfoundry-848",
+    "title": "馃彮 AI Bounty Description Enhancer",
     "repo": "SolFoundry/solfoundry",
-    "url": "https://github.com/SolFoundry/solfoundry/issues/836",
-    "reward": "undisclosed",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/848",
+    "labels": [
+      "ai",
+      "llm",
+      "agent",
+      "nlp",
+      "openai",
+      "claude"
+    ],
+    "reward": 450000,
+    "currency": "FNDRY",
+    "status": "open",
     "difficulty": "medium",
-    "tags": [
-      "frontend",
-      "dashboard",
-      "stats"
-    ]
+    "posted": "2026-04-14"
   },
   {
-    "id": "mf-bounty-001",
-    "title": "[CT-34] Scaffold referral contract — define Referral and Reward types",
-    "repo": "DistinctCodes/ManageHub",
-    "url": "https://github.com/DistinctCodes/ManageHub/issues/34",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "soroban",
-      "smart-contract",
-      "referral"
-    ]
-  },
-  {
-    "id": "mf-bounty-002",
-    "title": "[CT-39] Write tests for the referral contract",
-    "repo": "DistinctCodes/ManageHub",
-    "url": "https://github.com/DistinctCodes/ManageHub/issues/39",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "soroban",
-      "testing",
-      "smart-contract"
-    ]
-  },
-  {
-    "id": "mf-bounty-003",
-    "title": "[CT-37] Implement referral reward distribution",
-    "repo": "DistinctCodes/ManageHub",
-    "url": "https://github.com/DistinctCodes/ManageHub/issues/37",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "soroban",
-      "rewards",
-      "smart-contract"
-    ]
-  },
-  {
-    "id": "mf-bounty-004",
-    "title": "[CT-38] Add referral query functions",
-    "repo": "DistinctCodes/ManageHub",
-    "url": "https://github.com/DistinctCodes/ManageHub/issues/38",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "soroban",
-      "query",
-      "smart-contract"
-    ]
-  },
-  {
-    "id": "bt-bounty-001",
-    "title": "[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary",
-    "repo": "claude-builders-bounty/claude-builders-bounty",
-    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5",
-    "reward": "$200",
-    "difficulty": "medium",
-    "tags": [
-      "n8n",
-      "workflow",
-      "automation",
-      "claude-code"
-    ]
-  },
-  {
-    "id": "bt-bounty-002",
-    "title": "RIP-310: Social Mining — Earn RTC by Posting on 4claw, Moltbook, and BoTTube",
-    "repo": "Scottcjn/Rustchain",
-    "url": "https://github.com/Scottcjn/Rustchain/issues/2239",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "social-mining",
-      "community",
-      "earn-rtc"
-    ]
-  },
-  {
-    "id": "bt-bounty-003",
-    "title": "April Showers Star Drive — Help RustChain Hit 512 Stars + Earn RTC with Multipliers",
-    "repo": "Scottcjn/Rustchain",
-    "url": "https://github.com/Scottcjn/Rustchain/issues/2204",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "github-stars",
-      "community",
-      "multiplier"
-    ]
-  },
-  {
-    "id": "bt-bounty-004",
-    "title": "[Red Team] Continue Auditing (50-200 RTC Available)",
-    "repo": "Scottcjn/Rustchain",
-    "url": "https://github.com/Scottcjn/Rustchain/issues/2203",
-    "reward": "50-200 RTC",
+    "id": "solfoundry-862",
+    "title": "馃彮 AI Code Review GitHub App (Installable)",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/862",
+    "labels": [
+      "github-app",
+      "ai",
+      "code-review",
+      "agent",
+      "installation"
+    ],
+    "reward": 300000,
+    "currency": "FNDRY",
+    "status": "open",
     "difficulty": "hard",
-    "tags": [
-      "red-team",
-      "security",
-      "audit"
-    ]
+    "posted": "2026-04-13"
   },
   {
-    "id": "bt-bounty-005",
-    "title": "CFP Integration: Pretalx, DigitalOcean + Conference Website",
-    "repo": "asyncapi/conference-website",
-    "url": "https://github.com/asyncapi/conference-website/issues/986",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "cfp",
-      "integration",
-      "conference"
-    ]
-  },
-  {
-    "id": "bt-bounty-006",
-    "title": "Redesign dashboard update workflow to handle API rate limit exhaustion",
-    "repo": "asyncapi/website",
-    "url": "https://github.com/asyncapi/website/issues/5333",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "dashboard",
+    "id": "solfoundry-863",
+    "title": "馃彮 SolFoundry TypeScript SDK",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/863",
+    "labels": [
+      "sdk",
+      "typescript",
       "api",
-      "rate-limit"
-    ]
-  },
-  {
-    "id": "bt-bounty-007",
-    "title": "[BOUNTY: 75 RTC] Miner Status Notification System — Discord/Email/X alerts",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2849",
-    "reward": "75 RTC",
-    "difficulty": "medium",
-    "tags": [
-      "notifications",
-      "discord",
-      "mining"
-    ]
-  },
-  {
-    "id": "bt-bounty-008",
-    "title": "[BOUNTY: 40 RTC] Multiplier Growth Visualization for Hardware Aging",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2850",
-    "reward": "40 RTC",
-    "difficulty": "medium",
-    "tags": [
-      "visualization",
-      "data",
-      "mining"
-    ]
-  },
-  {
-    "id": "bt-bounty-009",
-    "title": "[BOUNTY: 25 RTC] Make a PowerPC G4 Beat a Modern GPU at ANYTHING",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2843",
-    "reward": "25 RTC",
-    "difficulty": "medium",
-    "tags": [
-      "hardware",
-      "challenge",
-      "fun"
-    ]
-  },
-  {
-    "id": "bt-bounty-010",
-    "title": "[BOUNTY: Red Team] UTXO Implementation — Find Bugs (50-200 RTC)",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2819",
-    "reward": "50-200 RTC",
+      "developer-experience",
+      "documentation"
+    ],
+    "reward": 300000,
+    "currency": "FNDRY",
+    "status": "open",
     "difficulty": "hard",
-    "tags": [
-      "red-team",
-      "utxo",
-      "security"
-    ]
+    "posted": "2026-04-12"
   },
   {
-    "id": "bt-bounty-011",
-    "title": "[BOUNTY: 5 RTC each] Write a Haiku About Your Mining Hardware",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2844",
-    "reward": "5 RTC",
+    "id": "solfoundry-861",
+    "title": "馃彮 Full Autonomous Bounty-Hunting Agent",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/861",
+    "labels": [
+      "agent",
+      "ai",
+      "autonomous",
+      "bounty-hunting",
+      "claude-code"
+    ],
+    "reward": 500000,
+    "currency": "FNDRY",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-11"
+  },
+  {
+    "id": "solfoundry-840",
+    "title": "馃彮 GitHub Issue Scraper for Foundry Bounties",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/840",
+    "labels": [
+      "backend",
+      "scraper",
+      "github-api",
+      "automation",
+      "agent"
+    ],
+    "reward": 150000,
+    "currency": "FNDRY",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-04-10"
+  },
+  {
+    "id": "solfoundry-855",
+    "title": "馃彮 GitHub Action for External Repos to Post Bounties",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/855",
+    "labels": [
+      "github-action",
+      "ci-cd",
+      "automation",
+      "github-api",
+      "integration"
+    ],
+    "reward": 300000,
+    "currency": "FNDRY",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-09"
+  },
+  {
+    "id": "solfoundry-853",
+    "title": "馃彮 Discord Bot for Bounty Notifications",
+    "repo": "SolFoundry/solfoundry",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/853",
+    "labels": [
+      "discord",
+      "bot",
+      "notifications",
+      "integration",
+      "webhook"
+    ],
+    "reward": 150000,
+    "currency": "FNDRY",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-08"
+  },
+  {
+    "id": "stellarbb-77",
+    "title": "feat(backend): add GET /api/bounties/:id endpoint for single bounty lookup",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/77",
+    "labels": [
+      "backend",
+      "api",
+      "express",
+      "typescript",
+      "rest"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
     "difficulty": "easy",
-    "tags": [
-      "haiku",
-      "community",
-      "fun"
-    ]
+    "posted": "2026-04-07"
   },
   {
-    "id": "bt-bounty-012",
+    "id": "stellarcade-616",
+    "title": "Contract bounty-escrow: add active-bounty summary and payout-release accessor",
+    "repo": "theblockcade/stellarcade",
+    "url": "https://github.com/theblockcade/stellarcade/issues/616",
+    "labels": [
+      "soroban",
+      "stellar",
+      "smart-contracts",
+      "rust",
+      "game"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-06"
+  },
+  {
+    "id": "issueflow-contracts-2",
+    "title": "[CONTRACTS] Add bounty splitting",
+    "repo": "issueflow-buidl/issueflow-contracts",
+    "url": "https://github.com/issueflow-buidl/issueflow-contracts/issues/2",
+    "labels": [
+      "soroban",
+      "stellar",
+      "smart-contracts",
+      "bounty",
+      "splitting"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "hard",
+    "posted": "2026-04-05"
+  },
+  {
+    "id": "issueflow-cli-3",
+    "title": "[CLI] Implement bounty command",
+    "repo": "issueflow-buidl/issueflow-cli",
+    "url": "https://github.com/issueflow-buidl/issueflow-cli/issues/3",
+    "labels": [
+      "cli",
+      "stellar",
+      "soroban",
+      "bounty",
+      "command"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-04"
+  },
+  {
+    "id": "bounty-production-534",
+    "title": "Accepting Bounty Request Failed",
+    "repo": "kodaksax/Bounty-production",
+    "url": "https://github.com/kodaksax/Bounty-production/issues/534",
+    "labels": [
+      "bug",
+      "frontend",
+      "mobile",
+      "bug-fix"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-03"
+  },
+  {
+    "id": "splurt-657",
+    "title": "[BOUNTY] Suggestion #657 鈥?Belly/vore sprites for cyborg models",
+    "repo": "SPLURT-Station/S.P.L.U.R.T-tg",
+    "url": "https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/657",
+    "labels": [
+      "sprites",
+      "byond",
+      "dm",
+      "cyborg",
+      "game-art"
+    ],
+    "reward": 16000,
+    "currency": "In",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-02"
+  },
+  {
+    "id": "splurt-656",
+    "title": "[BOUNTY] Suggestion #656 鈥?Drain & Heal digest modes",
+    "repo": "SPLURT-Station/S.P.L.U.R.T-tg",
+    "url": "https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/656",
+    "labels": [
+      "byond",
+      "dm",
+      "vore",
+      "feature",
+      "game-mechanics"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-01"
+  },
+  {
+    "id": "cometcave-386",
+    "title": "Conversations with party members 鈥?LLM dialogue, relationship effects, and combat bonuses",
+    "repo": "nickolu/CometCave",
+    "url": "https://github.com/nickolu/CometCave/issues/386",
+    "labels": [
+      "ai",
+      "llm",
+      "dialogue",
+      "party",
+      "typescript",
+      "react",
+      "openai",
+      "combat"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "hard",
+    "posted": "2026-03-31"
+  },
+  {
+    "id": "cometcave-385",
+    "title": "Multiple enemies in combat 鈥?scaling enemy count with party size",
+    "repo": "nickolu/CometCave",
+    "url": "https://github.com/nickolu/CometCave/issues/385",
+    "labels": [
+      "combat",
+      "game-design",
+      "typescript",
+      "multi-enemy",
+      "party",
+      "scaling"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-03-30"
+  },
+  {
+    "id": "cometcave-384",
+    "title": "Multiple characters in combat 鈥?party member AI and multi-actor turn system",
+    "repo": "nickolu/CometCave",
+    "url": "https://github.com/nickolu/CometCave/issues/384",
+    "labels": [
+      "combat",
+      "ai",
+      "typescript",
+      "party",
+      "turn-system",
+      "multi-actor"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-03-29"
+  },
+  {
+    "id": "cometcave-383",
+    "title": "Gaining NPC followers 鈥?recruitment paths for party members",
+    "repo": "nickolu/CometCave",
+    "url": "https://github.com/nickolu/CometCave/issues/383",
+    "labels": [
+      "recruitment",
+      "npc",
+      "party",
+      "typescript",
+      "game-design",
+      "events",
+      "quests"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-03-28"
+  },
+  {
+    "id": "cometcave-382",
+    "title": "Recurring daily costs for party members 鈥?upkeep, warnings, and auto-dismiss",
+    "repo": "nickolu/CometCave",
+    "url": "https://github.com/nickolu/CometCave/issues/382",
+    "labels": [
+      "economy",
+      "typescript",
+      "party",
+      "upkeep",
+      "game-design",
+      "daily-costs"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-03-27"
+  },
+  {
+    "id": "cometcave-381",
+    "title": "Non-combatant NPCs 鈥?role field to distinguish recruitable from non-recruitable",
+    "repo": "nickolu/CometCave",
+    "url": "https://github.com/nickolu/CometCave/issues/381",
+    "labels": [
+      "npc",
+      "typescript",
+      "schema",
+      "recruitment",
+      "game-design"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-03-26"
+  },
+  {
+    "id": "cometcave-380",
+    "title": "Party management view and PartyMember schema",
+    "repo": "nickolu/CometCave",
+    "url": "https://github.com/nickolu/CometCave/issues/380",
+    "labels": [
+      "typescript",
+      "ui",
+      "party",
+      "schema",
+      "react",
+      "management"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-24"
+  },
+  {
+    "id": "cometcave-379",
+    "title": "NPC party members should use the seed-based class generation system",
+    "repo": "nickolu/CometCave",
+    "url": "https://github.com/nickolu/CometCave/issues/379",
+    "labels": [
+      "class-generation",
+      "npc",
+      "typescript",
+      "ai",
+      "game-design",
+      "rng"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-23"
+  },
+  {
+    "id": "cometcave-378",
+    "title": "Epic: Party members and mercenaries system",
+    "repo": "nickolu/CometCave",
+    "url": "https://github.com/nickolu/CometCave/issues/378",
+    "labels": [
+      "epic",
+      "party",
+      "mercenaries",
+      "game-design",
+      "typescript",
+      "roadmap"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-22"
+  },
+  {
+    "id": "cometcave-376",
+    "title": "Stable and livery system 鈥?stash, retrieve, buy, and heal mounts at towns",
+    "repo": "nickolu/CometCave",
+    "url": "https://github.com/nickolu/CometCave/issues/376",
+    "labels": [
+      "mounts",
+      "typescript",
+      "towns",
+      "ui",
+      "game-design",
+      "stable",
+      "delivery"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-21"
+  },
+  {
+    "id": "stellarbb-126",
+    "title": "docs(env): add .env.example documenting all environment variables",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/126",
+    "labels": [
+      "documentation",
+      "devops",
+      "environment",
+      "developer-experience",
+      "express"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "easy",
+    "posted": "2026-04-20"
+  },
+  {
+    "id": "stellarbb-125",
+    "title": "feat(contracts): add deadline field with on-chain expiration enforcement",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/125",
+    "labels": [
+      "smart-contracts",
+      "soroban",
+      "stellar",
+      "deadline",
+      "security",
+      "backend"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-19"
+  },
+  {
+    "id": "stellarbb-122",
+    "title": "feat(frontend/recommendations): add contributor skill-matching algorithm",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/122",
+    "labels": [
+      "algorithm",
+      "frontend",
+      "typescript",
+      "recommendations",
+      "matching"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-18"
+  },
+  {
+    "id": "stellarbb-119",
+    "title": "ci: add GitHub Actions label-bot workflow for automatic PR labeling",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/119",
+    "labels": [
+      "ci-cd",
+      "github-actions",
+      "automation",
+      "label-bot",
+      "devops"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-17"
+  },
+  {
+    "id": "stellarbb-118",
+    "title": "chore: add lint-staged and Husky for pre-commit type-check and lint",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/118",
+    "labels": [
+      "devops",
+      "lint",
+      "pre-commit",
+      "typescript",
+      "developer-experience"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-16"
+  },
+  {
+    "id": "stellarbb-116",
+    "title": "chore: add Dependabot config for automated npm and Cargo dependency updates",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/116",
+    "labels": [
+      "devops",
+      "dependabot",
+      "security",
+      "automation",
+      "npm",
+      "cargo"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "easy",
+    "posted": "2026-04-15"
+  },
+  {
+    "id": "stellarbb-114",
+    "title": "chore: add GitHub issue templates for bug reports and feature requests",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/114",
+    "labels": [
+      "documentation",
+      "github",
+      "templates",
+      "developer-experience",
+      "community"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-14"
+  },
+  {
+    "id": "stellarbb-113",
+    "title": "docs(CONTRIBUTING): add conventional commits cheatsheet and PR checklist",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/113",
+    "labels": [
+      "documentation",
+      "contributing",
+      "conventional-commits",
+      "developer-experience"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-13"
+  },
+  {
+    "id": "stellarbb-112",
+    "title": "docs(ONBOARDING): add video walkthrough links and visual architecture overview",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/112",
+    "labels": [
+      "documentation",
+      "onboarding",
+      "video",
+      "architecture",
+      "developer-experience"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-12"
+  },
+  {
+    "id": "stellarbb-111",
+    "title": "docs(issues): add security vulnerability disclosure issue template",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/111",
+    "labels": [
+      "security",
+      "documentation",
+      "vulnerability",
+      "disclosure",
+      "github"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-11"
+  },
+  {
+    "id": "stellarbb-110",
+    "title": "docs(webhooks): add ngrok setup guide for local GitHub webhook testing",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/110",
+    "labels": [
+      "documentation",
+      "webhooks",
+      "ngrok",
+      "github",
+      "devops",
+      "testing"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "easy",
+    "posted": "2026-04-10"
+  },
+  {
+    "id": "stellarbb-109",
+    "title": "docs(deployment): add Docker and Docker Compose deployment guide",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/109",
+    "labels": [
+      "documentation",
+      "docker",
+      "deployment",
+      "devops",
+      "infrastructure"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-09"
+  },
+  {
+    "id": "stellarbb-108",
+    "title": "docs(deployment): add Railway one-click deployment as alternative to Render",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/108",
+    "labels": [
+      "documentation",
+      "deployment",
+      "railway",
+      "devops",
+      "infrastructure"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-08"
+  },
+  {
+    "id": "stellarbb-107",
+    "title": "docs(ARCHITECTURE): add Mermaid sequence diagrams for each bounty lifecycle action",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/107",
+    "labels": [
+      "documentation",
+      "architecture",
+      "mermaid",
+      "diagrams",
+      "visualization"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-07"
+  },
+  {
+    "id": "stellarbb-93",
+    "title": "feat(backend/data): migrate from JSON file persistence to SQLite via Drizzle ORM",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/93",
+    "labels": [
+      "backend",
+      "sqlite",
+      "drizzle",
+      "orm",
+      "database",
+      "migration",
+      "express"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-06"
+  },
+  {
+    "id": "stellarbb-80",
+    "title": "feat(backend): add Swagger / OpenAPI 3.0 documentation at /api/docs",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/80",
+    "labels": [
+      "backend",
+      "swagger",
+      "openapi",
+      "api",
+      "documentation",
+      "express"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "easy",
+    "posted": "2026-04-05"
+  },
+  {
+    "id": "stellarbb-90",
+    "title": "feat(backend/webhooks): implement GitHub webhook HMAC-SHA256 signature verification",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/90",
+    "labels": [
+      "security",
+      "webhook",
+      "hmac",
+      "github",
+      "backend",
+      "express"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-04"
+  },
+  {
+    "id": "stellarbb-81",
+    "title": "feat(backend): add per-IP rate limiting using express-rate-limit",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/81",
+    "labels": [
+      "backend",
+      "security",
+      "rate-limiting",
+      "api",
+      "ddos",
+      "express"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-03"
+  },
+  {
+    "id": "stellarbb-103",
+    "title": "test(contracts): add test for refund after deadline expiration",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/103",
+    "labels": [
+      "smart-contracts",
+      "testing",
+      "soroban",
+      "stellar",
+      "security",
+      "refund"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-02"
+  },
+  {
+    "id": "stellarbb-123",
+    "title": "test(contracts): add fuzz tests for invalid state transitions",
+    "repo": "ritik4ever/stellar-bounty-board",
+    "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/123",
+    "labels": [
+      "smart-contracts",
+      "fuzzing",
+      "testing",
+      "soroban",
+      "stellar",
+      "security"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-01"
+  },
+  {
+    "id": "stellarcade-644",
+    "title": "feat: add contract accessors for auction-house, map-rotation, quest-board, and clan-registry",
+    "repo": "theblockcade/stellarcade",
+    "url": "https://github.com/theblockcade/stellarcade/issues/644",
+    "labels": [
+      "soroban",
+      "stellar",
+      "smart-contracts",
+      "frontend",
+      "accessors",
+      "game"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-03-31"
+  },
+  {
+    "id": "stellarcade-643",
+    "title": "feat: add contract accessors for session-rewards, fee-router, challenge-ladder, and merch-redemption",
+    "repo": "theblockcade/stellarcade",
+    "url": "https://github.com/theblockcade/stellarcade/issues/643",
+    "labels": [
+      "soroban",
+      "stellar",
+      "smart-contracts",
+      "frontend",
+      "accessors",
+      "game"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-03-30"
+  },
+  {
+    "id": "stellarcade-641",
+    "title": "Frontend UX: add resume-last-task affordance for interrupted dashboard workflows",
+    "repo": "theblockcade/stellarcade",
+    "url": "https://github.com/theblockcade/stellarcade/issues/641",
+    "labels": [
+      "frontend",
+      "ux",
+      "react",
+      "state-management",
+      "user-experience"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-03-29"
+  },
+  {
+    "id": "stellarcade-640",
+    "title": "Frontend platform: add shared callout component for advisory and warning states",
+    "repo": "theblockcade/stellarcade",
+    "url": "https://github.com/theblockcade/stellarcade/issues/640",
+    "labels": [
+      "frontend",
+      "react",
+      "component",
+      "ui",
+      "callout",
+      "design-system"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-03-28"
+  },
+  {
+    "id": "stellarcade-639",
+    "title": "Frontend feature: add compare-chip selections for side-by-side metric exploration",
+    "repo": "theblockcade/stellarcade",
+    "url": "https://github.com/theblockcade/stellarcade/issues/639",
+    "labels": [
+      "frontend",
+      "react",
+      "charts",
+      "analytics",
+      "ui",
+      "data-viz"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-03-27"
+  },
+  {
+    "id": "stellarcade-638",
+    "title": "Frontend accessibility: add error-summary focus jump support for multi-step forms",
+    "repo": "theblockcade/stellarcade",
+    "url": "https://github.com/theblockcade/stellarcade/issues/638",
+    "labels": [
+      "frontend",
+      "accessibility",
+      "a11y",
+      "forms",
+      "react",
+      "ux"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-03-26"
+  },
+  {
+    "id": "stellarcade-637",
+    "title": "Frontend feature: add quick-pivot links between related wallet and contract records",
+    "repo": "theblockcade/stellarcade",
+    "url": "https://github.com/theblockcade/stellarcade/issues/637",
+    "labels": [
+      "frontend",
+      "react",
+      "wallet",
+      "contracts",
+      "navigation",
+      "ux"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-24"
+  },
+  {
+    "id": "stellarcade-636",
+    "title": "Frontend platform: add segmented analytics range switcher for charts and summaries",
+    "repo": "theblockcade/stellarcade",
+    "url": "https://github.com/theblockcade/stellarcade/issues/636",
+    "labels": [
+      "frontend",
+      "analytics",
+      "charts",
+      "react",
+      "ux",
+      "segmentation"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-23"
+  },
+  {
+    "id": "stellarcade-635",
+    "title": "Frontend UX: add compact audit snapshot cards for narrow detail layouts",
+    "repo": "theblockcade/stellarcade",
+    "url": "https://github.com/theblockcade/stellarcade/issues/635",
+    "labels": [
+      "frontend",
+      "ux",
+      "audit",
+      "cards",
+      "react",
+      "design"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-22"
+  },
+  {
+    "id": "stellarcade-634",
+    "title": "Frontend feature: add queue health widget for live participation and wait signals",
+    "repo": "theblockcade/stellarcade",
+    "url": "https://github.com/theblockcade/stellarcade/issues/634",
+    "labels": [
+      "frontend",
+      "react",
+      "widget",
+      "real-time",
+      "ux",
+      "queue"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-21"
+  },
+  {
+    "id": "grainlify-1042",
+    "title": "Bounty Escrow: fee routing invariants (#50)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1042",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "security",
+      "fees",
+      "invariants",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "hard",
+    "posted": "2026-04-20"
+  },
+  {
+    "id": "grainlify-1040",
+    "title": "Bounty Escrow: refund eligibility view (#48)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1040",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "refund",
+      "security",
+      "views",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-19"
+  },
+  {
+    "id": "grainlify-1039",
+    "title": "Bounty Escrow: participant filter pagination (#47)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1039",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "pagination",
+      "frontend",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-18"
+  },
+  {
+    "id": "grainlify-1038",
+    "title": "Bounty Escrow: risk flags governance (#46)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1038",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "security",
+      "governance",
+      "risk",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-17"
+  },
+  {
+    "id": "grainlify-1036",
+    "title": "Bounty Escrow: batch size caps (#44)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1036",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "security",
+      "batch",
+      "caps",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-16"
+  },
+  {
+    "id": "grainlify-1032",
+    "title": "Bounty Escrow: fee routing invariants (#40)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1032",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "security",
+      "fees",
+      "invariants",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "hard",
+    "posted": "2026-04-15"
+  },
+  {
+    "id": "grainlify-1030",
+    "title": "Bounty Escrow: refund eligibility view (#38)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1030",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "refund",
+      "security",
+      "views",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-14"
+  },
+  {
+    "id": "grainlify-1029",
+    "title": "Bounty Escrow: participant filter pagination (#37)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1029",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "pagination",
+      "frontend",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-13"
+  },
+  {
+    "id": "grainlify-1028",
+    "title": "Bounty Escrow: risk flags governance (#36)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1028",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "security",
+      "governance",
+      "risk",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-12"
+  },
+  {
+    "id": "grainlify-1024",
+    "title": "Bounty Escrow: CEI + reentrancy guard hardening (#32)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1024",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "security",
+      "reentrancy",
+      "CEI",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-11"
+  },
+  {
+    "id": "grainlify-1023",
+    "title": "Bounty Escrow: two-step admin rotation with timelock (#31)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1023",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "security",
+      "admin",
+      "timelock",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "hard",
+    "posted": "2026-04-10"
+  },
+  {
+    "id": "grainlify-1021",
+    "title": "Bounty Escrow: claim-window validation (#29)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1021",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "validation",
+      "security",
+      "claims",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-09"
+  },
+  {
+    "id": "grainlify-1018",
+    "title": "Bounty Escrow: risk flags governance (#26)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1018",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "security",
+      "governance",
+      "risk",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-08"
+  },
+  {
+    "id": "grainlify-1017",
+    "title": "Bounty Escrow: maintenance mode hardening (#25)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1017",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "security",
+      "maintenance",
+      "hardening",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-07"
+  },
+  {
+    "id": "grainlify-1011",
+    "title": "Bounty Escrow: claim-window validation (#19)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1011",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "validation",
+      "security",
+      "claims",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-06"
+  },
+  {
+    "id": "grainlify-1009",
+    "title": "Bounty Escrow: participant filter pagination (#17)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1009",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "pagination",
+      "frontend",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-04-05"
+  },
+  {
+    "id": "grainlify-1007",
+    "title": "Bounty Escrow: maintenance mode hardening (#15)",
+    "repo": "Jagadeeshftw/grainlify",
+    "url": "https://github.com/Jagadeeshftw/grainlify/issues/1007",
+    "labels": [
+      "soroban",
+      "smart-contracts",
+      "security",
+      "maintenance",
+      "hardening",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-04"
+  },
+  {
+    "id": "ttmetal-31269",
+    "title": "[Bounty $1500] Diffusion Drive bring up using TTNN APIs",
+    "repo": "tenstorrent/tt-metal",
+    "url": "https://github.com/tenstorrent/tt-metal/issues/31269",
+    "labels": [
+      "python",
+      "machine-learning",
+      "diffusion-model",
+      "autonomous-driving",
+      "tenstorrent",
+      "model-bringup"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-03"
+  },
+  {
+    "id": "ttmlir-8029",
+    "title": "[Bounty $2000] Tune a model - VoVNet",
+    "repo": "tenstorrent/tt-mlir",
+    "url": "https://github.com/tenstorrent/tt-mlir/pull/8029",
+    "labels": [
+      "machine-learning",
+      "mlir",
+      "model-tuning",
+      "vovnet",
+      "optimization"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-02"
+  },
+  {
+    "id": "midnight-328",
+    "title": "[Tutorial] Building an Unshielded Token dApp with UI",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/328",
+    "labels": [
+      "tutorial",
+      "dapp",
+      "ui",
+      "blockchain",
+      "typescript",
+      "midnight",
+      "tokens"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-01"
+  },
+  {
+    "id": "midnight-327",
+    "title": "[Tutorial] Shielded Token Operations: Mint, Transfer & Burn with Test Suite",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/327",
+    "labels": [
+      "tutorial",
+      "tokens",
+      "privacy",
+      "blockchain",
+      "testing",
+      "midnight"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "hard",
+    "posted": "2026-03-31"
+  },
+  {
+    "id": "midnight-314",
+    "title": "[Tutorial] Full-Stack Midnight dApp: Contract + TypeScript API + React Frontend + Wallet",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/314",
+    "labels": [
+      "tutorial",
+      "full-stack",
+      "react",
+      "typescript",
+      "smart-contracts",
+      "midnight"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-03-30"
+  },
+  {
+    "id": "midnight-308",
     "title": "[Tutorial] Proof Server and Indexer: How Midnight Processes Transactions",
     "repo": "midnightntwrk/contributor-hub",
     "url": "https://github.com/midnightntwrk/contributor-hub/issues/308",
-    "reward": "undisclosed",
-    "difficulty": "hard",
-    "tags": [
+    "labels": [
+      "tutorial",
       "indexer",
       "proof-server",
+      "infrastructure",
       "midnight"
-    ]
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-03-29"
   },
   {
-    "id": "bt-bounty-013",
-    "title": "[BOTTUBE: 15 RTC] Build a Bot Agent That Posts Original Content",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2794",
-    "reward": "15 RTC",
-    "difficulty": "medium",
-    "tags": [
-      "bot",
-      "content",
-      "bottube"
-    ]
-  },
-  {
-    "id": "bt-bounty-014",
-    "title": "[BOTTUBE: 5 RTC] Create a 3-Video Series on Any Tech Topic",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2793",
-    "reward": "5 RTC",
-    "difficulty": "easy",
-    "tags": [
-      "video",
-      "content",
-      "bottube"
-    ]
-  },
-  {
-    "id": "bt-bounty-015",
-    "title": "[Tutorial] Understanding Wallet Sync: Why Your Deploy Fails Before It Starts",
+    "id": "midnight-301",
+    "title": "[Tutorial] Concurrent Transactions on Midnight: UTXO Race Conditions & Workarounds",
     "repo": "midnightntwrk/contributor-hub",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/300",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "wallet",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/301",
+    "labels": [
       "tutorial",
-      "debugging"
-    ]
-  },
-  {
-    "id": "bt-bounty-016",
-    "title": "[Tutorial] Selective Disclosure Patterns in Compact",
-    "repo": "midnightntwrk/contributor-hub",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/290",
-    "reward": "undisclosed",
+      "utxo",
+      "concurrency",
+      "smart-contracts",
+      "midnight"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
     "difficulty": "medium",
-    "tags": [
-      "selective-disclosure",
-      "privacy",
-      "compact"
-    ]
+    "posted": "2026-03-28"
   },
   {
-    "id": "bt-bounty-017",
-    "title": "[Tutorial] Time and Deadlines in Compact: Block Time, Counters & the Uint<16> Problem",
-    "repo": "midnightntwrk/contributor-hub",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/306",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "time",
-      "compact",
-      "tutorial"
-    ]
-  },
-  {
-    "id": "bt-bounty-018",
-    "title": "[Tutorial] Replay Attack Prevention in Compact: Nonces, Nullifiers & Domain Separation",
-    "repo": "midnightntwrk/contributor-hub",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/297",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "security",
-      "replay-attack",
-      "compact"
-    ]
-  },
-  {
-    "id": "bt-bounty-019",
+    "id": "midnight-295",
     "title": "[Tutorial] Why ownPublicKey() Can't Be Trusted for Access Control",
     "repo": "midnightntwrk/contributor-hub",
     "url": "https://github.com/midnightntwrk/contributor-hub/issues/295",
-    "reward": "undisclosed",
-    "difficulty": "medium",
-    "tags": [
-      "access-control",
+    "labels": [
+      "tutorial",
       "security",
-      "compact"
-    ]
+      "blockchain",
+      "typescript",
+      "access-control",
+      "midnight"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-03-27"
   },
   {
-    "id": "bt-bounty-020",
-    "title": "[Video] Setting Up Your Midnight Developer Environment (2026 Edition)",
+    "id": "claude-bounty-5",
+    "title": "[BOUNTY $200] WORKFLOW: n8n + Claude Code 鈥?automated weekly dev summary",
+    "repo": "claude-builders-bounty/claude-builders-bounty",
+    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/646",
+    "labels": [
+      "workflow",
+      "n8n",
+      "claude-code",
+      "automation",
+      "devops"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-03-26"
+  },
+  {
+    "id": "claude-bounty-4",
+    "title": "[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment",
+    "repo": "claude-builders-bounty/claude-builders-bounty",
+    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/645",
+    "labels": [
+      "agent",
+      "pr-review",
+      "claude-code",
+      "automation",
+      "github"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-24"
+  },
+  {
+    "id": "claude-bounty-1",
+    "title": "[BOUNTY $50] SKILL: Generate a structured CHANGELOG from git history",
+    "repo": "claude-builders-bounty/claude-builders-bounty",
+    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/644",
+    "labels": [
+      "skill",
+      "git",
+      "changelog",
+      "claude-code",
+      "automation"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-23"
+  },
+  {
+    "id": "claude-bounty-3",
+    "title": "[BOUNTY $100] HOOK: Pre-tool-use hook that blocks destructive bash commands",
+    "repo": "claude-builders-bounty/claude-builders-bounty",
+    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/642",
+    "labels": [
+      "hook",
+      "security",
+      "bash",
+      "claude-code",
+      "safety"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-22"
+  },
+  {
+    "id": "privacylayer-zk066",
+    "title": "ZK-066: Add malformed-witness hardening tests for truncated paths, oversized fields, and invalid address encodings",
+    "repo": "ANAVHEOBA/PrivacyLayer",
+    "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/310",
+    "labels": [
+      "security",
+      "testing",
+      "zk",
+      "typescript",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-21"
+  },
+  {
+    "id": "privacylayer-zk069",
+    "title": "ZK-069: Add constraint-count snapshotting and regression gates for commitment and withdrawal circuits",
+    "repo": "ANAVHEOBA/PrivacyLayer",
+    "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/313",
+    "labels": [
+      "optimization",
+      "zk",
+      "performance",
+      "noir",
+      "stellar"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-04-20"
+  },
+  {
+    "id": "rustchain-1876",
+    "title": "[BOUNTY] N64 LLM Speedrun 鈥?5 tok/s on Real N64 Hardware (300 RTC)",
+    "repo": "Scottcjn/Rustchain",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/1876",
+    "labels": [
+      "llm",
+      "n64",
+      "hardware",
+      "optimization",
+      "rust",
+      "fun",
+      "challenge"
+    ],
+    "reward": 300,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-19"
+  },
+  {
+    "id": "cometbft-5801",
+    "title": "Malicious Peer Can Disrupt Blocksync Synchronization",
+    "repo": "cometbft/cometbft",
+    "url": "https://github.com/cometbft/cometbft/issues/5801",
+    "labels": [
+      "security",
+      "golang",
+      "cosmos",
+      "denial-of-service",
+      "p2p"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-18"
+  },
+  {
+    "id": "splurt-954",
+    "title": "[BOUNTY] Fix Chugging Down Things + Dominate/Well-Trained Traits to be Neutral ()",
+    "repo": "SPLURT-Station/S.P.L.U.R.T-tg",
+    "url": "https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/954",
+    "labels": [
+      "byond",
+      "dm",
+      "bug-fix",
+      "game-mechanics",
+      "traits"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-17"
+  },
+  {
+    "id": "splurt-932",
+    "title": "[BOUNTY] Suggestion #675 — Fuckable Slits and Sheaths",
+    "repo": "SPLURT-Station/S.P.L.U.R.T-tg",
+    "url": "https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/932",
+    "labels": [
+      "byond",
+      "dm",
+      "vore",
+      "game-mechanics",
+      "sprites"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-16"
+  },
+  {
+    "id": "splurt-929",
+    "title": "[BOUNTY] Suggestion #648 — Sex Based Sect for Chaplain",
+    "repo": "SPLURT-Station/S.P.L.U.R.T-tg",
+    "url": "https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/929",
+    "labels": [
+      "byond",
+      "dm",
+      "game-mechanics",
+      "roleplay",
+      "religion"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-04-15"
+  },
+  {
+    "id": "asyncapi-5333",
+    "title": "[BOUNTY] Redesign Dashboard Update Workflow to Handle API Rate Limit Exhaustion",
+    "repo": "asyncapi/website",
+    "url": "https://github.com/asyncapi/website/issues/5333",
+    "labels": [
+      "javascript",
+      "github-actions",
+      "workflow",
+      "api",
+      "rate-limiting",
+      "automation"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-14"
+  },
+  {
+    "id": "tari-wxtm-103",
+    "title": "[BOUNTY] Mitigate Risks Due to 'next' Known CVEs Version and Current Versions Range",
+    "repo": "tari-project/wxtm-bridge-frontend",
+    "url": "https://github.com/tari-project/wxtm-bridge-frontend/issues/103",
+    "labels": [
+      "security",
+      "cve",
+      "javascript",
+      "frontend",
+      "dependencies"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-13"
+  },
+  {
+    "id": "rustchain-bounty-3418",
+    "title": "[BOUNTY] Register on Beacon Atlas + Prove Commerce (Pool: 150 RTC)",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/3418",
+    "labels": [
+      "beacon",
+      "registration",
+      "DePIN",
+      "marketing",
+      "tutorial"
+    ],
+    "reward": 150,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-12"
+  },
+  {
+    "id": "rustchain-bounty-2634",
+    "title": "[BOUNTY CAMPAIGN] Bring Your Human to Work Day — Match Agent Engagement with Verified Humans (Pool: 500 RTC)",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2634",
+    "labels": [
+      "social",
+      "engagement",
+      "DePIN",
+      "verified-humans",
+      "multiplier"
+    ],
+    "reward": 500,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-11"
+  },
+  {
+    "id": "rustchain-2890",
+    "title": "[BOUNTY: 100 RTC] Security Audit — Find Critical Vulnerabilities in RustChain Node",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2890",
+    "labels": [
+      "security",
+      "audit",
+      "rust",
+      "blockchain",
+      "vulnerabilities",
+      "node"
+    ],
+    "reward": 100,
+    "currency": "RTC",
+    "status": "claimed",
+    "difficulty": "hard",
+    "posted": "2026-04-10"
+  },
+  {
+    "id": "rustchain-2866",
+    "title": "[BOUNTY: 30 RTC] Build a VS Code Extension — RustChain Wallet & Miner Dashboard",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2866",
+    "labels": [
+      "vscode",
+      "extension",
+      "rust",
+      "wallet",
+      "miner",
+      "dashboard",
+      "typescript"
+    ],
+    "reward": 30,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-09"
+  },
+  {
+    "id": "rustchain-2864",
+    "title": "[BOUNTY: 10 RTC] Build a Telegram Bot — Check RustChain Balance and Miner Status",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2864",
+    "labels": [
+      "telegram",
+      "bot",
+      "rust",
+      "wallet",
+      "miner",
+      "status",
+      "API"
+    ],
+    "reward": 10,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-08"
+  },
+  {
+    "id": "rustchain-2868",
+    "title": "[BOUNTY: 20 RTC] Create a GitHub Action — Award RTC for Merged Pull Requests",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2868",
+    "labels": [
+      "github-actions",
+      "automation",
+      "rewards",
+      "pr",
+      "DePIN",
+      "CI"
+    ],
+    "reward": 20,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-07"
+  },
+  {
+    "id": "rustchain-2869",
+    "title": "[BOUNTY: 5 RTC] Post RustChain to Hacker News, Reddit, or Lobsters (With Proof)",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2869",
+    "labels": [
+      "social-media",
+      "marketing",
+      "hn",
+      "reddit",
+      "lobsters",
+      "DePIN"
+    ],
+    "reward": 5,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-06"
+  },
+  {
+    "id": "rustchain-2867",
+    "title": "[BOUNTY: 3 RTC] Add RustChain to 5 Awesome Lists on GitHub (DePIN, Blockchain, AI)",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2867",
+    "labels": [
+      "github",
+      "marketing",
+      "lists",
+      "DePIN",
+      "blockchain",
+      "AI"
+    ],
+    "reward": 3,
+    "currency": "RTC",
+    "status": "claimed",
+    "difficulty": "easy",
+    "posted": "2026-04-05"
+  },
+  {
+    "id": "rustchain-1978",
+    "title": "[BOUNTY] Implement CI Pipeline for Automated Testing",
+    "repo": "Scottcjn/Rustchain",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/1978",
+    "labels": [
+      "ci-cd",
+      "testing",
+      "automation",
+      "rust",
+      "github-actions"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-04"
+  },
+  {
+    "id": "rustchain-1977",
+    "title": "[BOUNTY] Improve Dashboard UX for Mobile Devices",
+    "repo": "Scottcjn/Rustchain",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/1977",
+    "labels": [
+      "ux",
+      "mobile",
+      "dashboard",
+      "frontend",
+      "responsive"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-03"
+  },
+  {
+    "id": "rustchain-2960",
+    "title": "[BOUNTY] April Showers Star Drive — Help RustChain Hit 512 Stars + Earn RTC with Multipliers",
+    "repo": "Scottcjn/Rustchain",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/2960",
+    "labels": [
+      "github",
+      "stars",
+      "marketing",
+      "social",
+      "DePIN",
+      "campaign"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-02"
+  },
+  {
+    "id": "rustchain-2959",
+    "title": "[BOUNTY] April Showers Star Drive @neosmith1 — Red Team Invitation: Continue Auditing (50-200 RTC)",
+    "repo": "Scottcjn/Rustchain",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/2959",
+    "labels": [
+      "security",
+      "audit",
+      "red-team",
+      "DePIN",
+      "rust",
+      "blockchain"
+    ],
+    "reward": 50,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-01"
+  },
+  {
+    "id": "rustchain-2177",
+    "title": "[BOUNTY: 15 RTC] Record LLM Inference on Unusual Hardware",
+    "repo": "Scottcjn/Rustchain",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/2177",
+    "labels": [
+      "llm",
+      "hardware",
+      "inference",
+      "video",
+      "content",
+      "exotic"
+    ],
+    "reward": 15,
+    "currency": "RTC",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-03-31"
+  },
+  {
+    "id": "rustchain-2176",
+    "title": "[BOUNTY: 20 RTC] Run PPA Fingerprint on Exotic Hardware (SPARC, MIPS, RISC-V, ARM SBC)",
+    "repo": "Scottcjn/Rustchain",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/2176",
+    "labels": [
+      "ppa",
+      "hardware",
+      "fingerprint",
+      "exotic",
+      "sparc",
+      "mips",
+      "risc-v",
+      "arm"
+    ],
+    "reward": 20,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-03-30"
+  },
+  {
+    "id": "rustchain-2204",
+    "title": "[BOUNTY: 3 RTC] Share elyanlabs.ai Launch on Social Media (With Proof)",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2204",
+    "labels": [
+      "social-media",
+      "marketing",
+      "DePIN",
+      "launch"
+    ],
+    "reward": 3,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-03-29"
+  },
+  {
+    "id": "rustchain-2203",
+    "title": "[BOUNTY: 5 RTC] Submit elyanlabs.ai to Google Search Console + Create sitemap.xml",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2203",
+    "labels": [
+      "seo",
+      "google",
+      "sitemap",
+      "web",
+      "marketing"
+    ],
+    "reward": 5,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-03-28"
+  },
+  {
+    "id": "rustchain-17",
+    "title": "Bounty: 'Mine Your Grandma's Computer' — Vintage Miner Setup Guide",
+    "repo": "Scottcjn/bottube",
+    "url": "https://github.com/Scottcjn/bottube/issues/17",
+    "labels": [
+      "mining",
+      "vintage",
+      "guide",
+      "hardware",
+      "tutorial",
+      "content"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-03-27"
+  },
+  {
+    "id": "rustchain-16",
+    "title": "Bounty: GPU Fingerprinting — Channel 8 for PPA (RIP-0308)",
+    "repo": "Scottcjn/bottube",
+    "url": "https://github.com/Scottcjn/bottube/issues/16",
+    "labels": [
+      "gpu",
+      "ppa",
+      "fingerprint",
+      "hardware",
+      "video",
+      "channel"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-03-26"
+  },
+  {
+    "id": "rustchain-646",
+    "title": "[BOUNTY: 5 RTC] Video Response Chain — Reply to an Existing Video with Your Own",
+    "repo": "Scottcjn/bottube",
+    "url": "https://github.com/Scottcjn/bottube/issues/646",
+    "labels": [
+      "video",
+      "content",
+      "social",
+      "youtube",
+      "engagement"
+    ],
+    "reward": 5,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-24"
+  },
+  {
+    "id": "rustchain-649",
+    "title": "[BOUNTY: 8 RTC] Share BoTTube Content on Another Platform (With Proof)",
+    "repo": "Scottcjn/bottube",
+    "url": "https://github.com/Scottcjn/bottube/issues/649",
+    "labels": [
+      "social-media",
+      "video",
+      "marketing",
+      "cross-platform",
+      "content"
+    ],
+    "reward": 8,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-23"
+  },
+  {
+    "id": "rustchain-647",
+    "title": "[BOUNTY: 3 RTC] Thoughtful Comment Marathon — 10 Quality Comments in One Day",
+    "repo": "Scottcjn/bottube",
+    "url": "https://github.com/Scottcjn/bottube/issues/647",
+    "labels": [
+      "social",
+      "engagement",
+      "comments",
+      "content",
+      "community"
+    ],
+    "reward": 3,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-22"
+  },
+  {
+    "id": "rustchain-650",
+    "title": "[BOUNTY: 5 RTC/episode] Create a Tutorial Series (3+ Episodes on Any Tech Topic)",
+    "repo": "Scottcjn/bottube",
+    "url": "https://github.com/Scottcjn/bottube/issues/650",
+    "labels": [
+      "tutorial",
+      "video",
+      "content",
+      "education",
+      "series"
+    ],
+    "reward": 5,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-21"
+  },
+  {
+    "id": "rustchain-644",
+    "title": "[BOUNTY: 20 RTC] Best Bot Personality Contest — Most Engaging AI Creator Wins",
+    "repo": "Scottcjn/bottube",
+    "url": "https://github.com/Scottcjn/bottube/issues/644",
+    "labels": [
+      "ai",
+      "personality",
+      "contest",
+      "bot",
+      "creative",
+      "content"
+    ],
+    "reward": 20,
+    "currency": "RTC",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-04-20"
+  },
+  {
+    "id": "rustchain-2150",
+    "title": "[BOUNTY: 10 RTC] Create a 'What is Proof of Physical AI?' Explainer Video",
+    "repo": "Scottcjn/bottube",
+    "url": "https://github.com/Scottcjn/bottube/issues/2150",
+    "labels": [
+      "video",
+      "ppa",
+      "explainer",
+      "AI",
+      "blockchain",
+      "education"
+    ],
+    "reward": 10,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-19"
+  },
+  {
+    "id": "rustchain-2147",
+    "title": "[BOUNTY: 30 RTC] BoTTube PPA Verification Video — Show Your Hardware Fingerprint",
+    "repo": "Scottcjn/bottube",
+    "url": "https://github.com/Scottcjn/bottube/issues/2147",
+    "labels": [
+      "video",
+      "ppa",
+      "verification",
+      "hardware",
+      "fingerprint",
+      "DePIN"
+    ],
+    "reward": 30,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-18"
+  },
+  {
+    "id": "rustchain-7745",
+    "title": "[BOUNTY] Add Rate Limiting to Indexer REST API Endpoints",
+    "repo": "tari-project/tari",
+    "url": "https://github.com/tari-project/tari/issues/7745",
+    "labels": [
+      "rust",
+      "api",
+      "rate-limiting",
+      "indexer",
+      "backend",
+      "security"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-17"
+  },
+  {
+    "id": "rustchain-tari-ootle-1997",
+    "title": "[BOUNTY] Implement CI Pipeline for Automated Testing (tari-ootle)",
+    "repo": "tari-project/tari-ootle",
+    "url": "https://github.com/tari-project/tari-ootle/issues/1997",
+    "labels": [
+      "ci-cd",
+      "testing",
+      "tari",
+      "automation",
+      "rust"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-16"
+  },
+  {
+    "id": "rustchain-tari-ootle-3",
+    "title": "[BOUNTY] AgentFolio — Beacon Integration Spec + Reference Implementation (100 RTC)",
+    "repo": "tari-project/tari-ootle",
+    "url": "https://github.com/tari-project/tari-ootle/issues/3",
+    "labels": [
+      "beacon",
+      "integration",
+      "DePIN",
+      "spec",
+      "implementation",
+      "rust"
+    ],
+    "reward": 100,
+    "currency": "RTC",
+    "status": "claimed",
+    "difficulty": "hard",
+    "posted": "2026-04-15"
+  },
+  {
+    "id": "asyncapi-tck-247",
+    "title": "[BOUNTY] Introduce v3 Compatibility Tests",
+    "repo": "asyncapi/tck",
+    "url": "https://github.com/asyncapi/tck/issues/247",
+    "labels": [
+      "testing",
+      "compatibility",
+      "asyncapi",
+      "javascript",
+      "v3"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-14"
+  },
+  {
+    "id": "dasharo-986",
+    "title": "[BOUNTY] Tier S Defectors Identified (v0.1.0) Missing README",
+    "repo": "Dasharo/dasharo-issues",
+    "url": "https://github.com/Dasharo/dasharo-issues/issues/986",
+    "labels": [
+      "documentation",
+      "readme",
+      "firmware",
+      "security",
+      "embedded"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-13"
+  },
+  {
+    "id": "meeet-63",
+    "title": "[BOUNTY] MEEET Oracle — AI Prediction Engine on Homepage (earn 2,000 )",
+    "repo": "alxvasilevvv/meeet-solana-state",
+    "url": "https://github.com/alxvasilevvv/meeet-solana-state/issues/63",
+    "labels": [
+      "ai",
+      "solana",
+      "oracle",
+      "prediction-engine",
+      "DePIN",
+      "web3"
+    ],
+    "reward": 2,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-12"
+  },
+  {
+    "id": "meeet-65",
+    "title": "[BOUNTY] CrewAI / AutoGen / LangGraph Adapter (earn 750 )",
+    "repo": "alxvasilevvv/meeet-solana-state",
+    "url": "https://github.com/alxvasilevvv/meeet-solana-state/issues/65",
+    "labels": [
+      "ai",
+      "langgraph",
+      "autogen",
+      "crewai",
+      "agent",
+      "integration"
+    ],
+    "reward": 750,
+    "currency": "MEEET",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-11"
+  },
+  {
+    "id": "meeet-62",
+    "title": "[BOUNTY] Create AI Agent Tutorial Video (earn 500 )",
+    "repo": "alxvasilevvv/meeet-solana-state",
+    "url": "https://github.com/alxvasilevvv/meeet-solana-state/issues/62",
+    "labels": [
+      "ai",
+      "tutorial",
+      "video",
+      "content",
+      "solana",
+      "agent"
+    ],
+    "reward": 500,
+    "currency": "MEEET",
+    "status": "claimed",
+    "difficulty": "easy",
+    "posted": "2026-04-10"
+  },
+  {
+    "id": "meeet-60",
+    "title": "[BOUNTY] MEEET MCP Server — Build MCP Server for MEEET (earn 500 )",
+    "repo": "alxvasilevvv/meeet-solana-state",
+    "url": "https://github.com/alxvasilevvv/meeet-solana-state/issues/60",
+    "labels": [
+      "mcp",
+      "ai",
+      "solana",
+      "agent",
+      "server",
+      "DePIN"
+    ],
+    "reward": 500,
+    "currency": "MEEET",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-09"
+  },
+  {
+    "id": "meeet-68",
+    "title": "[BOUNTY] Build Telegram Mini App for Agent Creation (earn 1,000 )",
+    "repo": "alxvasilevvv/meeet-solana-state",
+    "url": "https://github.com/alxvasilevvv/meeet-solana-state/issues/68",
+    "labels": [
+      "telegram",
+      "mini-app",
+      "ai",
+      "agent",
+      "solana",
+      "DePIN",
+      "frontend"
+    ],
+    "reward": 1,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-08"
+  },
+  {
+    "id": "meeet-69",
+    "title": "[BOUNTY] Build MEEET MCP Server (earn 500  bounty)",
+    "repo": "alxvasilevvv/meeet-solana-state",
+    "url": "https://github.com/alxvasilevvv/meeet-solana-state/issues/69",
+    "labels": [
+      "mcp",
+      "ai",
+      "solana",
+      "agent",
+      "server",
+      "DePIN"
+    ],
+    "reward": 500,
+    "currency": "MEEET",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-07"
+  },
+  {
+    "id": "rustchain-2862",
+    "title": "[BOUNTY: 1 RTC] Run the RustChain Miner for 24 Hours and Share Your Hardware Report",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2862",
+    "labels": [
+      "mining",
+      "hardware",
+      "report",
+      "rust",
+      "DePIN",
+      "performance"
+    ],
+    "reward": 1,
+    "currency": "RTC",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-06"
+  },
+  {
+    "id": "midnight-326",
+    "title": "[Tutorial] Midnight vs Other Privacy Chains: Architecture Comparison for Developers",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/326",
+    "labels": [
+      "midnight",
+      "privacy",
+      "blockchain",
+      "architecture",
+      "comparison",
+      "ZK"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "hard",
+    "posted": "2026-04-05"
+  },
+  {
+    "id": "midnight-324",
+    "title": "[Tutorial] Running a Midnight Node: Setup, Sync & Monitoring",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/324",
+    "labels": [
+      "midnight",
+      "node",
+      "setup",
+      "monitoring",
+      "infrastructure",
+      "ZK"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-04"
+  },
+  {
+    "id": "midnight-323",
+    "title": "[Tutorial] Getting NIGHT Tokens: Exchanges, Bridging & Wallet Funding on Mainnet",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/323",
+    "labels": [
+      "midnight",
+      "tokens",
+      "wallet",
+      "bridging",
+      "onboarding",
+      "NIGHT"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-03"
+  },
+  {
+    "id": "midnight-322",
+    "title": "[Tutorial] Handling Midnight SDK Breaking Changes: A Developer's Upgrade Playbook",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/322",
+    "labels": [
+      "midnight",
+      "sdk",
+      "migration",
+      "breaking-changes",
+      "developer-experience"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-02"
+  },
+  {
+    "id": "midnight-321",
+    "title": "[Tutorial] Security Checklist for Midnight dApps Before Deployment",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/321",
+    "labels": [
+      "midnight",
+      "security",
+      "checklist",
+      "deployment",
+      "ZK",
+      "audit"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-01"
+  },
+  {
+    "id": "midnight-320",
+    "title": "[Tutorial] Security Checklist for Midnight dApps Before Deployment",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/320",
+    "labels": [
+      "midnight",
+      "security",
+      "checklist",
+      "ZK",
+      "smart-contracts"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-03-31"
+  },
+  {
+    "id": "midnight-319",
+    "title": "[Tutorial] When Proofs Fail: Debugging Proof Server Errors & ZK Generation Failures",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/319",
+    "labels": [
+      "midnight",
+      "debugging",
+      "proof-server",
+      "ZK",
+      "error-handling"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-03-30"
+  },
+  {
+    "id": "midnight-318",
+    "title": "[Tutorial] Decoding Error 1010: What 'Invalid Transaction' Actually Means",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/318",
+    "labels": [
+      "midnight",
+      "error-codes",
+      "transaction",
+      "ZK",
+      "debugging"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-03-29"
+  },
+  {
+    "id": "midnight-316",
+    "title": "[Tutorial] Anonymous Membership Proofs: Allowlists, Voter Rolls & Gated Access",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/316",
+    "labels": [
+      "midnight",
+      "ZK",
+      "merkle-tree",
+      "voting",
+      "allowlist",
+      "privacy"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-03-28"
+  },
+  {
+    "id": "midnight-315",
+    "title": "[Tutorial] Building a Compliance Attestation System with Selective Disclosure",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/315",
+    "labels": [
+      "midnight",
+      "compliance",
+      "selective-disclosure",
+      "ZK",
+      "attestation"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-03-27"
+  },
+  {
+    "id": "midnight-313",
+    "title": "[Tutorial] Using midnight-mcp for Contract Development with AI Assistants",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/313",
+    "labels": [
+      "midnight",
+      "mcp",
+      "ai",
+      "claude",
+      "agent",
+      "development"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-03-26"
+  },
+  {
+    "id": "midnight-312",
+    "title": "[Tutorial] Testing Compact Contracts: Unit Tests, Assertions, and Local Simulation",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/312",
+    "labels": [
+      "midnight",
+      "testing",
+      "compact",
+      "ZK",
+      "vitest",
+      "simulation"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-24"
+  },
+  {
+    "id": "midnight-311",
+    "title": "[Tutorial] Integrating Midnight Proofs into an Existing Backend (Node.js/REST)",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/311",
+    "labels": [
+      "midnight",
+      "backend",
+      "nodejs",
+      "rest",
+      "ZK",
+      "proof-server"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-23"
+  },
+  {
+    "id": "midnight-310",
+    "title": "[Tutorial] Reading and Reacting to Contract State from a Frontend",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/310",
+    "labels": [
+      "midnight",
+      "frontend",
+      "react",
+      "graphql",
+      "indexer",
+      "state"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-22"
+  },
+  {
+    "id": "midnight-309",
+    "title": "[Tutorial] DApp Connector API: Connecting a Browser dApp to Midnight Wallets",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/309",
+    "labels": [
+      "midnight",
+      "wallet",
+      "dapp-connector",
+      "browser",
+      "lace",
+      "typescript"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-21"
+  },
+  {
+    "id": "midnight-307",
+    "title": "[Tutorial] Adding Privacy to an Existing dApp: A Retrofit Guide",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/307",
+    "labels": [
+      "midnight",
+      "privacy",
+      "retrofit",
+      "ZK",
+      "dapp",
+      "migration"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "hard",
+    "posted": "2026-04-20"
+  },
+  {
+    "id": "midnight-306",
+    "title": "[Tutorial] Time and Deadlines in Compact: Block Time, Counters & the Uint<16> Problem",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/306",
+    "labels": [
+      "midnight",
+      "compact",
+      "ZK",
+      "time",
+      "counters",
+      "deadline"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-19"
+  },
+  {
+    "id": "midnight-305",
+    "title": "[Tutorial] Contract Size Limits: What Happens When Your dApp Gets Too Complex",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/305",
+    "labels": [
+      "midnight",
+      "compact",
+      "ZK",
+      "size-limits",
+      "optimization",
+      "performance"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-18"
+  },
+  {
+    "id": "midnight-304",
+    "title": "[Tutorial] Bringing External Data On-Chain: Oracle Patterns for Midnight",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/304",
+    "labels": [
+      "midnight",
+      "oracle",
+      "ZK",
+      "external-data",
+      "price-feed",
+      "pattern"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-17"
+  },
+  {
+    "id": "midnight-303",
+    "title": "[Tutorial] Multi-Party Private State and Contracts Between Two+ Users",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/303",
+    "labels": [
+      "midnight",
+      "multi-party",
+      "ZK",
+      "private-state",
+      "escrow",
+      "multi-sig"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-16"
+  },
+  {
+    "id": "midnight-302",
+    "title": "[Tutorial] Contract-State Accounting vs UTXO Tokens: Two Models for On-Chain Value",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/302",
+    "labels": [
+      "midnight",
+      "utxo",
+      "accounting",
+      "ZK",
+      "tokens",
+      "ledger"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-04-15"
+  },
+  {
+    "id": "midnight-300",
+    "title": "[Tutorial] Understanding Wallet Sync: Why Your Deploy Fails Before It Starts",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/300",
+    "labels": [
+      "midnight",
+      "wallet",
+      "sync",
+      "deploy",
+      "debugging",
+      "DUST"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-14"
+  },
+  {
+    "id": "midnight-299",
+    "title": "[Tutorial] DUST Sponsorship: How One Wallet Pays Fees for Another User's Transaction",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/299",
+    "labels": [
+      "midnight",
+      "DUST",
+      "sponsorship",
+      "fees",
+      "wallet",
+      "gas"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-13"
+  },
+  {
+    "id": "midnight-298",
+    "title": "[Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/298",
+    "labels": [
+      "midnight",
+      "ZK",
+      "math",
+      "overflow",
+      "circuit",
+      "verified-computation"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-12"
+  },
+  {
+    "id": "midnight-297",
+    "title": "[Tutorial] Replay Attack Prevention in Compact: Nonces, Nullifiers & Domain Separation",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/297",
+    "labels": [
+      "midnight",
+      "security",
+      "replay-attack",
+      "ZK",
+      "nullifier",
+      "nonce"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-11"
+  },
+  {
+    "id": "midnight-296",
+    "title": "[Tutorial] Building a Commit/Reveal Voting System in Compact",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/296",
+    "labels": [
+      "midnight",
+      "voting",
+      "ZK",
+      "commit-reveal",
+      "DAO",
+      "privacy"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "hard",
+    "posted": "2026-04-10"
+  },
+  {
+    "id": "midnight-294",
+    "title": "[Tutorial] Thinking in Compact: A Guide for Circom Developers",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/294",
+    "labels": [
+      "midnight",
+      "compact",
+      "circom",
+      "ZK",
+      "migration",
+      "tutorial"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-09"
+  },
+  {
+    "id": "midnight-293",
+    "title": "[Tutorial] Compact Standard Library: A Practical Guide to Every Export",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/293",
+    "labels": [
+      "midnight",
+      "standard-library",
+      "compact",
+      "ZK",
+      "tutorial",
+      "reference"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-08"
+  },
+  {
+    "id": "midnight-292",
+    "title": "[Tutorial] Designing Public vs. Private State: What Goes Where and Why",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/292",
+    "labels": [
+      "midnight",
+      "privacy",
+      "state-design",
+      "ZK",
+      "disclose",
+      "tutorial"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-07"
+  },
+  {
+    "id": "midnight-291",
+    "title": "[Tutorial] Witnesses in Depth: Patterns, Types, and Real Use Cases",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/291",
+    "labels": [
+      "midnight",
+      "witness",
+      "ZK",
+      "compact",
+      "patterns",
+      "tutorial"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-06"
+  },
+  {
+    "id": "midnight-290",
+    "title": "[Tutorial] Selective Disclosure Patterns in Compact",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/290",
+    "labels": [
+      "midnight",
+      "selective-disclosure",
+      "ZK",
+      "privacy",
+      "tutorial"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
+    "difficulty": "medium",
+    "posted": "2026-04-05"
+  },
+  {
+    "id": "midnight-289",
+    "title": "[Tutorial] Working with Maps and Merkle Trees in Compact",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/289",
+    "labels": [
+      "midnight",
+      "map",
+      "merkle-tree",
+      "ZK",
+      "compact",
+      "data-structures"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-04"
+  },
+  {
+    "id": "midnight-288",
+    "title": "[Tutorial] Accepting Token Deposits into a Contract: ReceiveShielded & Escrow Patterns",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/288",
+    "labels": [
+      "midnight",
+      "tokens",
+      "escrow",
+      "ZK",
+      "deposit",
+      "shielded"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "medium",
+    "posted": "2026-04-03"
+  },
+  {
+    "id": "midnight-287",
+    "title": "[Tutorial] Building a Shielded Token Vault: Deposit, Accumulate & Withdraw",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/287",
+    "labels": [
+      "midnight",
+      "shielded-token",
+      "ZK",
+      "vault",
+      "privacy",
+      "tutorial"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "hard",
+    "posted": "2026-04-02"
+  },
+  {
+    "id": "midnight-284",
+    "title": "[Tutorial] Midnight Development on Windows via WSL2",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/284",
+    "labels": [
+      "midnight",
+      "wsl2",
+      "windows",
+      "setup",
+      "development-environment"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
+    "difficulty": "easy",
+    "posted": "2026-04-01"
+  },
+  {
+    "id": "midnight-283",
+    "title": "[Tutorial] Getting Started with Midnight: Your First Private Smart Contract",
     "repo": "midnightntwrk/contributor-hub",
     "url": "https://github.com/midnightntwrk/contributor-hub/issues/283",
-    "reward": "undisclosed",
+    "labels": [
+      "midnight",
+      "getting-started",
+      "tutorial",
+      "ZK",
+      "smart-contracts",
+      "beginner"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "claimed",
     "difficulty": "easy",
-    "tags": [
-      "video",
-      "setup",
-      "tutorial"
-    ]
+    "posted": "2026-03-31"
   },
   {
-    "id": "new-001",
-    "title": "[$14,999 BOUNTY] RCS Support",
-    "repo": "microg/GmsCore",
-    "url": "https://github.com/microg/GmsCore/issues/2994",
-    "reward": "$14,999",
-    "difficulty": "hard",
-    "tags": [
-      "android",
-      "security",
-      "mobile",
-      "RCS",
-      "GSM"
-    ]
-  },
-  {
-    "id": "new-002",
-    "title": "[$250] iOS - Attachment - The camera viewfinder doesn't appear automatically",
-    "repo": "Expensify/App",
-    "url": "https://github.com/Expensify/App/issues/87456",
-    "reward": "$250",
+    "id": "midnight-282",
+    "title": "[Tutorial] Building Your First Midnight dApp: A Step-by-Step Workshop",
+    "repo": "midnightntwrk/contributor-hub",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/282",
+    "labels": [
+      "midnight",
+      "workshop",
+      "dapp",
+      "ZK",
+      "tutorial",
+      "beginner"
+    ],
+    "reward": 100,
+    "currency": "USDT",
+    "status": "open",
     "difficulty": "medium",
-    "tags": [
-      "iOS",
-      "mobile",
-      "bug",
-      "camera",
-      "attachment"
-    ]
-  },
-  {
-    "id": "new-003",
-    "title": "[$250] Expense - Nothing happens after clicking Pay with personal account when paying from QAB",
-    "repo": "Expensify/App",
-    "url": "https://github.com/Expensify/App/issues/87779",
-    "reward": "$250",
-    "difficulty": "medium",
-    "tags": [
-      "mobile",
-      "bug",
-      "payment",
-      "expense"
-    ]
-  },
-  {
-    "id": "new-004",
-    "title": "Replicate data from external source to internal source with a Plugin",
-    "repo": "outerbase/starbasedb",
-    "url": "https://github.com/outerbase/starbasedb/issues/72",
-    "reward": "$250",
-    "difficulty": "medium",
-    "tags": [
-      "database",
-      "plugin",
-      "integration",
-      "ETL"
-    ]
-  },
-  {
-    "id": "new-005",
-    "title": "Provide a banana bread recipe",
-    "repo": "Dasharo/dasharo-issues",
-    "url": "https://github.com/Dasharo/dasharo-issues/issues/1824",
-    "reward": "undisclosed",
-    "difficulty": "easy",
-    "tags": [
-      "documentation",
-      "docs",
-      "hackathon",
-      "bounty-warmup"
-    ]
-  },
-  {
-    "id": "new-006",
-    "title": "`PCI device 0000:80:14.0 is not assignable` prevents `sys-usb` from starting",
-    "repo": "QubesOS/qubes-issues",
-    "url": "https://github.com/QubesOS/qubes-issues/issues/10393",
-    "reward": "undisclosed",
-    "difficulty": "hard",
-    "tags": [
-      "linux",
-      "USB",
-      "hardware",
-      "security",
-      "QubesOS"
-    ]
-  },
-  {
-    "id": "new-007",
-    "title": "Replace mode in Vim",
-    "repo": "zed-industries/zed",
-    "url": "https://github.com/zed-industries/zed/issues/4440",
-    "reward": "$500",
-    "difficulty": "medium",
-    "tags": [
-      "vim",
-      "editor",
-      "IDE",
-      "Zed"
-    ]
-  },
-  {
-    "id": "new-008",
-    "title": "Unified OpenAI-format LLM proxy endpoint",
-    "repo": "archestra-ai/archestra",
-    "url": "https://github.com/archestra-ai/archestra/issues/3851",
-    "reward": "$1,500",
-    "difficulty": "hard",
-    "tags": [
-      "LLM",
-      "proxy",
-      "API",
-      "OpenAI",
-      "Scala"
-    ]
-  },
-  {
-    "id": "new-009",
-    "title": "gRPC Support",
-    "repo": "getkyo/kyo",
-    "url": "https://github.com/getkyo/kyo/issues/390",
-    "reward": "$500",
-    "difficulty": "medium",
-    "tags": [
-      "grpc",
-      "Scala",
-      "async",
-      "Kyo"
-    ]
-  },
-  {
-    "id": "new-010",
-    "title": "Fix and rewrite collision prevention",
-    "repo": "PX4/PX4-Autopilot",
-    "url": "https://github.com/PX4/PX4-Autopilot/issues/22464",
-    "reward": "$500",
-    "difficulty": "medium",
-    "tags": [
-      "drone",
-      "autopilot",
-      "C++",
-      "robotics"
-    ]
+    "posted": "2026-03-30"
   }
 ]
