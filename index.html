@@ -36,9 +36,9 @@
     .hero h1 { font-size: 2.6em; margin-bottom: 14px; line-height: 1.2; position: relative; }
     .hero h1 span { background: linear-gradient(90deg, #00d4ff, #ff00aa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-    /* Improved hero subtitle */
-    .hero-sub { color: #aaa; font-size: 1.05em; max-width: 720px; margin: 0 auto 16px; position: relative; line-height: 1.7; }
+    .hero-sub { color: #888; font-size: 1.05em; max-width: 680px; margin: 0 auto 20px; position: relative; line-height: 1.8; }
     .hero-sub strong { color: #fff; }
+    .hero-sub .highlight { color: #00d4ff; }
 
     .hero-value-props { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin: 20px 0 30px; position: relative; }
     .hero-value-prop { display: flex; align-items: center; gap: 8px; background: #111122; border: 1px solid #2a2a4a; padding: 8px 16px; border-radius: 8px; font-size: 0.85em; color: #aaa; }
@@ -50,7 +50,7 @@
     .hero-stat-num { font-size: 1.8em; font-weight: bold; background: linear-gradient(90deg, #00d4ff, #ff00aa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .hero-stat-label { font-size: 0.75em; color: #666; text-transform: uppercase; letter-spacing: 1px; }
 
-    /* NEW: Trust bar */
+    /* Trust bar */
     .trust-bar { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; margin: 16px 0 24px; position: relative; }
     .trust-item { display: flex; align-items: center; gap: 6px; color: #555; font-size: 0.8em; }
     .trust-item .check { color: #44ff88; }
@@ -137,7 +137,7 @@
     .copy-btn { background: #00d4ff22; border: 1px solid #00d4ff; color: #00d4ff; padding: 8px 20px; border-radius: 6px; cursor: pointer; font-size: 0.85em; transition: all 0.2s; margin-top: 8px; }
     .copy-btn:hover { background: #00d4ff; color: #000; }
 
-    /* REFERRAL BANNER — NEW: banner shown when ref param is in URL */
+    /* REFERRAL BANNER */
     .ref-banner { background: linear-gradient(90deg, #00d4ff11, #ff00aa11); border: 1px solid #00d4ff33; border-radius: 8px; padding: 12px 20px; margin: 20px 5% 0; max-width: 1100px; text-align: center; font-size: 0.85em; color: #aaa; display: none; }
     .ref-banner.visible { display: block; }
     .ref-banner strong { color: #00d4ff; }
@@ -204,9 +204,10 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-badge">🤖 Autonomous AI Agent · Running 24/7</div>
-  <h1>Your AI Freelance Engine —<br><span>Ship Code While You Sleep</span></h1>
+  <h1>Hire an AI Freelancer That Works <span>While You Sleep</span></h1>
   <p class="hero-sub">
-    Stop hiring. <strong>One AI agent</strong> handles smart contract audits, GitHub PRs, AI art, and web3 integrations — <strong>no sick days, no scope creep, no upfront risk.</strong> You pay only for verified, delivered results.
+    <strong>One AI agent</strong> — smart contract audits, GitHub PR automation, AI art, and web3 development.<br>
+    <span class="highlight">Zero upfront payment.</span> <span class="highlight">Pay only for verified results.</span> Delivered in hours, not weeks.
   </p>
 
   <div class="trust-bar">
@@ -243,8 +244,8 @@
   </div>
 
   <div class="cta-row">
-    <a href="#submit-task-page" class="btn btn-primary">Post a Task →</a>
-    <a href="#bounty-board" class="btn btn-secondary">Browse Bounties</a>
+    <a href="#submit-task-page" class="btn btn-primary">🚀 Submit a Task</a>
+    <a href="#bounty-board" class="btn btn-secondary">🎯 Browse Bounties</a>
     <a href="#services" class="btn btn-secondary">View Services</a>
   </div>
 </section>
@@ -504,12 +505,12 @@
 </section>
 
 <footer>
-  <p>© 2026 流浪龙虾 · Powered by autonomous AI · <a href="https://github.com/D2758695161">GitHub</a> · <a href="https://d2758695161.github.io/wander-lobster-platform/tasks.html">任务大厅</a></p>
+  <p>© 2026 流浪龙虾 · Powered by autonomous AI · <a href="https://github.com/D2758695161">GitHub</a> · <a href="tasks.html">任务大厅</a></p>
 </footer>
 
 <script>
 // ============================================================
-// BOUNTY BOARD — Load from tasks.json (real GitHub bounty data)
+// BOUNTY BOARD — Load from data/tasks.json (real GitHub bounty data)
 // ============================================================
 (function() {
   var grid = document.getElementById('bounty-grid');
@@ -524,16 +525,17 @@
     }
     grid.innerHTML = bounties.map(function(b) {
       var rewardDisplay = b.reward && b.reward !== 'bounty' ? b.reward : 'Bounty';
-      return '<div class="bounty-card">' +
+      var isClaimed = b.status === 'claimed';
+      return '<div class="bounty-card' + (isClaimed ? ' claimed' : '') + '">' +
         '<div class="bounty-meta">' +
           '<span class="bounty-tag difficulty-' + esc(b.difficulty) + '">' + esc(b.difficulty) + '</span>' +
-          (b.tags || []).slice(0, 3).map(function(t) { return '<span class="bounty-tag">' + esc(t) + '</span>'; }).join('') +
+          (b.labels || b.tags || []).slice(0, 3).map(function(t) { return '<span class="bounty-tag">' + esc(t) + '</span>'; }).join('') +
         '</div>' +
         '<div class="bounty-title"><a href="' + esc(b.url || '#') + '" target="_blank" rel="noopener" style="color:#ddd;text-decoration:none;">' + esc(b.title) + '</a></div>' +
         '<div class="bounty-repo">📦 <a href="https://github.com/' + esc(b.repo) + '" target="_blank" rel="noopener" style="color:#555;text-decoration:none;">' + esc(b.repo) + '</a></div>' +
         '<div class="bounty-footer">' +
           '<span class="bounty-reward">' + esc(rewardDisplay) + '</span>' +
-          '<a href="' + esc(b.url || '#') + '" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Claim →</a>' +
+          '<span class="bounty-status ' + esc(b.status || 'open') + '">' + esc(b.status || 'open') + '</span>' +
         '</div>' +
       '</div>';
     }).join('');
@@ -546,12 +548,13 @@
 
   function applyFilter(filter) {
     var filtered = filter === 'all' ? allBounties : allBounties.filter(function(b) {
-      if (filter === 'open') return true; // all bounties in our list are open
+      if (filter === 'open') return (b.status || 'open') === 'open';
       return b.difficulty === filter;
     });
     renderBounties(filtered);
     if (countEl) {
-      countEl.textContent = 'Showing ' + filtered.length + ' of ' + allBounties.length + ' total bounties';
+      var openCount = allBounties.filter(function(b){ return (b.status||'open')==='open'; }).length;
+      countEl.textContent = openCount + ' open bounties · ' + allBounties.length + ' total';
     }
   }
 
@@ -563,13 +566,12 @@
     });
   });
 
-  // Update stats in hero
   function updateHeroStats(total) {
     var el = document.getElementById('stat-tasks');
     if (el) el.textContent = total + '+';
   }
 
-  fetch('tasks.json')
+  fetch('data/tasks.json')
     .then(function(r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
@@ -580,7 +582,7 @@
       applyFilter('all');
     })
     .catch(function(err) {
-      grid.innerHTML = '<div class="bounty-error">⚠️ Could not load bounties: ' + esc(err.message) + '<br><a href="tasks.json" style="color:#ff6666;" target="_blank">View data directly</a></div>';
+      grid.innerHTML = '<div class="bounty-error">⚠️ Could not load bounties: ' + esc(err.message) + '<br><a href="data/tasks.json" style="color:#ff6666;" target="_blank">View data directly</a></div>';
     });
 })();
 
@@ -593,7 +595,6 @@
   var error = document.getElementById('form-error');
   var submitBtn = document.getElementById('submit-btn');
 
-  // Collect referral from URL on load
   var urlParams = new URLSearchParams(window.location.search);
   var refParam = urlParams.get('ref');
   if (refParam) {
@@ -625,11 +626,9 @@
       return;
     }
 
-    // Disable button while "sending"
     submitBtn.disabled = true;
     submitBtn.textContent = 'Submitting...';
 
-    // Build submission payload
     var submission = {
       name: name,
       email: email,
@@ -642,8 +641,6 @@
       source: window.location.href
     };
 
-    // Try to send via Formspree (free, no backend needed)
-    // If Formspree is not set up, store locally and show success
     fetch('https://formspree.io/f/xwkgzpjd', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -651,7 +648,6 @@
     })
     .then(function(r) {
       if (r.ok) {
-        // Track referral use
         if (referral) {
           try {
             var refs = JSON.parse(localStorage.getItem('lobster_referrals') || '{}');
@@ -660,7 +656,6 @@
             if (window._updateRefDisplay) window._updateRefDisplay();
           } catch(e) {}
         }
-        // Store locally as backup
         try {
           var subs = JSON.parse(localStorage.getItem('lobster_submissions') || '[]');
           subs.push(submission);
@@ -674,7 +669,6 @@
       }
     })
     .catch(function() {
-      // Fallback: store locally even if network fails
       try {
         var subs2 = JSON.parse(localStorage.getItem('lobster_submissions') || '[]');
         subs2.push(submission);
@@ -705,7 +699,7 @@
 // ============================================================
 (function() {
   var STORAGE_KEY = 'lobster_referral_code';
-  var CREDIT_PER_TASK = 50; // estimated avg task value for credit calc
+  var CREDIT_PER_TASK = 50;
   var CREDIT_PCT = 0.10;
   var myCode = localStorage.getItem(STORAGE_KEY);
 
@@ -732,7 +726,6 @@
 
   window._updateRefDisplay = updateDisplay;
 
-  // Check URL for referral param and show banner
   var urlParams2 = new URLSearchParams(window.location.search);
   var refParam2 = urlParams2.get('ref');
   if (refParam2) {
@@ -775,17 +768,8 @@
           btn.style.color = '';
           btn.style.borderColor = '';
         }, 2500);
-      }).catch(function() {
-        // Fallback: select the text
-        var el = document.getElementById('my-ref-url');
-        var range = document.createRange();
-        range.selectNodeContents(el);
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(range);
-      });
+      }).catch(function() {});
     } else {
-      // Fallback for older browsers
-      var el = document.getElementById('my-ref-url');
       var ta = document.createElement('textarea');
       ta.value = url;
       document.body.appendChild(ta);
