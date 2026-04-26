@@ -1,17 +1,192 @@
 [
   {
+    "id": "gh-bounty-n001",
+    "title": "[Bounty $2500] Create infrastructure to automatically choose the most optimal configuration for matmul",
+    "repo": "tenstorrent/tt-metal",
+    "url": "https://github.com/tenstorrent/tt-metal/issues/38114",
+    "reward": "$2500",
+    "difficulty": "hard",
+    "tags": ["ml", "hardware", "optimization", "infrastructure", "python"]
+  },
+  {
+    "id": "gh-bounty-n002",
+    "title": "Rust Component Definition Support $500",
+    "repo": "Spectral-Finance/lux",
+    "url": "https://github.com/Spectral-Finance/lux/issues/103",
+    "reward": "$500",
+    "difficulty": "medium",
+    "tags": ["rust", "web3", "finance", "component"]
+  },
+  {
+    "id": "gh-bounty-n003",
+    "title": "[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary",
+    "repo": "claude-builders-bounty/claude-builders-bounty",
+    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5",
+    "reward": "$200",
+    "difficulty": "medium",
+    "tags": ["workflow", "n8n", "automation", "claude", "github"]
+  },
+  {
+    "id": "gh-bounty-n004",
+    "title": "[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment",
+    "repo": "claude-builders-bounty/claude-builders-bounty",
+    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4",
+    "reward": "$150",
+    "difficulty": "medium",
+    "tags": ["agent", "claude", "pr-review", "automation"]
+  },
+  {
+    "id": "gh-bounty-n005",
+    "title": "[BOUNTY] Suggestion #746 - Port the Rogue Star vore system",
+    "repo": "SPLURT-Station/S.P.L.U.R.T-tg",
+    "url": "https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/963",
+    "reward": "bounty",
+    "difficulty": "medium",
+    "tags": ["game", "porting", "feature", "game-dev"]
+  },
+  {
+    "id": "gh-bounty-n006",
+    "title": "ZK-070: Measure practical proving cost for withdrawal flow",
+    "repo": "ANAVHEOBA/PrivacyLayer",
+    "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/314",
+    "reward": "bounty",
+    "difficulty": "hard",
+    "tags": ["noir", "zk", "performance", "proving", "withdrawal"]
+  },
+  {
+    "id": "gh-bounty-n007",
+    "title": "ZK-069: Track circuit size as ZK wave evolves",
+    "repo": "ANAVHEOBA/PrivacyLayer",
+    "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/313",
+    "reward": "bounty",
+    "difficulty": "medium",
+    "tags": ["noir", "zk", "performance", "circuit-size", "ci"]
+  },
+  {
+    "id": "gh-bounty-n008",
+    "title": "ZK-068: Adversarial test harness for core privacy and spend-safety",
+    "repo": "ANAVHEOBA/PrivacyLayer",
+    "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/312",
+    "reward": "bounty",
+    "difficulty": "hard",
+    "tags": ["noir", "zk", "security", "testing", "adversarial"]
+  },
+  {
+    "id": "gh-bounty-n009",
+    "title": "ZK-067: Privacy-regression coverage for note strings, fixtures, and witness payload metadata",
+    "repo": "ANAVHEOBA/PrivacyLayer",
+    "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/311",
+    "reward": "bounty",
+    "difficulty": "medium",
+    "tags": ["noir", "zk", "privacy", "testing", "fixtures"]
+  },
+  {
+    "id": "gh-bounty-n010",
+    "title": "ZK-066: Harden proof-generation boundary against malformed witness inputs",
+    "repo": "ANAVHEOBA/PrivacyLayer",
+    "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/310",
+    "reward": "bounty",
+    "difficulty": "hard",
+    "tags": ["noir", "zk", "security", "proof-generation", "validation"]
+  },
+  {
+    "id": "gh-bounty-n011",
+    "title": "ZK-065: Run all ZK tests, rebuild checks, and artifact hash validation in CI",
+    "repo": "ANAVHEOBA/PrivacyLayer",
+    "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/309",
+    "reward": "bounty",
+    "difficulty": "hard",
+    "tags": ["noir", "zk", "ci", "testing", "pipeline"]
+  },
+  {
+    "id": "gh-bounty-n012",
+    "title": "ZK-064: Add compatibility gate for Noir upgrades",
+    "repo": "ANAVHEOBA/PrivacyLayer",
+    "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/308",
+    "reward": "bounty",
+    "difficulty": "medium",
+    "tags": ["noir", "zk", "ci", "compatibility", "testing"]
+  },
+  {
+    "id": "gh-bounty-n013",
+    "title": "[BOUNTY: 15 RTC each, 200 RTC pool] Make a Video — Mining Hardware Showcase",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/6194",
+    "reward": "15 RTC",
+    "difficulty": "medium",
+    "tags": ["video", "content", "mining", "rust", "hardware", "proof-of-antiquity"]
+  },
+  {
+    "id": "gh-bounty-n014",
+    "title": "ZK-060: Add an SDK ZK integration suite that runs note -> tree -> witness -> proof round trips",
+    "repo": "ANAVHEOBA/PrivacyLayer",
+    "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/304",
+    "reward": "bounty",
+    "difficulty": "hard",
+    "tags": ["typescript", "zk", "sdk", "proof", "testing"]
+  },
+  {
+    "id": "gh-bounty-n015",
+    "title": "[BOUNTY] Red Team UTXO Implementation — Find Bugs, Earn RTC (50-200 RTC)",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2819",
+    "reward": "50-200 RTC",
+    "difficulty": "hard",
+    "tags": ["security", "audit", "red-team", "utxo", "rust", "blockchain"]
+  },
+  {
+    "id": "gh-bounty-n016",
+    "title": "[BOUNTY: 100 RTC] Security Audit — Find Critical Vulnerabilities in RustChain Node",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2867",
+    "reward": "100 RTC",
+    "difficulty": "hard",
+    "tags": ["security", "audit", "red-team", "rust", "blockchain", "node"]
+  },
+  {
+    "id": "gh-bounty-n017",
+    "title": "[BOUNTY: 100 RTC] AgentFolio — Beacon Integration Spec + Reference Implementation",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2890",
+    "reward": "100 RTC",
+    "difficulty": "hard",
+    "tags": ["integration", "agentfolio", "beacon", "rust", "blockchain"]
+  },
+  {
+    "id": "gh-bounty-n018",
+    "title": "[BOUNTY: 5 RTC] Create a YouTube or BoTTube video tutorial about any Elyan Labs project",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2180",
+    "reward": "5 RTC",
+    "difficulty": "medium",
+    "tags": ["video", "tutorial", "content", "bottube", "marketing"]
+  },
+  {
+    "id": "gh-bounty-n019",
+    "title": "[BOUNTY: 10 RTC] Build a Telegram Bot That Checks RustChain Balance and Miner Status",
+    "repo": "Scottcjn/rustchain-bounties",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2869",
+    "reward": "10 RTC",
+    "difficulty": "medium",
+    "tags": ["telegram-bot", "integration", "rust", "blockchain", "wallet"]
+  },
+  {
+    "id": "gh-bounty-n020",
+    "title": "LLM Provider Abstraction Layer $600",
+    "repo": "Spectral-Finance/lux",
+    "url": "https://github.com/Spectral-Finance/lux/issues/99",
+    "reward": "$600",
+    "difficulty": "hard",
+    "tags": ["llm", "ai", "abstraction", "web3", "finance"]
+  },
+  {
     "id": "gh-bounty-001",
     "title": "[$250] Home - Getting Started section not displayed after onboarding",
     "repo": "Expensify/App",
     "url": "https://github.com/Expensify/App/issues/88482",
     "reward": "$250",
     "difficulty": "easy",
-    "tags": [
-      "react-native",
-      "bug",
-      "onboarding",
-      "ui"
-    ]
+    "tags": ["react-native", "bug", "onboarding", "ui"]
   },
   {
     "id": "gh-bounty-002",
@@ -20,12 +195,7 @@
     "url": "https://github.com/Expensify/App/issues/88432",
     "reward": "$250",
     "difficulty": "easy",
-    "tags": [
-      "react-native",
-      "bug",
-      "scan",
-      "pdf"
-    ]
+    "tags": ["react-native", "bug", "scan", "pdf"]
   },
   {
     "id": "gh-bounty-003",
@@ -34,11 +204,7 @@
     "url": "https://github.com/Expensify/App/issues/88401",
     "reward": "$500",
     "difficulty": "easy",
-    "tags": [
-      "react-native",
-      "linting",
-      "chore"
-    ]
+    "tags": ["react-native", "linting", "chore"]
   },
   {
     "id": "gh-bounty-004",
@@ -47,12 +213,7 @@
     "url": "https://github.com/Expensify/App/issues/88383",
     "reward": "$250",
     "difficulty": "hard",
-    "tags": [
-      "react-native",
-      "bug",
-      "crash",
-      "travel"
-    ]
+    "tags": ["react-native", "bug", "crash", "travel"]
   },
   {
     "id": "gh-bounty-005",
@@ -61,12 +222,7 @@
     "url": "https://github.com/Expensify/App/issues/88355",
     "reward": "$250",
     "difficulty": "hard",
-    "tags": [
-      "react-native",
-      "bug",
-      "approval",
-      "expense"
-    ]
+    "tags": ["react-native", "bug", "approval", "expense"]
   },
   {
     "id": "gh-bounty-006",
@@ -75,12 +231,7 @@
     "url": "https://github.com/Expensify/App/issues/88471",
     "reward": "$250",
     "difficulty": "medium",
-    "tags": [
-      "react-native",
-      "bug",
-      "task",
-      "assignee"
-    ]
+    "tags": ["react-native", "bug", "task", "assignee"]
   },
   {
     "id": "gh-bounty-007",
@@ -89,12 +240,7 @@
     "url": "https://github.com/Expensify/App/issues/88443",
     "reward": "$250",
     "difficulty": "medium",
-    "tags": [
-      "react-native",
-      "bug",
-      "deeplink",
-      "navigation"
-    ]
+    "tags": ["react-native", "bug", "deeplink", "navigation"]
   },
   {
     "id": "gh-bounty-008",
@@ -103,12 +249,7 @@
     "url": "https://github.com/Expensify/App/issues/88258",
     "reward": "$250",
     "difficulty": "medium",
-    "tags": [
-      "react-native",
-      "bug",
-      "expense",
-      "tax"
-    ]
+    "tags": ["react-native", "bug", "expense", "tax"]
   },
   {
     "id": "gh-bounty-009",
@@ -117,12 +258,7 @@
     "url": "https://github.com/entrius/gittensor-ui/issues/706",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "react",
-      "ui",
-      "watchlist",
-      "panels"
-    ]
+    "tags": ["react", "ui", "watchlist", "panels"]
   },
   {
     "id": "gh-bounty-010",
@@ -131,13 +267,7 @@
     "url": "https://github.com/entrius/gittensor-ui/issues/674",
     "reward": "bounty",
     "difficulty": "easy",
-    "tags": [
-      "react",
-      "ui",
-      "table",
-      "watchlist",
-      "bounty"
-    ]
+    "tags": ["react", "ui", "table", "watchlist", "bounty"]
   },
   {
     "id": "gh-bounty-011",
@@ -146,12 +276,7 @@
     "url": "https://github.com/sebrandon1/go-skylight/issues/45",
     "reward": "bounty",
     "difficulty": "easy",
-    "tags": [
-      "go",
-      "cli",
-      "refactor",
-      "ux"
-    ]
+    "tags": ["go", "cli", "refactor", "ux"]
   },
   {
     "id": "gh-bounty-012",
@@ -160,12 +285,7 @@
     "url": "https://github.com/Scottcjn/Rustchain/issues/2634",
     "reward": "$500",
     "difficulty": "medium",
-    "tags": [
-      "rust",
-      "crypto",
-      "p2p",
-      "agents"
-    ]
+    "tags": ["rust", "crypto", "p2p", "agents"]
   },
   {
     "id": "gh-bounty-013",
@@ -174,12 +294,7 @@
     "url": "https://github.com/cory-johannsen/mud/issues/243",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "game",
-      "quest",
-      "npc",
-      "bug"
-    ]
+    "tags": ["game", "quest", "npc", "bug"]
   },
   {
     "id": "gh-bounty-014",
@@ -188,12 +303,7 @@
     "url": "https://github.com/cory-johannsen/mud/issues/238",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "game",
-      "quest",
-      "npc",
-      "bug"
-    ]
+    "tags": ["game", "quest", "npc", "bug"]
   },
   {
     "id": "gh-bounty-015",
@@ -202,11 +312,7 @@
     "url": "https://github.com/StellAIverse/luminarytrade/issues/275",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "solidity",
-      "smart-contract",
-      "bug-bounty"
-    ]
+    "tags": ["solidity", "smart-contract", "bug-bounty"]
   },
   {
     "id": "gh-bounty-016",
@@ -215,11 +321,7 @@
     "url": "https://github.com/Dasharo/dasharo-issues/issues/1824",
     "reward": "bounty",
     "difficulty": "easy",
-    "tags": [
-      "documentation",
-      "docs",
-      "fun"
-    ]
+    "tags": ["documentation", "docs", "fun"]
   },
   {
     "id": "gh-bounty-017",
@@ -228,12 +330,7 @@
     "url": "https://github.com/mautic/mautic/issues/16043",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "php",
-      "bug",
-      "email",
-      "tracking"
-    ]
+    "tags": ["php", "bug", "email", "tracking"]
   },
   {
     "id": "gh-bounty-018",
@@ -242,12 +339,7 @@
     "url": "https://github.com/mautic/mautic/issues/16036",
     "reward": "bounty",
     "difficulty": "easy",
-    "tags": [
-      "php",
-      "bug",
-      "ckeditor",
-      "html-templates"
-    ]
+    "tags": ["php", "bug", "ckeditor", "html-templates"]
   },
   {
     "id": "gh-bounty-019",
@@ -256,12 +348,7 @@
     "url": "https://github.com/tenstorrent/tt-blacksmith/issues/538",
     "reward": "$150",
     "difficulty": "hard",
-    "tags": [
-      "python",
-      "pytorch",
-      "ml",
-      "training"
-    ]
+    "tags": ["python", "pytorch", "ml", "training"]
   },
   {
     "id": "gh-bounty-020",
@@ -270,12 +357,7 @@
     "url": "https://github.com/cometbft/cometbft/issues/5801",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "go",
-      "p2p",
-      "security",
-      "consensus"
-    ]
+    "tags": ["go", "p2p", "security", "consensus"]
   },
   {
     "id": "gh-bounty-021",
@@ -284,11 +366,7 @@
     "url": "https://github.com/Kit3713/resume-site/issues/21",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "security",
-      "open-redirect",
-      "xss"
-    ]
+    "tags": ["security", "open-redirect", "xss"]
   },
   {
     "id": "gh-bounty-022",
@@ -297,12 +375,7 @@
     "url": "https://github.com/code-423n4/glow-finance-bug-bounty/issues/58",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "solidity",
-      "security",
-      "defi",
-      "audit"
-    ]
+    "tags": ["solidity", "security", "defi", "audit"]
   },
   {
     "id": "gh-bounty-023",
@@ -311,12 +384,7 @@
     "url": "https://github.com/code-423n4/glow-finance-bug-bounty/issues/56",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "solidity",
-      "security",
-      "defi",
-      "audit"
-    ]
+    "tags": ["solidity", "security", "defi", "audit"]
   },
   {
     "id": "gh-bounty-024",
@@ -325,13 +393,7 @@
     "url": "https://github.com/Jagadeeshftw/grainlify/issues/1004",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "rust",
-      "stellar",
-      "smart-contract",
-      "security",
-      "escrow"
-    ]
+    "tags": ["rust", "stellar", "smart-contract", "security", "escrow"]
   },
   {
     "id": "gh-bounty-025",
@@ -340,13 +402,7 @@
     "url": "https://github.com/Jagadeeshftw/grainlify/issues/1038",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "rust",
-      "stellar",
-      "governance",
-      "risk",
-      "escrow"
-    ]
+    "tags": ["rust", "stellar", "governance", "risk", "escrow"]
   },
   {
     "id": "gh-bounty-026",
@@ -355,13 +411,7 @@
     "url": "https://github.com/Jagadeeshftw/grainlify/issues/999",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "rust",
-      "stellar",
-      "pagination",
-      "filter",
-      "escrow"
-    ]
+    "tags": ["rust", "stellar", "pagination", "filter", "escrow"]
   },
   {
     "id": "gh-bounty-027",
@@ -370,13 +420,7 @@
     "url": "https://github.com/entrius/gittensor/issues/733",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "rust",
-      "blockchain",
-      "bounty",
-      "batch-transactions",
-      "smart-contract"
-    ]
+    "tags": ["rust", "blockchain", "bounty", "batch-transactions", "smart-contract"]
   },
   {
     "id": "gh-bounty-028",
@@ -385,13 +429,7 @@
     "url": "https://github.com/Mumega-com/inkwell/issues/43",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "rust",
-      "bounty-system",
-      "bug",
-      "agents",
-      "auth"
-    ]
+    "tags": ["rust", "bounty-system", "bug", "agents", "auth"]
   },
   {
     "id": "gh-bounty-029",
@@ -400,13 +438,7 @@
     "url": "https://github.com/boundlessfi/bounties/issues/174",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "frontend",
-      "stellar",
-      "bounty-flow",
-      "react",
-      "typescript"
-    ]
+    "tags": ["frontend", "stellar", "bounty-flow", "react", "typescript"]
   },
   {
     "id": "gh-bounty-030",
@@ -415,13 +447,7 @@
     "url": "https://github.com/boundlessfi/bounties/issues/175",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "frontend",
-      "stellar",
-      "lightning-round",
-      "react",
-      "typescript"
-    ]
+    "tags": ["frontend", "stellar", "lightning-round", "react", "typescript"]
   },
   {
     "id": "gh-bounty-031",
@@ -430,12 +456,7 @@
     "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/77",
     "reward": "bounty",
     "difficulty": "easy",
-    "tags": [
-      "backend",
-      "stellar",
-      "api",
-      "typescript"
-    ]
+    "tags": ["backend", "stellar", "api", "typescript"]
   },
   {
     "id": "gh-bounty-032",
@@ -444,12 +465,7 @@
     "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/91",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "backend",
-      "stellar",
-      "webhooks",
-      "automation"
-    ]
+    "tags": ["backend", "stellar", "webhooks", "automation"]
   },
   {
     "id": "gh-bounty-033",
@@ -458,13 +474,7 @@
     "url": "https://github.com/ritik4ever/stellar-bounty-board/issues/96",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "backend",
-      "stellar",
-      "testing",
-      "race-condition",
-      "integration"
-    ]
+    "tags": ["backend", "stellar", "testing", "race-condition", "integration"]
   },
   {
     "id": "gh-bounty-034",
@@ -473,13 +483,7 @@
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/304",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "typescript",
-      "zk",
-      "sdk",
-      "proof",
-      "testing"
-    ]
+    "tags": ["typescript", "zk", "sdk", "proof", "testing"]
   },
   {
     "id": "gh-bounty-035",
@@ -488,13 +492,7 @@
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/311",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "typescript",
-      "zk",
-      "privacy",
-      "testing",
-      "fixtures"
-    ]
+    "tags": ["typescript", "zk", "privacy", "testing", "fixtures"]
   },
   {
     "id": "gh-bounty-036",
@@ -503,13 +501,7 @@
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/298",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "typescript",
-      "zk",
-      "sdk",
-      "deposit",
-      "smart-contract"
-    ]
+    "tags": ["typescript", "zk", "sdk", "deposit", "smart-contract"]
   },
   {
     "id": "gh-bounty-037",
@@ -518,12 +510,7 @@
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/295",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "typescript",
-      "zk",
-      "merkle",
-      "sdk"
-    ]
+    "tags": ["typescript", "zk", "merkle", "sdk"]
   },
   {
     "id": "gh-bounty-038",
@@ -532,12 +519,7 @@
     "url": "https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/954",
     "reward": "$70",
     "difficulty": "medium",
-    "tags": [
-      "game",
-      "bug",
-      "traits",
-      "balance"
-    ]
+    "tags": ["game", "bug", "traits", "balance"]
   },
   {
     "id": "gh-bounty-039",
@@ -546,12 +528,7 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/3534",
     "reward": "bounty",
     "difficulty": "easy",
-    "tags": [
-      "rust",
-      "blockchain",
-      "emoji",
-      "claim"
-    ]
+    "tags": ["rust", "blockchain", "emoji", "claim"]
   },
   {
     "id": "gh-bounty-040",
@@ -560,11 +537,7 @@
     "url": "https://github.com/kodaksax/Bounty-production/issues/534",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "bug",
-      "bounty",
-      "production"
-    ]
+    "tags": ["bug", "bounty", "production"]
   },
   {
     "id": "gh-bounty-041",
@@ -573,11 +546,7 @@
     "url": "https://github.com/PlatformNetwork/bounty-challenge/issues/53422",
     "reward": "$50",
     "difficulty": "easy",
-    "tags": [
-      "challenge",
-      "bug",
-      "bounty"
-    ]
+    "tags": ["challenge", "bug", "bounty"]
   },
   {
     "id": "gh-bounty-042",
@@ -586,12 +555,7 @@
     "url": "https://github.com/aibtcdev/landing-page/issues/628",
     "reward": "$402",
     "difficulty": "easy",
-    "tags": [
-      "python",
-      "api",
-      "deprecation",
-      "agents"
-    ]
+    "tags": ["python", "api", "deprecation", "agents"]
   },
   {
     "id": "gh-bounty-043",
@@ -600,13 +564,7 @@
     "url": "https://github.com/code-flexing/Harvest-Finance/issues/153",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "rust",
-      "stellar",
-      "soroban",
-      "defi",
-      "bounty"
-    ]
+    "tags": ["rust", "stellar", "soroban", "defi", "bounty"]
   },
   {
     "id": "gh-bounty-044",
@@ -615,12 +573,7 @@
     "url": "https://github.com/Stream-Scholar/Stream-Scholar-contracts/issues/179",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "solidity",
-      "smart-contract",
-      "crowdfunding",
-      "bounty"
-    ]
+    "tags": ["solidity", "smart-contract", "crowdfunding", "bounty"]
   },
   {
     "id": "gh-bounty-045",
@@ -629,13 +582,7 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2960",
     "reward": "3 RTC",
     "difficulty": "easy",
-    "tags": [
-      "social-media",
-      "marketing",
-      "community",
-      "rust",
-      "blockchain"
-    ]
+    "tags": ["social-media", "marketing", "community", "rust", "blockchain"]
   },
   {
     "id": "gh-bounty-046",
@@ -644,13 +591,7 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2959",
     "reward": "5 RTC",
     "difficulty": "medium",
-    "tags": [
-      "seo",
-      "marketing",
-      "web",
-      "rust",
-      "blockchain"
-    ]
+    "tags": ["seo", "marketing", "web", "rust", "blockchain"]
   },
   {
     "id": "gh-bounty-047",
@@ -659,13 +600,7 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2866",
     "reward": "5 RTC",
     "difficulty": "easy",
-    "tags": [
-      "social-media",
-      "marketing",
-      "hacker-news",
-      "rust",
-      "blockchain"
-    ]
+    "tags": ["social-media", "marketing", "hacker-news", "rust", "blockchain"]
   },
   {
     "id": "gh-bounty-048",
@@ -674,43 +609,25 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2862",
     "reward": "3 RTC",
     "difficulty": "easy",
-    "tags": [
-      "github",
-      "marketing",
-      "depin",
-      "rust",
-      "blockchain"
-    ]
+    "tags": ["github", "marketing", "depin", "rust", "blockchain"]
   },
   {
     "id": "gh-bounty-049",
-    "title": "[BOUNTY: 100 RTC] AgentFolio ↔ Beacon Integration Spec + Reference Implementation",
+    "title": "[BOUNTY: 100 RTC] AgentFolio – Beacon Integration Spec + Reference Implementation",
     "repo": "Scottcjn/rustchain-bounties",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2890",
     "reward": "100 RTC",
     "difficulty": "hard",
-    "tags": [
-      "integration",
-      "agentfolio",
-      "beacon",
-      "rust",
-      "blockchain"
-    ]
+    "tags": ["integration", "agentfolio", "beacon", "rust", "blockchain"]
   },
   {
     "id": "gh-bounty-050",
-    "title": "[BOUNTY: 100 RTC] Security Audit — Find Critical Vulnerabilities in RustChain Node",
+    "title": "[BOUNTY: 100 RTC] Security Audit – Find Critical Vulnerabilities in RustChain Node",
     "repo": "Scottcjn/rustchain-bounties",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2867",
     "reward": "100 RTC",
     "difficulty": "hard",
-    "tags": [
-      "security",
-      "audit",
-      "red-team",
-      "rust",
-      "blockchain"
-    ]
+    "tags": ["security", "audit", "red-team", "rust", "blockchain"]
   },
   {
     "id": "gh-bounty-051",
@@ -719,27 +636,16 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2869",
     "reward": "10 RTC",
     "difficulty": "medium",
-    "tags": [
-      "telegram-bot",
-      "integration",
-      "rust",
-      "blockchain"
-    ]
+    "tags": ["telegram-bot", "integration", "rust", "blockchain"]
   },
   {
     "id": "gh-bounty-052",
-    "title": "[BOUNTY: 30 RTC] Build a VS Code Extension — RustChain Wallet & Miner Dashboard",
+    "title": "[BOUNTY: 30 RTC] Build a VS Code Extension – RustChain Wallet & Miner Dashboard",
     "repo": "Scottcjn/rustchain-bounties",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2868",
     "reward": "30 RTC",
     "difficulty": "medium",
-    "tags": [
-      "vscode-extension",
-      "wallet",
-      "dashboard",
-      "rust",
-      "blockchain"
-    ]
+    "tags": ["vscode-extension", "wallet", "dashboard", "rust", "blockchain"]
   },
   {
     "id": "gh-bounty-053",
@@ -748,12 +654,7 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2864",
     "reward": "20 RTC",
     "difficulty": "medium",
-    "tags": [
-      "github-actions",
-      "automation",
-      "rewards",
-      "rust"
-    ]
+    "tags": ["github-actions", "automation", "rewards", "rust"]
   },
   {
     "id": "gh-bounty-054",
@@ -762,98 +663,61 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2844",
     "reward": "5 RTC",
     "difficulty": "easy",
-    "tags": [
-      "creative",
-      "community",
-      "mining",
-      "rust"
-    ]
+    "tags": ["creative", "community", "mining", "rust"]
   },
   {
     "id": "gh-bounty-055",
-    "title": "[BOUNTY] Red Team UTXO Implementation — Find Bugs, Earn RTC (50-200 RTC)",
+    "title": "[BOUNTY] Red Team UTXO Implementation – Find Bugs, Earn RTC (50-200 RTC)",
     "repo": "Scottcjn/rustchain-bounties",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2819",
     "reward": "50-200 RTC",
     "difficulty": "hard",
-    "tags": [
-      "security",
-      "audit",
-      "red-team",
-      "utxo",
-      "rust"
-    ]
+    "tags": ["security", "audit", "red-team", "utxo", "rust"]
   },
   {
     "id": "gh-bounty-056",
-    "title": "Silicon Obituary — Hardware Eulogy Generator for Retired Miners (25 RTC)",
+    "title": "Silicon Obituary – Hardware Eulogy Generator for Retired Miners (25 RTC)",
     "repo": "Scottcjn/rustchain-bounties",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2308",
     "reward": "25 RTC",
     "difficulty": "medium",
-    "tags": [
-      "creative",
-      "content",
-      "mining",
-      "rust",
-      "blockchain"
-    ]
+    "tags": ["creative", "content", "mining", "rust", "blockchain"]
   },
   {
     "id": "gh-bounty-057",
-    "title": "[BOUNTY: 10-15 RTC] Epoch Reporter Bot — Auto-Post Epoch Summaries",
+    "title": "[BOUNTY: 10-15 RTC] Epoch Reporter Bot – Auto-Post Epoch Summaries",
     "repo": "Scottcjn/rustchain-bounties",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/749",
     "reward": "10-15 RTC",
     "difficulty": "medium",
-    "tags": [
-      "telegram-bot",
-      "automation",
-      "reporting",
-      "rust"
-    ]
+    "tags": ["telegram-bot", "automation", "reporting", "rust"]
   },
   {
     "id": "gh-bounty-058",
-    "title": "[BOUNTY: 5 RTC] Write a Comparison Article — RustChain vs Other Chains",
+    "title": "[BOUNTY: 5 RTC] Write a Comparison Article – RustChain vs Other Chains",
     "repo": "Scottcjn/rustchain-bounties",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/727",
     "reward": "5 RTC",
     "difficulty": "easy",
-    "tags": [
-      "content",
-      "writing",
-      "community",
-      "blockchain"
-    ]
+    "tags": ["content", "writing", "community", "blockchain"]
   },
   {
     "id": "gh-bounty-059",
-    "title": "Bounty: \"Mine Your Grandma's Computer\" — vintage miner setup guide",
+    "title": "Bounty: 'Mine Your Grandma's Computer' – vintage miner setup guide",
     "repo": "Scottcjn/Rustchain",
     "url": "https://github.com/Scottcjn/Rustchain/issues/2150",
     "reward": "bounty",
     "difficulty": "easy",
-    "tags": [
-      "documentation",
-      "tutorial",
-      "mining",
-      "rust"
-    ]
+    "tags": ["documentation", "tutorial", "mining", "rust"]
   },
   {
     "id": "gh-bounty-060",
-    "title": "[BOUNTY] Report a Bug — 5-15 RTC",
+    "title": "[BOUNTY] Report a Bug – 5-15 RTC",
     "repo": "Scottcjn/Rustchain",
     "url": "https://github.com/Scottcjn/Rustchain/issues/305",
     "reward": "5-15 RTC",
     "difficulty": "easy",
-    "tags": [
-      "bug",
-      "testing",
-      "rust",
-      "blockchain"
-    ]
+    "tags": ["bug", "testing", "rust", "blockchain"]
   },
   {
     "id": "gh-bounty-061",
@@ -862,26 +726,16 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1611",
     "reward": "1 RTC",
     "difficulty": "easy",
-    "tags": [
-      "community",
-      "social",
-      "engagement",
-      "rust"
-    ]
+    "tags": ["community", "social", "engagement", "rust"]
   },
   {
     "id": "gh-bounty-062",
-    "title": "[BOUNTY: 1 RTC] Star & Follow — Earn RTC (Ongoing, Agents Welcome)",
+    "title": "[BOUNTY: 1 RTC] Star & Follow – Earn RTC (Ongoing, Agents Welcome)",
     "repo": "Scottcjn/rustchain-bounties",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2103",
     "reward": "1 RTC",
     "difficulty": "easy",
-    "tags": [
-      "community",
-      "social",
-      "engagement",
-      "rust"
-    ]
+    "tags": ["community", "social", "engagement", "rust"]
   },
   {
     "id": "gh-bounty-063",
@@ -890,12 +744,7 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2180",
     "reward": "5 RTC",
     "difficulty": "medium",
-    "tags": [
-      "video",
-      "tutorial",
-      "content",
-      "bottube"
-    ]
+    "tags": ["video", "tutorial", "content", "bottube"]
   },
   {
     "id": "gh-bounty-064",
@@ -904,12 +753,7 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2795",
     "reward": "1 RTC",
     "difficulty": "easy",
-    "tags": [
-      "social",
-      "bottube",
-      "engagement",
-      "community"
-    ]
+    "tags": ["social", "bottube", "engagement", "community"]
   },
   {
     "id": "gh-bounty-065",
@@ -918,12 +762,7 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2791",
     "reward": "1 RTC",
     "difficulty": "easy",
-    "tags": [
-      "social",
-      "bottube",
-      "engagement",
-      "community"
-    ]
+    "tags": ["social", "bottube", "engagement", "community"]
   },
   {
     "id": "gh-bounty-066",
@@ -932,12 +771,7 @@
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2792",
     "reward": "1 RTC",
     "difficulty": "easy",
-    "tags": [
-      "social",
-      "bottube",
-      "engagement",
-      "community"
-    ]
+    "tags": ["social", "bottube", "engagement", "community"]
   },
   {
     "id": "gh-bounty-067",
@@ -946,13 +780,7 @@
     "url": "https://github.com/Spectral-Finance/lux/issues/99",
     "reward": "$600",
     "difficulty": "hard",
-    "tags": [
-      "llm",
-      "ai",
-      "abstraction",
-      "web3",
-      "finance"
-    ]
+    "tags": ["llm", "ai", "abstraction", "web3", "finance"]
   },
   {
     "id": "gh-bounty-068",
@@ -961,13 +789,7 @@
     "url": "https://github.com/Spectral-Finance/lux/issues/87",
     "reward": "$750",
     "difficulty": "medium",
-    "tags": [
-      "nft",
-      "marketplace",
-      "web3",
-      "data",
-      "finance"
-    ]
+    "tags": ["nft", "marketplace", "web3", "data", "finance"]
   },
   {
     "id": "gh-bounty-069",
@@ -976,12 +798,7 @@
     "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3",
     "reward": "$100",
     "difficulty": "medium",
-    "tags": [
-      "security",
-      "hook",
-      "claude",
-      "shell"
-    ]
+    "tags": ["security", "hook", "claude", "shell"]
   },
   {
     "id": "gh-bounty-070",
@@ -990,12 +807,7 @@
     "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1",
     "reward": "$50",
     "difficulty": "medium",
-    "tags": [
-      "skill",
-      "changelog",
-      "git",
-      "claude"
-    ]
+    "tags": ["skill", "changelog", "git", "claude"]
   },
   {
     "id": "gh-bounty-071",
@@ -1004,12 +816,7 @@
     "url": "https://github.com/asyncapi/training/issues/58",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "video",
-      "tutorial",
-      "asyncapi",
-      "training"
-    ]
+    "tags": ["video", "tutorial", "asyncapi", "training"]
   },
   {
     "id": "gh-bounty-072",
@@ -1018,12 +825,7 @@
     "url": "https://github.com/asyncapi/tck/issues/247",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "compatibility",
-      "testing",
-      "asyncapi",
-      "typescript"
-    ]
+    "tags": ["compatibility", "testing", "asyncapi", "typescript"]
   },
   {
     "id": "gh-bounty-073",
@@ -1032,12 +834,7 @@
     "url": "https://github.com/midnightntwrk/contributor-hub/issues/323",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "tutorial",
-      "midnight",
-      "node",
-      "blockchain"
-    ]
+    "tags": ["tutorial", "midnight", "node", "blockchain"]
   },
   {
     "id": "gh-bounty-074",
@@ -1046,12 +843,7 @@
     "url": "https://github.com/midnightntwrk/contributor-hub/issues/327",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "tutorial",
-      "shielded-token",
-      "midnight",
-      "blockchain"
-    ]
+    "tags": ["tutorial", "shielded-token", "midnight", "blockchain"]
   },
   {
     "id": "gh-bounty-075",
@@ -1060,13 +852,7 @@
     "url": "https://github.com/midnightntwrk/contributor-hub/issues/314",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "tutorial",
-      "fullstack",
-      "midnight",
-      "react",
-      "typescript"
-    ]
+    "tags": ["tutorial", "fullstack", "midnight", "react", "typescript"]
   },
   {
     "id": "gh-bounty-076",
@@ -1075,13 +861,7 @@
     "url": "https://github.com/tenstorrent/tt-metal/issues/16618",
     "reward": "$1500",
     "difficulty": "hard",
-    "tags": [
-      "ml",
-      "hardware",
-      "tensor",
-      "python",
-      "tenstorrent"
-    ]
+    "tags": ["ml", "hardware", "tensor", "python", "tenstorrent"]
   },
   {
     "id": "gh-bounty-077",
@@ -1090,12 +870,7 @@
     "url": "https://github.com/commaai/openpilot/issues/30693",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "ci",
-      "testing",
-      "simulation",
-      "自动驾驶"
-    ]
+    "tags": ["ci", "testing", "simulation", "autonomous-driving"]
   },
   {
     "id": "gh-bounty-078",
@@ -1104,40 +879,25 @@
     "url": "https://github.com/commaai/flash/issues/128",
     "reward": "$100",
     "difficulty": "medium",
-    "tags": [
-      "video",
-      "tutorial",
-      "commaai",
-      "walkthrough"
-    ]
+    "tags": ["video", "tutorial", "commaai", "walkthrough"]
   },
   {
     "id": "gh-bounty-079",
-    "title": "♿ Accessibility Audit + Fixes — 200 LTD Bounty",
+    "title": "Accessibility Audit + Fixes – 200 LTD Bounty",
     "repo": "INDIGOAZUL/la-tanda-web",
     "url": "https://github.com/INDIGOAZUL/la-tanda-web/issues/85",
     "reward": "200 LTD",
     "difficulty": "medium",
-    "tags": [
-      "accessibility",
-      "audit",
-      "frontend",
-      "web"
-    ]
+    "tags": ["accessibility", "audit", "frontend", "web"]
   },
   {
     "id": "gh-bounty-080",
-    "title": "[BOUNTY: 5 RTC] Star 10 Scottcjn Repos — Earn 5 RTC",
+    "title": "[BOUNTY: 5 RTC] Star 10 Scottcjn Repos – Earn 5 RTC",
     "repo": "Scottcjn/rustchain-bounties",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/253",
     "reward": "5 RTC",
     "difficulty": "easy",
-    "tags": [
-      "community",
-      "engagement",
-      "social",
-      "rust"
-    ]
+    "tags": ["community", "engagement", "social", "rust"]
   },
   {
     "id": "gh-bounty-301",
@@ -1146,13 +906,7 @@
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/271",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "noir",
-      "zk",
-      "testing",
-      "merkle",
-      "circuits"
-    ]
+    "tags": ["noir", "zk", "testing", "merkle", "circuits"]
   },
   {
     "id": "gh-bounty-302",
@@ -1161,557 +915,384 @@
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/285",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "build",
-      "circuits"
-    ]
+    "tags": ["noir", "zk", "build", "circuits"]
   },
   {
     "id": "gh-bounty-303",
-    "title": "[BOUNTY: 15 RTC each, 200 RTC pool] Make a Video Mining Hardware Showcase",
-    "repo": "Scottcjn/rustchain-bounties",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/6194",
-    "reward": "15 RTC",
-    "difficulty": "medium",
-    "tags": [
-      "video",
-      "content",
-      "mining",
-      "rust",
-      "hardware"
-    ]
-  },
-  {
-    "id": "gh-bounty-304",
-    "title": "ZK-030: Bind fixed denomination semantics into the withdrawal proof instead of relying on a free-form amount",
+    "title": "ZK-030: Bind fixed denomination semantics into the withdrawal proof",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/274",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "circuits",
-      "denomination"
-    ]
+    "tags": ["noir", "zk", "circuits", "denomination"]
   },
   {
-    "id": "gh-bounty-305",
+    "id": "gh-bounty-304",
     "title": "ZK-035: Rework nullifier hashing so spend identifiers are pool-scoped rather than root-scoped",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/279",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "nullifier",
-      "security"
-    ]
+    "tags": ["noir", "zk", "nullifier", "security"]
   },
   {
-    "id": "gh-bounty-306",
+    "id": "gh-bounty-305",
     "title": "ZK-008: Add a shared public-input encoding layer for root, nullifier hash, addresses, amount, relayer, and fee",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/252",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "public-inputs",
-      "encoding"
-    ]
+    "tags": ["noir", "zk", "public-inputs", "encoding"]
   },
   {
-    "id": "gh-bounty-307",
+    "id": "gh-bounty-306",
     "title": "ZK-001: Define the canonical BN254 field encoding contract across Noir and TypeScript",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/245",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "typescript",
-      "bn254",
-      "cryptography"
-    ]
+    "tags": ["noir", "typescript", "bn254", "cryptography"]
   },
   {
-    "id": "gh-bounty-308",
+    "id": "gh-bounty-307",
     "title": "ZK-042: Generate proving and verification keys for commitment and withdrawal circuits",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/286",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "proving-keys",
-      "circuits"
-    ]
+    "tags": ["noir", "zk", "proving-keys", "circuits"]
   },
   {
-    "id": "gh-bounty-310",
+    "id": "gh-bounty-308",
     "title": "ZK-038: Expand withdrawal fixtures to realistic non-zero sibling paths and non-zero leaf indices",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/282",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "noir",
-      "zk",
-      "fixtures",
-      "testing"
-    ]
+    "tags": ["noir", "zk", "fixtures", "testing"]
   },
   {
-    "id": "gh-bounty-311",
+    "id": "gh-bounty-310",
     "title": "ZK-010: Add cross-stack commitment test vectors for Noir, SDK, and generated fixtures",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/254",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "testing",
-      "cross-stack"
-    ]
+    "tags": ["noir", "zk", "testing", "cross-stack"]
   },
   {
-    "id": "gh-bounty-312",
+    "id": "gh-bounty-311",
     "title": "ZK-045: Encode withdrawal public inputs for the verifier boundary using the canonical packing schema",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/289",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "verifier",
-      "encoding"
-    ]
+    "tags": ["noir", "zk", "verifier", "encoding"]
   },
   {
-    "id": "gh-bounty-314",
+    "id": "gh-bounty-312",
     "title": "ZK-020: Add explicit leaf-index bit decomposition and range checks for Merkle proofs",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/264",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "merkle",
-      "cryptography"
-    ]
+    "tags": ["noir", "zk", "merkle", "cryptography"]
   },
   {
-    "id": "gh-bounty-315",
+    "id": "gh-bounty-314",
     "title": "ZK-026: Support variable-depth offline tooling while keeping the production circuit depth fixed",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/270",
     "reward": "bounty",
     "difficulty": "easy",
-    "tags": [
-      "noir",
-      "zk",
-      "offline",
-      "tooling"
-    ]
+    "tags": ["noir", "zk", "offline", "tooling"]
   },
   {
-    "id": "gh-bounty-316",
+    "id": "gh-bounty-315",
     "title": "ZK-029: Extend the withdrawal proof schema with an explicit pool identifier input",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/273",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "pool",
-      "schema"
-    ]
+    "tags": ["noir", "zk", "pool", "schema"]
   },
   {
-    "id": "gh-bounty-317",
+    "id": "gh-bounty-316",
     "title": "ZK-011: Add explicit domain separation tags to note commitments",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/255",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "dst",
-      "commitment"
-    ]
+    "tags": ["noir", "zk", "dst", "commitment"]
   },
   {
-    "id": "gh-bounty-318",
+    "id": "gh-bounty-317",
     "title": "ZK-014: Implement versioned note serialization with integrity checks",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/258",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "typescript",
-      "serialization",
-      "security"
-    ]
+    "tags": ["noir", "typescript", "serialization", "security"]
   },
   {
-    "id": "gh-bounty-319",
+    "id": "gh-bounty-318",
     "title": "ZK-004: Create a canonical circuit fixture generator for notes, roots, siblings, and public inputs",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/248",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "fixtures",
-      "generator"
-    ]
+    "tags": ["noir", "zk", "fixtures", "generator"]
   },
   {
-    "id": "gh-bounty-320",
+    "id": "gh-bounty-319",
     "title": "ZK-005: Add a pinned build pipeline that compiles every circuit and emits reproducible artifacts",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/249",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "ci",
-      "build",
-      "reproducibility"
-    ]
+    "tags": ["noir", "ci", "build", "reproducibility"]
   },
   {
-    "id": "gh-bounty-321",
+    "id": "gh-bounty-320",
     "title": "ZK-028: Add randomized Merkle property tests for inserts, roots, and path validity",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/272",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "merkle",
-      "property-testing"
-    ]
+    "tags": ["noir", "zk", "merkle", "property-testing"]
   },
   {
-    "id": "gh-bounty-322",
+    "id": "gh-bounty-321",
     "title": "ZK-046: Validate artifact checksums and compatibility before proof generation",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/290",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "noir",
-      "zk",
-      "validation",
-      "ci"
-    ]
+    "tags": ["noir", "zk", "validation", "ci"]
   },
   {
-    "id": "gh-bounty-323",
+    "id": "gh-bounty-322",
     "title": "ZK-017: Add domain-separated nullifier hashing with cross-stack fixtures",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/261",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "nullifier",
-      "hashing"
-    ]
+    "tags": ["noir", "zk", "nullifier", "hashing"]
   },
   {
-    "id": "gh-bounty-324",
+    "id": "gh-bounty-323",
     "title": "ZK-009: Replace the placeholder SDK commitment implementation with real Poseidon-compatible hashing",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/253",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "typescript",
-      "poseidon",
-      "hashing"
-    ]
+    "tags": ["noir", "typescript", "poseidon", "hashing"]
   },
   {
-    "id": "gh-bounty-325",
+    "id": "gh-bounty-324",
     "title": "ZK-006: Track artifact hashes, backend versions, and circuit identifiers in a manifest",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/250",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "noir",
-      "build",
-      "manifest",
-      "versioning"
-    ]
+    "tags": ["noir", "build", "manifest", "versioning"]
   },
   {
-    "id": "gh-bounty-326",
+    "id": "gh-bounty-325",
     "title": "ZK-013: Bind denomination or amount class into the note commitment preimage",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/257",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "commitment",
-      "denomination"
-    ]
+    "tags": ["noir", "zk", "commitment", "denomination"]
   },
   {
-    "id": "gh-bounty-327",
+    "id": "gh-bounty-326",
     "title": "[BOUNTY] Register on Beacon Atlas + Prove Commerce (Pool: 150 RTC)",
     "repo": "Scottcjn/rustchain-bounties",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/3418",
     "reward": "150 RTC",
     "difficulty": "medium",
-    "tags": [
-      "rust",
-      "crypto",
-      "registration",
-      "commerce"
-    ]
+    "tags": ["rust", "crypto", "registration", "commerce"]
   },
   {
-    "id": "gh-bounty-328",
+    "id": "gh-bounty-327",
     "title": "Tari Universe terminates external xmrig processes on shutdown",
     "repo": "tari-project/universe",
     "url": "https://github.com/tari-project/universe/issues/3204",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "bug",
-      "mining",
-      "process",
-      "shutdown"
-    ]
+    "tags": ["bug", "mining", "process", "shutdown"]
   },
   {
-    "id": "gh-bounty-329",
+    "id": "gh-bounty-328",
     "title": "ZK-065: Run all ZK tests, rebuild checks, and artifact hash validation in CI",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/309",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "ci",
-      "testing"
-    ]
+    "tags": ["noir", "zk", "ci", "testing"]
   },
   {
-    "id": "gh-bounty-330",
+    "id": "gh-bounty-329",
     "title": "ZK-062: Add fuzz and property tests for note serialization, witness encoding, and Merkle paths",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/306",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "fuzzing",
-      "property-testing"
-    ]
+    "tags": ["noir", "zk", "fuzzing", "property-testing"]
   },
   {
-    "id": "gh-bounty-331",
+    "id": "gh-bounty-330",
     "title": "ZK-036: Harden relayer and fee semantics for zero-relayer, max-fee, and malformed combinations",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/280",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "noir",
-      "zk",
-      "relayer",
-      "fee"
-    ]
+    "tags": ["noir", "zk", "relayer", "fee"]
   },
   {
-    "id": "gh-bounty-333",
+    "id": "gh-bounty-331",
     "title": "ZK-022: Implement a TypeScript incremental Merkle tree that exactly matches Noir hash ordering",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/266",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "typescript",
-      "merkle",
-      "noir",
-      "zk"
-    ]
+    "tags": ["typescript", "merkle", "noir", "zk"]
   },
   {
-    "id": "gh-bounty-334",
+    "id": "gh-bounty-332",
     "title": "ZK-024: Add cross-stack Merkle inclusion vectors shared by circuit and SDK tests",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/268",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "merkle",
-      "cross-stack"
-    ]
+    "tags": ["noir", "zk", "merkle", "cross-stack"]
   },
   {
-    "id": "gh-bounty-335",
+    "id": "gh-bounty-333",
     "title": "ZK-025: Generate empty-tree and bootstrap-root fixtures for each pool and denomination class",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/269",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "noir",
-      "zk",
-      "fixtures",
-      "bootstrap"
-    ]
+    "tags": ["noir", "zk", "fixtures", "bootstrap"]
   },
   {
-    "id": "gh-bounty-336",
+    "id": "gh-bounty-334",
     "title": "ZK-023: Define the client-side Merkle synchronization format for leaves, checkpoints, and root snapshots",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/267",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "merkle",
-      "synchronization"
-    ]
+    "tags": ["noir", "zk", "merkle", "synchronization"]
   },
   {
-    "id": "gh-bounty-337",
+    "id": "gh-bounty-335",
     "title": "ZK-044: Normalize Groth16 proof bytes into the layout expected by the Soroban verifier boundary",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/288",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "zk",
-      "groth16",
-      "soroban"
-    ]
+    "tags": ["noir", "zk", "groth16", "soroban"]
   },
   {
-    "id": "gh-bounty-338",
+    "id": "gh-bounty-336",
     "title": "ZK-039: Extract withdrawal witness builders into reusable support code for future spend variants",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/283",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "noir",
-      "zk",
-      "witness",
-      "refactor"
-    ]
+    "tags": ["noir", "zk", "witness", "refactor"]
   },
   {
-    "id": "gh-bounty-339",
+    "id": "gh-bounty-337",
     "title": "ZK-031: Implement canonical Stellar address-to-field encoding for recipient and relayer inputs",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/275",
     "reward": "bounty",
     "difficulty": "hard",
-    "tags": [
-      "noir",
-      "stellar",
-      "encoding",
-      "cryptography"
-    ]
+    "tags": ["noir", "stellar", "encoding", "cryptography"]
   },
   {
-    "id": "gh-bounty-340",
+    "id": "gh-bounty-338",
     "title": "ZK-018: Build an edge-case commitment regression corpus for collisions, symmetry, and near-field values",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/262",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "noir",
-      "zk",
-      "commitment",
-      "edge-cases"
-    ]
+    "tags": ["noir", "zk", "commitment", "edge-cases"]
   },
   {
-    "id": "gh-bounty-341",
+    "id": "gh-bounty-339",
     "title": "ZK-016: Add deterministic note derivation for fixtures, seeded tests, and recovery flows",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/260",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "noir",
-      "zk",
-      "note",
-      "derivation"
-    ]
+    "tags": ["noir", "zk", "note", "derivation"]
   },
   {
-    "id": "gh-bounty-342",
+    "id": "gh-bounty-340",
     "title": "ZK-015: Harden note deserialization against malformed, truncated, and ambiguous note strings",
     "repo": "ANAVHEOBA/PrivacyLayer",
     "url": "https://github.com/ANAVHEOBA/PrivacyLayer/issues/259",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "noir",
-      "zk",
-      "security",
-      "deserialization"
-    ]
+    "tags": ["noir", "zk", "security", "deserialization"]
   },
   {
-    "id": "gh-bounty-343",
+    "id": "gh-bounty-341",
     "title": "Mitigate risks due to next known CVEs version and current versions range",
     "repo": "tari-project/wxtm-bridge-frontend",
     "url": "https://github.com/tari-project/wxtm-bridge-frontend/issues/103",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "security",
-      "cve",
-      "frontend",
-      "javascript"
-    ]
+    "tags": ["security", "cve", "frontend", "javascript"]
   },
   {
-    "id": "gh-bounty-344",
+    "id": "gh-bounty-342",
     "title": "Fix the sum function",
     "repo": "emabarrera/bounty-test-repo",
     "url": "https://github.com/emabarrera/bounty-test-repo/issues/1",
     "reward": "bounty",
     "difficulty": "medium",
-    "tags": [
-      "bug",
-      "beginner",
-      "simple"
-    ]
+    "tags": ["bug", "beginner", "simple"]
+  },
+  {
+    "id": "gh-bounty-343",
+    "title": "Implement Tip Bounty System",
+    "repo": "Bonizozo/stellar-tipjar-contracts",
+    "url": "https://github.com/Bonizozo/stellar-tipjar-contracts/issues/181",
+    "reward": "bounty",
+    "difficulty": "medium",
+    "tags": ["stellar", "smart-contract", "bounty", "solidity"]
+  },
+  {
+    "id": "gh-bounty-344",
+    "title": "Bug bounty - question.market contracts",
+    "repo": "qmrkt/contracts",
+    "url": "https://github.com/qmrkt/contracts/issues/10",
+    "reward": "bounty",
+    "difficulty": "hard",
+    "tags": ["security", "audit", "defi", "smart-contract"]
+  },
+  {
+    "id": "gh-bounty-345",
+    "title": "Bounty console still Mention CentComm in bounties",
+    "repo": "DopplerShift13/DopplerShift",
+    "url": "https://github.com/DopplerShift13/DopplerShift/issues/1023",
+    "reward": "bounty",
+    "difficulty": "easy",
+    "tags": ["game", "bug", "ui", "bounty"]
+  },
+  {
+    "id": "gh-bounty-346",
+    "title": "Feature: Sponsor Bounty Creation Flow",
+    "repo": "boundlessfi/bounties",
+    "url": "https://github.com/boundlessfi/bounties/issues/181",
+    "reward": "bounty",
+    "difficulty": "medium",
+    "tags": ["stellar", "frontend", "bounty-flow", "react", "typescript"]
   }
 ]
