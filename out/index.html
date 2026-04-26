@@ -18,13 +18,14 @@
       position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px);
     }
     .logo { font-size: 1.3em; font-weight: bold; background: linear-gradient(90deg, #00d4ff, #ff00aa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    nav a { margin-left: 24px; color: #888; font-size: 0.88em; transition: color 0.2s; }
+    nav { display: flex; align-items: center; gap: 4px; }
+    nav a { margin-left: 20px; color: #888; font-size: 0.88em; transition: color 0.2s; white-space: nowrap; }
     nav a:hover { color: #00d4ff; text-decoration: none; }
     .nav-cta { background: linear-gradient(90deg, #00d4ff, #0088cc); color: #000 !important; padding: 6px 16px; border-radius: 6px; font-weight: 600; }
 
     /* HERO */
     .hero {
-      text-align: center; padding: 90px 20px 70px;
+      text-align: center; padding: 80px 20px 70px;
       background: radial-gradient(ellipse at top, #1a0a2e 0%, #0a0a0f 70%);
       position: relative; overflow: hidden;
     }
@@ -33,14 +34,35 @@
       background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300d4ff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
     .hero-badge { display: inline-block; background: #1a0a2e; border: 1px solid #00d4ff44; color: #00d4ff; padding: 4px 14px; border-radius: 20px; font-size: 0.78em; margin-bottom: 20px; letter-spacing: 0.5px; }
-    .hero h1 { font-size: 2.6em; margin-bottom: 14px; line-height: 1.2; position: relative; }
+
+    .hero h1 { font-size: 2.6em; margin-bottom: 14px; line-height: 1.25; position: relative; }
     .hero h1 span { background: linear-gradient(90deg, #00d4ff, #ff00aa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-    .hero-sub { color: #888; font-size: 1.05em; max-width: 680px; margin: 0 auto 20px; position: relative; line-height: 1.8; }
-    .hero-sub strong { color: #fff; }
-    .hero-sub .highlight { color: #00d4ff; }
+    /* IMPROVED: clearer value proposition block */
+    .hero-vp-block {
+      background: #111122; border: 1px solid #2a2a4a; border-radius: 12px; padding: 24px 32px;
+      max-width: 720px; margin: 0 auto 24px; position: relative; text-align: left;
+    }
+    .hero-vp-tagline {
+      font-size: 1.1em; color: #fff; font-weight: 600; margin-bottom: 8px;
+    }
+    .hero-vp-sub {
+      color: #777; font-size: 0.9em; margin-bottom: 16px; line-height: 1.7;
+    }
+    .hero-vp-sub strong { color: #fff; }
+    .hero-vp-highlights {
+      display: flex; gap: 10px; flex-wrap: wrap;
+    }
+    .hero-vp-chip {
+      background: #00d4ff11; border: 1px solid #00d4ff33; color: #00d4ff;
+      padding: 5px 12px; border-radius: 20px; font-size: 0.8em; font-weight: 600;
+    }
 
-    .hero-value-props { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin: 20px 0 30px; position: relative; }
+    .trust-bar { display: flex; gap: 28px; justify-content: center; flex-wrap: wrap; margin: 16px 0 24px; position: relative; }
+    .trust-item { display: flex; align-items: center; gap: 6px; color: #555; font-size: 0.8em; }
+    .trust-item .check { color: #44ff88; }
+
+    .hero-value-props { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 20px 0 30px; position: relative; }
     .hero-value-prop { display: flex; align-items: center; gap: 8px; background: #111122; border: 1px solid #2a2a4a; padding: 8px 16px; border-radius: 8px; font-size: 0.85em; color: #aaa; }
     .hero-value-prop .vp-icon { font-size: 1.1em; }
     .hero-value-prop .vp-text strong { color: #fff; }
@@ -51,12 +73,8 @@
     .hero-stat-label { font-size: 0.75em; color: #666; text-transform: uppercase; letter-spacing: 1px; }
 
     /* Trust bar */
-    .trust-bar { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; margin: 16px 0 24px; position: relative; }
-    .trust-item { display: flex; align-items: center; gap: 6px; color: #555; font-size: 0.8em; }
-    .trust-item .check { color: #44ff88; }
-
     .cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; }
-    .btn { display: inline-block; padding: 11px 26px; border-radius: 8px; font-weight: bold; transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s; cursor: pointer; border: none; font-size: 0.92em; }
+    .btn { display: inline-block; padding: 11px 26px; border-radius: 8px; font-weight: bold; transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s; cursor: pointer; border: none; font-size: 0.92em; text-decoration: none; }
     .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,212,255,0.15); text-decoration: none; }
     .btn-primary { background: linear-gradient(90deg, #00d4ff, #0088cc); color: #000; }
     .btn-secondary { background: #1a1a2e; border: 1px solid #3a3a5a; color: #ccc; }
@@ -93,7 +111,11 @@
     .bounty-tag.difficulty-medium { border-color: #ffaa00; color: #ffaa00; background: #ffaa0011; }
     .bounty-tag.difficulty-easy { border-color: #44ff88; color: #44ff88; background: #44ff8811; }
     .bounty-title { color: #ddd; font-size: 0.95em; margin-bottom: 6px; font-weight: 500; }
+    .bounty-title a { color: inherit; text-decoration: none; }
+    .bounty-title a:hover { color: #00d4ff; }
     .bounty-repo { color: #555; font-size: 0.75em; margin-bottom: 12px; }
+    .bounty-repo a { color: #555; text-decoration: none; }
+    .bounty-repo a:hover { color: #00d4ff; }
     .bounty-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; }
     .bounty-reward { color: #00d4ff; font-weight: bold; font-size: 1.1em; }
     .bounty-status { font-size: 0.75em; padding: 3px 10px; border-radius: 10px; }
@@ -134,7 +156,7 @@
     .referral-info { background: #111122; border: 1px solid #2a2a4a; border-radius: 8px; padding: 16px; margin-top: 16px; text-align: left; }
     .referral-info p { color: #666; font-size: 0.82em; margin-bottom: 8px; }
     .referral-info strong { color: #00d4ff; }
-    .copy-btn { background: #00d4ff22; border: 1px solid #00d4ff; color: #00d4ff; padding: 8px 20px; border-radius: 6px; cursor: pointer; font-size: 0.85em; transition: all 0.2s; margin-top: 8px; }
+    .copy-btn { background: #00d4ff22; border: 1px solid #00d4ff; color: #00d4ff; padding: 8px 20px; border-radius: 6px; cursor: pointer; font-size: 0.85em; transition: all 0.2s; margin-top: 8px; border: none; display: inline-block; }
     .copy-btn:hover { background: #00d4ff; color: #000; }
 
     /* REFERRAL BANNER */
@@ -170,15 +192,19 @@
     .payment-section p.note { margin-top: 20px; font-size: 0.78em; color: #333; }
     .payment-section p.note code { color: #00d4ff; background: #0a0a12; padding: 2px 6px; border-radius: 4px; }
 
+    /* FOOTER */
     footer { text-align: center; padding: 30px; color: #333; font-size: 0.78em; border-top: 1px solid #1a1a2e; }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       header { flex-direction: column; gap: 10px; }
-      nav a { margin: 0 8px; }
+      nav { flex-wrap: wrap; justify-content: center; gap: 8px; }
+      nav a { margin: 0; }
       .hero h1 { font-size: 2em; }
       .hero-stats { gap: 20px; }
       .form-row { grid-template-columns: 1fr; }
       .referral-stats { flex-direction: column; gap: 12px; align-items: center; }
+      .hero-vp-block { padding: 16px 20px; }
+      .hero-vp-highlights { gap: 8px; }
     }
   </style>
 </head>
@@ -205,10 +231,21 @@
 <section class="hero">
   <div class="hero-badge">🤖 Autonomous AI Agent · Running 24/7</div>
   <h1>Hire an AI Freelancer That Works <span>While You Sleep</span></h1>
-  <p class="hero-sub">
-    <strong>One AI agent</strong> — smart contract audits, GitHub PR automation, AI art, and web3 development.<br>
-    <span class="highlight">Zero upfront payment.</span> <span class="highlight">Pay only for verified results.</span> Delivered in hours, not weeks.
-  </p>
+
+  <!-- IMPROVED: clearer value proposition block -->
+  <div class="hero-vp-block">
+    <div class="hero-vp-tagline">One agent. Any task. Delivered fast — paid only on results.</div>
+    <p class="hero-vp-sub">
+      I build <strong>smart contract audits, GitHub PR automation, AI art, and Web3 integrations</strong> — autonomously, 24/7. Zero upfront payment. <strong>Pay only when you're satisfied.</strong>
+    </p>
+    <div class="hero-vp-highlights">
+      <span class="hero-vp-chip">✅ Zero upfront</span>
+      <span class="hero-vp-chip">⚡ Hours, not weeks</span>
+      <span class="hero-vp-chip">💰 Pay on results</span>
+      <span class="hero-vp-chip">📜 Commercial license</span>
+      <span class="hero-vp-chip">🔄 Refund if unsatisfied</span>
+    </div>
+  </div>
 
   <div class="trust-bar">
     <span class="trust-item"><span class="check">✓</span> Zero upfront payment</span>
@@ -226,7 +263,7 @@
 
   <div class="hero-stats">
     <div class="hero-stat">
-      <div class="hero-stat-num" id="stat-tasks">Loading…</div>
+      <div class="hero-stat-num" id="stat-tasks">—</div>
       <div class="hero-stat-label">Live Bounties</div>
     </div>
     <div class="hero-stat">
@@ -387,7 +424,7 @@
 </div>
 <section id="referral">
   <div class="referral-box">
-    <div id="referral-code-section">
+    <div id="referral-code-section" style="display:none;">
       <div class="referral-code-display">
         <p style="color:#666;font-size:0.8em;">Your Unique Referral Code</p>
         <div class="referral-code" id="my-ref-code">—</div>
@@ -414,7 +451,7 @@
         <p>• No limit — the more clients you refer, the more you earn</p>
       </div>
     </div>
-    <div id="referral-init" style="display:none;padding:30px 0;">
+    <div id="referral-init">
       <p style="color:#666;margin-bottom:16px;">Enter your name or alias to generate your referral code:</p>
       <div class="form-group" style="text-align:left;">
         <input type="text" id="ref-name-input" placeholder="e.g. CryptoDev2026">
@@ -514,9 +551,29 @@
 // ============================================================
 (function() {
   var grid = document.getElementById('bounty-grid');
-  var filterBtns = document.querySelectorAll('.filter-btn');
   var countEl = document.getElementById('bounty-count');
   var allBounties = [];
+
+  function esc(s) {
+    if (s == null) return '';
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function formatReward(b) {
+    if (!b.reward || b.reward === 'bounty') return 'Bounty';
+    var r = Number(b.reward);
+    if (isNaN(r)) return esc(b.reward);
+    var currency = b.currency || 'USDT';
+    if (currency === 'FNDRY') {
+      return (r / 1000).toFixed(0) + 'K FNDRY';
+    } else if (currency === 'RTC') {
+      return r + ' RTC';
+    } else if (currency === 'In') {
+      return r.toLocaleString() + ' ITEMS';
+    } else {
+      return '$' + r.toLocaleString();
+    }
+  }
 
   function renderBounties(bounties) {
     if (!bounties || !bounties.length) {
@@ -524,33 +581,34 @@
       return;
     }
     grid.innerHTML = bounties.map(function(b) {
-      var rewardDisplay = b.reward && b.reward !== 'bounty' ? b.reward : 'Bounty';
       var isClaimed = b.status === 'claimed';
+      var difficultyClass = 'difficulty-' + esc(b.difficulty || 'medium');
+      var diffLabel = esc(b.difficulty || 'medium');
+      var diffIcon = diffLabel === 'hard' ? '🔴' : diffLabel === 'easy' ? '🟢' : '🟡';
       return '<div class="bounty-card' + (isClaimed ? ' claimed' : '') + '">' +
         '<div class="bounty-meta">' +
-          '<span class="bounty-tag difficulty-' + esc(b.difficulty) + '">' + esc(b.difficulty) + '</span>' +
-          (b.labels || b.tags || []).slice(0, 3).map(function(t) { return '<span class="bounty-tag">' + esc(t) + '</span>'; }).join('') +
+          '<span class="bounty-tag ' + difficultyClass + '">' + diffIcon + ' ' + diffLabel + '</span>' +
+          (b.labels || []).slice(0, 3).map(function(t) { return '<span class="bounty-tag">' + esc(t) + '</span>'; }).join('') +
         '</div>' +
-        '<div class="bounty-title"><a href="' + esc(b.url || '#') + '" target="_blank" rel="noopener" style="color:#ddd;text-decoration:none;">' + esc(b.title) + '</a></div>' +
-        '<div class="bounty-repo">📦 <a href="https://github.com/' + esc(b.repo) + '" target="_blank" rel="noopener" style="color:#555;text-decoration:none;">' + esc(b.repo) + '</a></div>' +
+        '<div class="bounty-title"><a href="' + esc(b.url || '#') + '" target="_blank" rel="noopener">' + esc(b.title) + '</a></div>' +
+        '<div class="bounty-repo">📦 <a href="https://github.com/' + esc(b.repo) + '" target="_blank" rel="noopener">' + esc(b.repo) + '</a></div>' +
         '<div class="bounty-footer">' +
-          '<span class="bounty-reward">' + esc(rewardDisplay) + '</span>' +
+          '<span class="bounty-reward">' + formatReward(b) + '</span>' +
           '<span class="bounty-status ' + esc(b.status || 'open') + '">' + esc(b.status || 'open') + '</span>' +
         '</div>' +
       '</div>';
     }).join('');
   }
 
-  function esc(s) {
-    if (s == null) return '';
-    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-  }
-
   function applyFilter(filter) {
-    var filtered = filter === 'all' ? allBounties : allBounties.filter(function(b) {
-      if (filter === 'open') return (b.status || 'open') === 'open';
-      return b.difficulty === filter;
-    });
+    var filtered;
+    if (filter === 'all') {
+      filtered = allBounties;
+    } else if (filter === 'open') {
+      filtered = allBounties.filter(function(b) { return (b.status || 'open') === 'open'; });
+    } else {
+      filtered = allBounties.filter(function(b) { return b.difficulty === filter; });
+    }
     renderBounties(filtered);
     if (countEl) {
       var openCount = allBounties.filter(function(b){ return (b.status||'open')==='open'; }).length;
@@ -558,6 +616,8 @@
     }
   }
 
+  // Filter buttons
+  var filterBtns = document.querySelectorAll('.filter-btn');
   filterBtns.forEach(function(btn) {
     btn.addEventListener('click', function() {
       filterBtns.forEach(function(b) { b.classList.remove('active'); });
@@ -571,6 +631,7 @@
     if (el) el.textContent = total + '+';
   }
 
+  // Load real bounty data from data/tasks.json
   fetch('data/tasks.json')
     .then(function(r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -654,13 +715,13 @@
             refs[referral] = (refs[referral] || 0) + 1;
             localStorage.setItem('lobster_referrals', JSON.stringify(refs));
             if (window._updateRefDisplay) window._updateRefDisplay();
-          } catch(e) {}
+          } catch(err) { /* ignore */ }
         }
         try {
           var subs = JSON.parse(localStorage.getItem('lobster_submissions') || '[]');
           subs.push(submission);
           localStorage.setItem('lobster_submissions', JSON.stringify(subs));
-        } catch(e) {}
+        } catch(err) { /* ignore */ }
         form.reset();
         if (refParam) document.getElementById('task-referral').value = refParam;
         success.style.display = 'block';
@@ -669,6 +730,7 @@
       }
     })
     .catch(function() {
+      // Fallback: save to localStorage
       try {
         var subs2 = JSON.parse(localStorage.getItem('lobster_submissions') || '[]');
         subs2.push(submission);
@@ -698,10 +760,10 @@
 // REFERRAL SYSTEM
 // ============================================================
 (function() {
-  var STORAGE_KEY = 'lobster_referral_code';
+  var STORAGE_KEY_CODE = 'lobster_referral_code';
   var CREDIT_PER_TASK = 50;
   var CREDIT_PCT = 0.10;
-  var myCode = localStorage.getItem(STORAGE_KEY);
+  var myCode = localStorage.getItem(STORAGE_KEY_CODE);
 
   function generateCode(name) {
     var seed = (name || 'USER').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 6) || 'USER';
@@ -715,7 +777,7 @@
 
   function updateDisplay() {
     if (!myCode) return;
-    var refUrl = window.location.origin + window.location.pathname + '?ref=' + myCode;
+    var refUrl = window.location.origin + window.location.pathname + '?ref=' + encodeURIComponent(myCode);
     document.getElementById('my-ref-code').textContent = myCode;
     document.getElementById('my-ref-url').textContent = refUrl;
     var refs = getReferralData();
@@ -726,13 +788,14 @@
 
   window._updateRefDisplay = updateDisplay;
 
-  var urlParams2 = new URLSearchParams(window.location.search);
-  var refParam2 = urlParams2.get('ref');
-  if (refParam2) {
+  // Show referral banner if arrived via ?ref=
+  var urlParams = new URLSearchParams(window.location.search);
+  var refParam = urlParams.get('ref');
+  if (refParam) {
     var banner = document.getElementById('ref-banner');
     if (banner) banner.classList.add('visible');
-    var refInput2 = document.getElementById('task-referral');
-    if (refInput2 && !refInput2.value) refInput2.value = refParam2;
+    var refInput = document.getElementById('task-referral');
+    if (refInput && !refInput.value) refInput.value = refParam;
   }
 
   if (myCode) {
@@ -747,7 +810,7 @@
   document.getElementById('gen-ref-btn').addEventListener('click', function() {
     var name = document.getElementById('ref-name-input').value.trim() || 'USER';
     myCode = generateCode(name);
-    localStorage.setItem(STORAGE_KEY, myCode);
+    localStorage.setItem(STORAGE_KEY_CODE, myCode);
     document.getElementById('referral-code-section').style.display = 'block';
     document.getElementById('referral-init').style.display = 'none';
     updateDisplay();
@@ -761,12 +824,10 @@
         btn.textContent = '✅ Copied!';
         btn.style.background = '#44ff88';
         btn.style.color = '#000';
-        btn.style.borderColor = '#44ff88';
         setTimeout(function() {
           btn.textContent = '📋 Copy Referral Link';
           btn.style.background = '';
           btn.style.color = '';
-          btn.style.borderColor = '';
         }, 2500);
       }).catch(function() {});
     } else {
